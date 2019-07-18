@@ -1,8 +1,12 @@
-# 强化学习：理论与Python实现
+# 强化学习：原理与Python实现
+
+**世界上第一本配套 TensorFlow 2 代码的强化学习教程**
+
+![Book](https://zhiqingxiao.github.io/images/book/rl.jpg)
 
 本书介绍强化学习理论及其 Python 实现。
 - 理论方面：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等经典算法和柔性执行者/评论者等深度强化学习算法。
-- 实现方面：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于最新的 Python 3.7、Gym 0.12 和 Tensorflow 2（兼容 Tensorflow 1），实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
+- 实现方面：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于最新的 Python 3.7、Gym 0.13 和 TensorFlow 2（兼容 TensorFlow 1），实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
 
 
 ### 目录
@@ -23,7 +27,9 @@
 
 # Reinforcement Learning: Theory and Python Implementation
 
-We support Python 3.7, Gym 0.12 and Tensorflow 2.
+** The First Reinforcement Learning Tutorial Book with Tensorflow 2 Implementation**
+
+We support Python 3.7, Gym 0.13 and Tensorflow 2.
 
 ### Table of Contents
 
@@ -47,6 +53,7 @@ We support Python 3.7, Gym 0.12 and Tensorflow 2.
      title     = {Reinforcement Learning: Theory and {Python} Implementation},
      author    = {Zhiqing Xiao}
      year      = 2019,
+     month     = 7,
      publisher = {China Machine Press},
     }
 

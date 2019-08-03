@@ -26,7 +26,7 @@
 11. 综合案例：棋盘游戏
 12. 综合案例：自动驾驶
 
-**本书 QQ 群：** 935702193
+**QQ群：** 935702193
 
 # Reinforcement Learning: Theory and Python Implementation
 

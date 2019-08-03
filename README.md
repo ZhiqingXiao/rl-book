@@ -1,12 +1,13 @@
 # 强化学习：原理与Python实现
 
-**世界上第一本配套 TensorFlow 2 代码的强化学习教程**
+**世界上第一本配套 TensorFlow 2 代码的强化学习教程书**
+**第一本正式出版的配套 TensorFlow 2 代码的算法书**
 
 ![Book](https://zhiqingxiao.github.io/images/book/rl.jpg)
 
 本书介绍强化学习理论及其 Python 实现。
-- 理论方面：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等经典算法和柔性执行者/评论者等深度强化学习算法。
-- 实现方面：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于最新的 Python 3.7、Gym 0.13 和 TensorFlow 2（兼容 TensorFlow 1），实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
+- 理论完备：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等非深度强化学习算法和柔性执行者/评论者等深度强化学习算法。
+- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于最新的 Python 3.7、Gym 0.14 和 TensorFlow 2（兼容 TensorFlow 1），实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
 
 
 ### 目录
@@ -24,12 +25,15 @@
 11. 综合案例：棋盘游戏
 12. 综合案例：自动驾驶
 
+本书 QQ 群：935702193。
 
 # Reinforcement Learning: Theory and Python Implementation
 
-** The First Reinforcement Learning Tutorial Book with Tensorflow 2 Implementation**
+**The First Reinforcement Learning Tutorial Book with Tensorflow 2 Implementation**
 
-We support Python 3.7, Gym 0.13 and Tensorflow 2.
+This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
+- Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algithms.
+- Practice: Every chapter is accompanied by high quality implementation based on Python 3.7, Gym 0.14, and Tensorflow 2.
 
 ### Table of Contents
 

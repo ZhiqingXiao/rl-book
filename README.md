@@ -2,7 +2,7 @@
 
 **世界上第一本配套 TensorFlow 2 代码的强化学习教程书**
 
-**第一本正式出版的配套 TensorFlow 2 代码的算法书**
+**中国第一本配套 TensorFlow 2 代码的纸质算法书**
 
 ![Book](https://zhiqingxiao.github.io/images/book/rl.jpg)
 
@@ -26,7 +26,7 @@
 11. 综合案例：棋盘游戏
 12. 综合案例：自动驾驶
 
-本书 QQ 群：935702193。
+**本书 QQ 群：** 935702193
 
 # Reinforcement Learning: Theory and Python Implementation
 

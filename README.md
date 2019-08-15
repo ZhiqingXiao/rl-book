@@ -28,6 +28,8 @@
 
 **QQ群：** 935702193
 
+**勘误列表：** https://github.com/zhiqingxiao/rl-book/wiki/errata
+
 # Reinforcement Learning: Theory and Python Implementation
 
 **The First Reinforcement Learning Tutorial Book with Tensorflow 2 Implementation**

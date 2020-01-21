@@ -31,17 +31,18 @@
 - 关于入群验证问题：由于QQ的bug，即使正确输入答案，也可能会验证失败。这时更换设备重试、更换输入法重试、改日重试均可能解决问题。
 
 **书籍勘误与更新**
-- 2019年8月第1版第1次印刷： https://github.com/zhiqingxiao/rl-book/wiki/errata201908
-- 2019年11月第1版第2次印刷： https://github.com/zhiqingxiao/rl-book/wiki/errata201911
-- 其他版次： https://github.com/zhiqingxiao/rl-book/wiki/errata
+- 2019年8月第1版第1次印刷：https://github.com/zhiqingxiao/rl-book/wiki/errata201908
+- 2019年11月第1版第2次印刷：https://github.com/zhiqingxiao/rl-book/wiki/errata201911
+- 其他版次：https://github.com/zhiqingxiao/rl-book/wiki/errata
 
 **判断纸质版书籍版次的方法 / 确定纸质书印刷时间的方法**
-“前言”之前有1页是“图书在版编目（CIP）数据”。这页下部的表格中有一项是“版次”，该项标明当前书是什么时候第几次印刷的。
+- “前言”之前有1页是“图书在版编目（CIP）数据”。这页下部的表格中有一项是“版次”，该项标明当前书是什么时候第几次印刷的。
 
 **本书数学符号表**
-https://github.com/ZhiqingXiao/rl-book/blob/master/notations.pdf
+- https://github.com/zhiqingxiao/rl-book/blob/master/notations.pdf
 
 **本书电子版**
+
 本书不仅有纸质版销售，也有电子版销售。不过，电子版没有提供配套的勘误与更新资源，所以推荐购买纸质版。电子版销售平台包括但不限于：
 - 华章鲜读：微信订阅公众号“华章电子书”，“在线书城”，“搜索”“强化学习”，在“鲜读”栏目下找到本书
 - Kindle电子书：https://www.amazon.cn/dp/B07X936G34/

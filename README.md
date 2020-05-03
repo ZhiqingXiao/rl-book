@@ -23,7 +23,7 @@
 08. 执行者/评论者方法 &emsp; [查看代码：Acrobot](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter08_ac/Acrobot-v1_tf.ipynb)
 09. 连续动作空间的确定性策略 &emsp; [查看代码：Pendulum](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter09_dpg/Pendulum-v0_tf.ipynb)
 10. 综合案例：电动游戏 &emsp; [查看代码：Breakout](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter10_atari/BreakoutDeterministic-v4_tf.ipynb) [Pong](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter10_atari/PongDeterministic-v4_tf.ipynb) [Seaquest](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter10_atari/SeaquestDeterministic-v4_tf.ipynb)
-11. 综合案例：棋盘游戏 &emsp; [查看代码：TicTacToe](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter11_alphazero/TicTacToe-v0_tf.ipynb) [Reversi](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter11_alphazero/Reversi-v0_4x4_tf.ipynb)
+11. 综合案例：棋盘游戏 &emsp; [查看代码：TicTacToe](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter11_alphazero/TicTacToe-v0_tf.ipynb) [Reversi](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter11_alphazero/Reversi-v0_4x4_tf.ipynb) [boardgame2](https://github.com/zhiqingxiao/boardgame2)
 12. 综合案例：自动驾驶 &emsp; [查看代码：AirSimNH](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter12_drive/AirSimNH_tf.ipynb)
 
 **QQ群**

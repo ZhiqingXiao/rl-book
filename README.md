@@ -1,6 +1,6 @@
 # 强化学习：原理与Python实现
 
-**世界上第一本配套 TensorFlow 2 代码的强化学习教程书**
+**全球第一本配套 TensorFlow 2 代码的强化学习教程书**
 
 **中国第一本配套 TensorFlow 2 代码的纸质算法书**
 
@@ -27,8 +27,10 @@
 12. 综合案例：自动驾驶 &emsp; [查看代码：AirSimNH](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter12_drive/AirSimNH_tf.ipynb)
 
 **QQ群**
-- 群号：935702193 （免费入群）
-- 关于入群验证问题：由于QQ的bug，即使正确输入答案，也可能会验证失败。这时更换设备重试、更换输入法重试、改日重试均可能解决问题。如果答案中有英文字母，清注意大小写。人名的首字母应大写。
+- 主群：935702193（主群扩容中请多支持，勘误报错可发此群，其他问题提问前请先Google）
+- 二群：243613392（免费入群，勘误报错可发此群，其他问题提问前请先Google）
+- 多任务群：696984257（免费入群，非小白群，多任务强化学习+强化元学习+终身强化学习+迁移强化学习，勘误报错勿发此群，提问前请先Google）
+- 关于入群验证问题：由于QQ的bug，即使正确输入答案，也可能会验证失败。这时更换设备重试、更换输入法重试、改日重试均可能解决问题。如果答案中有英文字母，清注意大小写。
 
 **书籍勘误与更新**
 - 2019年08月第1版第1次印刷：[查看勘误与更新](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/errata/errata201908.ipynb)
@@ -51,13 +53,22 @@
 - 知乎书店：https://www.zhihu.com/pub/reader/119634282
 
 
+**初学者常见问题**
+
+- 问：Windows系统下安装TensorFlow失败。答：请在Windows 10里安装Visual Studio 2019（如果有旧版本的Visual Studio请先彻底卸载）。更多细节和TensorFlow安装问题请自行Google。
+
+- 问：在PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，`display()`函数是Jupyter Notebook里才有的函数。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。
+
+- 问：TF-GPU运行的结果和repo里带的结果不完全一样。答：本repo附带的结果都是用CPU跑的。GPU运算本来就不能精确复现。
+
+
 # Reinforcement Learning: Theory and Python Implementation
 
 **The First Reinforcement Learning Tutorial Book with TensorFlow 2 Implementation**
 
 This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
 - Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.
-- Practice: Every chapter is accompanied by high quality implementation based on Python 3.7, Gym 0.17, and TensorFlow 2.1.
+- Practice: Every chapter is accompanied by high quality implementation based on Python 3.8, Gym 0.17, and TensorFlow 2.2.
 
 ### Table of Contents
 

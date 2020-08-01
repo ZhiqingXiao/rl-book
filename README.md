@@ -8,7 +8,7 @@
 
 本书介绍强化学习理论及其 Python 实现。
 - 理论完备：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等非深度强化学习算法和柔性执行者/评论者等深度强化学习算法。
-- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于最新的 Python 3.8、Gym 0.17 和 TensorFlow 2.2（兼容 TensorFlow 1.15），实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
+- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于最新的 Python 3.8、Gym 0.17 和 TensorFlow 2.3（兼容 TensorFlow 1.15），实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
 
 
 ### 目录
@@ -57,9 +57,9 @@
 
 - 问：Windows系统下安装TensorFlow失败。答：请在Windows 10里安装Visual Studio 2019（如果有旧版本的Visual Studio请先彻底卸载）。更多细节和TensorFlow安装问题请自行Google。
 
-- 问：在PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，`display()`函数是Jupyter Notebook里才有的函数。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。
+- 问：在Visual Studio或Visual Studio Code或PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，只能在Jupyter Notebook里运行。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。（`display()`函数是Jupyter Notebook里才有的函数。）更多细节或其他错误请自行Google。
 
-- 问：TF-GPU运行的结果和repo里带的结果不完全一样。答：本repo附带的结果都是用CPU跑的。GPU运算本来就不能精确复现。
+- 问：TF-GPU运行的结果和repo里带的结果不完全一样。答：本repo附带的结果都是用CPU跑的。GPU运算本来就不能精确复现。更多细节请自行Google。
 
 
 # Reinforcement Learning: Theory and Python Implementation

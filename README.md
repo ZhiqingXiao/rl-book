@@ -42,7 +42,7 @@
 - “前言”之前有1页是“图书在版编目（CIP）数据”。这页下部的表格中有一项是“版次”，该项标明当前书是什么时候第几次印刷的。
 
 **本书数学符号表**
-- [下载PDF](https://raw.githubusercontent.com/zhiqingxiao/rl-book/master/notations.pdf)
+- [下载PDF](https://raw.githubusercontent.com/zhiqingxiao/rl-book/master/resources/notations.pdf)
 
 **本书电子版**
 
@@ -57,7 +57,7 @@
 
 - 问：Windows系统下安装TensorFlow失败。答：请在Windows 10里安装Visual Studio 2019（如果有旧版本的Visual Studio请先彻底卸载）。更多细节和TensorFlow安装问题请自行Google。
 
-- 问：在Visual Studio或Visual Studio Code或PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，只能在Jupyter Notebook里运行。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。（`display()`函数是Jupyter Notebook里才有的函数。）更多细节或其他错误请自行Google。
+- 问：在Visual Studio或Visual Studio Code或PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，只能在Jupyter Notebook里运行。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。（`display()`函数是Jupyter Notebook里才有的函数。）不需要安装Visual Studio Code或PyCharm。更多细节或其他错误请自行Google。
 
 - 问：TF-GPU运行的结果和repo里带的结果不完全一样。答：本repo附带的结果都是用CPU跑的。GPU运算本来就不能精确复现。更多细节请自行Google。
 
@@ -66,11 +66,15 @@
 
 **The First Reinforcement Learning Tutorial Book with TensorFlow 2 Implementation**
 
+Please email me if you are interested in publishing the English version of the book.
+
 This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
 - Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.
 - Practice: Every chapter is accompanied by high quality implementation based on Python 3.8, Gym 0.17, and TensorFlow 2.3.
 
 ### Table of Contents
+
+[Detail](https://raw.githubusercontent.com/zhiqingxiao/rl-book/master/resources/toc.pdf)
 
 01. Introduction of Reinforcement Learning
 02. Markov Decision Process
@@ -83,7 +87,7 @@ This is a tutorial book on reinforcement learning, with explanation of theory an
 09. Deterministic Policy Gradient
 10. Case Study: Video Game
 11. Case Study: Board Game
-12. Case Study: Self-Driving Car
+12. Case Study: Autonomous Driving
 
 
 **BibTeX**

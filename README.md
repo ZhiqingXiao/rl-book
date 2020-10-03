@@ -66,11 +66,11 @@
 
 **The First Reinforcement Learning Tutorial Book with TensorFlow 2 Implementation**
 
-Please email me if you are interested in publishing the English version of the book.
-
 This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
 - Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.
 - Practice: Every chapter is accompanied by high quality implementation based on Python 3.8, Gym 0.17, and TensorFlow 2.3.
+
+** Please email me if you are interested in publishing the English version of the book.**
 
 ### Table of Contents
 

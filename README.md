@@ -50,7 +50,6 @@
 - 华章鲜读：微信订阅公众号“华章电子书”，“在线书城”，搜索“强化学习”，在“鲜读”栏目下找到本书
 - Kindle电子书：https://www.amazon.cn/dp/B07X936G34/
 - 京东读书：https://e.jd.com/30513215.html
-- 知乎书店：https://www.zhihu.com/pub/reader/119634282
 
 
 **初学者常见问题**
@@ -70,7 +69,7 @@ This is a tutorial book on reinforcement learning, with explanation of theory an
 - Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.
 - Practice: Every chapter is accompanied by high quality implementation based on Python 3.8, Gym 0.17, and TensorFlow 2.3.
 
-** Please email me if you are interested in publishing the English version of the book.**
+**Please email me if you are interested in publishing the English version of the book.**
 
 ### Table of Contents
 

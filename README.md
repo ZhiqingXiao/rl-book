@@ -36,6 +36,7 @@
 - 2019年08月第1版第1次印刷：[查看勘误与更新](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/errata/errata201908.ipynb)
 - 2019年11月第1版第2次印刷：[查看勘误与更新](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/errata/errata201911.ipynb)
 - 2019年12月第1版第3次印刷：[查看勘误与更新](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/errata/errata201912.ipynb)
+- 2020年09月第1版第4次印刷：[查看勘误与更新](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/errata/errata202009.ipynb)
 - 电子版不提供勘误与更新。
 
 **判断纸质版书籍版次的方法 / 确定纸质书印刷时间的方法**

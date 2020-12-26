@@ -4,6 +4,8 @@
 
 **中国第一本配套 TensorFlow 2 代码的纸质算法书**
 
+**现已提供 TensorFlow 2 和 PyTorch 1 对照代码**
+
 ![Book](https://zhiqingxiao.github.io/images/book/rl.jpg)
 
 本书介绍强化学习理论及其 Python 实现。
@@ -31,8 +33,11 @@
 12. 综合案例：自动驾驶 &emsp; [查看代码：AirSimNH](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter12_drive/AirSimNH_tf.ipynb)
 
 **QQ群**
+
+由于最近广告比较多，暂时关闭免费入群。如果有勘误报错信息可以直接私聊群主和管理员。
+
 - 主群：935702193（主群扩容中请多支持，勘误报错可发此群，其他问题提问前请先Google）
-- 二群：243613392（免费入群，勘误报错可发此群，其他问题提问前请先Google，群主和管理员不提供免费咨询服务）
+- 二群：243613392（勘误报错可发此群，其他问题提问前请先Google，群主和管理员不提供免费咨询服务）
 - 多任务群：696984257（免费入群，非小白群，多任务强化学习+强化元学习+终身强化学习+迁移强化学习，勘误报错勿发此群，提问前请先Google）
 - 关于入群验证问题：由于QQ的bug，即使正确输入答案，也可能会验证失败。这时更换设备重试、更换输入法重试、改日重试均可能解决问题。如果答案中有英文字母，清注意大小写。
 
@@ -81,6 +86,8 @@
 # Reinforcement Learning: Theory and Python Implementation
 
 **The First Reinforcement Learning Tutorial Book with TensorFlow 2 Implementation**
+
+**Implementation with both TensorFlow 2 and PyTorch 1**
 
 This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
 - Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.

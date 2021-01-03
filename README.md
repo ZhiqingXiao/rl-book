@@ -42,11 +42,11 @@
 - 关于入群验证问题：由于QQ的bug，即使正确输入答案，也可能会验证失败。这时更换设备重试、更换输入法重试、改日重试均可能解决问题。如果答案中有英文字母，清注意大小写。
 
 **书籍勘误与更新**
-- 2019年08月第1版第1次印刷：[查看勘误与更新](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/errata/errata201908.ipynb)
-- 2019年11月第1版第2次印刷：[查看勘误与更新](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/errata/errata201911.ipynb)
-- 2019年12月第1版第3次印刷：[查看勘误与更新](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/errata/errata201912.ipynb)
-- 2020年09月第1版第4次印刷：[查看勘误与更新](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/errata/errata202009.ipynb)
-- 2020年11月第1版第5次印刷：[查看勘误与更新](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/errata/errata202011.ipynb)
+- 2019年08月第1版第1次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata201908.html)
+- 2019年11月第1版第2次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata201911.html)
+- 2019年12月第1版第3次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata201912.html)
+- 2020年09月第1版第4次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata202009.html)
+- 2020年11月第1版第5次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata202011.html)
 - 电子版不提供勘误与更新。
 
 **判断纸质版书籍版次的方法 / 确定纸质书印刷时间的方法**

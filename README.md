@@ -10,7 +10,7 @@
 
 本书介绍强化学习理论及其 Python 实现。
 - 理论完备：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等非深度强化学习算法和柔性执行者/评论者等深度强化学习算法。
-- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.8（兼容 Python 3.9）、Gym 0.17 和 TensorFlow 2.4（兼容 TensorFlow 1.15），实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
+- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.8（兼容 Python 3.9）、Gym 0.18 和 TensorFlow 2.4 / PyTorch 1.7，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
 
 **2020年更新**
 
@@ -91,7 +91,7 @@
 
 This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
 - Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.
-- Practice: Every chapter is accompanied by high quality implementation based on Python 3.8, Gym 0.17, and TensorFlow 2.4.
+- Practice: Every chapter is accompanied by high quality implementation based on Python 3.8, Gym 0.18, and TensorFlow 2.4 / PyTorch 1.7.
 
 **Please email me if you are interested in publishing this book in other languages.**
 

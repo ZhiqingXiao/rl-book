@@ -87,7 +87,7 @@
 
 **The First Reinforcement Learning Tutorial Book with TensorFlow 2 Implementation**
 
-**Implementation with both TensorFlow 2 and PyTorch 1**
+**[Codes](https://github.com/ZhiqingXiao/rl-book/tree/master/notebooks) with both TensorFlow 2 and PyTorch 1**
 
 This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
 - Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.

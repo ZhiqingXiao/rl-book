@@ -34,10 +34,8 @@
 
 **QQ群**
 
-由于最近广告比较多，暂时关闭免费入群。如果有勘误报错信息可以直接私聊群主和管理员。
-
 - 主群：935702193（主群扩容中请多支持，勘误报错可发此群，其他问题提问前请先Google）
-- 二群：243613392（勘误报错可发此群，其他问题提问前请先Google，群主和管理员不提供免费咨询服务）
+- 二群：243613392（免费入群，勘误报错可发此群，其他问题提问前请先Google，群主和管理员不提供免费咨询服务）
 - 多任务群：696984257（免费入群，非小白群，多任务强化学习+强化元学习+终身强化学习+迁移强化学习，勘误报错勿发此群，提问前请先Google）
 - 关于入群验证问题：由于QQ的bug，即使正确输入答案，也可能会验证失败。这时更换设备重试、更换输入法重试、改日重试均可能解决问题。如果答案中有英文字母，清注意大小写。
 
@@ -47,6 +45,7 @@
 - 2019年12月第1版第3次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata201912.html)
 - 2020年09月第1版第4次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata202009.html)
 - 2020年11月第1版第5次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata202011.html)
+- 2021年01月第1版第6次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata202101.html)
 - 电子版不提供勘误与更新。
 
 **判断纸质版书籍版次的方法 / 确定纸质书印刷时间的方法**
@@ -76,11 +75,11 @@
 
 **初学者常见问题**
 
-- 问：Windows系统下安装TensorFlow失败。答：请在Windows 10里安装Visual Studio 2019（如果有旧版本的Visual Studio请先彻底卸载）。更多细节和TensorFlow安装问题请自行Google。
+- 问：Windows系统下安装TensorFlow或PyTorch失败。答：请在Windows 10里安装Visual Studio 2019（如果有旧版本的Visual Studio请先彻底卸载）。更多细节和安装问题请自行Google。
 
 - 问：在Visual Studio或Visual Studio Code或PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，只能在Jupyter Notebook里运行。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。（`display()`函数是Jupyter Notebook里才有的函数。）不需要安装Visual Studio Code或PyCharm。更多细节或其他错误请自行Google。
 
-- 问：TF-GPU运行的结果和repo里带的结果不完全一样。答：本repo附带的结果都是用CPU跑的。GPU运算本来就不能精确复现。更多细节请自行Google。
+- 问：GPU运行的结果和repo里带的结果不完全一样。答：本repo附带的结果都是用CPU跑的。GPU运算本来就不能精确复现。更多细节请自行Google。
 
 
 # Reinforcement Learning: Theory and Python Implementation
@@ -94,6 +93,22 @@ This is a tutorial book on reinforcement learning, with explanation of theory an
 - Practice: Every chapter is accompanied by high quality implementation based on Python 3.8, Gym 0.18, and TensorFlow 2.4 / PyTorch 1.7.
 
 **Please email me if you are interested in publishing this book in other languages.**
+
+
+### Table of Codes
+
+| Chapter | Environment | Agent |
+| :--- | :--- | :--- |
+| 2 | [CliffWalking-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CliffWalking-v0_CloseForm.ipynb) | [Bellman](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CliffWalking-v0_CloseForm.ipynb) |
+| 3 | FrozenLake-v0 | [DP](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/FrozenLake-v0_DP_demo.ipynb) |
+| 4 | Blackjack-v0 | [MC](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Blackjack-v0_MonteCarlo_demo.ipynb) |
+| 5 | Taxi-v3 | [SARSA](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_SARSA_demo.ipynb), [ExpectedSARSA](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_ExpectedSARSA.ipynb), [SARSA(λ)](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_SARSALambda.ipynb), [QL](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_QLearning.ipynb), [DoubleQL](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_DoubleQLearning.ipynb) |
+| 6 | [MountainCar-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/MountainCar-v0_CloseForm.ipynb) | [SARSA](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/MountainCar-v0_SARSA.ipynb), [SARSA(λ)](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/MountainCar-v0_SARSAlambda.ipynb), DQN [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/MountainCar-v0_DQN_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/MountainCar-v0_DQN_torch.ipynb), DoubleDQN [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/MountainCar-v0_DoubleDQN_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/MountainCar-v0_DoubleDQN_torch.ipynb), DualDQN [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/MountainCar-v0_DualDQN_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/MountainCar-v0_DualDQN_torch.ipynb) |
+| 7 | [CartPole-0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CartPole-v0_CloseForm.ipynb) | VPG [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CartPole-v0_VPG_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CartPole-v0_VPG_torch.ipynb), VPGwBaseline [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CartPole-v0_VPGwBaseline_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CartPole-v0_VPGwBaseline_torch.ipynb), OffPolicyVPG [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CartPole-v0_OffPolicyVPG_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CartPole-v0_OffPolicyVPG_torch.ipynb), OffPolicyVPGwBaseline [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CartPole-v0_OffPolicyVPGwBaseline_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CartPole-v0_OffPolicyVPGwBaseline_torch.ipynb) |
+| 8 | [Acrobot-v1](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_CloseForm.ipynb) | QAC [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_QActorCritic_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_QActorCritic_torch.ipynb), AdvantageAC [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_AdvantageActorCritic_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_AdvantageActorCritic_torch.ipynb), EligibilityTraceAC [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_EligibilityTraceAC_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_EligibilityTraceAC_torch.ipynb), OffPAC [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_OffPAC_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_OffPAC_torch.ipynb), PPO [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_PPO_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_PPO_torch.ipynb), NPG [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_NPG_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_NPG_torch.ipynb), TRPO [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_TRPO_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Acrobot-v1_TRPO_torch.ipynb) |
+| 9 | [Pendulum-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Pendulum-v0_CloseForm.ipynb) | DDPG [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Pendulum-v0_DDPG_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Pendulum-v0_DDPG_torch.ipynb), TD3 [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Pendulum-v0_TD3_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Pendulum-v0_TD3_torch.ipynb) |
+| 10 | [LunarLander-v2](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/LunarLander-v2_CloseForm.ipynb) | SQL [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/LunarLander-v2_SQL_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/LunarLander-v2_SQL_torch.ipynb), SAC [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/LunarLander-v2_SACwoA_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/LunarLander-v2_SACwoA_torch.ipynb), SACwA [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/LunarLander-v2_SACwA_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/LunarLander-v2_SACwA_torch.ipynb) |
+
 
 ### Table of Contents
 

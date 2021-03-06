@@ -59,6 +59,7 @@
 本书不仅有纸质版销售，也有电子版销售。不过，电子版没有提供配套的勘误与更新资源，而且公式展示不美观，对阅读带来困难。所以推荐购买纸质版。电子版销售平台包括但不限于：
 - Kindle电子书：https://www.amazon.cn/dp/B07X936G34/
 - 京东读书：https://e.jd.com/30513215.html
+- 华章课堂：http://www.hzcourse.com/web/refbook/detail/8397/226
 
 **热心读者 [Anesck](https://github.com/anesck) 对本书知识点的梳理评注**
 

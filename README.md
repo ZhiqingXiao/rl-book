@@ -101,7 +101,7 @@ This is a tutorial book on reinforcement learning, with explanation of theory an
 
 | Chapter | Environment & Closed-Form Policy | Agent |
 | :--- | :--- | :--- |
-| 2 | [CliffWalking-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CliffWalking-v0_ClosedForm.ipynb) | [Bellman](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CliffWalking-v0_ClosedForm.ipynb) |
+| 2 | [CliffWalking-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CliffWalking-v0_ClosedForm.ipynb) | [Bellman](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/CliffWalking-v0_Bellman_demo.ipynb) |
 | 3 | [FrozenLake-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/FrozenLake-v0_ClosedForm.ipynb)| [DP](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/FrozenLake-v0_DP_demo.ipynb) |
 | 4 | [Blackjack-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Blackjack-v0_ClosedForm.ipynb) | [MC](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Blackjack-v0_MonteCarlo_demo.ipynb) |
 | 5 | [Taxi-v3](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_ClosedForm.ipynb) | [SARSA](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_SARSA_demo.ipynb), [ExpectedSARSA](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_ExpectedSARSA.ipynb), [QL](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_QLearning.ipynb), [DoubleQL](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_DoubleQLearning.ipynb), [SARSA(λ)](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Taxi-v3_SARSALambda.ipynb) |

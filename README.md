@@ -10,7 +10,7 @@
 
 本书介绍强化学习理论及其 Python 实现。
 - 理论完备：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等非深度强化学习算法和柔性执行者/评论者等深度强化学习算法。
-- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.8（兼容 Python 3.9）、Gym 0.18 和 TensorFlow 2.4 / PyTorch 1.8，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
+- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.9、Gym 0.18 和 TensorFlow 2.5 / PyTorch 1.8，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
 
 **2020年更新**
 
@@ -34,10 +34,10 @@
 
 **QQ群**
 
-- 主群：935702193（主群扩容中请多支持，勘误报错可发此群，其他问题提问前请先Google）
-- 二群：243613392（免费入群，勘误报错可发此群，其他问题提问前请先Google，群主和管理员不提供免费咨询服务）
-- 多任务群：696984257（免费入群，非小白群，多任务强化学习+强化元学习+终身强化学习+迁移强化学习，勘误报错勿发此群，提问前请先Google）
+- QQ群：243613392（勘误报错可发此群，其他问题提问前请先Google，群主和管理员不提供免费咨询服务）
+- 多任务群：696984257（非小白群，多任务强化学习+强化元学习+终身强化学习+迁移强化学习，勘误报错勿发此群，提问前请先Google）
 - 关于入群验证问题：由于QQ的bug，即使正确输入答案，也可能会验证失败。这时更换设备重试、更换输入法重试、改日重试均可能解决问题。如果答案中有英文字母，清注意大小写。
+- 纸板书前言中给出的QQ群已满，不再新增群成员，谢谢理解。
 
 **书籍勘误与更新**
 - 2019年08月第1版第1次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata201908.html) 拼多多上的盗版都是这个版次的，建议退掉，然后到天猫/京东/当当上买新版
@@ -91,7 +91,7 @@
 
 This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
 - Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.
-- Practice: Every chapter is accompanied by high quality implementation based on Python 3.8, Gym 0.18, and TensorFlow 2.4 / PyTorch 1.8. Codes in first 9 chapters only depends on minimum installation of Gym, and can be run in a laptop without GPU. Codes in the last 3 chapters can be run in a laptop with a normal GPU. All codes are compatible with Windows, Linux, and macOS.
+- Practice: Every chapter is accompanied by high quality implementation based on Python 3.8, Gym 0.18, and TensorFlow 2.5 / PyTorch 1.8. Codes in first 9 chapters only depends on minimum installation of Gym, and can be run in a laptop without GPU. Codes in the last 3 chapters can be run in a laptop with a normal GPU. All codes are compatible with Windows, Linux, and macOS.
 
 
 **Please email me if you are interested in publishing this book in other languages.**

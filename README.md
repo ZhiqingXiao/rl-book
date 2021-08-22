@@ -10,7 +10,7 @@
 
 本书介绍强化学习理论及其 Python 实现。
 - 理论完备：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等非深度强化学习算法和柔性执行者/评论者等深度强化学习算法。
-- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.9、Gym 0.18 和 TensorFlow 2.6 / PyTorch 1.9，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
+- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.9、Gym 0.19 和 TensorFlow 2.6 / PyTorch 1.9，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
 
 **2020年更新**
 
@@ -94,7 +94,7 @@ This is a tutorial book on reinforcement learning, with explanation of theory an
 - Practice: Every chapter is accompanied by high quality implementation based on Python 3.8, Gym 0.18, and TensorFlow 2.6 / PyTorch 1.9. Codes in first 9 chapters only depends on minimum installation of Gym, and can be run in a laptop without GPU. Codes in the last 3 chapters can be run in a laptop with a normal GPU. All codes are compatible with Windows, Linux, and macOS.
 
 
-**Please email me if you are interested in publishing this book in other languages.**
+**Please email me if you are interested in publishing this book in other languages.** English version will be published by Springer Nature.
 
 
 ### Table of Codes
@@ -116,6 +116,7 @@ This is a tutorial book on reinforcement learning, with explanation of theory an
 | 13 | BernoulliMAB-v0 | [UCB](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/BernoulliMABEnv_demo.ipynb) |
 | 13 | GaussianMAB-v0 | [UCB](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/GaussianMABEnv_demo.ipynb) |
 | 14 | TicTacToe-v0 | AlphaZero [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/TicTacToe-v0_AlphaZero_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/TicTacToe-v0_AlphaZero_torch.ipynb)  |
+| 15 | [HumanoidBulletEnv-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_ClosedForm_demo.ipynb) | BehaviorClone [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_BC_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_BC_torch.ipynb), GAIL [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_GAILPPO_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_GAILPPO_torch.ipynb) |
 
 
 ### Table of Contents

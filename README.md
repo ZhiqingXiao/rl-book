@@ -19,18 +19,18 @@
 
 ### 目录
 
-01. 初识强化学习 &emsp; [查看代码：useGym](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter01_intro/useGym.ipynb)
-02. Markov决策过程 &emsp; [查看代码：useBellman](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter02_mdp/useBellman.ipynb) [CliffWalking](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter02_mdp/CliffWalking-v0.ipynb)
-03. 有模型数值迭代 &emsp; [查看代码：FrozenLake](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter03_dp/FrozenLake-v1.ipynb)
-04. 回合更新价值迭代 &emsp; [查看代码：Blackjack](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter04_mc/Blackjack-v1.ipynb)
-05. 时序差分价值迭代 &emsp; [查看代码：Taxi](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter05_td/Taxi-v3.ipynb)
-06. 函数近似方法 &emsp; [查看代码：MountainCar](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter06_approx/MountainCar-v0_tf.ipynb)
-07. 回合更新策略梯度方法 &emsp; [查看代码：CartPole](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter07_pg/CartPole-v0_tf.ipynb)
-08. 执行者/评论者方法 &emsp; [查看代码：Acrobot](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter08_ac/Acrobot-v1_tf.ipynb)
-09. 连续动作空间的确定性策略 &emsp; [查看代码：Pendulum](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter09_dpg/Pendulum-v1_tf.ipynb)
-10. 综合案例：电动游戏 &emsp; [查看代码：Breakout](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter10_atari/BreakoutDeterministic-v4_tf.ipynb) [Pong](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter10_atari/PongDeterministic-v4_tf.ipynb) [Seaquest](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter10_atari/SeaquestDeterministic-v4_tf.ipynb)
-11. 综合案例：棋盘游戏 &emsp; [查看代码：TicTacToe](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter11_alphazero/TicTacToe-v0_tf.ipynb) [Reversi](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter11_alphazero/Reversi-v0_4x4_tf.ipynb) [boardgame2](https://github.com/zhiqingxiao/boardgame2)
-12. 综合案例：自动驾驶 &emsp; [查看代码：AirSimNH](https://nbviewer.jupyter.org/github/zhiqingxiao/rl-book/blob/master/chapter12_drive/AirSimNH_tf.ipynb)
+01. 初识强化学习 &emsp; [查看代码：useGym](https://github.com/zhiqingxiao/rl-book/blob/master/chapter01_intro/useGym.ipynb)
+02. Markov决策过程 &emsp; [查看代码：useBellman](https://github.com/zhiqingxiao/rl-book/blob/master/chapter02_mdp/useBellman.ipynb) [CliffWalking](https://github.com/zhiqingxiao/rl-book/blob/master/chapter02_mdp/CliffWalking-v0.ipynb)
+03. 有模型数值迭代 &emsp; [查看代码：FrozenLake](https://github.com/zhiqingxiao/rl-book/blob/master/chapter03_dp/FrozenLake-v1.ipynb)
+04. 回合更新价值迭代 &emsp; [查看代码：Blackjack](https://github.com/zhiqingxiao/rl-book/blob/master/chapter04_mc/Blackjack-v1.ipynb)
+05. 时序差分价值迭代 &emsp; [查看代码：Taxi](https://github.com/zhiqingxiao/rl-book/blob/master/chapter05_td/Taxi-v3.ipynb)
+06. 函数近似方法 &emsp; [查看代码：MountainCar](https://github.com/zhiqingxiao/rl-book/blob/master/chapter06_approx/MountainCar-v0_tf.ipynb)
+07. 回合更新策略梯度方法 &emsp; [查看代码：CartPole](https://github.com/zhiqingxiao/rl-book/blob/master/chapter07_pg/CartPole-v0_tf.ipynb)
+08. 执行者/评论者方法 &emsp; [查看代码：Acrobot](https://github.com/zhiqingxiao/rl-book/blob/master/chapter08_ac/Acrobot-v1_tf.ipynb)
+09. 连续动作空间的确定性策略 &emsp; [查看代码：Pendulum](https://github.com/zhiqingxiao/rl-book/blob/master/chapter09_dpg/Pendulum-v1_tf.ipynb)
+10. 综合案例：电动游戏 &emsp; [查看代码：Breakout](https://github.com/zhiqingxiao/rl-book/blob/master/chapter10_atari/BreakoutDeterministic-v4_tf.ipynb) [Pong](https://github.com/zhiqingxiao/rl-book/blob/master/chapter10_atari/PongDeterministic-v4_tf.ipynb) [Seaquest](https://github.com/zhiqingxiao/rl-book/blob/master/chapter10_atari/SeaquestDeterministic-v4_tf.ipynb)
+11. 综合案例：棋盘游戏 &emsp; [查看代码：TicTacToe](https://github.com/zhiqingxiao/rl-book/blob/master/chapter11_alphazero/TicTacToe-v0_tf.ipynb) [Reversi](https://github.com/zhiqingxiao/rl-book/blob/master/chapter11_alphazero/Reversi-v0_4x4_tf.ipynb) [boardgame2](https://github.com/zhiqingxiao/boardgame2)
+12. 综合案例：自动驾驶 &emsp; [查看代码：AirSimNH](https://github.com/zhiqingxiao/rl-book/blob/master/chapter12_drive/AirSimNH_tf.ipynb)
 
 **QQ群**
 

@@ -118,7 +118,7 @@ This is a tutorial book on reinforcement learning, with explanation of theory an
 | 13 | [GaussianMAB-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/BernoulliMABEnv_demo.ipynb) | [UCB](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/GaussianMABEnv_demo.ipynb) |
 | 14 | [TicTacToe-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/TicTacToe-v0_ExhaustiveSearch.ipynb) | AlphaZero [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/TicTacToe-v0_AlphaZero_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/TicTacToe-v0_AlphaZero_torch.ipynb)  |
 | 15 | [HumanoidBulletEnv-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_ClosedForm_demo.ipynb) | BehaviorClone [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_BC_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_BC_torch.ipynb), GAIL [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_GAILPPO_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_GAILPPO_torch.ipynb) |
-| 16 | [Tiger-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Tiger-v0_ClosedForm.ipynb.ipynb) | [VI](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Tiger-v0_planning_demo.ipynb)
+| 16 | [Tiger-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Tiger-v0_ClosedForm.ipynb) | [VI](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Tiger-v0_planning_demo.ipynb)
 
 ### Table of Contents
 

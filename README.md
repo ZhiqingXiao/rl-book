@@ -10,7 +10,7 @@
 
 本书介绍强化学习理论及其 Python 实现。
 - 理论完备：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等非深度强化学习算法和柔性执行者/评论者等深度强化学习算法。
-- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.9（兼容Python 3.10语法）、Gym 0.21 和 TensorFlow 2.7 / PyTorch 1.10，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
+- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.10、Gym 0.23 和 TensorFlow 2 / PyTorch 1，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
 
 **2020年更新**
 
@@ -46,6 +46,7 @@
 - 2020年09月第1版第4次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata202009.html)
 - 2020年11月第1版第5次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata202011.html)
 - 2021年01月第1版第6次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata202101.html)
+- 2021年10月第1版第7次印刷：[查看勘误与更新](https://zhiqingxiao.github.io/rl-book/errata/errata202110.html)
 - 电子版不提供勘误与更新。
 
 **判断纸质版书籍版次的方法 / 确定纸质书印刷时间的方法**
@@ -73,13 +74,13 @@
 [第8章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/8.chapter_eight.html) 
 [第9章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/9.chapter_nine.html) 
 
-**初学者常见问题**
+**常见问题**
 
-- 问：Windows系统下安装TensorFlow或PyTorch失败。答：请在Windows 10里安装Visual Studio 2019（如果有旧版本的Visual Studio请先彻底卸载）。更多细节和安装问题请自行Google。PyTorch安装可参阅：https://mp.weixin.qq.com/s/uRx1XOPrfFOdMlRU6I-eyA
+- 问：Windows系统下安装TensorFlow或PyTorch失败。答：请在Windows 10/11里安装Visual Studio 2022（如果有旧版本的Visual Studio请先彻底卸载）。更多细节和安装问题请自行Google。PyTorch安装可参阅：https://mp.weixin.qq.com/s/uRx1XOPrfFOdMlRU6I-eyA
 
 - 问：在Visual Studio或Visual Studio Code或PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，只能在Jupyter Notebook里运行。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。（`display()`函数是Jupyter Notebook里才有的函数。）不需要安装Visual Studio Code或PyCharm。更多细节或其他错误请自行Google。
 
-- 问：GPU运行的结果和repo里带的结果不完全一样。答：本repo附带的结果都是用CPU跑的。GPU运算本来就不能精确复现。更多细节请自行Google。
+- 问：运行的结果和repo里带的结果不完全一样。答：本repo中涉及到TensorFlow或PyTorch的代码，附带的结果都是用CPU跑的。GPU运算本来就不能精确复现（更多细节请自行Google）。Gym 0.22版本重新实现了seeding机制，有些结果是用Gym <=0.21版本跑的，而没有用Gym 0.22重跑。如果发现Gym 0.22 CPU版本运行结果不正常请发送勘误报错，谢谢。
 
 - 问：GPU会比CPU跑的快么？答：没有用到TensorFlow和PyTorch的代码，不会用到GPU。用到TensorFlow和PyTorch的代码，由于网络一般不大，GPU反而可能更慢。PyTorch代码使用GPU时要把Tensor对象放在GPU上（可能需要修改代码）。
 
@@ -91,7 +92,7 @@
 
 This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
 - Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.
-- Practice: Every chapter is accompanied by high quality implementation based on Python 3.9, Gym 0.19, and TensorFlow 2.6 / PyTorch 1.9. Codes in first 9 chapters only depends on minimum installation of Gym, and can be run in a laptop without GPU. Codes in the last 3 chapters can be run in a laptop with a normal GPU. All codes are compatible with Windows, Linux, and macOS.
+- Practice: Every chapter is accompanied by high quality implementation based on Python 3.10, Gym 0.23, and TensorFlow 2 / PyTorch 1. Codes in first 9 chapters only depends on minimum installation of Gym, and can be run in a laptop without GPU. Codes in the last 3 chapters can be run in a laptop with a normal GPU. All codes are compatible with Windows, Linux, and macOS.
 
 
 **Please email me if you are interested in publishing this book in other languages.** English version will be published by Springer Nature.
@@ -117,7 +118,7 @@ This is a tutorial book on reinforcement learning, with explanation of theory an
 | 13 | [GaussianMAB-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/BernoulliMABEnv_demo.ipynb) | [UCB](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/GaussianMABEnv_demo.ipynb) |
 | 14 | [TicTacToe-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/TicTacToe-v0_ExhaustiveSearch.ipynb) | AlphaZero [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/TicTacToe-v0_AlphaZero_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/TicTacToe-v0_AlphaZero_torch.ipynb)  |
 | 15 | [HumanoidBulletEnv-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_ClosedForm_demo.ipynb) | BehaviorClone [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_BC_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_BC_torch.ipynb), GAIL [tf](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_GAILPPO_tf.ipynb) [torch](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/HumanoidBulletEnv-v0_GAILPPO_torch.ipynb) |
-
+| 16 | [Tiger-v0](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Tiger-v0_ClosedForm.ipynb.ipynb) | [VI](https://github.com/ZhiqingXiao/rl-book/blob/master/notebooks/Tiger-v0_planning_demo.ipynb)
 
 ### Table of Contents
 

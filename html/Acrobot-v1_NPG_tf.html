@@ -14168,7 +14168,8 @@ a.anchor-link {
             <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">replayer</span><span class="o">.</span><span class="n">memory</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">1000</span><span class="p">:</span>
                 <span class="k">for</span> <span class="n">batch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span> <span class="c1"># learn multiple times</span>
                     <span class="bp">self</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">replayer</span> <span class="o">=</span> <span class="n">PPOReplayer</span><span class="p">()</span> <span class="c1"># reset replayer after the agent changes itself</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">replayer</span> <span class="o">=</span> <span class="n">PPOReplayer</span><span class="p">()</span>
+                        <span class="c1"># reset replayer after the agent changes itself</span>
 
     <span class="k">def</span> <span class="nf">save_trajectory_to_replayer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>

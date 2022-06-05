@@ -1,8 +1,0 @@
-numpy
-pandas
-sympy
-matplotlib
-gym[atari]
-tensorflow
-airsim
-boardgame2

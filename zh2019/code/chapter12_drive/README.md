@@ -1,7 +1,7 @@
 # 自动驾驶 AirSimNH
 
 
-AirSim最新版和Jupyter Notebook不再兼容。
+2022年更新：AirSim最新版和Jupyter Notebook不再兼容。
 - 原因：AirSim依赖的包msgpack-rpc-python进一步依赖tornado的旧版本（tornado<5），但是Jupyter Notebook要求更高版本的tornado，两者不能共存。
 - 现在要想用airsim，就不能用Jupyter Notebook。在Anaconda中，可以新建一个不带Jupyter Notebook的环境专门来运行airsim。
 
@@ -19,5 +19,4 @@ pip install --upgrade airsim
 python AirSimNH_tf.py
 ```
 
-
-本目录下提供参数不适合 AirSimNH 1.6.0 以上版本。
+2022年更新：由于其他依赖库的更新，参数已经不能用了。目前作者没有重新提供参数的计划。

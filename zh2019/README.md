@@ -50,7 +50,8 @@
 [详细目录](https://raw.githubusercontent.com/zhiqingxiao/rl-book/master/zh2019/resource/toc.pdf)
 
 **本书数学符号表**
-- [下载PDF](https://raw.githubusercontent.com/zhiqingxiao/rl-book/master/zh2019/resource/notation.pdf)
+
+- [网页版](https://zhiqingxiao.github.io/rl-book/zh2019/notation/zh2019notation.html)
 
 **本书电子版**
 

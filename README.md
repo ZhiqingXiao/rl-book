@@ -20,7 +20,7 @@ Supporting materials in English can be found [here](https://github.com/ZhiqingXi
 - 理论完备：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等非深度强化学习算法和柔性执行者/评论者等深度强化学习算法。
 - 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.10、Gym 0.24 和 TensorFlow 2 / PyTorch 1，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
 
-**TensorFlow 2 和 PyTorch 1 对照代码 **
+**TensorFlow 2 和 PyTorch 1 对照代码**
 
 本书深度强化学习部分新增基于 TensorFlow 2 和 PyTorch 1 的 [对照实现](https://zhiqingxiao.github.io/rl-book/#table-of-codes)。两个版本实现均和正文伪代码严格对应，两个版本仅在智能体部分实现不同，程序结构和智能体参数完全相同。ipynb格式见notebooks文件夹，HTML网页格式见html文件夹，两个版本内容相同。
 

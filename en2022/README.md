@@ -63,9 +63,11 @@ All chapters are accompanied with Python codes.
 | 15 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
 | 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_planning_demo.html)
 
-**Exercise**
+### Other Resources
 
-[Reference Answers for Multiple Choices](https://zhiqingxiao.github.io/rl-book/en2022/exercise/choice.html)
+- Reference answers of multiple choices: [link](https://zhiqingxiao.github.io/rl-book/en2022/exercise/choice.html)
+- Table of notations: [link](https://zhiqingxiao.github.io/rl-book/en2022/notation/en2022notation.html)
+- Table of abbreviations: [link](https://zhiqingxiao.github.io/rl-book/en2022/abbreviation/en2022abbreviation.html)
 
 **BibTeX**
 
@@ -78,12 +80,12 @@ All chapters are accompanied with Python codes.
 
 # 强化学习：原理与Python实现（英文版）
 
-**全球第一本配套TensorFlow 2和PyTorch 1一比一对照代码的强化学习书**
+**全球第一本配套 TensorFlow 2 和 PyTorch 1 一比一对照代码的强化学习书**
 
-**本书特色**
+### 本书特色
 
 本书完整地介绍了主流强化学习理论。
-- 	选用现代强化学习理论体系，突出主干，主要定理均给出证明过程。基于理论讲解强化学习算法，全面覆盖主流强化学习算法，包括了资格迹等经典算法和MuZero等深度强化学习算法。
+- 选用现代强化学习理论体系，突出主干，主要定理均给出证明过程。基于理论讲解强化学习算法，全面覆盖主流强化学习算法，包括了资格迹等经典算法和MuZero等深度强化学习算法。
 - 全书采用完整的数学体系，各章内容循序渐进。全书采用一致的数学符号，并兼容主流强化学习教程。
 
 本书各章均提供Python代码，实战性强。
@@ -117,9 +119,11 @@ All chapters are accompanied with Python codes.
 | 15 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
 | 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_planning_demo.html)
 
-**习题**
+### 中英双语资源
 
-[单选题参考答案](https://zhiqingxiao.github.io/rl-book/en2022/exercise/choice.html)
+- 字母表：[链接](https://zhiqingxiao.github.io/rl-book/en2022/notation/en2022notation_zh.html)
+- 缩略语表：[链接](https://zhiqingxiao.github.io/rl-book/en2022/abbreviation/en2022abbreviation_zh.html)
+- 习题参考答案：[链接](https://zhiqingxiao.github.io/rl-book/en2022/exercise/choice.html)
 
 **QQ群**
 

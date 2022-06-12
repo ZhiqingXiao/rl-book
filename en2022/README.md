@@ -65,9 +65,10 @@ All chapters are accompanied with Python codes.
 
 ### Other Resources
 
-- Reference answers of multiple choices: [link](https://zhiqingxiao.github.io/rl-book/en2022/exercise/choice.html)
-- Table of notations: [link](https://zhiqingxiao.github.io/rl-book/en2022/notation/en2022notation.html)
-- Table of abbreviations: [link](https://zhiqingxiao.github.io/rl-book/en2022/abbreviation/en2022abbreviation.html)
+- Reference answers of multiple choices: [link](https://zhiqingxiao.github.io/rl-book/en2022/choice.html)
+- Table of notations: [link](https://zhiqingxiao.github.io/rl-book/en2022/notation.html)
+- Table of abbreviations: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/abbreviation.md)
+- Bibliography: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/bibliography.md)
 
 **BibTeX**
 
@@ -121,9 +122,10 @@ All chapters are accompanied with Python codes.
 
 ### 中英双语资源
 
-- 字母表：[链接](https://zhiqingxiao.github.io/rl-book/en2022/notation/en2022notation_zh.html)
-- 缩略语表：[链接](https://zhiqingxiao.github.io/rl-book/en2022/abbreviation/en2022abbreviation_zh.html)
-- 习题参考答案：[链接](https://zhiqingxiao.github.io/rl-book/en2022/exercise/choice.html)
+- 习题参考答案：[链接](https://zhiqingxiao.github.io/rl-book/en2022/choice.html)
+- 字母表：[链接](https://zhiqingxiao.github.io/rl-book/en2022/notation_zh.html)
+- 缩略语表：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/abbreviation_zh.md)
+- 参考文献：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/bibliography.md)
 
 **QQ群**
 

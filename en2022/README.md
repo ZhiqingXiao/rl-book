@@ -2,9 +2,7 @@
 
 **The First Reinforcement Learning Tutorial Book with one-on-one mapping TensorFlow 2 and PyTorch 1 Implementation**
 
-**[Codes](https://github.com/ZhiqingXiao/rl-book/tree/master/notebooks) with both TensorFlow 2 and PyTorch 1**
-
-**Please email me if you are interested in publishing this book in other languages.**
+Please email me if you are interested in publishing this book in other languages.
 
 ### Features
 
@@ -41,7 +39,16 @@ All chapters are accompanied with Python codes.
 15. IL: Imitation Learning
 16. More Agent-Environment Interface
 
+### Resources
+
+- Reference answers of multiple choices: [link](https://zhiqingxiao.github.io/rl-book/en2022/choice.html)
+- Table of notations: [link](https://zhiqingxiao.github.io/rl-book/en2022/notation.html)
+- Table of abbreviations: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/abbreviation.md)
+- Bibliography: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/bibliography.md)
+
 ### Table of Codes
+
+List view: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/code.md)
 
 | Chapter | Environment & Closed-Form Policy | Agent |
 | :--- | :--- | :--- |
@@ -63,14 +70,7 @@ All chapters are accompanied with Python codes.
 | 15 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
 | 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_planning_demo.html)
 
-### Other Resources
-
-- Reference answers of multiple choices: [link](https://zhiqingxiao.github.io/rl-book/en2022/choice.html)
-- Table of notations: [link](https://zhiqingxiao.github.io/rl-book/en2022/notation.html)
-- Table of abbreviations: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/abbreviation.md)
-- Bibliography: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/bibliography.md)
-
-**BibTeX**
+### BibTeX
 
     @book{xiao2022,
      title     = {Reinforcement Learning: Theory and {Python} Implementation},

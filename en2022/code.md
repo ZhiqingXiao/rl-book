@@ -1,6 +1,6 @@
 # Table of Codes
 
-| \# | Location |
+| \# | Caption |
 | --- | --- |
 | [Code 1-1](https://github.com/openai/gym/blob/master/gym/core.py) | The class `gym.Env` |
 | [Code 1-2](https://github.com/openai/gym/blob/master/gym/spaces/space.py) | The class `gym.space.Space` |

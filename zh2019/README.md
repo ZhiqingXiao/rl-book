@@ -12,6 +12,8 @@
 
 **各章代码**
 
+代码暂时只在Gym 0.24.1上测试通过，在Gym 0.25上可能存在问题。等我在Gym 0.25上测试完毕后会删除本说明。
+
 01. 初识强化学习 &emsp; [查看代码：useGym](https://github.com/zhiqingxiao/rl-book/blob/master/zh2019/code/chapter01_intro/useGym.ipynb)
 02. Markov决策过程 &emsp; [查看代码：useBellman](https://github.com/zhiqingxiao/rl-book/blob/master/zh2019/code/chapter02_mdp/useBellman.ipynb) [CliffWalking](https://github.com/zhiqingxiao/rl-book/blob/master/zh2019/code/chapter02_mdp/CliffWalking-v0.ipynb)
 03. 有模型数值迭代 &emsp; [查看代码：FrozenLake](https://github.com/zhiqingxiao/rl-book/blob/master/zh2019/code/chapter03_dp/FrozenLake-v1.ipynb)

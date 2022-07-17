@@ -141,8 +141,8 @@
 | [Code 15-5](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_torch.html) | BC agent (with PyTorch) |
 | [Code 15-6](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_tf.html) | GAIL-PPO agent (with TensorFlow) |
 | [Code 15-7](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_torch.html) | GAIL-PPO agent (with PyTorch) |
-| [Code 16-1](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_CloseForm.html) | The environment class `TigerEnv` for the task “Tiger” |
-| [Code 16-2](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_CloseForm.html) | Register the environment class `TigerEnv` |
-| [Code 16-3](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_CloseForm.html)| Optimal policy when discounted factor $\gamma=1$ |
-| [Code 16-4](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_Planning_demo.html) | Belief VI |
-| [Code 16-5](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_Planning_demo.html) | PBVI |
+| [Code 16-1](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_ClosedForm.html) | The environment class `TigerEnv` for the task “Tiger” |
+| [Code 16-2](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_ClosedForm.html) | Register the environment class `TigerEnv` |
+| [Code 16-3](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_ClosedForm.html) | Optimal policy when discounted factor $\gamma=1$ |
+| [Code 16-4](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_Plan_demo.html) | Belief VI |
+| [Code 16-5](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_Plan_demo.html) | PBVI |

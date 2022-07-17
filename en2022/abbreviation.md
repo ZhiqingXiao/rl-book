@@ -5,6 +5,7 @@
 | A3C | Asynchronous Advantage Actor–Critic |
 | AC | Actor–Critic |
 | AI | Artificial Intelligence |
+| API | Application Programming Interface |
 | APV-MCTS | Asynchronous Policy and Value MCTS |
 | ARS | Augmented Random Search |
 | BC | Behavior Cloning |

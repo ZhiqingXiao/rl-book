@@ -42,6 +42,7 @@ All chapters are accompanied with Python codes.
 ### Resources
 
 - Reference answers of multiple choices: [link](https://zhiqingxiao.github.io/rl-book/en2022/choice.html)
+- Guide to set up developing environment: [link](https://zhiqingxiao.github.io/rl-book/en2022/setupwin.md)
 - Table of notations: [link](https://zhiqingxiao.github.io/rl-book/en2022/notation.html)
 - Table of abbreviations: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/abbreviation.md)
 - Bibliography: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/bibliography.md)
@@ -63,12 +64,18 @@ List view: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/code
 | 10 | [LunarLander-v2](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_ClosedForm.html) | SQL [tf](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SQL_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SQL_torch.html), SAC [tf](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SACwoA_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SACwoA_torch.html), SACwA [tf](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SACwA_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SACwA_torch.html) |
 | 10 | [LunarLanderContinuous-v2](https://zhiqingxiao.github.io/rl-book/html/LunarLanderContinuous-v2_ClosedForm.html) | SACwA [tf](https://zhiqingxiao.github.io/rl-book/html/LunarLanderContinuous-v2_SACwA_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/LunarLanderContinuous-v2_SACwA_torch.html) |
 | 11 | [BipedalWalker-v3](https://zhiqingxiao.github.io/rl-book/html/BipedalWalker-v3_ClosedForm.html) | [ES](https://zhiqingxiao.github.io/rl-book/html/BipedalWalker-v3_ES.html), [ARS](https://zhiqingxiao.github.io/rl-book/html/BipedalWalker-v3_ARS.html) |
-| 12 | [PongNoFrameskip-v4](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_ClosedForm.html) | CategoricalDQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_CategoricalDQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_CategoricalDQN_torch.html), QR-DQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_QRDQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_QRDQN_torch.html), IQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_IQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_IQN_torch.html) |
+| 12 note1 | [PongNoFrameskip-v4](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_ClosedForm.html) | CategoricalDQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_CategoricalDQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_CategoricalDQN_torch.html), QR-DQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_QRDQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_QRDQN_torch.html), IQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_IQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_IQN_torch.html) |
 | 13 | [BernoulliMAB-v0](https://zhiqingxiao.github.io/rl-book/html/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/html/BernoulliMABEnv_demo.html) |
 | 13 | [GaussianMAB-v0](https://zhiqingxiao.github.io/rl-book/html/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/html/GaussianMABEnv_demo.html) |
 | 14 | [TicTacToe-v0](https://zhiqingxiao.github.io/rl-book/html/TicTacToe-v0_ExhaustiveSearch.html) | AlphaZero [tf](https://zhiqingxiao.github.io/rl-book/html/TicTacToe-v0_AlphaZero_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/TicTacToe-v0_AlphaZero_torch.html)  |
-| 15 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
-| 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_planning_demo.html)
+| 15 note2 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
+| 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_Plan_demo.html)
+
+
+Notes:
+1. It does not work with Gym 0.25. It is because the `wrapper.FrameStack` class in Gym 0.25 is buggy.
+2. It does not work with Gym 0.25 and PyBullet 3.2.4. It is because Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
+
 
 ### BibTeX
 
@@ -113,16 +120,23 @@ List view: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/code
 | 10 | [LunarLander-v2](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_ClosedForm.html) | SQL [tf](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SQL_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SQL_torch.html), SAC [tf](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SACwoA_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SACwoA_torch.html), SACwA [tf](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SACwA_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/LunarLander-v2_SACwA_torch.html) |
 | 10 | [LunarLanderContinuous-v2](https://zhiqingxiao.github.io/rl-book/html/LunarLanderContinuous-v2_ClosedForm.html) | SACwA [tf](https://zhiqingxiao.github.io/rl-book/html/LunarLanderContinuous-v2_SACwA_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/LunarLanderContinuous-v2_SACwA_torch.html) |
 | 11 | [BipedalWalker-v3](https://zhiqingxiao.github.io/rl-book/html/BipedalWalker-v3_ClosedForm.html) | [ES](https://zhiqingxiao.github.io/rl-book/html/BipedalWalker-v3_ES.html), [ARS](https://zhiqingxiao.github.io/rl-book/html/BipedalWalker-v3_ARS.html) |
-| 12 | [PongNoFrameskip-v4](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_ClosedForm.html) | CategoricalDQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_CategoricalDQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_CategoricalDQN_torch.html), QR-DQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_QRDQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_QRDQN_torch.html), IQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_IQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_IQN_torch.html) |
+| 12 note1 | [PongNoFrameskip-v4](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_ClosedForm.html) | CategoricalDQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_CategoricalDQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_CategoricalDQN_torch.html), QR-DQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_QRDQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_QRDQN_torch.html), IQN [tf](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_IQN_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/PongNoFrameskip-v4_IQN_torch.html) |
 | 13 | [BernoulliMAB-v0](https://zhiqingxiao.github.io/rl-book/html/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/html/BernoulliMABEnv_demo.html) |
 | 13 | [GaussianMAB-v0](https://zhiqingxiao.github.io/rl-book/html/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/html/GaussianMABEnv_demo.html) |
 | 14 | [TicTacToe-v0](https://zhiqingxiao.github.io/rl-book/html/TicTacToe-v0_ExhaustiveSearch.html) | AlphaZero [tf](https://zhiqingxiao.github.io/rl-book/html/TicTacToe-v0_AlphaZero_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/TicTacToe-v0_AlphaZero_torch.html)  |
-| 15 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
-| 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_planning_demo.html)
+| 15 note2 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/html/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
+| 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/html/Tiger-v0_Plan_demo.html)
+
+
+Notes:
+1. It does not work with Gym 0.25. It is because the `wrapper.FrameStack` class in Gym 0.25 is buggy.
+2. It does not work with Gym 0.25 and PyBullet 3.2.4. It is because Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
+
 
 ### 中英双语资源
 
 - 习题参考答案：[链接](https://zhiqingxiao.github.io/rl-book/en2022/choice.html)
+- 开发环境搭建：[链接](https://zhiqingxiao.github.io/rl-book/en2022/setupwin_zh.html)
 - 字母表：[链接](https://zhiqingxiao.github.io/rl-book/en2022/notation_zh.html)
 - 缩略语表：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/abbreviation_zh.md)
 - 参考文献：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/bibliography.md)
@@ -133,7 +147,7 @@ List view: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/code
 
 **常见问题**
 
-- 问：Windows系统下安装TensorFlow或PyTorch失败。答：请在Windows 10/11里安装Visual Studio 2022（如果有旧版本的Visual Studio请先彻底卸载）。更多细节和安装问题请自行Google。PyTorch安装可参阅：https://mp.weixin.qq.com/s/uRx1XOPrfFOdMlRU6I-eyA
+- 问：Windows系统下安装TensorFlow或PyTorch失败。答：请在Windows 10/11里安装Visual Studio 2022（如果有旧版本的Visual Studio请先彻底卸载）。请阅读本书的[开发环境搭建指南](https://zhiqingxiao.github.io/rl-book/en2022/setupwin_zh.html)。更多细节和安装问题请自行Google。PyTorch安装可参阅：https://mp.weixin.qq.com/s/uRx1XOPrfFOdMlRU6I-eyA
 
 - 问：在Visual Studio或Visual Studio Code或PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，只能在Jupyter Notebook里运行。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。（`display()`函数是Jupyter Notebook里才有的函数。）不需要安装Visual Studio Code或PyCharm。更多细节或其他错误请自行Google。
 

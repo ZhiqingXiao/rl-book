@@ -5,6 +5,7 @@
 | A3C | 异步优势执行者/评论者算法 | Asynchronous Advantage Actor–Critic |
 | AC | 执行者/评论者 | Actor–Critic |
 | AI | 人工智能 | Artificial Intelligence |
+| API | 应用编程接口 | Application Programming Interface |
 | APV-MCTS | 异步策略价值回合更新树搜索 | Asynchronous Policy and Value MCTS |
 | ARS | 增强随机搜索 | Augmented Random Search |
 | BC | 行为克隆 | Behavior Cloning |

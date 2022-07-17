@@ -13998,7 +13998,7 @@ a.anchor-link {
 <span class="kn">from</span> <span class="nn">tensorflow</span> <span class="kn">import</span> <span class="n">keras</span>
 <span class="kn">from</span> <span class="nn">tensorflow.keras</span> <span class="kn">import</span> <span class="n">layers</span>
 
-<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">,</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span>
         <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%(asctime)s</span><span class="s1"> [</span><span class="si">%(levelname)s</span><span class="s1">] </span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">,</span>
         <span class="n">stream</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">datefmt</span><span class="o">=</span><span class="s1">&#39;%H:%M:%S&#39;</span><span class="p">)</span>
 </pre></div>
@@ -14014,8 +14014,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s1">&#39;MountainCar-v0&#39;</span><span class="p">)</span>
-<span class="n">env</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s1">&#39;MountainCar-v0&#39;</span><span class="p">,</span> <span class="n">new_step_api</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">vars</span><span class="p">(</span><span class="n">env</span><span class="p">):</span>
     <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="nb">vars</span><span class="p">(</span><span class="n">env</span><span class="p">)[</span><span class="n">key</span><span class="p">])</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">vars</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">spec</span><span class="p">):</span>
@@ -14070,7 +14069,7 @@ a.anchor-link {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">DQNReplayer</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">capacity</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">memory</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="n">capacity</span><span class="p">),</span>
-                <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">,</span> <span class="s1">&#39;reward&#39;</span><span class="p">,</span> <span class="s1">&#39;next_state&#39;</span><span class="p">,</span> <span class="s1">&#39;done&#39;</span><span class="p">])</span>
+                <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">,</span> <span class="s1">&#39;reward&#39;</span><span class="p">,</span> <span class="s1">&#39;next_state&#39;</span><span class="p">,</span> <span class="s1">&#39;termination&#39;</span><span class="p">])</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">capacity</span> <span class="o">=</span> <span class="n">capacity</span>
@@ -14144,19 +14143,19 @@ a.anchor-link {
             <span class="bp">self</span><span class="o">.</span><span class="n">trajectory</span> <span class="o">=</span> <span class="p">[]</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">target_net</span><span class="o">.</span><span class="n">set_weights</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">evaluate_net</span><span class="o">.</span><span class="n">get_weights</span><span class="p">())</span>
 
-    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">termination</span><span class="p">):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s1">&#39;train&#39;</span> <span class="ow">and</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.001</span><span class="p">:</span>
             <span class="c1"># epsilon-greedy policy in train mode</span>
             <span class="n">action</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">action_n</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">qs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">evaluate_net</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">observation</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">])</span>
+            <span class="n">qs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">evaluate_net</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">observation</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">],</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
             <span class="n">action</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s1">&#39;train&#39;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">trajectory</span> <span class="o">+=</span> <span class="p">[</span><span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">trajectory</span> <span class="o">+=</span> <span class="p">[</span><span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">termination</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span>
             <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">trajectory</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">8</span><span class="p">:</span>
-                <span class="n">state</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">act</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> \
+                <span class="n">state</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">act</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">termination</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> \
                         <span class="bp">self</span><span class="o">.</span><span class="n">trajectory</span><span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="p">:]</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">replayer</span><span class="o">.</span><span class="n">store</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">act</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">done</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">replayer</span><span class="o">.</span><span class="n">store</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">act</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">termination</span><span class="p">)</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">replayer</span><span class="o">.</span><span class="n">count</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">replayer</span><span class="o">.</span><span class="n">capacity</span> <span class="o">*</span> <span class="mf">0.95</span><span class="p">:</span>
                     <span class="c1"># skip first few episodes for speed</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
@@ -14167,15 +14166,16 @@ a.anchor-link {
 
     <span class="k">def</span> <span class="nf">learn</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># replay</span>
-        <span class="n">states</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">rewards</span><span class="p">,</span> <span class="n">next_states</span><span class="p">,</span> <span class="n">dones</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">replayer</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+        <span class="n">states</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">rewards</span><span class="p">,</span> <span class="n">next_states</span><span class="p">,</span> <span class="n">terminations</span> <span class="o">=</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">replayer</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
 
         <span class="c1"># train</span>
-        <span class="n">next_eval_qs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">evaluate_net</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">next_states</span><span class="p">)</span>
+        <span class="n">next_eval_qs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">evaluate_net</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">next_states</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
         <span class="n">next_actions</span> <span class="o">=</span> <span class="n">next_eval_qs</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">next_qs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">target_net</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">next_states</span><span class="p">)</span>
+        <span class="n">next_qs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">target_net</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">next_states</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
         <span class="n">next_max_qs</span> <span class="o">=</span> <span class="n">next_qs</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">next_qs</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">next_actions</span><span class="p">]</span>
-        <span class="n">us</span> <span class="o">=</span> <span class="n">rewards</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">gamma</span> <span class="o">*</span> <span class="n">next_max_qs</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="n">dones</span><span class="p">)</span>
-        <span class="n">targets</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">evaluate_net</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">states</span><span class="p">)</span>
+        <span class="n">us</span> <span class="o">=</span> <span class="n">rewards</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">gamma</span> <span class="o">*</span> <span class="n">next_max_qs</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="n">terminations</span><span class="p">)</span>
+        <span class="n">targets</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">evaluate_net</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
         <span class="n">targets</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">us</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">actions</span><span class="p">]</span> <span class="o">=</span> <span class="n">us</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">evaluate_net</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">targets</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
@@ -14194,21 +14194,20 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">play_episode</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">agent</span><span class="p">,</span> <span class="n">max_episode_steps</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">render</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">(),</span> <span class="mf">0.</span><span class="p">,</span> <span class="kc">False</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">play_episode</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">agent</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">render</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">observation</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="n">seed</span><span class="p">)</span>
+    <span class="n">reward</span><span class="p">,</span> <span class="n">termination</span><span class="p">,</span> <span class="n">truncation</span> <span class="o">=</span> <span class="mf">0.</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span>
     <span class="n">agent</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">)</span>
     <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span> <span class="o">=</span> <span class="mf">0.</span><span class="p">,</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">action</span> <span class="o">=</span> <span class="n">agent</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">)</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="n">agent</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">termination</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">render</span><span class="p">:</span>
             <span class="n">env</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">done</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">termination</span> <span class="ow">or</span> <span class="n">truncation</span><span class="p">:</span>
             <span class="k">break</span>
-        <span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">termination</span><span class="p">,</span> <span class="n">truncation</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
         <span class="n">episode_reward</span> <span class="o">+=</span> <span class="n">reward</span>
         <span class="n">elapsed_steps</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="n">max_episode_steps</span> <span class="ow">and</span> <span class="n">elapsed_steps</span> <span class="o">&gt;=</span> <span class="n">max_episode_steps</span><span class="p">:</span>
-            <span class="k">break</span>
     <span class="n">agent</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span>
 
@@ -14216,10 +14215,10 @@ a.anchor-link {
 <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;==== train ====&#39;</span><span class="p">)</span>
 <span class="n">episode_rewards</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">episode</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">count</span><span class="p">():</span>
-    <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span> <span class="o">=</span> <span class="n">play_episode</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">unwrapped</span><span class="p">,</span> <span class="n">agent</span><span class="p">,</span>
-            <span class="n">max_episode_steps</span><span class="o">=</span><span class="n">env</span><span class="o">.</span><span class="n">spec</span><span class="o">.</span><span class="n">max_episode_steps</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;train&#39;</span><span class="p">)</span>
+    <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span> <span class="o">=</span> <span class="n">play_episode</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">agent</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="n">episode</span><span class="p">,</span>
+            <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;train&#39;</span><span class="p">)</span>
     <span class="n">episode_rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">episode_reward</span><span class="p">)</span>
-    <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;train episode </span><span class="si">%d</span><span class="s1">: reward = </span><span class="si">%.2f</span><span class="s1">, steps = </span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;train episode </span><span class="si">%d</span><span class="s1">: reward = </span><span class="si">%.2f</span><span class="s1">, steps = </span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span>
             <span class="n">episode</span><span class="p">,</span> <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:])</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">110</span><span class="p">:</span>
         <span class="k">break</span>
@@ -14231,7 +14230,7 @@ a.anchor-link {
 <span class="k">for</span> <span class="n">episode</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
     <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span> <span class="o">=</span> <span class="n">play_episode</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">agent</span><span class="p">)</span>
     <span class="n">episode_rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">episode_reward</span><span class="p">)</span>
-    <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;test episode </span><span class="si">%d</span><span class="s1">: reward = </span><span class="si">%.2f</span><span class="s1">, steps = </span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;test episode </span><span class="si">%d</span><span class="s1">: reward = </span><span class="si">%.2f</span><span class="s1">, steps = </span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span>
             <span class="n">episode</span><span class="p">,</span> <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span><span class="p">)</span>
 <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;average episode reward = </span><span class="si">%.2f</span><span class="s1"> ± </span><span class="si">%.2f</span><span class="s1">&#39;</span><span class="p">,</span>
         <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">))</span>
@@ -14255,314 +14254,314 @@ a.anchor-link {
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>22:22:07 [INFO] ==== train ====
-22:22:18 [DEBUG] train episode 0: reward = -200.00, steps = 200
-22:22:32 [DEBUG] train episode 1: reward = -200.00, steps = 200
-22:22:44 [DEBUG] train episode 2: reward = -200.00, steps = 200
-22:22:59 [DEBUG] train episode 3: reward = -200.00, steps = 200
-22:23:13 [DEBUG] train episode 4: reward = -200.00, steps = 200
-22:23:27 [DEBUG] train episode 5: reward = -200.00, steps = 200
-22:23:46 [DEBUG] train episode 6: reward = -200.00, steps = 200
-22:24:08 [DEBUG] train episode 7: reward = -200.00, steps = 200
-22:24:25 [DEBUG] train episode 8: reward = -200.00, steps = 200
-22:24:42 [DEBUG] train episode 9: reward = -200.00, steps = 200
-22:25:09 [DEBUG] train episode 10: reward = -200.00, steps = 200
-22:25:26 [DEBUG] train episode 11: reward = -200.00, steps = 200
-22:25:40 [DEBUG] train episode 12: reward = -200.00, steps = 200
-22:25:54 [DEBUG] train episode 13: reward = -200.00, steps = 200
-22:26:07 [DEBUG] train episode 14: reward = -200.00, steps = 200
-22:26:20 [DEBUG] train episode 15: reward = -200.00, steps = 200
-22:26:34 [DEBUG] train episode 16: reward = -200.00, steps = 200
-22:26:49 [DEBUG] train episode 17: reward = -200.00, steps = 200
-22:27:03 [DEBUG] train episode 18: reward = -200.00, steps = 200
-22:27:16 [DEBUG] train episode 19: reward = -200.00, steps = 200
-22:27:31 [DEBUG] train episode 20: reward = -200.00, steps = 200
-22:27:46 [DEBUG] train episode 21: reward = -200.00, steps = 200
-22:28:00 [DEBUG] train episode 22: reward = -200.00, steps = 200
-22:28:15 [DEBUG] train episode 23: reward = -200.00, steps = 200
-22:28:30 [DEBUG] train episode 24: reward = -200.00, steps = 200
-22:28:44 [DEBUG] train episode 25: reward = -200.00, steps = 200
-22:28:59 [DEBUG] train episode 26: reward = -200.00, steps = 200
-22:29:13 [DEBUG] train episode 27: reward = -200.00, steps = 200
-22:29:27 [DEBUG] train episode 28: reward = -200.00, steps = 200
-22:29:40 [DEBUG] train episode 29: reward = -200.00, steps = 200
-22:29:53 [DEBUG] train episode 30: reward = -200.00, steps = 200
-22:30:06 [DEBUG] train episode 31: reward = -200.00, steps = 200
-22:30:19 [DEBUG] train episode 32: reward = -200.00, steps = 200
-22:30:37 [DEBUG] train episode 33: reward = -200.00, steps = 200
-22:30:58 [DEBUG] train episode 34: reward = -200.00, steps = 200
-22:31:12 [DEBUG] train episode 35: reward = -200.00, steps = 200
-22:31:26 [DEBUG] train episode 36: reward = -200.00, steps = 200
-22:31:41 [DEBUG] train episode 37: reward = -200.00, steps = 200
-22:31:55 [DEBUG] train episode 38: reward = -200.00, steps = 200
-22:32:12 [DEBUG] train episode 39: reward = -200.00, steps = 200
-22:32:26 [DEBUG] train episode 40: reward = -200.00, steps = 200
-22:32:40 [DEBUG] train episode 41: reward = -200.00, steps = 200
-22:32:55 [DEBUG] train episode 42: reward = -200.00, steps = 200
-22:33:12 [DEBUG] train episode 43: reward = -200.00, steps = 200
-22:33:26 [DEBUG] train episode 44: reward = -200.00, steps = 200
-22:33:40 [DEBUG] train episode 45: reward = -200.00, steps = 200
-22:33:53 [DEBUG] train episode 46: reward = -200.00, steps = 200
-22:34:29 [DEBUG] train episode 47: reward = -200.00, steps = 200
-22:36:05 [DEBUG] train episode 48: reward = -200.00, steps = 200
-22:38:02 [DEBUG] train episode 49: reward = -200.00, steps = 200
-22:40:03 [DEBUG] train episode 50: reward = -200.00, steps = 200
-22:42:20 [DEBUG] train episode 51: reward = -200.00, steps = 200
-22:44:42 [DEBUG] train episode 52: reward = -200.00, steps = 200
-22:47:03 [DEBUG] train episode 53: reward = -200.00, steps = 200
-22:49:07 [DEBUG] train episode 54: reward = -200.00, steps = 200
-22:51:20 [DEBUG] train episode 55: reward = -200.00, steps = 200
-22:53:29 [DEBUG] train episode 56: reward = -200.00, steps = 200
-22:55:46 [DEBUG] train episode 57: reward = -200.00, steps = 200
-22:56:43 [DEBUG] train episode 58: reward = -87.00, steps = 87
-22:58:53 [DEBUG] train episode 59: reward = -200.00, steps = 200
-23:01:17 [DEBUG] train episode 60: reward = -200.00, steps = 200
-23:03:43 [DEBUG] train episode 61: reward = -200.00, steps = 200
-23:06:02 [DEBUG] train episode 62: reward = -200.00, steps = 200
-23:08:17 [DEBUG] train episode 63: reward = -200.00, steps = 200
-23:10:37 [DEBUG] train episode 64: reward = -200.00, steps = 200
-23:13:29 [DEBUG] train episode 65: reward = -200.00, steps = 200
-23:15:04 [DEBUG] train episode 66: reward = -104.00, steps = 104
-23:18:01 [DEBUG] train episode 67: reward = -200.00, steps = 200
-23:19:31 [DEBUG] train episode 68: reward = -101.00, steps = 101
-23:22:29 [DEBUG] train episode 69: reward = -200.00, steps = 200
-23:25:31 [DEBUG] train episode 70: reward = -200.00, steps = 200
-23:28:31 [DEBUG] train episode 71: reward = -200.00, steps = 200
-23:31:33 [DEBUG] train episode 72: reward = -200.00, steps = 200
-23:34:29 [DEBUG] train episode 73: reward = -200.00, steps = 200
-23:37:26 [DEBUG] train episode 74: reward = -200.00, steps = 200
-23:40:30 [DEBUG] train episode 75: reward = -200.00, steps = 200
-23:43:46 [DEBUG] train episode 76: reward = -200.00, steps = 200
-23:45:09 [DEBUG] train episode 77: reward = -89.00, steps = 89
-23:48:31 [DEBUG] train episode 78: reward = -200.00, steps = 200
-23:51:46 [DEBUG] train episode 79: reward = -200.00, steps = 200
-23:54:56 [DEBUG] train episode 80: reward = -200.00, steps = 200
-23:57:55 [DEBUG] train episode 81: reward = -200.00, steps = 200
-00:00:52 [DEBUG] train episode 82: reward = -200.00, steps = 200
-00:03:49 [DEBUG] train episode 83: reward = -200.00, steps = 200
-00:06:43 [DEBUG] train episode 84: reward = -200.00, steps = 200
-00:09:39 [DEBUG] train episode 85: reward = -200.00, steps = 200
-00:12:35 [DEBUG] train episode 86: reward = -200.00, steps = 200
-00:15:31 [DEBUG] train episode 87: reward = -200.00, steps = 200
-00:18:26 [DEBUG] train episode 88: reward = -200.00, steps = 200
-00:21:22 [DEBUG] train episode 89: reward = -200.00, steps = 200
-00:24:18 [DEBUG] train episode 90: reward = -200.00, steps = 200
-00:27:18 [DEBUG] train episode 91: reward = -200.00, steps = 200
-00:30:13 [DEBUG] train episode 92: reward = -200.00, steps = 200
-00:33:14 [DEBUG] train episode 93: reward = -200.00, steps = 200
-00:36:09 [DEBUG] train episode 94: reward = -200.00, steps = 200
-00:39:06 [DEBUG] train episode 95: reward = -200.00, steps = 200
-00:42:05 [DEBUG] train episode 96: reward = -200.00, steps = 200
-00:45:00 [DEBUG] train episode 97: reward = -200.00, steps = 200
-00:47:54 [DEBUG] train episode 98: reward = -200.00, steps = 200
-00:50:48 [DEBUG] train episode 99: reward = -200.00, steps = 200
-00:53:43 [DEBUG] train episode 100: reward = -200.00, steps = 200
-00:56:39 [DEBUG] train episode 101: reward = -200.00, steps = 200
-00:59:34 [DEBUG] train episode 102: reward = -200.00, steps = 200
-01:02:29 [DEBUG] train episode 103: reward = -200.00, steps = 200
-01:05:23 [DEBUG] train episode 104: reward = -200.00, steps = 200
-01:08:18 [DEBUG] train episode 105: reward = -200.00, steps = 200
-01:11:13 [DEBUG] train episode 106: reward = -200.00, steps = 200
-01:14:08 [DEBUG] train episode 107: reward = -200.00, steps = 200
-01:17:03 [DEBUG] train episode 108: reward = -200.00, steps = 200
-01:19:56 [DEBUG] train episode 109: reward = -200.00, steps = 200
-01:22:51 [DEBUG] train episode 110: reward = -200.00, steps = 200
-01:25:44 [DEBUG] train episode 111: reward = -200.00, steps = 200
-01:28:42 [DEBUG] train episode 112: reward = -200.00, steps = 200
-01:31:37 [DEBUG] train episode 113: reward = -200.00, steps = 200
-01:34:33 [DEBUG] train episode 114: reward = -200.00, steps = 200
-01:37:02 [DEBUG] train episode 115: reward = -171.00, steps = 171
-01:38:50 [DEBUG] train episode 116: reward = -122.00, steps = 122
-01:41:46 [DEBUG] train episode 117: reward = -200.00, steps = 200
-01:44:34 [DEBUG] train episode 118: reward = -191.00, steps = 191
-01:47:05 [DEBUG] train episode 119: reward = -173.00, steps = 173
-01:49:59 [DEBUG] train episode 120: reward = -200.00, steps = 200
-01:52:54 [DEBUG] train episode 121: reward = -200.00, steps = 200
-01:55:48 [DEBUG] train episode 122: reward = -200.00, steps = 200
-01:58:35 [DEBUG] train episode 123: reward = -190.00, steps = 190
-02:01:23 [DEBUG] train episode 124: reward = -192.00, steps = 192
-02:04:16 [DEBUG] train episode 125: reward = -200.00, steps = 200
-02:07:10 [DEBUG] train episode 126: reward = -200.00, steps = 200
-02:10:05 [DEBUG] train episode 127: reward = -200.00, steps = 200
-02:13:00 [DEBUG] train episode 128: reward = -200.00, steps = 200
-02:15:54 [DEBUG] train episode 129: reward = -200.00, steps = 200
-02:18:47 [DEBUG] train episode 130: reward = -200.00, steps = 200
-02:21:41 [DEBUG] train episode 131: reward = -200.00, steps = 200
-02:24:34 [DEBUG] train episode 132: reward = -200.00, steps = 200
-02:27:30 [DEBUG] train episode 133: reward = -200.00, steps = 200
-02:29:13 [DEBUG] train episode 134: reward = -117.00, steps = 117
-02:30:45 [DEBUG] train episode 135: reward = -105.00, steps = 105
-02:33:38 [DEBUG] train episode 136: reward = -200.00, steps = 200
-02:35:18 [DEBUG] train episode 137: reward = -114.00, steps = 114
-02:38:13 [DEBUG] train episode 138: reward = -200.00, steps = 200
-02:39:58 [DEBUG] train episode 139: reward = -118.00, steps = 118
-02:42:56 [DEBUG] train episode 140: reward = -200.00, steps = 200
-02:44:47 [DEBUG] train episode 141: reward = -127.00, steps = 127
-02:47:04 [DEBUG] train episode 142: reward = -157.00, steps = 157
-02:48:44 [DEBUG] train episode 143: reward = -114.00, steps = 114
-02:51:27 [DEBUG] train episode 144: reward = -185.00, steps = 185
-02:53:04 [DEBUG] train episode 145: reward = -110.00, steps = 110
-02:54:37 [DEBUG] train episode 146: reward = -106.00, steps = 106
-02:56:13 [DEBUG] train episode 147: reward = -108.00, steps = 108
-02:57:28 [DEBUG] train episode 148: reward = -96.00, steps = 96
-02:58:37 [DEBUG] train episode 149: reward = -87.00, steps = 87
-03:00:33 [DEBUG] train episode 150: reward = -150.00, steps = 150
-03:02:10 [DEBUG] train episode 151: reward = -122.00, steps = 122
-03:04:41 [DEBUG] train episode 152: reward = -194.00, steps = 194
-03:06:02 [DEBUG] train episode 153: reward = -104.00, steps = 104
-03:07:34 [DEBUG] train episode 154: reward = -116.00, steps = 116
-03:10:09 [DEBUG] train episode 155: reward = -200.00, steps = 200
-03:11:22 [DEBUG] train episode 156: reward = -93.00, steps = 93
-03:13:18 [DEBUG] train episode 157: reward = -149.00, steps = 149
-03:15:12 [DEBUG] train episode 158: reward = -147.00, steps = 147
-03:17:47 [DEBUG] train episode 159: reward = -200.00, steps = 200
-03:20:21 [DEBUG] train episode 160: reward = -200.00, steps = 200
-03:21:27 [DEBUG] train episode 161: reward = -86.00, steps = 86
-03:23:28 [DEBUG] train episode 162: reward = -161.00, steps = 161
-03:24:35 [DEBUG] train episode 163: reward = -87.00, steps = 87
-03:27:08 [DEBUG] train episode 164: reward = -200.00, steps = 200
-03:29:14 [DEBUG] train episode 165: reward = -166.00, steps = 166
-03:31:46 [DEBUG] train episode 166: reward = -200.00, steps = 200
-03:32:53 [DEBUG] train episode 167: reward = -88.00, steps = 88
-03:34:09 [DEBUG] train episode 168: reward = -100.00, steps = 100
-03:36:39 [DEBUG] train episode 169: reward = -200.00, steps = 200
-03:39:11 [DEBUG] train episode 170: reward = -200.00, steps = 200
-03:41:41 [DEBUG] train episode 171: reward = -200.00, steps = 200
-03:42:44 [DEBUG] train episode 172: reward = -83.00, steps = 83
-03:44:30 [DEBUG] train episode 173: reward = -140.00, steps = 140
-03:45:38 [DEBUG] train episode 174: reward = -90.00, steps = 90
-03:47:33 [DEBUG] train episode 175: reward = -151.00, steps = 151
-03:49:37 [DEBUG] train episode 176: reward = -163.00, steps = 163
-03:50:42 [DEBUG] train episode 177: reward = -85.00, steps = 85
-03:52:21 [DEBUG] train episode 178: reward = -131.00, steps = 131
-03:53:45 [DEBUG] train episode 179: reward = -111.00, steps = 111
-03:55:13 [DEBUG] train episode 180: reward = -115.00, steps = 115
-03:56:49 [DEBUG] train episode 181: reward = -127.00, steps = 127
-03:58:33 [DEBUG] train episode 182: reward = -136.00, steps = 136
-04:00:03 [DEBUG] train episode 183: reward = -120.00, steps = 120
-04:01:36 [DEBUG] train episode 184: reward = -123.00, steps = 123
-04:03:08 [DEBUG] train episode 185: reward = -121.00, steps = 121
-04:04:33 [DEBUG] train episode 186: reward = -113.00, steps = 113
-04:06:02 [DEBUG] train episode 187: reward = -119.00, steps = 119
-04:07:31 [DEBUG] train episode 188: reward = -118.00, steps = 118
-04:08:58 [DEBUG] train episode 189: reward = -115.00, steps = 115
-04:10:42 [DEBUG] train episode 190: reward = -124.00, steps = 124
-04:12:09 [DEBUG] train episode 191: reward = -115.00, steps = 115
-04:13:37 [DEBUG] train episode 192: reward = -116.00, steps = 116
-04:15:06 [DEBUG] train episode 193: reward = -118.00, steps = 118
-04:16:33 [DEBUG] train episode 194: reward = -115.00, steps = 115
-04:17:55 [DEBUG] train episode 195: reward = -109.00, steps = 109
-04:19:17 [DEBUG] train episode 196: reward = -111.00, steps = 111
-04:20:35 [DEBUG] train episode 197: reward = -116.00, steps = 116
-04:21:32 [DEBUG] train episode 198: reward = -84.00, steps = 84
-04:23:29 [DEBUG] train episode 199: reward = -174.00, steps = 174
-04:24:48 [DEBUG] train episode 200: reward = -119.00, steps = 119
-04:26:01 [DEBUG] train episode 201: reward = -108.00, steps = 108
-04:27:04 [DEBUG] train episode 202: reward = -92.00, steps = 92
-04:28:14 [DEBUG] train episode 203: reward = -105.00, steps = 105
-04:29:27 [DEBUG] train episode 204: reward = -109.00, steps = 109
-04:30:36 [DEBUG] train episode 205: reward = -102.00, steps = 102
-04:31:33 [DEBUG] train episode 206: reward = -85.00, steps = 85
+22:22:18 [INFO] train episode 0: reward = -200.00, steps = 200
+22:22:32 [INFO] train episode 1: reward = -200.00, steps = 200
+22:22:44 [INFO] train episode 2: reward = -200.00, steps = 200
+22:22:59 [INFO] train episode 3: reward = -200.00, steps = 200
+22:23:13 [INFO] train episode 4: reward = -200.00, steps = 200
+22:23:27 [INFO] train episode 5: reward = -200.00, steps = 200
+22:23:46 [INFO] train episode 6: reward = -200.00, steps = 200
+22:24:08 [INFO] train episode 7: reward = -200.00, steps = 200
+22:24:25 [INFO] train episode 8: reward = -200.00, steps = 200
+22:24:42 [INFO] train episode 9: reward = -200.00, steps = 200
+22:25:09 [INFO] train episode 10: reward = -200.00, steps = 200
+22:25:26 [INFO] train episode 11: reward = -200.00, steps = 200
+22:25:40 [INFO] train episode 12: reward = -200.00, steps = 200
+22:25:54 [INFO] train episode 13: reward = -200.00, steps = 200
+22:26:07 [INFO] train episode 14: reward = -200.00, steps = 200
+22:26:20 [INFO] train episode 15: reward = -200.00, steps = 200
+22:26:34 [INFO] train episode 16: reward = -200.00, steps = 200
+22:26:49 [INFO] train episode 17: reward = -200.00, steps = 200
+22:27:03 [INFO] train episode 18: reward = -200.00, steps = 200
+22:27:16 [INFO] train episode 19: reward = -200.00, steps = 200
+22:27:31 [INFO] train episode 20: reward = -200.00, steps = 200
+22:27:46 [INFO] train episode 21: reward = -200.00, steps = 200
+22:28:00 [INFO] train episode 22: reward = -200.00, steps = 200
+22:28:15 [INFO] train episode 23: reward = -200.00, steps = 200
+22:28:30 [INFO] train episode 24: reward = -200.00, steps = 200
+22:28:44 [INFO] train episode 25: reward = -200.00, steps = 200
+22:28:59 [INFO] train episode 26: reward = -200.00, steps = 200
+22:29:13 [INFO] train episode 27: reward = -200.00, steps = 200
+22:29:27 [INFO] train episode 28: reward = -200.00, steps = 200
+22:29:40 [INFO] train episode 29: reward = -200.00, steps = 200
+22:29:53 [INFO] train episode 30: reward = -200.00, steps = 200
+22:30:06 [INFO] train episode 31: reward = -200.00, steps = 200
+22:30:19 [INFO] train episode 32: reward = -200.00, steps = 200
+22:30:37 [INFO] train episode 33: reward = -200.00, steps = 200
+22:30:58 [INFO] train episode 34: reward = -200.00, steps = 200
+22:31:12 [INFO] train episode 35: reward = -200.00, steps = 200
+22:31:26 [INFO] train episode 36: reward = -200.00, steps = 200
+22:31:41 [INFO] train episode 37: reward = -200.00, steps = 200
+22:31:55 [INFO] train episode 38: reward = -200.00, steps = 200
+22:32:12 [INFO] train episode 39: reward = -200.00, steps = 200
+22:32:26 [INFO] train episode 40: reward = -200.00, steps = 200
+22:32:40 [INFO] train episode 41: reward = -200.00, steps = 200
+22:32:55 [INFO] train episode 42: reward = -200.00, steps = 200
+22:33:12 [INFO] train episode 43: reward = -200.00, steps = 200
+22:33:26 [INFO] train episode 44: reward = -200.00, steps = 200
+22:33:40 [INFO] train episode 45: reward = -200.00, steps = 200
+22:33:53 [INFO] train episode 46: reward = -200.00, steps = 200
+22:34:29 [INFO] train episode 47: reward = -200.00, steps = 200
+22:36:05 [INFO] train episode 48: reward = -200.00, steps = 200
+22:38:02 [INFO] train episode 49: reward = -200.00, steps = 200
+22:40:03 [INFO] train episode 50: reward = -200.00, steps = 200
+22:42:20 [INFO] train episode 51: reward = -200.00, steps = 200
+22:44:42 [INFO] train episode 52: reward = -200.00, steps = 200
+22:47:03 [INFO] train episode 53: reward = -200.00, steps = 200
+22:49:07 [INFO] train episode 54: reward = -200.00, steps = 200
+22:51:20 [INFO] train episode 55: reward = -200.00, steps = 200
+22:53:29 [INFO] train episode 56: reward = -200.00, steps = 200
+22:55:46 [INFO] train episode 57: reward = -200.00, steps = 200
+22:56:43 [INFO] train episode 58: reward = -87.00, steps = 87
+22:58:53 [INFO] train episode 59: reward = -200.00, steps = 200
+23:01:17 [INFO] train episode 60: reward = -200.00, steps = 200
+23:03:43 [INFO] train episode 61: reward = -200.00, steps = 200
+23:06:02 [INFO] train episode 62: reward = -200.00, steps = 200
+23:08:17 [INFO] train episode 63: reward = -200.00, steps = 200
+23:10:37 [INFO] train episode 64: reward = -200.00, steps = 200
+23:13:29 [INFO] train episode 65: reward = -200.00, steps = 200
+23:15:04 [INFO] train episode 66: reward = -104.00, steps = 104
+23:18:01 [INFO] train episode 67: reward = -200.00, steps = 200
+23:19:31 [INFO] train episode 68: reward = -101.00, steps = 101
+23:22:29 [INFO] train episode 69: reward = -200.00, steps = 200
+23:25:31 [INFO] train episode 70: reward = -200.00, steps = 200
+23:28:31 [INFO] train episode 71: reward = -200.00, steps = 200
+23:31:33 [INFO] train episode 72: reward = -200.00, steps = 200
+23:34:29 [INFO] train episode 73: reward = -200.00, steps = 200
+23:37:26 [INFO] train episode 74: reward = -200.00, steps = 200
+23:40:30 [INFO] train episode 75: reward = -200.00, steps = 200
+23:43:46 [INFO] train episode 76: reward = -200.00, steps = 200
+23:45:09 [INFO] train episode 77: reward = -89.00, steps = 89
+23:48:31 [INFO] train episode 78: reward = -200.00, steps = 200
+23:51:46 [INFO] train episode 79: reward = -200.00, steps = 200
+23:54:56 [INFO] train episode 80: reward = -200.00, steps = 200
+23:57:55 [INFO] train episode 81: reward = -200.00, steps = 200
+00:00:52 [INFO] train episode 82: reward = -200.00, steps = 200
+00:03:49 [INFO] train episode 83: reward = -200.00, steps = 200
+00:06:43 [INFO] train episode 84: reward = -200.00, steps = 200
+00:09:39 [INFO] train episode 85: reward = -200.00, steps = 200
+00:12:35 [INFO] train episode 86: reward = -200.00, steps = 200
+00:15:31 [INFO] train episode 87: reward = -200.00, steps = 200
+00:18:26 [INFO] train episode 88: reward = -200.00, steps = 200
+00:21:22 [INFO] train episode 89: reward = -200.00, steps = 200
+00:24:18 [INFO] train episode 90: reward = -200.00, steps = 200
+00:27:18 [INFO] train episode 91: reward = -200.00, steps = 200
+00:30:13 [INFO] train episode 92: reward = -200.00, steps = 200
+00:33:14 [INFO] train episode 93: reward = -200.00, steps = 200
+00:36:09 [INFO] train episode 94: reward = -200.00, steps = 200
+00:39:06 [INFO] train episode 95: reward = -200.00, steps = 200
+00:42:05 [INFO] train episode 96: reward = -200.00, steps = 200
+00:45:00 [INFO] train episode 97: reward = -200.00, steps = 200
+00:47:54 [INFO] train episode 98: reward = -200.00, steps = 200
+00:50:48 [INFO] train episode 99: reward = -200.00, steps = 200
+00:53:43 [INFO] train episode 100: reward = -200.00, steps = 200
+00:56:39 [INFO] train episode 101: reward = -200.00, steps = 200
+00:59:34 [INFO] train episode 102: reward = -200.00, steps = 200
+01:02:29 [INFO] train episode 103: reward = -200.00, steps = 200
+01:05:23 [INFO] train episode 104: reward = -200.00, steps = 200
+01:08:18 [INFO] train episode 105: reward = -200.00, steps = 200
+01:11:13 [INFO] train episode 106: reward = -200.00, steps = 200
+01:14:08 [INFO] train episode 107: reward = -200.00, steps = 200
+01:17:03 [INFO] train episode 108: reward = -200.00, steps = 200
+01:19:56 [INFO] train episode 109: reward = -200.00, steps = 200
+01:22:51 [INFO] train episode 110: reward = -200.00, steps = 200
+01:25:44 [INFO] train episode 111: reward = -200.00, steps = 200
+01:28:42 [INFO] train episode 112: reward = -200.00, steps = 200
+01:31:37 [INFO] train episode 113: reward = -200.00, steps = 200
+01:34:33 [INFO] train episode 114: reward = -200.00, steps = 200
+01:37:02 [INFO] train episode 115: reward = -171.00, steps = 171
+01:38:50 [INFO] train episode 116: reward = -122.00, steps = 122
+01:41:46 [INFO] train episode 117: reward = -200.00, steps = 200
+01:44:34 [INFO] train episode 118: reward = -191.00, steps = 191
+01:47:05 [INFO] train episode 119: reward = -173.00, steps = 173
+01:49:59 [INFO] train episode 120: reward = -200.00, steps = 200
+01:52:54 [INFO] train episode 121: reward = -200.00, steps = 200
+01:55:48 [INFO] train episode 122: reward = -200.00, steps = 200
+01:58:35 [INFO] train episode 123: reward = -190.00, steps = 190
+02:01:23 [INFO] train episode 124: reward = -192.00, steps = 192
+02:04:16 [INFO] train episode 125: reward = -200.00, steps = 200
+02:07:10 [INFO] train episode 126: reward = -200.00, steps = 200
+02:10:05 [INFO] train episode 127: reward = -200.00, steps = 200
+02:13:00 [INFO] train episode 128: reward = -200.00, steps = 200
+02:15:54 [INFO] train episode 129: reward = -200.00, steps = 200
+02:18:47 [INFO] train episode 130: reward = -200.00, steps = 200
+02:21:41 [INFO] train episode 131: reward = -200.00, steps = 200
+02:24:34 [INFO] train episode 132: reward = -200.00, steps = 200
+02:27:30 [INFO] train episode 133: reward = -200.00, steps = 200
+02:29:13 [INFO] train episode 134: reward = -117.00, steps = 117
+02:30:45 [INFO] train episode 135: reward = -105.00, steps = 105
+02:33:38 [INFO] train episode 136: reward = -200.00, steps = 200
+02:35:18 [INFO] train episode 137: reward = -114.00, steps = 114
+02:38:13 [INFO] train episode 138: reward = -200.00, steps = 200
+02:39:58 [INFO] train episode 139: reward = -118.00, steps = 118
+02:42:56 [INFO] train episode 140: reward = -200.00, steps = 200
+02:44:47 [INFO] train episode 141: reward = -127.00, steps = 127
+02:47:04 [INFO] train episode 142: reward = -157.00, steps = 157
+02:48:44 [INFO] train episode 143: reward = -114.00, steps = 114
+02:51:27 [INFO] train episode 144: reward = -185.00, steps = 185
+02:53:04 [INFO] train episode 145: reward = -110.00, steps = 110
+02:54:37 [INFO] train episode 146: reward = -106.00, steps = 106
+02:56:13 [INFO] train episode 147: reward = -108.00, steps = 108
+02:57:28 [INFO] train episode 148: reward = -96.00, steps = 96
+02:58:37 [INFO] train episode 149: reward = -87.00, steps = 87
+03:00:33 [INFO] train episode 150: reward = -150.00, steps = 150
+03:02:10 [INFO] train episode 151: reward = -122.00, steps = 122
+03:04:41 [INFO] train episode 152: reward = -194.00, steps = 194
+03:06:02 [INFO] train episode 153: reward = -104.00, steps = 104
+03:07:34 [INFO] train episode 154: reward = -116.00, steps = 116
+03:10:09 [INFO] train episode 155: reward = -200.00, steps = 200
+03:11:22 [INFO] train episode 156: reward = -93.00, steps = 93
+03:13:18 [INFO] train episode 157: reward = -149.00, steps = 149
+03:15:12 [INFO] train episode 158: reward = -147.00, steps = 147
+03:17:47 [INFO] train episode 159: reward = -200.00, steps = 200
+03:20:21 [INFO] train episode 160: reward = -200.00, steps = 200
+03:21:27 [INFO] train episode 161: reward = -86.00, steps = 86
+03:23:28 [INFO] train episode 162: reward = -161.00, steps = 161
+03:24:35 [INFO] train episode 163: reward = -87.00, steps = 87
+03:27:08 [INFO] train episode 164: reward = -200.00, steps = 200
+03:29:14 [INFO] train episode 165: reward = -166.00, steps = 166
+03:31:46 [INFO] train episode 166: reward = -200.00, steps = 200
+03:32:53 [INFO] train episode 167: reward = -88.00, steps = 88
+03:34:09 [INFO] train episode 168: reward = -100.00, steps = 100
+03:36:39 [INFO] train episode 169: reward = -200.00, steps = 200
+03:39:11 [INFO] train episode 170: reward = -200.00, steps = 200
+03:41:41 [INFO] train episode 171: reward = -200.00, steps = 200
+03:42:44 [INFO] train episode 172: reward = -83.00, steps = 83
+03:44:30 [INFO] train episode 173: reward = -140.00, steps = 140
+03:45:38 [INFO] train episode 174: reward = -90.00, steps = 90
+03:47:33 [INFO] train episode 175: reward = -151.00, steps = 151
+03:49:37 [INFO] train episode 176: reward = -163.00, steps = 163
+03:50:42 [INFO] train episode 177: reward = -85.00, steps = 85
+03:52:21 [INFO] train episode 178: reward = -131.00, steps = 131
+03:53:45 [INFO] train episode 179: reward = -111.00, steps = 111
+03:55:13 [INFO] train episode 180: reward = -115.00, steps = 115
+03:56:49 [INFO] train episode 181: reward = -127.00, steps = 127
+03:58:33 [INFO] train episode 182: reward = -136.00, steps = 136
+04:00:03 [INFO] train episode 183: reward = -120.00, steps = 120
+04:01:36 [INFO] train episode 184: reward = -123.00, steps = 123
+04:03:08 [INFO] train episode 185: reward = -121.00, steps = 121
+04:04:33 [INFO] train episode 186: reward = -113.00, steps = 113
+04:06:02 [INFO] train episode 187: reward = -119.00, steps = 119
+04:07:31 [INFO] train episode 188: reward = -118.00, steps = 118
+04:08:58 [INFO] train episode 189: reward = -115.00, steps = 115
+04:10:42 [INFO] train episode 190: reward = -124.00, steps = 124
+04:12:09 [INFO] train episode 191: reward = -115.00, steps = 115
+04:13:37 [INFO] train episode 192: reward = -116.00, steps = 116
+04:15:06 [INFO] train episode 193: reward = -118.00, steps = 118
+04:16:33 [INFO] train episode 194: reward = -115.00, steps = 115
+04:17:55 [INFO] train episode 195: reward = -109.00, steps = 109
+04:19:17 [INFO] train episode 196: reward = -111.00, steps = 111
+04:20:35 [INFO] train episode 197: reward = -116.00, steps = 116
+04:21:32 [INFO] train episode 198: reward = -84.00, steps = 84
+04:23:29 [INFO] train episode 199: reward = -174.00, steps = 174
+04:24:48 [INFO] train episode 200: reward = -119.00, steps = 119
+04:26:01 [INFO] train episode 201: reward = -108.00, steps = 108
+04:27:04 [INFO] train episode 202: reward = -92.00, steps = 92
+04:28:14 [INFO] train episode 203: reward = -105.00, steps = 105
+04:29:27 [INFO] train episode 204: reward = -109.00, steps = 109
+04:30:36 [INFO] train episode 205: reward = -102.00, steps = 102
+04:31:33 [INFO] train episode 206: reward = -85.00, steps = 85
 04:31:33 [INFO] ==== test ====
-04:31:44 [DEBUG] test episode 0: reward = -106.00, steps = 106
-04:31:56 [DEBUG] test episode 1: reward = -106.00, steps = 106
-04:32:07 [DEBUG] test episode 2: reward = -106.00, steps = 106
-04:32:18 [DEBUG] test episode 3: reward = -106.00, steps = 106
-04:32:28 [DEBUG] test episode 4: reward = -88.00, steps = 88
-04:32:40 [DEBUG] test episode 5: reward = -105.00, steps = 105
-04:32:53 [DEBUG] test episode 6: reward = -128.00, steps = 128
-04:33:03 [DEBUG] test episode 7: reward = -90.00, steps = 90
-04:33:14 [DEBUG] test episode 8: reward = -106.00, steps = 106
-04:33:26 [DEBUG] test episode 9: reward = -104.00, steps = 104
-04:33:40 [DEBUG] test episode 10: reward = -138.00, steps = 138
-04:33:50 [DEBUG] test episode 11: reward = -87.00, steps = 87
-04:34:02 [DEBUG] test episode 12: reward = -106.00, steps = 106
-04:34:13 [DEBUG] test episode 13: reward = -106.00, steps = 106
-04:34:24 [DEBUG] test episode 14: reward = -106.00, steps = 106
-04:34:36 [DEBUG] test episode 15: reward = -105.00, steps = 105
-04:34:47 [DEBUG] test episode 16: reward = -104.00, steps = 104
-04:34:56 [DEBUG] test episode 17: reward = -91.00, steps = 91
-04:35:08 [DEBUG] test episode 18: reward = -103.00, steps = 103
-04:35:19 [DEBUG] test episode 19: reward = -107.00, steps = 107
-04:35:30 [DEBUG] test episode 20: reward = -106.00, steps = 106
-04:35:42 [DEBUG] test episode 21: reward = -106.00, steps = 106
-04:35:53 [DEBUG] test episode 22: reward = -106.00, steps = 106
-04:36:04 [DEBUG] test episode 23: reward = -106.00, steps = 106
-04:36:16 [DEBUG] test episode 24: reward = -106.00, steps = 106
-04:36:26 [DEBUG] test episode 25: reward = -91.00, steps = 91
-04:36:38 [DEBUG] test episode 26: reward = -106.00, steps = 106
-04:36:49 [DEBUG] test episode 27: reward = -106.00, steps = 106
-04:36:59 [DEBUG] test episode 28: reward = -105.00, steps = 105
-04:37:13 [DEBUG] test episode 29: reward = -135.00, steps = 135
-04:37:24 [DEBUG] test episode 30: reward = -107.00, steps = 107
-04:37:35 [DEBUG] test episode 31: reward = -105.00, steps = 105
-04:37:46 [DEBUG] test episode 32: reward = -106.00, steps = 106
-04:37:59 [DEBUG] test episode 33: reward = -128.00, steps = 128
-04:38:10 [DEBUG] test episode 34: reward = -105.00, steps = 105
-04:38:21 [DEBUG] test episode 35: reward = -107.00, steps = 107
-04:38:32 [DEBUG] test episode 36: reward = -107.00, steps = 107
-04:38:43 [DEBUG] test episode 37: reward = -105.00, steps = 105
-04:38:53 [DEBUG] test episode 38: reward = -104.00, steps = 104
-04:39:02 [DEBUG] test episode 39: reward = -88.00, steps = 88
-04:39:13 [DEBUG] test episode 40: reward = -106.00, steps = 106
-04:39:24 [DEBUG] test episode 41: reward = -104.00, steps = 104
-04:39:35 [DEBUG] test episode 42: reward = -106.00, steps = 106
-04:39:46 [DEBUG] test episode 43: reward = -105.00, steps = 105
-04:39:57 [DEBUG] test episode 44: reward = -105.00, steps = 105
-04:40:08 [DEBUG] test episode 45: reward = -105.00, steps = 105
-04:40:18 [DEBUG] test episode 46: reward = -104.00, steps = 104
-04:40:29 [DEBUG] test episode 47: reward = -105.00, steps = 105
-04:40:40 [DEBUG] test episode 48: reward = -106.00, steps = 106
-04:40:51 [DEBUG] test episode 49: reward = -104.00, steps = 104
-04:41:01 [DEBUG] test episode 50: reward = -105.00, steps = 105
-04:41:12 [DEBUG] test episode 51: reward = -106.00, steps = 106
-04:41:23 [DEBUG] test episode 52: reward = -106.00, steps = 106
-04:41:34 [DEBUG] test episode 53: reward = -106.00, steps = 106
-04:41:45 [DEBUG] test episode 54: reward = -106.00, steps = 106
-04:41:58 [DEBUG] test episode 55: reward = -128.00, steps = 128
-04:42:09 [DEBUG] test episode 56: reward = -105.00, steps = 105
-04:42:20 [DEBUG] test episode 57: reward = -105.00, steps = 105
-04:42:31 [DEBUG] test episode 58: reward = -104.00, steps = 104
-04:42:42 [DEBUG] test episode 59: reward = -104.00, steps = 104
-04:42:55 [DEBUG] test episode 60: reward = -128.00, steps = 128
-04:43:04 [DEBUG] test episode 61: reward = -88.00, steps = 88
-04:43:15 [DEBUG] test episode 62: reward = -106.00, steps = 106
-04:43:25 [DEBUG] test episode 63: reward = -87.00, steps = 87
-04:43:36 [DEBUG] test episode 64: reward = -107.00, steps = 107
-04:43:46 [DEBUG] test episode 65: reward = -105.00, steps = 105
-04:43:57 [DEBUG] test episode 66: reward = -106.00, steps = 106
-04:44:06 [DEBUG] test episode 67: reward = -88.00, steps = 88
-04:44:17 [DEBUG] test episode 68: reward = -104.00, steps = 104
-04:44:28 [DEBUG] test episode 69: reward = -105.00, steps = 105
-04:44:42 [DEBUG] test episode 70: reward = -133.00, steps = 133
-04:44:51 [DEBUG] test episode 71: reward = -92.00, steps = 92
-04:45:02 [DEBUG] test episode 72: reward = -107.00, steps = 107
-04:45:13 [DEBUG] test episode 73: reward = -107.00, steps = 107
-04:45:24 [DEBUG] test episode 74: reward = -105.00, steps = 105
-04:45:35 [DEBUG] test episode 75: reward = -105.00, steps = 105
-04:45:46 [DEBUG] test episode 76: reward = -107.00, steps = 107
-04:45:55 [DEBUG] test episode 77: reward = -87.00, steps = 87
-04:46:06 [DEBUG] test episode 78: reward = -105.00, steps = 105
-04:46:17 [DEBUG] test episode 79: reward = -106.00, steps = 106
-04:46:28 [DEBUG] test episode 80: reward = -106.00, steps = 106
-04:46:39 [DEBUG] test episode 81: reward = -105.00, steps = 105
-04:46:50 [DEBUG] test episode 82: reward = -106.00, steps = 106
-04:47:01 [DEBUG] test episode 83: reward = -104.00, steps = 104
-04:47:10 [DEBUG] test episode 84: reward = -90.00, steps = 90
-04:47:21 [DEBUG] test episode 85: reward = -107.00, steps = 107
-04:47:32 [DEBUG] test episode 86: reward = -107.00, steps = 107
-04:47:43 [DEBUG] test episode 87: reward = -103.00, steps = 103
-04:47:54 [DEBUG] test episode 88: reward = -106.00, steps = 106
-04:48:05 [DEBUG] test episode 89: reward = -106.00, steps = 106
-04:48:18 [DEBUG] test episode 90: reward = -127.00, steps = 127
-04:48:27 [DEBUG] test episode 91: reward = -88.00, steps = 88
-04:48:40 [DEBUG] test episode 92: reward = -127.00, steps = 127
-04:48:50 [DEBUG] test episode 93: reward = -88.00, steps = 88
-04:49:00 [DEBUG] test episode 94: reward = -106.00, steps = 106
-04:49:11 [DEBUG] test episode 95: reward = -105.00, steps = 105
-04:49:22 [DEBUG] test episode 96: reward = -104.00, steps = 104
-04:49:33 [DEBUG] test episode 97: reward = -107.00, steps = 107
-04:49:42 [DEBUG] test episode 98: reward = -88.00, steps = 88
-04:49:53 [DEBUG] test episode 99: reward = -105.00, steps = 105
+04:31:44 [INFO] test episode 0: reward = -106.00, steps = 106
+04:31:56 [INFO] test episode 1: reward = -106.00, steps = 106
+04:32:07 [INFO] test episode 2: reward = -106.00, steps = 106
+04:32:18 [INFO] test episode 3: reward = -106.00, steps = 106
+04:32:28 [INFO] test episode 4: reward = -88.00, steps = 88
+04:32:40 [INFO] test episode 5: reward = -105.00, steps = 105
+04:32:53 [INFO] test episode 6: reward = -128.00, steps = 128
+04:33:03 [INFO] test episode 7: reward = -90.00, steps = 90
+04:33:14 [INFO] test episode 8: reward = -106.00, steps = 106
+04:33:26 [INFO] test episode 9: reward = -104.00, steps = 104
+04:33:40 [INFO] test episode 10: reward = -138.00, steps = 138
+04:33:50 [INFO] test episode 11: reward = -87.00, steps = 87
+04:34:02 [INFO] test episode 12: reward = -106.00, steps = 106
+04:34:13 [INFO] test episode 13: reward = -106.00, steps = 106
+04:34:24 [INFO] test episode 14: reward = -106.00, steps = 106
+04:34:36 [INFO] test episode 15: reward = -105.00, steps = 105
+04:34:47 [INFO] test episode 16: reward = -104.00, steps = 104
+04:34:56 [INFO] test episode 17: reward = -91.00, steps = 91
+04:35:08 [INFO] test episode 18: reward = -103.00, steps = 103
+04:35:19 [INFO] test episode 19: reward = -107.00, steps = 107
+04:35:30 [INFO] test episode 20: reward = -106.00, steps = 106
+04:35:42 [INFO] test episode 21: reward = -106.00, steps = 106
+04:35:53 [INFO] test episode 22: reward = -106.00, steps = 106
+04:36:04 [INFO] test episode 23: reward = -106.00, steps = 106
+04:36:16 [INFO] test episode 24: reward = -106.00, steps = 106
+04:36:26 [INFO] test episode 25: reward = -91.00, steps = 91
+04:36:38 [INFO] test episode 26: reward = -106.00, steps = 106
+04:36:49 [INFO] test episode 27: reward = -106.00, steps = 106
+04:36:59 [INFO] test episode 28: reward = -105.00, steps = 105
+04:37:13 [INFO] test episode 29: reward = -135.00, steps = 135
+04:37:24 [INFO] test episode 30: reward = -107.00, steps = 107
+04:37:35 [INFO] test episode 31: reward = -105.00, steps = 105
+04:37:46 [INFO] test episode 32: reward = -106.00, steps = 106
+04:37:59 [INFO] test episode 33: reward = -128.00, steps = 128
+04:38:10 [INFO] test episode 34: reward = -105.00, steps = 105
+04:38:21 [INFO] test episode 35: reward = -107.00, steps = 107
+04:38:32 [INFO] test episode 36: reward = -107.00, steps = 107
+04:38:43 [INFO] test episode 37: reward = -105.00, steps = 105
+04:38:53 [INFO] test episode 38: reward = -104.00, steps = 104
+04:39:02 [INFO] test episode 39: reward = -88.00, steps = 88
+04:39:13 [INFO] test episode 40: reward = -106.00, steps = 106
+04:39:24 [INFO] test episode 41: reward = -104.00, steps = 104
+04:39:35 [INFO] test episode 42: reward = -106.00, steps = 106
+04:39:46 [INFO] test episode 43: reward = -105.00, steps = 105
+04:39:57 [INFO] test episode 44: reward = -105.00, steps = 105
+04:40:08 [INFO] test episode 45: reward = -105.00, steps = 105
+04:40:18 [INFO] test episode 46: reward = -104.00, steps = 104
+04:40:29 [INFO] test episode 47: reward = -105.00, steps = 105
+04:40:40 [INFO] test episode 48: reward = -106.00, steps = 106
+04:40:51 [INFO] test episode 49: reward = -104.00, steps = 104
+04:41:01 [INFO] test episode 50: reward = -105.00, steps = 105
+04:41:12 [INFO] test episode 51: reward = -106.00, steps = 106
+04:41:23 [INFO] test episode 52: reward = -106.00, steps = 106
+04:41:34 [INFO] test episode 53: reward = -106.00, steps = 106
+04:41:45 [INFO] test episode 54: reward = -106.00, steps = 106
+04:41:58 [INFO] test episode 55: reward = -128.00, steps = 128
+04:42:09 [INFO] test episode 56: reward = -105.00, steps = 105
+04:42:20 [INFO] test episode 57: reward = -105.00, steps = 105
+04:42:31 [INFO] test episode 58: reward = -104.00, steps = 104
+04:42:42 [INFO] test episode 59: reward = -104.00, steps = 104
+04:42:55 [INFO] test episode 60: reward = -128.00, steps = 128
+04:43:04 [INFO] test episode 61: reward = -88.00, steps = 88
+04:43:15 [INFO] test episode 62: reward = -106.00, steps = 106
+04:43:25 [INFO] test episode 63: reward = -87.00, steps = 87
+04:43:36 [INFO] test episode 64: reward = -107.00, steps = 107
+04:43:46 [INFO] test episode 65: reward = -105.00, steps = 105
+04:43:57 [INFO] test episode 66: reward = -106.00, steps = 106
+04:44:06 [INFO] test episode 67: reward = -88.00, steps = 88
+04:44:17 [INFO] test episode 68: reward = -104.00, steps = 104
+04:44:28 [INFO] test episode 69: reward = -105.00, steps = 105
+04:44:42 [INFO] test episode 70: reward = -133.00, steps = 133
+04:44:51 [INFO] test episode 71: reward = -92.00, steps = 92
+04:45:02 [INFO] test episode 72: reward = -107.00, steps = 107
+04:45:13 [INFO] test episode 73: reward = -107.00, steps = 107
+04:45:24 [INFO] test episode 74: reward = -105.00, steps = 105
+04:45:35 [INFO] test episode 75: reward = -105.00, steps = 105
+04:45:46 [INFO] test episode 76: reward = -107.00, steps = 107
+04:45:55 [INFO] test episode 77: reward = -87.00, steps = 87
+04:46:06 [INFO] test episode 78: reward = -105.00, steps = 105
+04:46:17 [INFO] test episode 79: reward = -106.00, steps = 106
+04:46:28 [INFO] test episode 80: reward = -106.00, steps = 106
+04:46:39 [INFO] test episode 81: reward = -105.00, steps = 105
+04:46:50 [INFO] test episode 82: reward = -106.00, steps = 106
+04:47:01 [INFO] test episode 83: reward = -104.00, steps = 104
+04:47:10 [INFO] test episode 84: reward = -90.00, steps = 90
+04:47:21 [INFO] test episode 85: reward = -107.00, steps = 107
+04:47:32 [INFO] test episode 86: reward = -107.00, steps = 107
+04:47:43 [INFO] test episode 87: reward = -103.00, steps = 103
+04:47:54 [INFO] test episode 88: reward = -106.00, steps = 106
+04:48:05 [INFO] test episode 89: reward = -106.00, steps = 106
+04:48:18 [INFO] test episode 90: reward = -127.00, steps = 127
+04:48:27 [INFO] test episode 91: reward = -88.00, steps = 88
+04:48:40 [INFO] test episode 92: reward = -127.00, steps = 127
+04:48:50 [INFO] test episode 93: reward = -88.00, steps = 88
+04:49:00 [INFO] test episode 94: reward = -106.00, steps = 106
+04:49:11 [INFO] test episode 95: reward = -105.00, steps = 105
+04:49:22 [INFO] test episode 96: reward = -104.00, steps = 104
+04:49:33 [INFO] test episode 97: reward = -107.00, steps = 107
+04:49:42 [INFO] test episode 98: reward = -88.00, steps = 88
+04:49:53 [INFO] test episode 99: reward = -105.00, steps = 105
 04:49:53 [INFO] average episode reward = -105.21 ± 9.98
 </pre>
 </div>

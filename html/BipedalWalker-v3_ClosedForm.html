@@ -13987,7 +13987,7 @@ a.anchor-link {
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">gym</span>
 
-<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">,</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span>
         <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%(asctime)s</span><span class="s1"> [</span><span class="si">%(levelname)s</span><span class="s1">] </span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">,</span>
         <span class="n">stream</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">datefmt</span><span class="o">=</span><span class="s1">&#39;%H:%M:%S&#39;</span><span class="p">)</span>
 </pre></div>
@@ -14003,8 +14003,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s1">&#39;BipedalWalker-v3&#39;</span><span class="p">)</span>
-<span class="n">env</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s1">&#39;BipedalWalker-v3&#39;</span><span class="p">,</span> <span class="n">new_step_api</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">vars</span><span class="p">(</span><span class="n">env</span><span class="p">):</span>
     <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="nb">vars</span><span class="p">(</span><span class="n">env</span><span class="p">)[</span><span class="n">key</span><span class="p">])</span>
 <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">vars</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">spec</span><span class="p">):</span>
@@ -14111,21 +14110,20 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">play_episode</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">agent</span><span class="p">,</span> <span class="n">max_episode_steps</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">render</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">(),</span> <span class="mf">0.</span><span class="p">,</span> <span class="kc">False</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">play_episode</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">agent</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">render</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">observation</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="n">seed</span><span class="p">)</span>
+    <span class="n">reward</span><span class="p">,</span> <span class="n">termination</span><span class="p">,</span> <span class="n">truncation</span> <span class="o">=</span> <span class="mf">0.</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span>
     <span class="n">agent</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">)</span>
     <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span> <span class="o">=</span> <span class="mf">0.</span><span class="p">,</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">action</span> <span class="o">=</span> <span class="n">agent</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">)</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="n">agent</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">termination</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">render</span><span class="p">:</span>
             <span class="n">env</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">done</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">termination</span> <span class="ow">or</span> <span class="n">truncation</span><span class="p">:</span>
             <span class="k">break</span>
-        <span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">termination</span><span class="p">,</span> <span class="n">truncation</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
         <span class="n">episode_reward</span> <span class="o">+=</span> <span class="n">reward</span>
         <span class="n">elapsed_steps</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="n">max_episode_steps</span> <span class="ow">and</span> <span class="n">elapsed_steps</span> <span class="o">&gt;=</span> <span class="n">max_episode_steps</span><span class="p">:</span>
-            <span class="k">break</span>
     <span class="n">agent</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span>
 
@@ -14135,7 +14133,7 @@ a.anchor-link {
 <span class="k">for</span> <span class="n">episode</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
     <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span> <span class="o">=</span> <span class="n">play_episode</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">agent</span><span class="p">)</span>
     <span class="n">episode_rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">episode_reward</span><span class="p">)</span>
-    <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;test episode </span><span class="si">%d</span><span class="s1">: reward = </span><span class="si">%.2f</span><span class="s1">, steps = </span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;test episode </span><span class="si">%d</span><span class="s1">: reward = </span><span class="si">%.2f</span><span class="s1">, steps = </span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span>
             <span class="n">episode</span><span class="p">,</span> <span class="n">episode_reward</span><span class="p">,</span> <span class="n">elapsed_steps</span><span class="p">)</span>
 <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;average episode reward = </span><span class="si">%.2f</span><span class="s1"> ± </span><span class="si">%.2f</span><span class="s1">&#39;</span><span class="p">,</span>
         <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">episode_rewards</span><span class="p">))</span>
@@ -14159,106 +14157,106 @@ a.anchor-link {
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>00:00:17 [INFO] ==== test ====
-00:00:18 [DEBUG] test episode 0: reward = 311.54, steps = 1238
-00:00:18 [DEBUG] test episode 1: reward = 311.80, steps = 1246
-00:00:19 [DEBUG] test episode 2: reward = 311.68, steps = 1297
-00:00:20 [DEBUG] test episode 3: reward = 311.93, steps = 1257
-00:00:20 [DEBUG] test episode 4: reward = 312.64, steps = 1279
-00:00:21 [DEBUG] test episode 5: reward = 314.01, steps = 1244
-00:00:22 [DEBUG] test episode 6: reward = 311.10, steps = 1242
-00:00:22 [DEBUG] test episode 7: reward = 312.14, steps = 1286
-00:00:23 [DEBUG] test episode 8: reward = 313.93, steps = 1227
-00:00:24 [DEBUG] test episode 9: reward = 312.31, steps = 1248
-00:00:24 [DEBUG] test episode 10: reward = 313.03, steps = 1243
-00:00:25 [DEBUG] test episode 11: reward = 310.21, steps = 1269
-00:00:26 [DEBUG] test episode 12: reward = 313.31, steps = 1246
-00:00:26 [DEBUG] test episode 13: reward = 311.41, steps = 1246
-00:00:27 [DEBUG] test episode 14: reward = 309.60, steps = 1274
-00:00:27 [DEBUG] test episode 15: reward = 310.79, steps = 1239
-00:00:28 [DEBUG] test episode 16: reward = 312.62, steps = 1240
-00:00:29 [DEBUG] test episode 17: reward = 310.81, steps = 1292
-00:00:29 [DEBUG] test episode 18: reward = 312.69, steps = 1255
-00:00:30 [DEBUG] test episode 19: reward = 311.89, steps = 1254
-00:00:31 [DEBUG] test episode 20: reward = 311.98, steps = 1257
-00:00:31 [DEBUG] test episode 21: reward = 311.88, steps = 1279
-00:00:32 [DEBUG] test episode 22: reward = 312.83, steps = 1257
-00:00:32 [DEBUG] test episode 23: reward = 312.19, steps = 1229
-00:00:33 [DEBUG] test episode 24: reward = 312.23, steps = 1240
-00:00:33 [DEBUG] test episode 25: reward = 311.83, steps = 1243
-00:00:34 [DEBUG] test episode 26: reward = 311.84, steps = 1215
-00:00:34 [DEBUG] test episode 27: reward = 312.74, steps = 1270
-00:00:35 [DEBUG] test episode 28: reward = 312.50, steps = 1243
-00:00:36 [DEBUG] test episode 29: reward = 309.36, steps = 1286
-00:00:37 [DEBUG] test episode 30: reward = 311.43, steps = 1230
-00:00:38 [DEBUG] test episode 31: reward = 313.14, steps = 1227
-00:00:38 [DEBUG] test episode 32: reward = 311.23, steps = 1264
-00:00:39 [DEBUG] test episode 33: reward = 310.01, steps = 1268
-00:00:40 [DEBUG] test episode 34: reward = 312.65, steps = 1261
-00:00:41 [DEBUG] test episode 35: reward = 311.03, steps = 1263
-00:00:42 [DEBUG] test episode 36: reward = 312.31, steps = 1267
-00:00:43 [DEBUG] test episode 37: reward = 311.59, steps = 1297
-00:00:44 [DEBUG] test episode 38: reward = 312.95, steps = 1260
-00:00:45 [DEBUG] test episode 39: reward = 310.43, steps = 1289
-00:00:46 [DEBUG] test episode 40: reward = 310.74, steps = 1273
-00:00:46 [DEBUG] test episode 41: reward = 311.26, steps = 1246
-00:00:47 [DEBUG] test episode 42: reward = 309.09, steps = 1305
-00:00:48 [DEBUG] test episode 43: reward = 312.86, steps = 1251
-00:00:48 [DEBUG] test episode 44: reward = 311.23, steps = 1256
-00:00:49 [DEBUG] test episode 45: reward = 313.63, steps = 1231
-00:00:49 [DEBUG] test episode 46: reward = 314.69, steps = 1200
-00:00:50 [DEBUG] test episode 47: reward = 310.47, steps = 1253
-00:00:50 [DEBUG] test episode 48: reward = 313.85, steps = 1235
-00:00:51 [DEBUG] test episode 49: reward = 310.36, steps = 1271
-00:00:52 [DEBUG] test episode 50: reward = 312.14, steps = 1250
-00:00:52 [DEBUG] test episode 51: reward = 313.43, steps = 1223
-00:00:53 [DEBUG] test episode 52: reward = 312.56, steps = 1239
-00:00:53 [DEBUG] test episode 53: reward = 310.96, steps = 1269
-00:00:54 [DEBUG] test episode 54: reward = 312.64, steps = 1257
-00:00:55 [DEBUG] test episode 55: reward = 313.76, steps = 1239
-00:00:55 [DEBUG] test episode 56: reward = 311.05, steps = 1258
-00:00:56 [DEBUG] test episode 57: reward = 311.65, steps = 1245
-00:00:56 [DEBUG] test episode 58: reward = 311.00, steps = 1249
-00:00:57 [DEBUG] test episode 59: reward = 312.88, steps = 1264
-00:00:57 [DEBUG] test episode 60: reward = 313.16, steps = 1229
-00:00:58 [DEBUG] test episode 61: reward = 310.72, steps = 1259
-00:00:58 [DEBUG] test episode 62: reward = 310.83, steps = 1270
-00:00:59 [DEBUG] test episode 63: reward = 312.81, steps = 1228
-00:00:59 [DEBUG] test episode 64: reward = 310.50, steps = 1248
-00:01:00 [DEBUG] test episode 65: reward = 313.22, steps = 1242
-00:01:01 [DEBUG] test episode 66: reward = 312.31, steps = 1212
-00:01:01 [DEBUG] test episode 67: reward = 312.95, steps = 1232
-00:01:02 [DEBUG] test episode 68: reward = 310.90, steps = 1246
-00:01:02 [DEBUG] test episode 69: reward = 311.22, steps = 1237
-00:01:03 [DEBUG] test episode 70: reward = 312.39, steps = 1249
-00:01:03 [DEBUG] test episode 71: reward = 312.80, steps = 1256
-00:01:04 [DEBUG] test episode 72: reward = 311.77, steps = 1267
-00:01:04 [DEBUG] test episode 73: reward = 310.94, steps = 1253
-00:01:05 [DEBUG] test episode 74: reward = 312.10, steps = 1275
-00:01:06 [DEBUG] test episode 75: reward = 312.31, steps = 1273
-00:01:06 [DEBUG] test episode 76: reward = 313.02, steps = 1248
-00:01:07 [DEBUG] test episode 77: reward = 311.88, steps = 1245
-00:01:07 [DEBUG] test episode 78: reward = 312.70, steps = 1240
-00:01:08 [DEBUG] test episode 79: reward = 313.93, steps = 1225
-00:01:08 [DEBUG] test episode 80: reward = 312.99, steps = 1261
-00:01:09 [DEBUG] test episode 81: reward = 311.63, steps = 1250
-00:01:10 [DEBUG] test episode 82: reward = 313.25, steps = 1245
-00:01:10 [DEBUG] test episode 83: reward = 312.35, steps = 1279
-00:01:11 [DEBUG] test episode 84: reward = 310.08, steps = 1289
-00:01:11 [DEBUG] test episode 85: reward = 309.38, steps = 1273
-00:01:12 [DEBUG] test episode 86: reward = 313.06, steps = 1220
-00:01:12 [DEBUG] test episode 87: reward = 312.29, steps = 1261
-00:01:13 [DEBUG] test episode 88: reward = 312.16, steps = 1264
-00:01:14 [DEBUG] test episode 89: reward = 313.73, steps = 1219
-00:01:14 [DEBUG] test episode 90: reward = 311.74, steps = 1238
-00:01:15 [DEBUG] test episode 91: reward = 312.11, steps = 1242
-00:01:16 [DEBUG] test episode 92: reward = 310.96, steps = 1262
-00:01:16 [DEBUG] test episode 93: reward = 311.33, steps = 1249
-00:01:17 [DEBUG] test episode 94: reward = 309.44, steps = 1285
-00:01:18 [DEBUG] test episode 95: reward = 311.50, steps = 1259
-00:01:18 [DEBUG] test episode 96: reward = 311.90, steps = 1239
-00:01:19 [DEBUG] test episode 97: reward = 311.58, steps = 1258
-00:01:19 [DEBUG] test episode 98: reward = 313.10, steps = 1232
-00:01:20 [DEBUG] test episode 99: reward = 310.88, steps = 1248
+00:00:18 [INFO] test episode 0: reward = 311.54, steps = 1238
+00:00:18 [INFO] test episode 1: reward = 311.80, steps = 1246
+00:00:19 [INFO] test episode 2: reward = 311.68, steps = 1297
+00:00:20 [INFO] test episode 3: reward = 311.93, steps = 1257
+00:00:20 [INFO] test episode 4: reward = 312.64, steps = 1279
+00:00:21 [INFO] test episode 5: reward = 314.01, steps = 1244
+00:00:22 [INFO] test episode 6: reward = 311.10, steps = 1242
+00:00:22 [INFO] test episode 7: reward = 312.14, steps = 1286
+00:00:23 [INFO] test episode 8: reward = 313.93, steps = 1227
+00:00:24 [INFO] test episode 9: reward = 312.31, steps = 1248
+00:00:24 [INFO] test episode 10: reward = 313.03, steps = 1243
+00:00:25 [INFO] test episode 11: reward = 310.21, steps = 1269
+00:00:26 [INFO] test episode 12: reward = 313.31, steps = 1246
+00:00:26 [INFO] test episode 13: reward = 311.41, steps = 1246
+00:00:27 [INFO] test episode 14: reward = 309.60, steps = 1274
+00:00:27 [INFO] test episode 15: reward = 310.79, steps = 1239
+00:00:28 [INFO] test episode 16: reward = 312.62, steps = 1240
+00:00:29 [INFO] test episode 17: reward = 310.81, steps = 1292
+00:00:29 [INFO] test episode 18: reward = 312.69, steps = 1255
+00:00:30 [INFO] test episode 19: reward = 311.89, steps = 1254
+00:00:31 [INFO] test episode 20: reward = 311.98, steps = 1257
+00:00:31 [INFO] test episode 21: reward = 311.88, steps = 1279
+00:00:32 [INFO] test episode 22: reward = 312.83, steps = 1257
+00:00:32 [INFO] test episode 23: reward = 312.19, steps = 1229
+00:00:33 [INFO] test episode 24: reward = 312.23, steps = 1240
+00:00:33 [INFO] test episode 25: reward = 311.83, steps = 1243
+00:00:34 [INFO] test episode 26: reward = 311.84, steps = 1215
+00:00:34 [INFO] test episode 27: reward = 312.74, steps = 1270
+00:00:35 [INFO] test episode 28: reward = 312.50, steps = 1243
+00:00:36 [INFO] test episode 29: reward = 309.36, steps = 1286
+00:00:37 [INFO] test episode 30: reward = 311.43, steps = 1230
+00:00:38 [INFO] test episode 31: reward = 313.14, steps = 1227
+00:00:38 [INFO] test episode 32: reward = 311.23, steps = 1264
+00:00:39 [INFO] test episode 33: reward = 310.01, steps = 1268
+00:00:40 [INFO] test episode 34: reward = 312.65, steps = 1261
+00:00:41 [INFO] test episode 35: reward = 311.03, steps = 1263
+00:00:42 [INFO] test episode 36: reward = 312.31, steps = 1267
+00:00:43 [INFO] test episode 37: reward = 311.59, steps = 1297
+00:00:44 [INFO] test episode 38: reward = 312.95, steps = 1260
+00:00:45 [INFO] test episode 39: reward = 310.43, steps = 1289
+00:00:46 [INFO] test episode 40: reward = 310.74, steps = 1273
+00:00:46 [INFO] test episode 41: reward = 311.26, steps = 1246
+00:00:47 [INFO] test episode 42: reward = 309.09, steps = 1305
+00:00:48 [INFO] test episode 43: reward = 312.86, steps = 1251
+00:00:48 [INFO] test episode 44: reward = 311.23, steps = 1256
+00:00:49 [INFO] test episode 45: reward = 313.63, steps = 1231
+00:00:49 [INFO] test episode 46: reward = 314.69, steps = 1200
+00:00:50 [INFO] test episode 47: reward = 310.47, steps = 1253
+00:00:50 [INFO] test episode 48: reward = 313.85, steps = 1235
+00:00:51 [INFO] test episode 49: reward = 310.36, steps = 1271
+00:00:52 [INFO] test episode 50: reward = 312.14, steps = 1250
+00:00:52 [INFO] test episode 51: reward = 313.43, steps = 1223
+00:00:53 [INFO] test episode 52: reward = 312.56, steps = 1239
+00:00:53 [INFO] test episode 53: reward = 310.96, steps = 1269
+00:00:54 [INFO] test episode 54: reward = 312.64, steps = 1257
+00:00:55 [INFO] test episode 55: reward = 313.76, steps = 1239
+00:00:55 [INFO] test episode 56: reward = 311.05, steps = 1258
+00:00:56 [INFO] test episode 57: reward = 311.65, steps = 1245
+00:00:56 [INFO] test episode 58: reward = 311.00, steps = 1249
+00:00:57 [INFO] test episode 59: reward = 312.88, steps = 1264
+00:00:57 [INFO] test episode 60: reward = 313.16, steps = 1229
+00:00:58 [INFO] test episode 61: reward = 310.72, steps = 1259
+00:00:58 [INFO] test episode 62: reward = 310.83, steps = 1270
+00:00:59 [INFO] test episode 63: reward = 312.81, steps = 1228
+00:00:59 [INFO] test episode 64: reward = 310.50, steps = 1248
+00:01:00 [INFO] test episode 65: reward = 313.22, steps = 1242
+00:01:01 [INFO] test episode 66: reward = 312.31, steps = 1212
+00:01:01 [INFO] test episode 67: reward = 312.95, steps = 1232
+00:01:02 [INFO] test episode 68: reward = 310.90, steps = 1246
+00:01:02 [INFO] test episode 69: reward = 311.22, steps = 1237
+00:01:03 [INFO] test episode 70: reward = 312.39, steps = 1249
+00:01:03 [INFO] test episode 71: reward = 312.80, steps = 1256
+00:01:04 [INFO] test episode 72: reward = 311.77, steps = 1267
+00:01:04 [INFO] test episode 73: reward = 310.94, steps = 1253
+00:01:05 [INFO] test episode 74: reward = 312.10, steps = 1275
+00:01:06 [INFO] test episode 75: reward = 312.31, steps = 1273
+00:01:06 [INFO] test episode 76: reward = 313.02, steps = 1248
+00:01:07 [INFO] test episode 77: reward = 311.88, steps = 1245
+00:01:07 [INFO] test episode 78: reward = 312.70, steps = 1240
+00:01:08 [INFO] test episode 79: reward = 313.93, steps = 1225
+00:01:08 [INFO] test episode 80: reward = 312.99, steps = 1261
+00:01:09 [INFO] test episode 81: reward = 311.63, steps = 1250
+00:01:10 [INFO] test episode 82: reward = 313.25, steps = 1245
+00:01:10 [INFO] test episode 83: reward = 312.35, steps = 1279
+00:01:11 [INFO] test episode 84: reward = 310.08, steps = 1289
+00:01:11 [INFO] test episode 85: reward = 309.38, steps = 1273
+00:01:12 [INFO] test episode 86: reward = 313.06, steps = 1220
+00:01:12 [INFO] test episode 87: reward = 312.29, steps = 1261
+00:01:13 [INFO] test episode 88: reward = 312.16, steps = 1264
+00:01:14 [INFO] test episode 89: reward = 313.73, steps = 1219
+00:01:14 [INFO] test episode 90: reward = 311.74, steps = 1238
+00:01:15 [INFO] test episode 91: reward = 312.11, steps = 1242
+00:01:16 [INFO] test episode 92: reward = 310.96, steps = 1262
+00:01:16 [INFO] test episode 93: reward = 311.33, steps = 1249
+00:01:17 [INFO] test episode 94: reward = 309.44, steps = 1285
+00:01:18 [INFO] test episode 95: reward = 311.50, steps = 1259
+00:01:18 [INFO] test episode 96: reward = 311.90, steps = 1239
+00:01:19 [INFO] test episode 97: reward = 311.58, steps = 1258
+00:01:19 [INFO] test episode 98: reward = 313.10, steps = 1232
+00:01:20 [INFO] test episode 99: reward = 310.88, steps = 1248
 00:01:20 [INFO] average episode reward = 311.94 ± 1.15
 </pre>
 </div>

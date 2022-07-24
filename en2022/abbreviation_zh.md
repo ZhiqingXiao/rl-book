@@ -42,7 +42,7 @@
 | GAN | 生成对抗网络 | Generative Adversarial Network |
 | GP | Gaussian过程 | Gaussian Process |
 | HRL | 分层强化学习 | Hierarchical Reinforcement Learning |
-| IL | 模仿学习 | Immitation Learning |
+| IL | 模仿学习 | Imitation Learning |
 | IQN | 含蓄分位网络 | Implicit Quantile Networks |
 | JSD | Jensen-Shannon散度 | Jensen-Shannon Divergence |
 | KLD | Kullback–Leibler散度 | Kullback–Leibler Divergence |
@@ -53,6 +53,7 @@
 | MDP | Markov决策过程 | Markov Decision Process |
 | ML | 机器学习 | Machine Learning |
 | MP | Markov过程 | Markov Process |
+| MSE | 均方误差 | Mean Squared Error |
 | MRP | Markov奖励过程 | Markov Reward Process |
 | MTRL | 多任务强化学习 | Multi-Task Reinforcement Learning |
 | NPG | 自然策略梯度算法 | Natural Policy Gradient |
@@ -72,6 +73,8 @@
 | QF | 分位函数 | Quantile Function |
 | QR | 分位数回归 | Quantile Regression |
 | QR-DQN | 分位数回归深度Q网络 | Quantile Regression Deep Q Network |
+| RAM | 随机存取存储器 | Random Access Memory |
+| ReLU | 修正线性单元 | Rectified Linear Unit |
 | RL | 强化学习 | Reinforcement Learning |
 | SAC | 柔性执行者/评论者算法 | Soft Actor–Critic |
 | SARSA | 状态/动作/奖励/状态/动作 | State-Action-Reward-State-Action |

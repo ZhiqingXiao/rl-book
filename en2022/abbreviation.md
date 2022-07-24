@@ -42,7 +42,7 @@
 | GAN | Generative Adversarial Network |
 | GP | Gaussian Process |
 | HRL | Hierarchical Reinforcement Learning |
-| IL | Immitation Learning |
+| IL | Imitation Learning |
 | IQN | Implicit Quantile Networks |
 | JSD | Jensen-Shannon Divergence |
 | KLD | Kullback–Leibler Divergence |
@@ -54,6 +54,7 @@
 | ML | Machine Learning |
 | MP | Markov Process |
 | MRP | Markov Reward Process |
+| MSE | Mean Squared Error |
 | MTRL | Multi-Task Reinforcement Learning |
 | NPG | Natural Policy Gradient |
 | OffPAC | Off-Policy Actor–Critic |
@@ -72,6 +73,8 @@
 | QF | Quantile Function |
 | QR | Quantile Regression |
 | QR-DQN | Quantile Regression Deep Q Network |
+| RAM | Random Access Memory |
+| ReLU | Rectified Linear Unit |
 | RL | Reinforcement Learning |
 | SAC | Soft Actor–Critic |
 | SARSA | State-Action-Reward-State-Action |

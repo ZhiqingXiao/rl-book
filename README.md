@@ -23,7 +23,7 @@ Check [here](https://github.com/ZhiqingXiao/rl-book/tree/master/en2022) for code
 
 ### Table of Codes
 
-All codes have been saved as a .ipynb file in the directory "ipynb" and a .html file in the directory "html".
+All codes have been saved as a .ipynb file and a .html file in the same directory.
 
 | Chapter | Environment & Closed-Form Policy | Agent |
 | :--- | :--- | :--- |
@@ -42,11 +42,11 @@ All codes have been saved as a .ipynb file in the directory "ipynb" and a .html 
 | 13 | [BernoulliMAB-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv_demo.html) |
 | 13 | [GaussianMAB-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/en2022/code/GaussianMABEnv_demo.html) |
 | 14 | [TicTacToe-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/TicTacToe-v0_ExhaustiveSearch.html) | AlphaZero [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/TicTacToe-v0_AlphaZero_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/TicTacToe-v0_AlphaZero_torch.html)  |
-| 15 note1 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
+| 15 note | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
 | 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/en2022/code/Tiger-v0_Plan_demo.html)
 
 
-Notes:
+Note:
 1. It does not work with Gym 0.25.1 and PyBullet 3.2.4. It is because Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
 
 
@@ -67,13 +67,13 @@ Notes:
 
 本书介绍强化学习理论及其 Python 实现。
 - 理论完备：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等非深度强化学习算法和柔性执行者/评论者等深度强化学习算法。
-- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.10、Gym 0.25.1 和 TensorFlow 2 / PyTorch 1，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
+- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.10、Gym 0.25.2 和 TensorFlow 2 / PyTorch 1，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
 
 **TensorFlow 2 和 PyTorch 1 对照代码**
 
 - 本书深度强化学习部分新增基于 TensorFlow 2 和 PyTorch 1 的 [对照实现](https://zhiqingxiao.github.io/rl-book/#table-of-codes)。两个版本实现均和正文伪代码严格对应，两个版本仅在智能体部分实现不同，程序结构和智能体参数完全相同。ipynb格式见notebooks文件夹，HTML网页格式见html文件夹，两个版本内容相同。
 
-- 代码已经过Python 3.10、Gym 0.24、TensorFlow 2和PyTorch 1验证。有错误请报错。
+- 代码已经过Python 3.10、Gym 0.25.2、TensorFlow 2和PyTorch 1验证。有错误请报错。
 
 **QQ群**
 

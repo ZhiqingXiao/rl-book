@@ -41,6 +41,7 @@
 | GAIL | 生成对抗模仿学习 | Generative Adversarial Imitation Learning |
 | GAN | 生成对抗网络 | Generative Adversarial Network |
 | GP | Gaussian过程 | Gaussian Process |
+| GPU | 图形处理器 | Graphics Processing Unit |
 | HRL | 分层强化学习 | Hierarchical Reinforcement Learning |
 | IL | 模仿学习 | Imitation Learning |
 | IQN | 含蓄分位网络 | Implicit Quantile Networks |

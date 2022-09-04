@@ -41,6 +41,7 @@
 | GAIL | Generative Adversarial Imitation Learning |
 | GAN | Generative Adversarial Network |
 | GP | Gaussian Process |
+| GPU | Graphics Processing Unit |
 | HRL | Hierarchical Reinforcement Learning |
 | IL | Imitation Learning |
 | IQN | Implicit Quantile Networks |

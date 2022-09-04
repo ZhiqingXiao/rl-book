@@ -68,12 +68,12 @@ List view: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/code
 | 13 | [BernoulliMAB-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv_demo.html) |
 | 13 | [GaussianMAB-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/en2022/code/GaussianMABEnv_demo.html) |
 | 14 | [TicTacToe-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/TicTacToe-v0_ExhaustiveSearch.html) | AlphaZero [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/TicTacToe-v0_AlphaZero_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/TicTacToe-v0_AlphaZero_torch.html)  |
-| 15 note1 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
+| 15 note | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
 | 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/en2022/code/Tiger-v0_Plan_demo.html)
 
 
-Notes:
-1. It does not work with Gym 0.25.1 and PyBullet 3.2.4. It is because Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
+Note:
+1. It does not work with Gym 0.25.2 and PyBullet 3.2.4. It is because Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
 
 
 ### BibTeX
@@ -123,12 +123,12 @@ Notes:
 | 13 | [BernoulliMAB-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv_demo.html) |
 | 13 | [GaussianMAB-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/en2022/code/GaussianMABEnv_demo.html) |
 | 14 | [TicTacToe-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/TicTacToe-v0_ExhaustiveSearch.html) | AlphaZero [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/TicTacToe-v0_AlphaZero_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/TicTacToe-v0_AlphaZero_torch.html)  |
-| 15 注1 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
+| 15 注 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2022/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
 | 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/en2022/code/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/en2022/code/Tiger-v0_Plan_demo.html)
 
 
 注:
-1. It does not work with Gym 0.25.1 and PyBullet 3.2.4. 原因： Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
+1. It does not work with Gym 0.25.2 and PyBullet 3.2.4. 原因：Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
 
 
 ### 中英双语资源

@@ -4,7 +4,7 @@ This article introduces how to set up developing environment in a Windows 10/11 
 
 ## Part 1: Minimum Installation
 
-This part will show how to set up a minimum environment. After this step, you are able to run codes in Chapter 1~5, 13, 16.
+This part will show how to set up a minimum environment. After this step, you are able to run codes in Chapter 1-5, 13, 16.
 
 #### Install Anaconda 3
 
@@ -63,7 +63,7 @@ This step is strongly recommended but not compulsory.
 
 ## Part 2: Install TensorFlow and/or PyTorch
 
-This part will show how to install TensorFlow and/or PyTorch upon the minimum environment in Part 1. Codes in Chapter 6~10, 12, 14, 15 need TensorFlow and/or PyTorch. After this step, you are able to run codes in Chapter 1~9, 13, 16.
+This part will show how to install TensorFlow and/or PyTorch upon the minimum environment in Part 1. Codes in Chapter 6-10, 12, 14, 15 need TensorFlow and/or PyTorch. After this step, you are able to run codes in Chapter 1-9, 13, 16.
 
 #### Install Visual Studio
 
@@ -101,9 +101,9 @@ Please install the latest version of Visual Studio before this step. Otherwise, 
 
 ## Part 3.1: Install `gym[box2d]`
 
-Codes in Chapter 10~11 use `gym[box2d]`. You can skip this part if you do not care the codes in Chapter 10~11. It does not impact other parts.
+Codes in Chapter 10-11 use `gym[box2d]`. You can skip this part if you do not care the codes in Chapter 10-11. It does not impact other parts.
 
-This part will show how to install `gym[box2d]` upon the environment with PyTorch and/or TensorFlow in Part 2. Upon completed this part, you are able to run codes in Chapter 1~13, 16. If you complete all of Part 3.1~3.3, you are able to run codes in all chapters.
+This part will show how to install `gym[box2d]` upon the environment with PyTorch and/or TensorFlow in Part 2. Upon completed this part, you are able to run codes in Chapter 1-13, 16. If you complete all of Part 3.1-3.3, you are able to run codes in all chapters.
 
 #### Install SWIG
 
@@ -139,7 +139,7 @@ This part will show how to install `gym[box2d]` upon the environment with PyTorc
 
 Codes in Chapter 15 use PyBullet. You can skip this part if you do not care the codes in Chapter 15.
 
-This part will show how to install PyBullet upon the environment with PyTorch and/or TensorFlow in Part 2. Upon completed, you are able to run codes in Chapter 1~9, 12~13, 15~16. If you complete all of Part 3.1~3.3, you are able to run codes in all chapters.
+This part will show how to install PyBullet upon the environment with PyTorch and/or TensorFlow in Part 2. Upon completed, you are able to run codes in Chapter 1-9, 12-13, 15-16. If you complete all of Part 3.1-3.3, you are able to run codes in all chapters.
 
 **Steps:**
 

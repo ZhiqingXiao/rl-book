@@ -12,4 +12,3 @@
 | Gym Internal 11-1 | [gym.wrapper.TransformReward](https://github.com/openai/gym/blob/master//gym/wrappers/transform_reward.py) |
 | Gym Internal 12-1 | [gym.wrapper.AtariPreprocessing](https://github.com/openai/gym/blob/master/gym/wrappers/atari_preprocessing.py) |
 | Gym Internal 12-2 | [gym.wrapper.FrameStack](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py) |
-

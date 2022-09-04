@@ -12,23 +12,25 @@
 | [Code 1-8](https://zhiqingxiao.github.io/rl-book/en2022/codeMountainCar-v0_ClosedForm.html) | Closed-form agent for task `MountainCar-v0` |
 | [Code 1-9](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_ClosedForm.html) | Play an episode |
 | [Code 1-10](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_ClosedForm.html) | Test the performance by playing 100 episodes |
-| [Code 1-11](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCarContinuous-v0_ClosedForm.html) | Closed-form agent for task `MountainCarContinous-v0` |
+| [Code 1-11](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCarContinuous-v0_ClosedForm.html) | Check the observation space and action space of the task `MountainCarContinuous-v0` |
+| [Code 1-12](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCarContinuous-v0_ClosedForm.html) | Closed-form agent for task `MountainCarContinous-v0` |
 | [Code 2-1](https://zhiqingxiao.github.io/rl-book/en2022/code/HungryFull_demo.html) | Use the example Bellman expectation equation |
 | [Code 2-2](https://zhiqingxiao.github.io/rl-book/en2022/code/HungryFull_demo.html) | Example to solve Bellman optimal equation |
 | [Code 2-3](https://zhiqingxiao.github.io/rl-book/en2022/code/CliffWalking-v0_Bellman_demo.html) | Import the environment `CliffWalking-v0` and check its information |
 | [Code 2-4](https://zhiqingxiao.github.io/rl-book/en2022/code/CliffWalking-v0_Bellman_demo.html) | Find states values and action values using Bellman expectation equations |
 | [Code 2-5](https://zhiqingxiao.github.io/rl-book/en2022/code/CliffWalking-v0_Bellman_demo.html) | Find optimal values using LP method |
 | [Code 2-6](https://zhiqingxiao.github.io/rl-book/en2022/code/CliffWalking-v0_Bellman_demo.html) | Find an optimal deterministic policy from optimal action values |
-| [Code 3-1](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Play an episode using the policy |
-| [Code 3-2](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Calculate the episode rewards of the random policy |
-| [Code 3-3](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Implementation of Policy Evaluation |
-| [Code 3-4](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Evaluate the random policy |
-| [Code 3-5](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Policy improvement |
-| [Code 3-6](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Improve the random policy |
-| [Code 3-7](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Policy iteration |
-| [Code 3-8](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Use policy iteration to find the optimal policy and test it |
-| [Code 3-9](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | VI |
-| [Code 3-10](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Find the optimal policy using the value iteration algorithm |
+| [Code 3-1](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Check the metadata of `FrozenLake-v1` |
+| [Code 3-2](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Play an episode using the policy |
+| [Code 3-3](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Calculate the episode rewards of the random policy |
+| [Code 3-4](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Implementation of Policy Evaluation |
+| [Code 3-5](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Evaluate the random policy |
+| [Code 3-6](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Policy improvement |
+| [Code 3-7](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Improve the random policy |
+| [Code 3-8](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Policy iteration |
+| [Code 3-9](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Use policy iteration to find the optimal policy and test it |
+| [Code 3-10](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | VI |
+| [Code 3-11](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Find the optimal policy using the value iteration algorithm |
 | [Code 4-1](https://github.com/openai/gym/blob/master/gym/spaces/tuple.py) | The class `gym.space.Tuple` |
 | [Code 4-2](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | Play an episode |
 | [Code 4-3](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | On-Policy MC evaluation |
@@ -43,12 +45,12 @@
 | [Code 5-4](https://zhiqingxiao.github.io/rl-book/en2022/code/Taxi-v3_ExpectedSARSA.html) | Expected SARSA agent |
 | [Code 5-5](https://zhiqingxiao.github.io/rl-book/en2022/code/Taxi-v3_QLearning.html) | Q Learning agent |
 | [Code 5-6](https://zhiqingxiao.github.io/rl-book/en2022/code/Taxi-v3_DoubleQLearning.html) | Double Q Learning agent |
-| [Code 5-7](https://zhiqingxiao.github.io/rl-book/en2022/code/Taxi-v3_SARSALambda.html) | SARSA$(\lambda)$ agent |
-| [Code 6-1](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_SARSA_demo.html) | Import the environment of MountainCar-v0 |
+| [Code 5-7](https://zhiqingxiao.github.io/rl-book/en2022/code/Taxi-v3_SARSALambda.html) | SARSA $(\lambda)$ agent |
+| [Code 6-1](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_SARSA_demo.html) | Import the environment of `MountainCar-v0` |
 | [Code 6-2](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_SARSA_demo.html) | The agent that always pushes right |
 | [Code 6-3](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_SARSA_demo.html) | Tile coding |
 | [Code 6-4](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_SARSA_demo.html) | SARSA agent with function approximation |
-| [Code 6-5](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_SARSAlambda.html)| SARSA$(\lambda)$ agent with function approximation |
+| [Code 6-5](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_SARSAlambda.html)| SARSA $(\lambda)$ agent with function approximation |
 | [Code 6-6](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_DQN_tf.html) | Experience replayer |
 | [Code 6-7](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_DQN_tf.html) | DQN agent with target network (with TensorFlow) |
 | [Code 6-8](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_DQN_torch.html) | DQN agent with target network (with PyTorch) |
@@ -89,7 +91,7 @@
 | [Code 9-4](https://zhiqingxiao.github.io/rl-book/en2022/code/Pendulum-v1_TD3_tf.html) | TD3 agent (with TensorFlow) |
 | [Code 9-5](https://zhiqingxiao.github.io/rl-book/en2022/code/Pendulum-v1_TD3_torch.html) | TD3 agent (with PyTorch) |
 | [Code 10-1](https://zhiqingxiao.github.io/rl-book/en2022/code/LunarLander-v2_ClosedForm.html) | Closed-form solution of `LunarLander-v2` |
-| [Code 10-2](https://zhiqingxiao.github.io/rl-book/en2022/code/LunarLanderContinuous-v2_ClosedForm.html) | Closed-form solution of LunarLanderContinuous-v2 |
+| [Code 10-2](https://zhiqingxiao.github.io/rl-book/en2022/code/LunarLanderContinuous-v2_ClosedForm.html) | Closed-form solution of `LunarLanderContinuous-v2` |
 | [Code 10-3](https://zhiqingxiao.github.io/rl-book/en2022/code/LunarLander-v2_SQL_tf.html) | SQL agent (with TensorFlow) |
 | [Code 10-4](https://zhiqingxiao.github.io/rl-book/en2022/code/LunarLander-v2_SQL_torch.html) | SQL agent (with PyTorch) |
 | [Code 10-5](https://zhiqingxiao.github.io/rl-book/en2022/code/LunarLander-v2_SACwoA_tf.html) | SAC agent (with TensorFlow) |
@@ -122,7 +124,7 @@
 | [Code 13-5](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv-v0_demo.html) | UCB1 agent |
 | [Code 13-6](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv-v0_demo.html) | Bayesian UCB agent |
 | [Code 13-7](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv-v0_demo.html) | Thompson sampling agent |
-| [Code 14-1](https://github.com/ZhiqingXiao/boardgame2/blob/master/boardgame2/env.py) | The constructor of the class `BoardGameEnv`
+| [Code 14-1](https://github.com/ZhiqingXiao/boardgame2/blob/master/boardgame2/env.py) | The constructor of the class `BoardGameEnv` |
 | [Code 14-2](https://github.com/ZhiqingXiao/boardgame2/blob/master/boardgame2/env.py) | The member function `is_valid()`, `has_valid()`, and `get_valid()` in the class `BoardGameEnv` |
 | [Code 14-3](https://github.com/ZhiqingXiao/boardgame2/blob/master/boardgame2/kinarow.py) | The member function `get_winner()` in the class `KInARowEnv` |
 | [Code 14-4](https://github.com/ZhiqingXiao/boardgame2/blob/master/boardgame2/env.py) | The member function `next_step()` and `get_next_state()` in the class `BoardGameEnv` |

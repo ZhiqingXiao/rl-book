@@ -14,7 +14,7 @@ Please email me if you are interested in publishing this book in other languages
 This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
 
 - Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.
-- Practice: Every chapter is accompanied by high quality implementation based on Python 3.10, Gym 0.25.1, and TensorFlow 2 / PyTorch 1. All codes are compatible with Windows, Linux, and macOS, can be run in a laptop. 
+- Practice: Every chapter is accompanied by high quality implementation based on Python 3.10, Gym 0.26, and TensorFlow 2 / PyTorch 1. All codes are compatible with Windows, Linux, and macOS, can be run in a laptop. 
 
 
 ### Supporting contents for English version
@@ -47,7 +47,7 @@ All codes have been saved as a .ipynb file and a .html file in the same director
 
 
 Note:
-1. It does not work with Gym 0.25.1 and PyBullet 3.2.4. It is because Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
+1. It does not work with Gym >=0.25 and PyBullet 3.2.4. It is because Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
 
 
 # 强化学习：原理与Python实现
@@ -73,7 +73,7 @@ Note:
 
 - 本书深度强化学习部分新增基于 TensorFlow 2 和 PyTorch 1 的 [对照实现](https://zhiqingxiao.github.io/rl-book/#table-of-codes)。两个版本实现均和正文伪代码严格对应，两个版本仅在智能体部分实现不同，程序结构和智能体参数完全相同。ipynb格式见notebooks文件夹，HTML网页格式见html文件夹，两个版本内容相同。
 
-- 代码已经过Python 3.10、Gym 0.25.2、TensorFlow 2和PyTorch 1验证。有错误请报错。
+- 代码已经过Python 3.10、Gym 0.26、TensorFlow 2和PyTorch 1验证。有错误请报错。
 
 **QQ群**
 

@@ -12,6 +12,7 @@
 | CDF | 累积概率分布 | Cumulative Distribution Function |
 | CG | 共轭梯度算法 | Conjugate Gradient |
 | CNN | 卷积神经网络 | Convolutional Neural Network |
+| CPU | 中央处理器 | Central Processing Unit |
 | CTMDP | 连续时间Markov决策过程 | Continuous-Time Markov Decision Process |
 | CTMP | 连续时间Markov过程 | Continuous-Time Markov Process |
 | CTMRP | 连续时间Markov奖励过程 | Continuous-Time Markov Reward Process |
@@ -87,6 +88,7 @@
 | SQL | 柔性Q学习 | Soft Q Learning |
 | TD | 时序差分 | Temporal Difference |
 | TD3 | 双重延迟深度确定性策略梯度算法 | Twin Delay Deep Deterministic Policy Gradient |
+| TPU | 张量处理器 | Tensor Processing Unit |
 | TRM | 信赖域方法 | Trust Region Method |
 | TRPO | 信赖域策略优化算法 | Trust Region Policy Optimization |
 | TV | 全变差 | Total Variation |

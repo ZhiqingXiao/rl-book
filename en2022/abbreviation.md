@@ -12,6 +12,7 @@
 | CDF | Cumulative Distribution Function |
 | CG | Conjugate Gradient |
 | CNN | Convolutional Neural Network |
+| CPU | Central Processing Unit |
 | CTMDP | Continuous-Time Markov Decision Process |
 | CTMP | Continuous-Time Markov Process |
 | CTMRP | Continuous-Time Markov Reward Process |
@@ -87,6 +88,7 @@
 | SQL | Soft Q Learning |
 | TD | Temporal Difference |
 | TD3 | Twin Delay Deep Deterministic Policy Gradient |
+| TPU | Tensor Processing Unit |
 | TRM | Trust Region Method |
 | TRPO | Trust Region Policy Optimization |
 | TV | Total Variation |

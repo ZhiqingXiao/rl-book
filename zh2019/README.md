@@ -12,7 +12,7 @@
 
 **各章代码**
 
-代码暂时只在Gym 0.24.1上测试通过，在Gym 0.25上可能存在问题。等我在Gym 0.25上测试完毕后会删除本说明。
+由于Gym 0.25更改了随机数种子的设置方法（从`env.seed(0)`变成`env.reset(seed=0)`），原书结果在最新版本的Gym上已不可复现。
 
 01. 初识强化学习 &emsp; [查看代码：useGym](https://github.com/zhiqingxiao/rl-book/blob/master/zh2019/code/chapter01_intro/useGym.ipynb)
 02. Markov决策过程 &emsp; [查看代码：useBellman](https://github.com/zhiqingxiao/rl-book/blob/master/zh2019/code/chapter02_mdp/useBellman.ipynb) [CliffWalking](https://github.com/zhiqingxiao/rl-book/blob/master/zh2019/code/chapter02_mdp/CliffWalking-v0.ipynb)
@@ -75,8 +75,6 @@
 - 问：Windows系统下安装TensorFlow或PyTorch失败。答：请在Windows 10/11里安装Visual Studio 2022（如果有旧版本的Visual Studio请先彻底卸载）。更多细节和安装问题请自行Google。PyTorch安装可参阅：https://mp.weixin.qq.com/s/uRx1XOPrfFOdMlRU6I-eyA
 
 - 问：在Visual Studio或Visual Studio Code或PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，只能在Jupyter Notebook里运行。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。（`display()`函数是Jupyter Notebook里才有的函数。）不需要安装Visual Studio Code或PyCharm。更多细节或其他错误请自行Google。
-
-- 问：运行的结果和repo里带的结果不完全一样。答：本repo中涉及到TensorFlow或PyTorch的代码，附带的结果都是用CPU跑的。GPU运算本来就不能精确复现（更多细节请自行Google）。Gym 0.22版本重新实现了seeding机制，有些结果是用Gym <=0.21版本跑的，而没有用Gym >=0.22重跑。如果发现最新版本的Gym CPU版本运行结果不正常请发送勘误报错，谢谢。
 
 - 问：GPU会比CPU跑的快么？答：没有用到TensorFlow和PyTorch的代码，不会用到GPU。用到TensorFlow和PyTorch的代码，由于网络一般不大，GPU反而可能更慢。PyTorch代码使用GPU时要把Tensor对象放在GPU上（可能需要修改代码）。
 

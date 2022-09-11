@@ -211,13 +211,13 @@ class DQNReplayer:
     def __init__(self, capacity):
         self.memory = pd.DataFrame(index=range(capacity),
                 columns=['observation', 'action', 'reward',
-                'next_observation', 'done'])
+                'next_observation', 'terminated'])
         self.i = 0
         self.count = 0
         self.capacity = capacity
 
     def store(self, *args):
-        self.memory.loc[self.i] = args
+        self.memory.loc[self.i] = np.asarray(args, dtype=object)
         self.i = (self.i + 1) % self.capacity
         self.count = min(self.count + 1, self.capacity)
 
@@ -290,7 +290,7 @@ class DQNAgent():
         if random or np.random.rand() < self.epsilon:
             return np.random.randint(self.action_n)
         observations = observation[np.newaxis]
-        qs = self.evaluate_net.predict(observations)
+        qs = self.evaluate_net.predict(observations, verbose=0)
         return np.argmax(qs)
 
 
@@ -303,24 +303,24 @@ class DQNAgent():
             return 1, steering, 0
 
 
-    def learn(self, observation, action, reward, next_observation, done):
+    def learn(self, observation, action, reward, next_observation, terminated, truncated):
         agent.replayer.store(observation, action, reward, next_observation,
-                done) # 存储经验
+                terminated) # 存储经验
 
         if self.replayer.count < self.random_initial_steps:
             return # 还没到存足够多的经验，先不训练神经网络
 
-        observations, actions, rewards, next_observations, dones = \
+        observations, actions, rewards, next_observations, terminateds = \
                 self.replayer.sample(self.batch_size) # 经验回放
 
-        next_qs = self.target_net.predict(next_observations)
+        next_qs = self.target_net.predict(next_observations, verbose=0)
         next_max_qs = next_qs.max(axis=-1)
-        us = rewards + self.gamma * next_max_qs * (1. - dones)
-        targets = self.evaluate_net.predict(observations)
+        us = rewards + self.gamma * next_max_qs * (1. - terminateds)
+        targets = self.evaluate_net.predict(observations, verbose=0)
         targets[np.arange(us.shape[0]), actions] = us
         self.evaluate_net.fit(observations, targets, verbose=0)
 
-        if done:
+        if terminated or truncated:
             self.target_net.set_weights(self.evaluate_net.get_weights())
 
         # 减小 epsilon 的值
@@ -356,19 +356,19 @@ def play_once(env, agent, explore_start=False, random=False, train=False,
 
         # 获得更新后的观测、奖励和回合结束指示
         next_image = env.get_image()
-        reward, done, info = env.get_reward()
+        reward, terminated, truncated, info = env.get_reward()
 
         # 如果回合刚开始就结束了，就不是靠谱的回合
-        if step == 0 and done:
+        if step == 0 and (terminated or truncated):
             if verbose:
                 print('不成功的回合，放弃保存')
             break
 
         if train: # 根据经验学习
-            agent.learn(image, action, reward, next_image, done)
+            agent.learn(image, action, reward, next_image, terminated, truncated)
 
         # 回合结束
-        if done:
+        if terminated or truncated:
             if verbose:
                 print('回合 从 {} 到 {} 结束. {}'.format(
                         env.start_time, env.end_time, info))

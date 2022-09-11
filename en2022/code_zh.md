@@ -2,12 +2,12 @@
 
 | \# | 代码内容 |
 | --- | --- |
-| [代码1-1](https://github.com/openai/gym/blob/master/gym/core.py) | 类`gym.Env` |
-| [代码1-2](https://github.com/openai/gym/blob/master/gym/spaces/space.py) | 类`gym.spaces.Space` |
-| [代码1-3](https://github.com/openai/gym/blob/master/gym/spaces/box.py) | 类`gym.spaces.Box` |
-| [代码1-4](https://github.com/openai/gym/blob/master/gym/spaces/discrete.py) | 类`gym.spaces.Discrete` |
-| [代码1-5](https://github.com/openai/gym/blob/master/gym/core.py) | 类`gym.Wrapper` |
-| [代码1-6](https://github.com/openai/gym/blob/master/gym/wrappers/time_limit.py) | 类`gym.wrappers.TimeLimit`|
+| [代码1-1](https://github.com/openai/gym/blob/master/gym/core.py) | 环境类`gym.Env` |
+| [代码1-2](https://github.com/openai/gym/blob/master/gym/spaces/space.py) | 空间类`gym.spaces.Space` |
+| [代码1-3](https://github.com/openai/gym/blob/master/gym/spaces/box.py) | 空间类`gym.spaces.Box` |
+| [代码1-4](https://github.com/openai/gym/blob/master/gym/spaces/discrete.py) | 空间类`gym.spaces.Discrete` |
+| [代码1-5](https://github.com/openai/gym/blob/master/gym/core.py) | 包装类`gym.Wrapper` |
+| [代码1-6](https://github.com/openai/gym/blob/master/gym/wrappers/time_limit.py) | 包装类`gym.wrappers.TimeLimit`|
 | [代码1-7](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_ClosedForm.html) | 查看`MountainCar-v0`的观测空间和动作空间 |
 | [代码1-8](https://zhiqingxiao.github.io/rl-book/en2022/codeMountainCar-v0_ClosedForm.html) | 根据指定确定性策略决定动作的智能体，用于`MountainCar-v0` |
 | [代码1-9](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_ClosedForm.html) | 智能体和环境交互一个回合的代码 |
@@ -31,7 +31,7 @@
 | [代码3-9](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | 利用策略迭代求解最优策略并测试 |
 | [代码3-10](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | 价值迭代的实现 |
 | [代码3-11](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | 用价值迭代算法求解最优策略 |
-| [代码4-1](https://github.com/openai/gym/blob/master/gym/spaces/tuple.py) | `gym.spaces.Tuple`类 |
+| [代码4-1](https://github.com/openai/gym/blob/master/gym/spaces/tuple.py) | 空间类`gym.spaces.Tuple` |
 | [代码4-2](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | 玩一个回合 |
 | [代码4-3](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | 同策回合更新策略评估 |
 | [代码4-4](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | 绘制以状态为指标的3维数组 |
@@ -106,8 +106,8 @@
 | [代码11-4](https://zhiqingxiao.github.io/rl-book/en2022/code/BipedalWalker-v3_ES.html) | 训练和测试进化算法智能体 |
 | [代码11-5](https://zhiqingxiao.github.io/rl-book/en2022/code/BipedalWalker-v3_ARS.html) | 增强随机搜索算法智能体 |
 | [代码12-1](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_ClosedForm.html) | `PongNoFrameskip-v4`的闭式解 |
-| [代码12-2](https://github.com/openai/gym/blob/master/gym/wrappers/atari_preprocessing.py) | `AtariPreprocessing`类 |
-| [代码12-3](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py) | `FrameStack`类 |
+| [代码12-2](https://github.com/openai/gym/blob/master/gym/wrappers/atari_preprocessing.py) | 包装类`AtariPreprocessing` |
+| [代码12-3](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py) | 包装类`FrameStack` |
 | [代码12-4](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_CategoricalDQN_tf.html) | 包装后的环境类 |
 | [代码12-5](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_CategoricalDQN_tf.html) | 类别深度Q网络算法智能体（TensorFlow版本） |
 | [代码12-6](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_CategoricalDQN_torch.html) | 类别深度Q网络算法智能体（PyTorch版本） |

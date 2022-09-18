@@ -45,6 +45,7 @@ All chapters are accompanied with Python codes.
 - Guide to set up developing environment: [link](https://zhiqingxiao.github.io/rl-book/en2022/setupwin.md)
 - Table of notations: [link](https://zhiqingxiao.github.io/rl-book/en2022/notation.html)
 - Table of abbreviations: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/abbreviation.md)
+- Gym Internal: [link](https://github.com/ZhiqingXiao/rl-book/blob/master/en2022/gym.md)
 - Bibliography: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/bibliography.md)
 
 ### Table of Codes
@@ -73,7 +74,7 @@ List view: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/code
 
 
 Note:
-1. It does not work with Gym 0.25.2 and PyBullet 3.2.4. It is because Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
+1. It does not work with Gym >=0.25 and PyBullet 3.2.4. It is because Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
 
 
 ### BibTeX
@@ -128,7 +129,7 @@ Note:
 
 
 注:
-1. It does not work with Gym 0.25.2 and PyBullet 3.2.4. 原因：Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
+1. It does not work with Gym >=0.25 and PyBullet 3.2.4. 原因：Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
 
 
 ### 中英双语资源
@@ -137,6 +138,7 @@ Note:
 - 开发环境搭建：[链接](https://zhiqingxiao.github.io/rl-book/en2022/setupwin_zh.html)
 - 字母表：[链接](https://zhiqingxiao.github.io/rl-book/en2022/notation_zh.html)
 - 缩略语表：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/abbreviation_zh.md)
+- Gym源码解读：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/en2022/code_zh.md)
 - 参考文献：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/en2022/bibliography.md)
 
 **QQ群**
@@ -148,8 +150,6 @@ Note:
 - 问：Windows系统下安装TensorFlow或PyTorch失败。答：请在Windows 10/11里安装Visual Studio 2022（如果有旧版本的Visual Studio请先彻底卸载）。请阅读本书的[开发环境搭建指南](https://zhiqingxiao.github.io/rl-book/en2022/setupwin_zh.html)。更多细节和安装问题请自行Google。PyTorch安装可参阅：https://mp.weixin.qq.com/s/uRx1XOPrfFOdMlRU6I-eyA
 
 - 问：在Visual Studio或Visual Studio Code或PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，只能在Jupyter Notebook里运行。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。（`display()`函数是Jupyter Notebook里才有的函数。）不需要安装Visual Studio Code或PyCharm。更多细节或其他错误请自行Google。
-
-- 问：运行的结果和repo里带的结果不完全一样。答：本repo中涉及到TensorFlow或PyTorch的代码，附带的结果都是用CPU跑的。GPU运算本来就不能精确复现（更多细节请自行Google）。如果发现Gym最新版CPU版本运行结果不正常请发送勘误报错，谢谢。
 
 - 问：GPU会比CPU跑的快么？答：没有用到TensorFlow和PyTorch的代码，不会用到GPU。用到TensorFlow和PyTorch的代码，由于网络一般不大，GPU反而可能更慢。PyTorch代码使用GPU时要把Tensor对象放在GPU上（可能需要修改代码）。
 

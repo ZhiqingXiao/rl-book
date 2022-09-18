@@ -2,18 +2,12 @@
 
 | \# | Caption |
 | --- | --- |
-| [Code 1-1](https://github.com/openai/gym/blob/master/gym/core.py) | The class `gym.Env` |
-| [Code 1-2](https://github.com/openai/gym/blob/master/gym/spaces/space.py) | The class `gym.space.Space` |
-| [Code 1-3](https://github.com/openai/gym/blob/master/gym/spaces/box.py) | The class `gym.space.Box` |
-| [Code 1-4](https://github.com/openai/gym/blob/master/gym/spaces/discrete.py) | The class `gym.space.Discrete` |
-| [Code 1-5](https://github.com/openai/gym/blob/master/gym/core.py) | The class `gym.Wrapper` |
-| [Code 1-6](https://github.com/openai/gym/blob/master/gym/wrappers/time_limit.py) | The class `gym.wrapper.TimeLimit` |
-| [Code 1-7](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_ClosedForm.html) | Check the observation space and action space of the environment |
-| [Code 1-8](https://zhiqingxiao.github.io/rl-book/en2022/codeMountainCar-v0_ClosedForm.html) | Closed-form agent for task `MountainCar-v0` |
-| [Code 1-9](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_ClosedForm.html) | Play an episode |
-| [Code 1-10](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_ClosedForm.html) | Test the performance by playing 100 episodes |
-| [Code 1-11](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCarContinuous-v0_ClosedForm.html) | Check the observation space and action space of the task `MountainCarContinuous-v0` |
-| [Code 1-12](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCarContinuous-v0_ClosedForm.html) | Closed-form agent for task `MountainCarContinous-v0` |
+| [Code 1-1](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_ClosedForm.html) | Check the observation space and action space of the environment |
+| [Code 1-2](https://zhiqingxiao.github.io/rl-book/en2022/codeMountainCar-v0_ClosedForm.html) | Closed-form agent for task `MountainCar-v0` |
+| [Code 1-3](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_ClosedForm.html) | Play an episode |
+| [Code 1-4](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCar-v0_ClosedForm.html) | Test the performance by playing 100 episodes |
+| [Code 1-5](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCarContinuous-v0_ClosedForm.html) | Check the observation space and action space of the task `MountainCarContinuous-v0` |
+| [Code 1-6](https://zhiqingxiao.github.io/rl-book/en2022/code/MountainCarContinuous-v0_ClosedForm.html) | Closed-form agent for task `MountainCarContinous-v0` |
 | [Code 2-1](https://zhiqingxiao.github.io/rl-book/en2022/code/HungryFull_demo.html) | Use the example Bellman expectation equation |
 | [Code 2-2](https://zhiqingxiao.github.io/rl-book/en2022/code/HungryFull_demo.html) | Example to solve Bellman optimal equation |
 | [Code 2-3](https://zhiqingxiao.github.io/rl-book/en2022/code/CliffWalking-v0_Bellman_demo.html) | Import the environment `CliffWalking-v0` and check its information |
@@ -31,14 +25,13 @@
 | [Code 3-9](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Use policy iteration to find the optimal policy and test it |
 | [Code 3-10](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | VI |
 | [Code 3-11](https://zhiqingxiao.github.io/rl-book/en2022/code/FrozenLake-v1_DP_demo.html) | Find the optimal policy using the value iteration algorithm |
-| [Code 4-1](https://github.com/openai/gym/blob/master/gym/spaces/tuple.py) | The class `gym.space.Tuple` |
-| [Code 4-2](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | Play an episode |
-| [Code 4-3](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | On-Policy MC evaluation |
-| [Code 4-4](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | Visualize a 3-dimension np.array, which can be indexed by a state |
-| [Code 4-5](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | On-policy MC update with exploring start |
-| [Code 4-6](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | MC update with soft policy |
-| [Code 4-7](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | Policy evaluation based on importance sampling |
-| [Code 4-8](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | Importance sampling policy optimization with soft policy |
+| [Code 4-1](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | Play an episode |
+| [Code 4-2](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | On-Policy MC evaluation |
+| [Code 4-3](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | Visualize a 3-dimension np.array, which can be indexed by a state |
+| [Code 4-4](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | On-policy MC update with exploring start |
+| [Code 4-5](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | MC update with soft policy |
+| [Code 4-6](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | Policy evaluation based on importance sampling |
+| [Code 4-7](https://zhiqingxiao.github.io/rl-book/en2022/code/Blackjack-v1_MonteCarlo_demo.html) | Importance sampling policy optimization with soft policy |
 | [Code 5-1](https://zhiqingxiao.github.io/rl-book/en2022/code/Taxi-v3_SARSA_demo.html) | Initialize and visualize the task |
 | [Code 5-2](https://zhiqingxiao.github.io/rl-book/en2022/code/Taxi-v3_SARSA_demo.html) | SARSA agent |
 | [Code 5-3](https://zhiqingxiao.github.io/rl-book/en2022/code/Taxi-v3_SARSA_demo.html) | Train the agent |
@@ -101,22 +94,19 @@
 | [Code 10-9](https://zhiqingxiao.github.io/rl-book/en2022/code/LunarLanderContinuous-v2_SACwA_tf.html) | SAC with automatic entropy adjustment for continuous action space (with TensorFlow) |
 | [Code 10-10](https://zhiqingxiao.github.io/rl-book/en2022/code/LunarLanderContinuous-v2_SACwA_torch.html) | SAC with automatic entropy adjustment for continuous action space (with PyTorch) |
 | [Code 11-1](https://zhiqingxiao.github.io/rl-book/en2022/code/BipedalWalker-v3_ClosedForm.html) | Closed-form solution of `BipedalWalker-v3` |
-| [Code 11-2](https://github.com/openai/gym/blob/master//gym/wrappers/transform_reward.py) | The class `gym.wrapper.TransformReward` |
-| [Code 11-3](https://zhiqingxiao.github.io/rl-book/en2022/code/BipedalWalker-v3_ES.html) | ES agent |
-| [Code 11-4](https://zhiqingxiao.github.io/rl-book/en2022/code/BipedalWalker-v3_ES.html) | Train and test ES agent |
-| [Code 11-5](https://zhiqingxiao.github.io/rl-book/en2022/code/BipedalWalker-v3_ARS.html) | ARS agent |
+| [Code 11-2](https://zhiqingxiao.github.io/rl-book/en2022/code/BipedalWalker-v3_ES.html) | ES agent |
+| [Code 11-3](https://zhiqingxiao.github.io/rl-book/en2022/code/BipedalWalker-v3_ES.html) | Train and test ES agent |
+| [Code 11-4](https://zhiqingxiao.github.io/rl-book/en2022/code/BipedalWalker-v3_ARS.html) | ARS agent |
 | [Code 12-1](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_ClosedForm.html) | Closed-form solution of `PongNoFrameskip-v4` |
-| [Code 12-2](https://github.com/openai/gym/blob/master/gym/wrappers/atari_preprocessing.py) | The class `gym.wrapper.AtariPreprocessing` |
-| [Code 12-3](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py) | The class `gym.wrapper.FrameStack` |
-| [Code 12-4](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_CategoricalDQN_tf.html) | Wrapped environment class |
-| [Code 12-5](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_CategoricalDQN_tf.html) | Categorical DQN agent (with TensorFlow) |
-| [Code 12-6](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_CategoricalDQN_torch.html) | Categorical DQN agent (with PyTorch) |
-| [Code 12-7](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_QRDQN_tf.html) | QR-DQN agent (with TensorFlow) |
-| [Code 12-8](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_QRDQN_torch.html) | QR-DQN agent (with PyTorch) |
-| [Code 12-9](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_IQN_tf.html) | Quantile network (with TensorFlow) |
-| [Code 12-10](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_IQN_torch.html) | Quantile network (with PyTorch) |
-| [Code 12-11](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_IQN_tf.html) | IQN agent (with TensorFlow) |
-| [Code 12-12](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_IQN_torch.html) | IQN agent (with PyTorch) |
+| [Code 12-2](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_CategoricalDQN_tf.html) | Wrapped environment class |
+| [Code 12-3](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_CategoricalDQN_tf.html) | Categorical DQN agent (with TensorFlow) |
+| [Code 12-4](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_CategoricalDQN_torch.html) | Categorical DQN agent (with PyTorch) |
+| [Code 12-5](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_QRDQN_tf.html) | QR-DQN agent (with TensorFlow) |
+| [Code 12-6](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_QRDQN_torch.html) | QR-DQN agent (with PyTorch) |
+| [Code 12-7](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_IQN_tf.html) | Quantile network (with TensorFlow) |
+| [Code 12-8](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_IQN_torch.html) | Quantile network (with PyTorch) |
+| [Code 12-9](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_IQN_tf.html) | IQN agent (with TensorFlow) |
+| [Code 12-10](https://zhiqingxiao.github.io/rl-book/en2022/code/PongNoFrameskip-v4_IQN_torch.html) | IQN agent (with PyTorch) |
 | [Code 13-1](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv-v0_demo.html) | The environment class `BernoulliMABEnv` |
 | [Code 13-2](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv-v0_demo.html) | Register the environment class `BernoulliMABEnv` into Gym |
 | [Code 13-3](https://zhiqingxiao.github.io/rl-book/en2022/code/BernoulliMABEnv-v0_demo.html) | $\epsilon$-greedy policy agent |

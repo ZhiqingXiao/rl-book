@@ -14739,7 +14739,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="k">pass</span>
 
-    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">termination</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">observation</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">terminated</span><span class="p">):</span>
         <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">observation</span><span class="p">)</span>
         <span class="n">action</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">policy</span><span class="p">[</span><span class="n">s</span><span class="p">]</span>
         <span class="k">return</span> <span class="n">action</span>
@@ -14767,19 +14767,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">play_boardgame2_episode</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">agent</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="n">observation</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
     <span class="n">winner</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">termination</span><span class="p">,</span> <span class="n">truncation</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span>
+    <span class="n">terminated</span><span class="p">,</span> <span class="n">truncated</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span>
     <span class="n">agent</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">)</span>
     <span class="n">elapsed_steps</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
             <span class="n">board</span><span class="p">,</span> <span class="n">player</span> <span class="o">=</span> <span class="n">observation</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">boardgame2</span><span class="o">.</span><span class="n">strfboard</span><span class="p">(</span><span class="n">board</span><span class="p">))</span>
-        <span class="n">action</span> <span class="o">=</span> <span class="n">agent</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">observation</span><span class="p">,</span> <span class="n">winner</span><span class="p">,</span> <span class="n">termination</span><span class="p">)</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="n">agent</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">observation</span><span class="p">,</span> <span class="n">winner</span><span class="p">,</span> <span class="n">terminated</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
             <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;step </span><span class="si">%d</span><span class="s1">：player </span><span class="si">%d</span><span class="s1">, action </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">elapsed_steps</span><span class="p">,</span> <span class="n">player</span><span class="p">,</span>
                     <span class="n">action</span><span class="p">)</span>
-        <span class="n">observation</span><span class="p">,</span> <span class="n">winner</span><span class="p">,</span> <span class="n">termination</span><span class="p">,</span> <span class="n">truncation</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">termination</span> <span class="ow">or</span> <span class="n">truncation</span><span class="p">:</span>
+        <span class="n">observation</span><span class="p">,</span> <span class="n">winner</span><span class="p">,</span> <span class="n">terminated</span><span class="p">,</span> <span class="n">truncated</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">terminated</span> <span class="ow">or</span> <span class="n">truncated</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
                 <span class="n">board</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">observation</span>
                 <span class="nb">print</span><span class="p">(</span><span class="n">boardgame2</span><span class="o">.</span><span class="n">strfboard</span><span class="p">(</span><span class="n">board</span><span class="p">))</span>

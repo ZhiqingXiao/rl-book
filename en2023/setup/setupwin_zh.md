@@ -10,7 +10,7 @@
 
 **步骤：**
 
-- 从https://www.anaconda.com/products/distribution下载Anaconda 3安装包（选择Windows版的安装包）。安装包名字像 `Anaconda3-2022.05-Windows-x86_64.exe`，大小约0.6GB。
+- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择Windows版的安装包）。安装包名字像 `Anaconda3-2022.10-Windows-x86_64.exe`，大小约0.6GB。
 - 双击安装包启动安装向导完成安装。需要安装在剩余空间大于13GB的硬盘上。（如果空间小于这个数，虽然也能完成Anaconda 3的安装，但是后续步骤的空间就不够了。13GB是后续所有步骤（除了安装Visual Studio以外）需要的空间。）安装过程中记下Anaconda的安装路径。默认路径为：`C:%HOMEPATH%\anaconda3`。后续操作会用到这个路径。
 
 #### 新建conda环境
@@ -31,17 +31,17 @@
 
 - 以管理员身份运行Anaconda Prompt，在目标conda环境中（你可以用`conda activate py310`进入名为`py310`的conda环境）执行下列命令：
    ```
-   conda install numpy, pandas, scipy, sympy, matplotlib
+   conda install numpy pandas scipy sympy matplotlib
    ```
 
-#### 安装`gym[classical_control]`、`gym[toy_text]`、 `gym[atari]`
+#### 安装`gym[classic_control]`、`gym[toy_text]`、 `gym[atari]`
 
 **步骤：**
 
 - 以管理员身份运行Anaconda Prompt，在目标conda环境中执行下列命令：
-  ```
-  pip install --upgrade gym[classical_control,toy_text,atari,accept-rom-license,other]
-  ```
+   ```
+   pip install --upgrade gym[classic_control,toy_text,atari,accept-rom-license,other]
+   ```
 
 #### 运行Jupyter Notebook
 
@@ -54,9 +54,9 @@
    C:
    cd C:%HOMEPATH%\Documents\Anaconda
    ```
-- 运行下列代码（用到了conda环境名，例如`py310`）：（注意代码只有一行）
+- 运行下列代码（用到了conda环境名，例如`py310`）：
    ```
-   C:%HOMEPATH%\anaconda3\python.exe C:%HOMEPATH%\cwp.py C:%HOMEPATH%\anaconda3\envs\py310 C:%HOMEPATH%\anaconda3\envs\py310\python.exe C:%HOMEPATH%\anaconda3\Scripts\jupyter-notebook-script.py C:%HOMEPATH%\Documents\Anaconda
+   C:%HOMEPATH%\anaconda3\python.exe C:%HOMEPATH%\anaconda3\cwp.py C:%HOMEPATH%\anaconda3\envs\py310 C:%HOMEPATH%\anaconda3\envs\py310\python.exe C:%HOMEPATH%\anaconda3\Scripts\jupyter-notebook-script.py C:%HOMEPATH%\Documents\Anaconda
    ```
 
 - 等待默认浏览器弹出。推荐您使用Chrome作为默认浏览器。
@@ -89,7 +89,6 @@ Visual Studio社区版是免费的，而且够用。装社区版就好了。
 **步骤：**（CPU版）
 
 - 安装TensorFlow和TensorFlow probability：以管理员身份运行Anaconda Prompt，在目标conda环境中执行下列命令
-   
    ```
    pip install --upgrade tensorflow tensorflow_probability
    ```
@@ -120,9 +119,9 @@ Visual Studio社区版是免费的，而且够用。装社区版就好了。
 **步骤：**
 
 - 以管理员身份运行Anaconda Prompt，在目标conda环境中执行下列命令：
-```
-  pip install --upgrade gym[box2d]
-```
+   ```
+   pip install --upgrade gym[box2d]
+   ```
 
 ## 第3.2部分：安装boardgame2
 
@@ -133,9 +132,9 @@ Visual Studio社区版是免费的，而且够用。装社区版就好了。
 **步骤：**
 
 - 以管理员身份运行Anaconda Prompt，在目标conda环境中执行下列命令以安装`boardgame2`：
-  ```
-  pip install --upgrade pybullet
-  ```
+   ```
+   pip install --upgrade pybullet
+   ```
 
 ## 第3.3部分：安装PyBullet
 
@@ -146,7 +145,7 @@ Visual Studio社区版是免费的，而且够用。装社区版就好了。
 **步骤：**
 
 - 以管理员身份运行Anaconda Prompt，在目标conda环境中执行下列命令：
-  ```
-  pip install --upgrade pybullet
-  ```
+   ```
+   pip install --upgrade pybullet
+   ```
 

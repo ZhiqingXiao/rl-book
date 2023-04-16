@@ -38,6 +38,7 @@
 * Pavlov, I. P. (1928). Lectures on Conditioned Reflexes, Volume 1 (English translation). International Publishers.
 * Robbins, H., Monro, S. (1951). A stochastic approximation algorithm. https://doi.org/10.1214/aoms/1177729586
 * Rummery, G. A., Niranjan, M. (1994). On-line Q-learning using connectionist systems. Technical Report CUED/F-INFENG/TR 166, Cambridge University.
+* Salimans, T., Ho, J., Chen, X. Sidor, S., Sutskever, I. (2017). Evolution strategies as a scalable alternative to reinforcement learning. https://arxiv.org/abs/1703.03864.
 * Samuel, A. L. (1959). Some studies in machine learning using the game of checkers. https://doi.org/10.1147/rd.441.0206
 * Schaul, T., Quan, J., Antonoglou, I., Silver, D. (2016). Prioritized experience replay. https://arxiv.org/abs/1511.05952
 * Schrittwieser, J., Antonoglou, I., Hubert, T., Simonyan, K., Sifre, L., Schmitt, S., ... Silver, D. (2020). Mastering Atari, Go, chess and shogi by planning with a learned model. https://doi.org/10.1038/s41586-020-03051-4

@@ -10,7 +10,7 @@ This part will show how to set up a minimum environment. After this step, you ar
 
 **Steps:**
 
-- Download the installer on https://www.anaconda.com/products/distribution (Pick Windows version for Windows users).The name of installer is alike `Anaconda3-2022.05-Windows-x86_64.exe`, and the size is about 0.6 GB.
+- Download the installer on https://www.anaconda.com/products/distribution (Pick Windows version for Windows users).The name of installer is alike `Anaconda3-2022.10-Windows-x86_64.exe`, and the size is about 0.6 GB.
 - Double click the installer to start the install wizard and install accordingly. The free space of the disk should be at least 13GB. (If the free space of the disk is too little, you may still be able to install Anaconda 3 itself, but you may not have enough free space in the follow-up steps. 13GB is the storage requirements for all steps in this article except Visual Studio.) Record the location of Anaconda installation. The default location is `C:%HOMEPATH%\anaconda3`. We will use the location in the sequal.
 
 #### Create a New Conda Environment
@@ -31,17 +31,17 @@ This step is strongly recommended but not compulsory.
 
 - Launch Anaconda Prompt as an Administrator, and execute the following commands in the target conda environment:
    ```
-   conda install numpy, pandas, scipy, sympy, matplotlib
+   conda install numpy pandas scipy sympy matplotlib
    ```
 
-#### Install `gym[classical_control]`, `gym[toy_text]`, and `gym[atari]`
+#### Install `gym[classic_control]`, `gym[toy_text]`, and `gym[atari]`
 
 **Steps:**
 
 - In the target conda environment (you can use `conda activate py310` to go to the conda environment `py310`), execute the following commands in Anaconda Prompt as an Administrator:
-  ```
-  pip install --upgrade gym[classical_control,toy_text,atari,accept-rom-license,other]
-  ```
+   ```
+   pip install --upgrade gym[classic_control,toy_text,atari,accept-rom-license,other]
+   ```
 
 #### Launch Jupyter Notebook
 
@@ -56,7 +56,7 @@ This step is strongly recommended but not compulsory.
    ```
 - Execute `python.exe` with the information of the conda environment (say `py310`) (note that the following command has only one line):
    ```
-   C:%HOMEPATH%\anaconda3\python.exe C:%HOMEPATH%\cwp.py C:%HOMEPATH%\anaconda3\envs\py310 C:%HOMEPATH%\anaconda3\envs\py310\python.exe C:%HOMEPATH%\anaconda3\Scripts\jupyter-notebook-script.py C:%HOMEPATH%\Documents\Anaconda
+   C:%HOMEPATH%\anaconda3\python.exe C:%HOMEPATH%\anaconda3\cwp.py C:%HOMEPATH%\anaconda3\envs\py310 C:%HOMEPATH%\anaconda3\envs\py310\python.exe C:%HOMEPATH%\anaconda3\Scripts\jupyter-notebook-script.py C:%HOMEPATH%\Documents\Anaconda
    ```
 
 - Wait for your default browser popping up. You are recommended to use Chrome.
@@ -89,7 +89,6 @@ Please install the latest version of Visual Studio before this step. Otherwise, 
 **Steps:** (CPU version)
 
 - Install TensorFlow and TensorFlow probability: Execute the following commands in Anaconda Prompt as an Administrator:
-   
    ```
    pip install --upgrade tensorflow tensorflow_probability
    ```
@@ -110,9 +109,9 @@ This part will show how to install `gym[box2d]` upon the environment with PyTorc
 **Steps:**
 
 - Get the installer of SWIG: http://www.swig.org/download.html. The URL of installer may be
-  http://prdownloads.sourceforge.net/swig/swigwin-4.0.2.zip. The size of installer is about 11MB.
+  http://prdownloads.sourceforge.net/swig/swigwin-4.1.0.zip. The size of installer is about 11MB.
 - Please unzip it into a permanent location, such as `%PROGRAMFILE%\swig` (this location requires administrator permission).
-- Add the directory containing the unzipped file `swig.exe`, such as `%PROGRAMFILE%\swig\swigwin-4.0.2`, to the `PATH` of system variable. (The way to set environment variables is as follows: Press “Windows+R” to open the “Run” window, and then type `sysdm.cpl` and press Enter to open “System Properties”. Go to the “Advanced” Tab and click “Environment Variables”, and select `PATH` in it and add the location to it.
+- Add the directory containing the unzipped file `swig.exe`, such as `%PROGRAMFILE%\swig\swigwin-4.1.0`, to the `PATH` of system variable. (The way to set environment variables is as follows: Press “Windows+R” to open the “Run” window, and then type `sysdm.cpl` and press Enter to open “System Properties”. Go to the “Advanced” Tab and click “Environment Variables”, and select `PATH` in it and add the location to it.
 - Restart the PC to ensure that the change of system environment is in effect.
 
 #### Install `gym[box2d]` in a Conda Environment
@@ -120,9 +119,9 @@ This part will show how to install `gym[box2d]` upon the environment with PyTorc
 **Steps:**
 
 - Execute the following command in Anaconda Prompt as an Administrator:
-```
-  pip install --upgrade gym[box2d]
-```
+   ```
+   pip install --upgrade gym[box2d]
+   ```
 
 ## Part 3.2: Install boardgame2
 
@@ -131,9 +130,9 @@ This part will show how to install `gym[box2d]` upon the environment with PyTorc
 **Steps:**
 
 - Execute the following command in Anaconda Prompt as an Administrator to install `boardgame2`:
-  ```
-  pip install --upgrade pybullet
-  ```
+   ```
+   pip install --upgrade pybullet
+   ```
 
 ## Part 3.3: Install PyBullet
 
@@ -144,6 +143,6 @@ This part will show how to install PyBullet upon the environment with PyTorch an
 **Steps:**
 
 - Execute the following command in Anaconda Prompt as an Administrator:
-  ```
-  pip install --upgrade pybullet
-  ```
+   ```
+   pip install --upgrade pybullet
+   ```

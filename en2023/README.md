@@ -138,7 +138,7 @@ Note:
 - 开发环境搭建：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/setupwin_zh.html)
 - 字母表：[链接](https://zhiqingxiao.github.io/rl-book/en2023/notation_zh.html)
 - 缩略语表：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/en2023/abbreviation_zh.md)
-- Gym源码解读：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/code_zh.md)
+- Gym源码解读：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/gym_zh.md)
 - 参考文献：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/en2023/bibliography.md)
 
 **QQ群**

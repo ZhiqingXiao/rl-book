@@ -1,31 +1,23 @@
+# 强化学习：原理与Python实战
 
-# Reinforcement Learning: Theory and Python Implementation
+**全球第一本配套 TensorFlow 2 和 PyTorch 1/2 对照代码的强化学习教程书**
 
-**The First Reinforcement Learning Tutorial Book with one-on-one mapping TensorFlow 2 and PyTorch 1&2 Implementation**
+![Book](https://zhiqingxiao.github.io/images/book/rlzh2023.jpg)
 
-| [English Edition](https://github.com/ZhiqingXiao/rl-book/tree/master/en2023) | [中文版](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2023) | [中文2019版](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2019) |
-| :---: | :---: | :---: |
-| [![Book](https://zhiqingxiao.github.io/rl-book/en2023/cover.jpg)](https://github.com/ZhiqingXiao/rl-book/tree/master/en2023) | [![Book](https://zhiqingxiao.github.io/rl-book/zh2023/resource/cover.jpg)](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2023) | [![Book](https://zhiqingxiao.github.io/rl-book/zh2019/resource/cover.jpg)](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2019) |
+**配套资源**
 
-Please email me if you are interested in publishing this book in other languages.
+- 习题参考答案：[链接](https://zhiqingxiao.github.io/rl-book/zh2023/choice.html)
+- 开发环境搭建：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/setupwin.html)
+- 数学字母表：[链接](https://zhiqingxiao.github.io/rl-book/zh2023/notation.html)
+- 缩略语表：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/abbreviation.md)
+- Gym源码解读：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/gym.md)
+- 参考文献：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/bibliography.md)
 
-**Features**
+**代码**
 
-This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
+列表索引：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/code.md)
 
-- Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.
-- Practice: Every chapter is accompanied by high quality implementation based on Python 3.10, Gym 0.26, and TensorFlow 2 / PyTorch 1&2. All codes are compatible with Windows, Linux, and macOS, can be run in a laptop. 
-
-
-### Supporting contents for English version
-
-Check [here](https://github.com/ZhiqingXiao/rl-book/tree/master/en2023) for codes, exercise answers, etc.
-
-### Table of Codes
-
-All codes have been saved as a .ipynb file and a .html file in the same directory.
-
-| Chapter | Environment & Closed-Form Policy | Agent |
+| 章 | 环境和闭式解 | 智能体 |
 | :--- | :--- | :--- |
 | 2 | [CliffWalking-v0](https://zhiqingxiao.github.io/rl-book/en2023/code/CliffWalking-v0_ClosedForm.html) | [Bellman](https://zhiqingxiao.github.io/rl-book/en2023/code/CliffWalking-v0_Bellman_demo.html) |
 | 3 | [FrozenLake-v1](https://zhiqingxiao.github.io/rl-book/en2023/code/FrozenLake-v1_ClosedForm.html)| [DP](https://zhiqingxiao.github.io/rl-book/en2023/code/FrozenLake-v1_DP_demo.html) |
@@ -42,21 +34,13 @@ All codes have been saved as a .ipynb file and a .html file in the same director
 | 13 | [BernoulliMAB-v0](https://zhiqingxiao.github.io/rl-book/en2023/code/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/en2023/code/BernoulliMABEnv_demo.html) |
 | 13 | [GaussianMAB-v0](https://zhiqingxiao.github.io/rl-book/en2023/code/BernoulliMABEnv_demo.html) | [UCB](https://zhiqingxiao.github.io/rl-book/en2023/code/GaussianMABEnv_demo.html) |
 | 14 | [TicTacToe-v0](https://zhiqingxiao.github.io/rl-book/en2023/code/TicTacToe-v0_ExhaustiveSearch.html) | AlphaZero [tf](https://zhiqingxiao.github.io/rl-book/en2023/code/TicTacToe-v0_AlphaZero_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2023/code/TicTacToe-v0_AlphaZero_torch.html)  |
-| 15 note | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
+| 15 注 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
 | 16 | [Tiger-v0](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_ClosedForm.html) | [VI](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_Plan_demo.html)
 
 
-Note:
-1. It does not work with Gym >=0.25 and PyBullet 3.2.4. It is because Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
+注:
+1. It does not work with Gym >=0.25 and PyBullet 3.2.4. 原因：Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
 
-
-# 强化学习：原理与Python实战
-
-**全球第一本配套 TensorFlow 2 和 PyTorch 1/2 对照代码的强化学习教程书**
-
-**中文版书籍支持内容**
-
-- 代码、勘误更新等见[这里](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2023)。
 
 **本书内容**
 
@@ -79,25 +63,77 @@ Note:
 - 兼容性好：所有代码在三大操作系统（Windows、macOS、Linux）上均可运行，书中给出了环境的安装和配置方法。深度强化学习代码还提供了 TensorFlow 和 PyTorch 对照代码。读者可任选其一。
 - 硬件要求低：所有代码均可在没有 GPU 的个人计算机上运行。
 
-# 强化学习：原理与Python实现
-
-**全球第一本配套 TensorFlow 2 代码的强化学习教程书**
-
-**中国第一本配套 TensorFlow 2 代码的纸质算法书**
-
-**中文版书籍支持内容**
-
-- 代码、勘误更新等见[这里](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2019)。
-
-**本书特色**
-
-本书介绍强化学习理论及其 Python 实现。
-- 理论完备：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等非深度强化学习算法和柔性执行者/评论者等深度强化学习算法。
-- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3.10、Gym 0.26 和 TensorFlow 2 + PyTorch 1/2，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
-
 **QQ群**
 
 - QQ群：722846914（勘误报错可发此群，其他问题提问前请先Google，群主和管理员不提供免费咨询服务）
 - 多任务群：696984257（非小白群，多任务强化学习+强化元学习+终身强化学习+迁移强化学习，勘误报错勿发此群，提问前请先Google）
-- 关于入群验证问题：由于QQ的bug，即使正确输入答案，也可能会验证失败。这时更换设备重试、更换输入法重试、改日重试均可能解决问题。如果答案中有英文字母，清注意大小写。
-- 中文版书前言中给出的QQ群（935702193、243613392和948110103）已满，不再新增群成员，谢谢理解。
+- 关于入群验证问题：由于QQ的bug，即使正确输入答案，也可能会验证失败。这时更换设备重试、更换输入法重试、改日重试均可能解决问题。如果答案中有英文字母，请注意大小写。
+
+**热心读者 [Anesck](https://github.com/anesck) 对本书知识点的梳理评注**
+
+[第1章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/1.chapter_one.html) 
+[第2章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/2.chapter_two.html) 
+[第3章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/3.chapter_three.html) 
+[第4章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/4.chapter_four.html) 
+[第5章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/5.chapter_five.html) 
+[第6章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/6.chapter_six.html) 
+[第7章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/7.chapter_seven.html) 
+[第8章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/8.chapter_eight.html) 
+[第9章](https://anesck.github.io/M-D-R_learning_notes/RLTPI/notes_html/9.chapter_nine.html) 
+
+**常见问题**
+
+- 问：Windows系统下安装TensorFlow或PyTorch失败。答：请在Windows 10/11里安装Visual Studio 2022（如果有旧版本的Visual Studio请先彻底卸载）。更多细节和安装问题请自行Google。PyTorch安装可参阅：https://mp.weixin.qq.com/s/uRx1XOPrfFOdMlRU6I-eyA
+
+- 问：在Visual Studio或Visual Studio Code或PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，只能在Jupyter Notebook里运行。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。（`display()`函数是Jupyter Notebook里才有的函数。）不需要安装Visual Studio Code或PyCharm。更多细节或其他错误请自行Google。
+
+- 问：GPU会比CPU跑的快么？答：没有用到TensorFlow和PyTorch的代码，不会用到GPU。用到TensorFlow和PyTorch的代码，由于网络一般不大，GPU反而可能更慢。PyTorch代码使用GPU时要把Tensor对象放在GPU上（可能需要修改代码）。
+
+# Reinforcement Learning: Theory and Python Implementation (Chinese 2023 edition)
+
+**The First Reinforcement Learning Tutorial Book with one-on-one mapping TensorFlow 2 and PyTorch 1/2 Implementation**
+
+**Features**
+
+This book comprehensively introduces the mainstream RL theory.
+
+- This book introduces the trunk of the modern RL theory in a systematically way. All major results are accompanied with proofs. We introduce the algorithms based on the theory, which covers all mainstream RL algorithms, including both classical RL algorithms such as eligibility trace and deep RL algorithm such as MuZero.
+- This book uses a consistent set of mathematical notations, which are compatible with mainstream RL tutorials.
+
+All chapters are accompanied with Python codes.
+
+- Easy to understand: All codes are implemented in a consistent and concise way, which directly maps to the explanation of algorithms.
+- Easy to check: All codes and running results are shown in GitHub. We can either browse them in the web browser, or download locally to run them. Every algorithm is implemented in a self-contained standalone file, which can be browsed and executed individually.
+- Diverse environments: We not only consider the built-in tasks in the library Gym, but also consider the third-party extension of the Gym. We even create environments for our own tasks.
+- Highly compatible: All codes can be run in any one of all three major operating systems (Windows, macOS, and Linux). The methods to setup the environments are provided. Deep RL algorithms are implemented based on both TensorFlow 2 and PyTorch 1&2, so that readers can choose any one among the two or have a one-to-one comparison.
+- Based on latest versions of software: All codes are based on the latest version of Python and its extension packages. The codes in GitHub will be updated according to the software update.
+- Little hardware requirement: All codes can be run in a PC without GPU.
+
+**Table of Contents**
+
+01. Introduction of Reinforcement Learning
+02. Markov Decision Process
+03. Model-based Numeric Iteration
+04. MC: Monte-Carlo Learning
+05. TD: Temporal Difference Learning
+06. Function Approximation
+07. PG: Policy Gradient
+08. AC: Actor-Critic
+09. DPG: Deterministic Policy Gradient
+10. Maximum-Entropy RL
+11. Policy-based Gradient-Free Algorithms
+12. Distributional RL
+13. Minimize Regret
+14. Tree Search
+15. IL and RLHF
+16. More Agent-Environment Interface
+
+**BibTeX**
+
+    @book{xiao2023,
+     title     = {Reinforcement Learning: Theory and {Python} Implementation},
+     author    = {Zhiqing Xiao}
+     year      = 2023,
+     publisher = {China Machine Press},
+    }
+

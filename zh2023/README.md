@@ -7,11 +7,12 @@
 **配套资源**
 
 - 习题参考答案：[链接](https://zhiqingxiao.github.io/rl-book/zh2023/choice.html)
-- 开发环境搭建：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/setupwin.html)
+- 开发环境搭建：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/setup/setupwin.html)
 - 数学字母表：[链接](https://zhiqingxiao.github.io/rl-book/zh2023/notation.html)
 - 缩略语表：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/abbreviation.md)
 - Gym源码解读：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/gym.md)
 - 参考文献：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/bibliography.md)
+- 勘误更新：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/errata/202307.md)
 
 **代码**
 
@@ -39,7 +40,7 @@
 
 
 注:
-1. It does not work with Gym >=0.25 and PyBullet 3.2.4. 原因：Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
+1. 此案例在 Gym >=0.25 且 PyBullet 3.2.4 的环境中无法工作。原因：Gym 0.25 把 `metadata["render.modes"]` 改成了 `metadata["render_modes"]`, 但是 PyBullet 未更新发行版。
 
 
 **本书内容**
@@ -134,6 +135,7 @@ All chapters are accompanied with Python codes.
      title     = {Reinforcement Learning: Theory and {Python} Implementation},
      author    = {Zhiqing Xiao}
      year      = 2023,
+     month     = 7,
      publisher = {China Machine Press},
     }
 

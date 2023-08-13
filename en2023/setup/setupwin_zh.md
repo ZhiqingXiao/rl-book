@@ -10,7 +10,7 @@
 
 **步骤：**
 
-- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择Windows版的安装包）。安装包名字像 `Anaconda3-2022.10-Windows-x86_64.exe`，大小约0.6GB。
+- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择Windows版的安装包）。安装包名字像 `Anaconda3-2023.07-2-Windows-x86_64.exe`，大小约0.9GB。
 - 双击安装包启动安装向导完成安装。需要安装在剩余空间大于13GB的硬盘上。（如果空间小于这个数，虽然也能完成Anaconda 3的安装，但是后续步骤的空间就不够了。13GB是后续所有步骤（除了安装Visual Studio以外）需要的空间。）安装过程中记下Anaconda的安装路径。默认路径为：`C:%HOMEPATH%\anaconda3`。后续操作会用到这个路径。
 
 #### 新建conda环境
@@ -19,17 +19,17 @@
 
 **步骤：**
 
-- 以管理员身份运行Anaconda Prompt，执行下列命令：（其中`py310`是conda环境名， 你也可以取其他名称）
+- 以管理员身份运行Anaconda Prompt，执行下列命令：（其中`py311`是conda环境名， 你也可以取其他名称）
    ```
-   conda create --name py310 python=3.10
-   conda activate py310
+   conda create --name py311 python=3.11
+   conda activate py311
    ```
 
 #### 安装Python扩展包：numpy、pandas等
 
 **步骤：**
 
-- 以管理员身份运行Anaconda Prompt，在目标conda环境中（你可以用`conda activate py310`进入名为`py310`的conda环境）执行下列命令：
+- 以管理员身份运行Anaconda Prompt，在目标conda环境中（你可以用`conda activate py311`进入名为`py311`的conda环境）执行下列命令：
    ```
    conda install numpy pandas scipy sympy matplotlib
    ```
@@ -54,9 +54,9 @@
    C:
    cd C:%HOMEPATH%\Documents\Anaconda
    ```
-- 运行下列代码（用到了conda环境名，例如`py310`）：
+- 运行下列代码（用到了conda环境名，例如`py311`）：
    ```
-   C:%HOMEPATH%\anaconda3\python.exe C:%HOMEPATH%\anaconda3\cwp.py C:%HOMEPATH%\anaconda3\envs\py310 C:%HOMEPATH%\anaconda3\envs\py310\python.exe C:%HOMEPATH%\anaconda3\Scripts\jupyter-notebook-script.py C:%HOMEPATH%\Documents\Anaconda
+   C:%HOMEPATH%\anaconda3\python.exe C:%HOMEPATH%\anaconda3\cwp.py C:%HOMEPATH%\anaconda3\envs\py311 C:%HOMEPATH%\anaconda3\envs\py311\python.exe C:%HOMEPATH%\anaconda3\Scripts\jupyter-notebook-script.py C:%HOMEPATH%\Documents\Anaconda
    ```
 
 - 等待默认浏览器弹出。推荐您使用Chrome作为默认浏览器。
@@ -109,9 +109,9 @@ Visual Studio社区版是免费的，而且够用。装社区版就好了。
 **步骤：**
 
 - 访问`http://www.swig.org/download.html`下载SWIG安装包。安装包的URL可能为
-  http://prdownloads.sourceforge.net/swig/swigwin-4.0.2.zip，大小约11MB。
+  http://prdownloads.sourceforge.net/swig/swigwin-4.1.1.zip，大小约11MB。
 - 将安装包解压到永久位置，例如`%PROGRAMFILE%\swig` （该位置需要管理员权限）。
-- 将解压后得到的文件中`swig.exe`所在的目录（如`%PROGRAMFILE%\swig\swigwin-4.0.2`）加到系统环境变量`PATH`中。（添加环境变量的方法是：用Windows+R打开“运行”窗口，输入`sysdm.cpl`并回车打开“系统属性”。然后在“高级”选项卡下找到“环境变量”，找到`PATH`并设置。
+- 将解压后得到的文件中`swig.exe`所在的目录（如`%PROGRAMFILE%\swig\swigwin-4.1.1`）加到系统环境变量`PATH`中。（添加环境变量的方法是：用Windows+R打开“运行”窗口，输入`sysdm.cpl`并回车打开“系统属性”。然后在“高级”选项卡下找到“环境变量”，找到`PATH`并设置。
 - 重启电脑确保环境变量生效。
 
 #### 在conda环境中安装`gym[box2d]`

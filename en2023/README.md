@@ -129,7 +129,7 @@ Note:
 
 
 注:
-1. It does not work with Gym >=0.25 and PyBullet 3.2.4. 原因：Gym 0.25 changed `metadata["render.modes"]` to `metadata["render_modes"]`, but PyBullet releases have not updated accordingly yet.
+1. 此案例在 Gym >=0.25 且 PyBullet 3.2.4 的环境中无法工作。原因：Gym 0.25 把 `metadata["render.modes"]` 改成了 `metadata["render_modes"]`, 但是 PyBullet 未更新发行版。
 
 
 ### 中英双语资源

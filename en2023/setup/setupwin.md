@@ -10,7 +10,7 @@ This part will show how to set up a minimum environment. After this step, you ar
 
 **Steps:**
 
-- Download the installer on https://www.anaconda.com/products/distribution (Pick Windows version for Windows users).The name of installer is alike `Anaconda3-2022.10-Windows-x86_64.exe`, and the size is about 0.6 GB.
+- Download the installer on https://www.anaconda.com/products/distribution (Pick Windows version for Windows users).The name of installer is alike `Anaconda3-2023.07-2-Windows-x86_64.exe`, and the size is about 0.9 GB.
 - Double click the installer to start the install wizard and install accordingly. The free space of the disk should be at least 13GB. (If the free space of the disk is too little, you may still be able to install Anaconda 3 itself, but you may not have enough free space in the follow-up steps. 13GB is the storage requirements for all steps in this article except Visual Studio.) Record the location of Anaconda installation. The default location is `C:%HOMEPATH%\anaconda3`. We will use the location in the sequal.
 
 #### Create a New Conda Environment
@@ -19,10 +19,10 @@ This step is strongly recommended but not compulsory.
 
 **Steps:**
 
-- Launch Anaconda Prompt as an Administrator, and execute the following commands: (where `py310` is the conda environment name, and you can change it to an other name.)
+- Launch Anaconda Prompt as an Administrator, and execute the following commands: (where `py311` is the conda environment name, and you can change it to an other name.)
    ```
-   conda create --name py310 python=3.10
-   conda activate py310
+   conda create --name py311 python=3.11
+   conda activate py311
    ```
 
 #### Install Packages: Numpy, Pandas, etc
@@ -38,7 +38,7 @@ This step is strongly recommended but not compulsory.
 
 **Steps:**
 
-- In the target conda environment (you can use `conda activate py310` to go to the conda environment `py310`), execute the following commands in Anaconda Prompt as an Administrator:
+- In the target conda environment (you can use `conda activate py311` to go to the conda environment `py311`), execute the following commands in Anaconda Prompt as an Administrator:
    ```
    pip install --upgrade gym[classic_control,toy_text,atari,accept-rom-license,other]
    ```
@@ -54,9 +54,9 @@ This step is strongly recommended but not compulsory.
    C:
    cd C:%HOMEPATH%\Documents\Anaconda
    ```
-- Execute `python.exe` with the information of the conda environment (say `py310`) (note that the following command has only one line):
+- Execute `python.exe` with the information of the conda environment (say `py311`) (note that the following command has only one line):
    ```
-   C:%HOMEPATH%\anaconda3\python.exe C:%HOMEPATH%\anaconda3\cwp.py C:%HOMEPATH%\anaconda3\envs\py310 C:%HOMEPATH%\anaconda3\envs\py310\python.exe C:%HOMEPATH%\anaconda3\Scripts\jupyter-notebook-script.py C:%HOMEPATH%\Documents\Anaconda
+   C:%HOMEPATH%\anaconda3\python.exe C:%HOMEPATH%\anaconda3\cwp.py C:%HOMEPATH%\anaconda3\envs\py311 C:%HOMEPATH%\anaconda3\envs\py311\python.exe C:%HOMEPATH%\anaconda3\Scripts\jupyter-notebook-script.py C:%HOMEPATH%\Documents\Anaconda
    ```
 
 - Wait for your default browser popping up. You are recommended to use Chrome.
@@ -109,9 +109,9 @@ This part will show how to install `gym[box2d]` upon the environment with PyTorc
 **Steps:**
 
 - Get the installer of SWIG: http://www.swig.org/download.html. The URL of installer may be
-  http://prdownloads.sourceforge.net/swig/swigwin-4.1.0.zip. The size of installer is about 11MB.
+  http://prdownloads.sourceforge.net/swig/swigwin-4.1.1.zip. The size of installer is about 11MB.
 - Please unzip it into a permanent location, such as `%PROGRAMFILE%\swig` (this location requires administrator permission).
-- Add the directory containing the unzipped file `swig.exe`, such as `%PROGRAMFILE%\swig\swigwin-4.1.0`, to the `PATH` of system variable. (The way to set environment variables is as follows: Press “Windows+R” to open the “Run” window, and then type `sysdm.cpl` and press Enter to open “System Properties”. Go to the “Advanced” Tab and click “Environment Variables”, and select `PATH` in it and add the location to it.
+- Add the directory containing the unzipped file `swig.exe`, such as `%PROGRAMFILE%\swig\swigwin-4.1.1`, to the `PATH` of system variable. (The way to set environment variables is as follows: Press “Windows+R” to open the “Run” window, and then type `sysdm.cpl` and press Enter to open “System Properties”. Go to the “Advanced” Tab and click “Environment Variables”, and select `PATH` in it and add the location to it.
 - Restart the PC to ensure that the change of system environment is in effect.
 
 #### Install `gym[box2d]` in a Conda Environment

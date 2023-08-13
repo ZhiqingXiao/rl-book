@@ -19,10 +19,10 @@ This step is strongly recommended but not compulsory.
 
 **Steps:**
 
-- Launch "Terminal", and execute the following commands: (where `py310` is the conda environment name, and you can change it to an other name.)
+- Launch "Terminal", and execute the following commands: (where `py311` is the conda environment name, and you can change it to an other name.)
    ```
-   conda create --name py310 python=3.10
-   conda activate py310
+   conda create --name py311 python=3.10
+   conda activate py311
    ```
 
 - In the new environment you may need to install jupyter:
@@ -43,7 +43,7 @@ This step is strongly recommended but not compulsory.
 
 **Steps:**
 
-- Execute the following commands in the target conda environment (you can use `conda activate py310` to go to the conda environment `py310`):
+- Execute the following commands in the target conda environment (you can use `conda activate py311` to go to the conda environment `py311`):
    ```
    pip install --upgrade 'gym[classic_control,toy_text,atari,accept-rom-license,other]'
    ```
@@ -58,9 +58,9 @@ This step is strongly recommended but not compulsory.
    ```
    cd ~/Documents/Anaconda
    ```
-- Execute `python` with the information of the conda environment (say `py310`):
+- Execute `python` with the information of the conda environment (say `py311`):
    ```
-   /opt/anaconda3/envs/py310/bin/jupyter-notebook
+   /opt/anaconda3/envs/py311/bin/jupyter-notebook
    ```
 
 - Wait for your default browser popping up. You are recommended to use Chrome.

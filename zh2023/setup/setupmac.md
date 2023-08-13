@@ -10,8 +10,8 @@
 
 **步骤：**
 
-- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择MacOS Graphical版的安装包）。安装包名字像 `Anaconda3-2022.10-MacOSX-x86_64.pkg`（M芯片版安装包名字像`Anaconda3-2022.10-MacOSX-amd64.pkg`），大小约0.7 GB（Mx芯片版约0.5 GB）。
-- 双击安装包启动安装向导完成安装。需要安装在剩余空间大于13GB的硬盘上。（如果空间小于这个数，虽然也能完成Anaconda 3的安装，但是后续步骤的空间就不够了。13GB是后续所有步骤需要的空间。）安装过程中记下Anaconda的安装路径。默认路径为：`/opt/anaconda3`。后续操作会用到这个路径。
+- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择MacOS Graphical版的安装包）。安装包名字像 `Anaconda3-2023.07-2-MacOSX-x86_64.pkg`（M芯片版安装包名字像`Anaconda3-2023.07-2-MacOSX-amd64.pkg`），大小约0.9 GB（Mx芯片版约0.9 GB）。
+- 双击安装包启动安装向导完成安装。需要安装在剩余空间大于13 GB的硬盘上。（如果空间小于这个数，虽然也能完成Anaconda 3的安装，但是后续步骤的空间就不够了。13GB是后续所有步骤需要的空间。）安装过程中记下Anaconda的安装路径。默认路径为：`/opt/anaconda3`。后续操作会用到这个路径。
 
 #### 新建conda环境
 
@@ -19,10 +19,10 @@
 
 **步骤：**
 
-- 运行“终端”，执行下列命令：（其中`py310`是conda环境名， 你也可以取其他名称）
+- 运行“终端”，执行下列命令：（其中`py311`是conda环境名， 你也可以取其他名称）
    ```
-   conda create --name py310 python=3.10
-   conda activate py310
+   conda create --name py311 python=3.11
+   conda activate py311
    ```
 - 在新的conda目标环境中可以用下列命令安装jupyter:
    ```
@@ -33,7 +33,7 @@
 
 **步骤：**
 
-- 在目标conda环境中（你可以在终端中用`conda activate py310`进入名为`py310`的conda环境）执行下列命令：
+- 在目标conda环境中（你可以在终端中用`conda activate py311`进入名为`py311`的conda环境）执行下列命令：
    ```
    conda install numpy pandas scipy sympy matplotlib
    ```
@@ -58,9 +58,9 @@
    C:
    cd C:%HOMEPATH%\Documents\Anaconda
    ```
-- 运行下列代码（用到了conda环境名，例如`py310`）：
+- 运行下列代码（用到了conda环境名，例如`py311`）：
    ```
-   /opt/anaconda3/envs/py310/bin/jupyter-notebook
+   /opt/anaconda3/envs/py311/bin/jupyter-notebook
    ```
 
 - 等待默认浏览器弹出。推荐您使用Chrome作为默认浏览器。

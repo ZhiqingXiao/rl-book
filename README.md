@@ -5,7 +5,7 @@
 
 | [English Edition](https://github.com/ZhiqingXiao/rl-book/tree/master/en2023) | [中文版](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2023) | [中文2019版](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2019) |
 | :---: | :---: | :---: |
-| [![Book](https://zhiqingxiao.github.io/rl-book/en2023/cover.jpg)](https://github.com/ZhiqingXiao/rl-book/tree/master/en2023) | [![Book](https://zhiqingxiao.github.io/rl-book/zh2023/resource/cover.jpg)](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2023) | [![Book](https://zhiqingxiao.github.io/rl-book/zh2019/resource/cover.jpg)](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2019) |
+| [![Book](https://zhiqingxiao.github.io/rl-book/en2023/cover.jpg)](https://github.com/ZhiqingXiao/rl-book/tree/master/en2023) | [![Book](https://zhiqingxiao.github.io/rl-book/zh2023/cover.jpg)](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2023) | [![Book](https://zhiqingxiao.github.io/rl-book/zh2019/resource/cover.jpg)](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2019) |
 
 Please email me if you are interested in publishing this book in other languages.
 
@@ -56,7 +56,7 @@ Note:
 
 **中文版书籍支持内容**
 
-- 代码、勘误更新等见[这里](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2023)。
+- 代码、习题答案、勘误更新等配套资源见[这里](https://github.com/ZhiqingXiao/rl-book/tree/master/zh2023)。
 
 **本书内容**
 
@@ -79,7 +79,7 @@ Note:
 - 兼容性好：所有代码在三大操作系统（Windows、macOS、Linux）上均可运行，书中给出了环境的安装和配置方法。深度强化学习代码还提供了 TensorFlow 和 PyTorch 对照代码。读者可任选其一。
 - 硬件要求低：所有代码均可在没有 GPU 的个人计算机上运行。
 
-# 强化学习：原理与Python实现
+# 强化学习：原理与Python实现 (2018)
 
 **全球第一本配套 TensorFlow 2 代码的强化学习教程书**
 

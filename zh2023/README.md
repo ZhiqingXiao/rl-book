@@ -7,7 +7,7 @@
 **配套资源**
 
 - 习题参考答案：[链接](https://zhiqingxiao.github.io/rl-book/zh2023/choice.html)
-- 开发环境搭建：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/setup/setupwin.html)
+- 开发环境搭建：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/setup/setupwin.md)
 - 数学字母表：[链接](https://zhiqingxiao.github.io/rl-book/zh2023/notation.html)
 - 缩略语表：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/abbreviation.md)
 - Gym源码解读：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/gym.md)

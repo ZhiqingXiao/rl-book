@@ -3,7 +3,7 @@
 | \# | 代码内容 |
 | --- | --- |
 | [代码1-1](https://zhiqingxiao.github.io/rl-book/en2023/code/MountainCar-v0_ClosedForm.html) | 查看`MountainCar-v0`的观测空间和动作空间 |
-| [代码1-2](https://zhiqingxiao.github.io/rl-book/en2023/codeMountainCar-v0_ClosedForm.html) | 根据指定确定性策略决定动作的智能体，用于`MountainCar-v0` |
+| [代码1-2](https://zhiqingxiao.github.io/rl-book/en2023/code/MountainCar-v0_ClosedForm.html) | 根据指定确定性策略决定动作的智能体，用于`MountainCar-v0` |
 | [代码1-3](https://zhiqingxiao.github.io/rl-book/en2023/code/MountainCar-v0_ClosedForm.html) | 智能体和环境交互一个回合的代码 |
 | [代码1-4](https://zhiqingxiao.github.io/rl-book/en2023/code/MountainCar-v0_ClosedForm.html) | 运行100回合求平均以测试性能 |
 | [代码1-5](https://zhiqingxiao.github.io/rl-book/en2023/code/MountainCarContinuous-v0_ClosedForm.html) | 查看`MountainCarContinuous-v0`的观测空间和动作空间 |

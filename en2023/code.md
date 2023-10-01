@@ -3,7 +3,7 @@
 | \# | Caption |
 | --- | --- |
 | [Code 1-1](https://zhiqingxiao.github.io/rl-book/en2023/code/MountainCar-v0_ClosedForm.html) | Check the observation space and action space of the environment |
-| [Code 1-2](https://zhiqingxiao.github.io/rl-book/en2023/codeMountainCar-v0_ClosedForm.html) | Closed-form agent for task `MountainCar-v0` |
+| [Code 1-2](https://zhiqingxiao.github.io/rl-book/en2023/code/MountainCar-v0_ClosedForm.html) | Closed-form agent for task `MountainCar-v0` |
 | [Code 1-3](https://zhiqingxiao.github.io/rl-book/en2023/code/MountainCar-v0_ClosedForm.html) | Play an episode |
 | [Code 1-4](https://zhiqingxiao.github.io/rl-book/en2023/code/MountainCar-v0_ClosedForm.html) | Test the performance by playing 100 episodes |
 | [Code 1-5](https://zhiqingxiao.github.io/rl-book/en2023/code/MountainCarContinuous-v0_ClosedForm.html) | Check the observation space and action space of the task `MountainCarContinuous-v0` |

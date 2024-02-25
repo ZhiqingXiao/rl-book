@@ -42,6 +42,7 @@
 | GAIL | Generative Adversarial Imitation Learning |
 | GAN | Generative Adversarial Network |
 | GP | Gaussian Process |
+| GPT | Generative Pre-trained Transformer |
 | GPU | Graphics Processing Unit |
 | HRL | Hierarchical Reinforcement Learning |
 | IL | Imitation Learning |
@@ -78,6 +79,7 @@
 | RAM | Random Access Memory |
 | ReLU | Rectified Linear Unit |
 | RL | Reinforcement Learning |
+| RLHF | Reinforcement Learning with Human Feedback |
 | SAC | Soft Actor–Critic |
 | SARSA | State-Action-Reward-State-Action |
 | SGD | Stochastic Gradient Descent  |

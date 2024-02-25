@@ -10,7 +10,7 @@ This part will show how to set up a minimum environment. After this step, you ar
 
 **Steps:**
 
-- Download the installer on https://www.anaconda.com/products/distribution (Pick Windows version for Windows users).The name of installer is alike `Anaconda3-2023.07-2-Windows-x86_64.exe`, and the size is about 0.9 GB.
+- Download the installer on https://www.anaconda.com/products/distribution (Pick Windows version for Windows users).The name of installer is alike `Anaconda3-2023.09-0-Windows-x86_64.exe`, and the size is about 0.9 GB.
 - Double click the installer to start the install wizard and install accordingly. The free space of the disk should be at least 13GB. (If the free space of the disk is too little, you may still be able to install Anaconda 3 itself, but you may not have enough free space in the follow-up steps. 13GB is the storage requirements for all steps in this article except Visual Studio.) Record the location of Anaconda installation. The default location is `C:%HOMEPATH%\anaconda3`. We will use the location in the sequal.
 
 #### Create a New Conda Environment
@@ -138,11 +138,15 @@ This part will show how to install `gym[box2d]` upon the environment with PyTorc
 
 Codes in Chapter 15 use PyBullet. You can skip this part if you do not care the codes in Chapter 15.
 
-This part will show how to install PyBullet upon the environment with PyTorch and/or TensorFlow in Part 2. Upon completed, you are able to run codes in Chapter 1-9, 12-13, 15-16. If you complete all of Part 3.1-3.3, you are able to run codes in all chapters.
+Since PyBullet depends on an old version of Gym, so it is better install it in a new conda environment so that it will not pollute current conda environment.
 
 **Steps:**
 
-- Execute the following command in Anaconda Prompt as an Administrator:
+- Create a new conda environment
+
+- Install packages such as Gym in the new environment.
+
+- Execute the following command in the target conda environment:
    ```
    pip install --upgrade pybullet
    ```

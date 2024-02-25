@@ -42,6 +42,7 @@
 | GAIL | 生成对抗模仿学习 | Generative Adversarial Imitation Learning |
 | GAN | 生成对抗网络 | Generative Adversarial Network |
 | GP | Gaussian过程 | Gaussian Process |
+| GPT | 生成性预变换模型 | Generative Pre-trained Transformer |
 | GPU | 图形处理器 | Graphics Processing Unit |
 | HRL | 分层强化学习 | Hierarchical Reinforcement Learning |
 | IL | 模仿学习 | Imitation Learning |
@@ -78,6 +79,7 @@
 | RAM | 随机存取存储器 | Random Access Memory |
 | ReLU | 修正线性单元 | Rectified Linear Unit |
 | RL | 强化学习 | Reinforcement Learning |
+| RLHF | 人类反馈强化学习 | Reinforcement Learning with Human Feedback |
 | SAC | 柔性执行者/评论者算法 | Soft Actor–Critic |
 | SARSA | 状态/动作/奖励/状态/动作 | State-Action-Reward-State-Action |
 | SGD | 随机梯度下降 | Stochastic Gradient Descent  |

@@ -10,7 +10,7 @@
 
 **步骤：**
 
-- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择Windows版的安装包）。安装包名字像 `Anaconda3-2023.07-2-Windows-x86_64.exe`，大小约0.9GB。
+- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择Windows版的安装包）。安装包名字像 `Anaconda3-2023.09-0-Windows-x86_64.exe`，大小约0.9GB。
 - 双击安装包启动安装向导完成安装。需要安装在剩余空间大于13GB的硬盘上。（如果空间小于这个数，虽然也能完成Anaconda 3的安装，但是后续步骤的空间就不够了。13GB是后续所有步骤（除了安装Visual Studio以外）需要的空间。）安装过程中记下Anaconda的安装路径。默认路径为：`C:%HOMEPATH%\anaconda3`。后续操作会用到这个路径。
 
 #### 新建conda环境
@@ -140,9 +140,13 @@ Visual Studio社区版是免费的，而且够用。装社区版就好了。
 
 第15章代码需要PyBullet，本部分安装PyBullet。如果您不想看这章代码，可以略过此步，不影响其他部分。
 
-本步骤可基于第2部分安装好的环境。完成此步后可以运行第1-9章、第12-13章、第15-16章代码。完成了全部的第3.1-3.3部分后可以运行所有章节的代码。
+由于PyBullet需要用到旧版的Gym，所以最好为PyBullet单独建一个环境，以免污染现有环境。
 
 **步骤：**
+
+- 新建Anaconda环境。
+
+- 在新Anaconda环境里安装Gym等。
 
 - 以管理员身份运行Anaconda Prompt，在目标conda环境中执行下列命令：
    ```

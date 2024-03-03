@@ -42,8 +42,8 @@ All chapters are accompanied with Python codes.
 ### Resources
 
 - Reference answers of multiple choices: [link](https://zhiqingxiao.github.io/rl-book/en2023/choice.html)
-- Guide to set up developing environment: [link](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/setup/setupwin.md)
-- Table of notations: [link](https://zhiqingxiao.github.io/rl-book/en2023/notation.html)
+- Guide to set up developing environment: [Windows](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/setup/setupwin.md) [macOS](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/setup/setupmac.md)
+- Table of notations: [link](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/notation.md)
 - Table of abbreviations: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2023/abbreviation.md)
 - Gym Internal: [link](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/gym.md)
 - Bibliography: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2023/bibliography.md)
@@ -135,10 +135,10 @@ Note:
 ### 中英双语资源
 
 - 习题参考答案：[链接](https://zhiqingxiao.github.io/rl-book/en2023/choice.html)
-- 开发环境搭建：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/setupwin_zh.html)
-- 字母表：[链接](https://zhiqingxiao.github.io/rl-book/en2023/notation_zh.html)
+- 开发环境搭建：[Windows](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/setup/setupwin.md) [macOS](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/setup/setupmac.md)
+- 字母表：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/notation_zh.md)
 - 缩略语表：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/en2023/abbreviation_zh.md)
-- Gym源码解读：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/en2023/gym_zh.md)
+- Gym源码解读：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/gym.md)
 - 参考文献：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/en2023/bibliography.md)
 
 **QQ群**

@@ -1,18 +1,20 @@
 # 强化学习：原理与Python实战
 
-**全球第一本配套 TensorFlow 2 和 PyTorch 1/2 对照代码的强化学习教程书**
+**全球首本配套 TensorFlow 2 和 PyTorch 1/2 对照代码的强化学习教程书**
+
+**剖析 ChatGPT 关键技术 PPO 和 RLHF **
 
 ![Book](https://zhiqingxiao.github.io/images/book/rlzh2023.jpg)
 
 **配套资源**
 
 - 习题参考答案：[链接](https://zhiqingxiao.github.io/rl-book/zh2023/choice.html)
-- 开发环境搭建：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/setup/setupwin.md)
-- 数学字母表：[链接](https://zhiqingxiao.github.io/rl-book/zh2023/notation.html)
+- 开发环境搭建：[Windows](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/setupwin.md) [macOS](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/setupmac.md)
+- 数学字母表：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/notation.md)
 - 缩略语表：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/abbreviation.md)
 - Gym源码解读：[链接](https://github.com/ZhiqingXiao/rl-book/blob/master/zh2023/gym.md)
 - 参考文献：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/bibliography.md)
-- 勘误更新：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/errata/202307.md)
+- 勘误更新：[链接](https://github.com/zhiqingxiao/rl-book/blob/master/zh2023/errata.md)
 
 **代码**
 

@@ -74,11 +74,11 @@ $p_ \ast\left({\mathsfit{s'},\mathsfit{a'}|\mathsfit{s},\mathsfit{a}}\right)=\pi
 
 ## 第49页知识卡片里最后一行
 
-$\mathbfit{y}\ge0$
+$\mathbfit{y}\geqslant0$
 
 #### 改为
 
-$\mathbfit{y}\ge\mathbf{0}$
+$\mathbfit{y}\geqslant\mathbf{0}$
 
 
 ## 第62页第2组通栏数学表达式
@@ -101,13 +101,13 @@ $\max\limits_ {\mathsfit{s}''}\left|v'\left(\mathsfit{s}''\right)-v''\left(\math
 
 ## 第62页第3组通栏数学表达式
 
-$\le\gamma\sum\limits_ {\mathsfit{s}'}p\left(\mathsfit{s}'\middle\vert\mathsfit{s},\mathsfit{a}\right)\sum\limits_ {\mathsfit{a}'}\pi\left(\mathsfit{a}\middle\vert\mathsfit{s}'\right)\max\limits_ {\mathsfit{s}',\mathsfit{a}'}\left|q'\left(\mathsfit{s},\mathsfit{a}\right)-q''\left(\mathsfit{s},\mathsfit{a}\right)\right|$
+$\leqslant\gamma\sum\limits_ {\mathsfit{s}'}p\left(\mathsfit{s}'\middle\vert\mathsfit{s},\mathsfit{a}\right)\sum\limits_ {\mathsfit{a}'}\pi\left(\mathsfit{a}\middle\vert\mathsfit{s}'\right)\max\limits_ {\mathsfit{s}',\mathsfit{a}'}\left|q'\left(\mathsfit{s},\mathsfit{a}\right)-q''\left(\mathsfit{s},\mathsfit{a}\right)\right|$
 
 $=\gamma\sum\limits_ {\mathsfit{s}'}p\left(\mathsfit{s}'\middle\vert\mathsfit{s},\mathsfit{a}\right)\sum\limits_ {\mathsfit{a}'}\pi\left(\mathsfit{a}\middle\vert\mathsfit{s}'\right)d_ \infty\left(q',q''\right)$
 
 #### 改为
 
-$\le\gamma\sum\limits_ {\mathsfit{s}'}p\left(\mathsfit{s}'\middle\vert\mathsfit{s},\mathsfit{a}\right)\sum\limits_ {\mathsfit{a}'}\pi\left(\mathsfit{a}'\middle\vert\mathsfit{s}'\right)\max\limits_ {\mathsfit{s}'',\mathsfit{a}''}\left|q'\left(\mathsfit{s}'',\mathsfit{a}''\right)-q''\left(\mathsfit{s}'',\mathsfit{a}''\right)\right|$
+$\leqslant\gamma\sum\limits_ {\mathsfit{s}'}p\left(\mathsfit{s}'\middle\vert\mathsfit{s},\mathsfit{a}\right)\sum\limits_ {\mathsfit{a}'}\pi\left(\mathsfit{a}'\middle\vert\mathsfit{s}'\right)\max\limits_ {\mathsfit{s}'',\mathsfit{a}''}\left|q'\left(\mathsfit{s}'',\mathsfit{a}''\right)-q''\left(\mathsfit{s}'',\mathsfit{a}''\right)\right|$
 
 $=\gamma\sum\limits_ {\mathsfit{s}'}p\left(\mathsfit{s}'\middle\vert\mathsfit{s},\mathsfit{a}\right)\sum\limits_ {\mathsfit{a}'}\pi\left(\mathsfit{a}'\middle\vert\mathsfit{s}'\right)d_ \infty\left(q',q''\right)$
 
@@ -246,6 +246,7 @@ $v_ \pi^\left(\text{H}\right)\left(\mathsfit{s},\mathsfit{a}\right)$
 
 $v_ \pi^\left(\text{H}\right)\left(\mathsfit{s}\right)$
 
+
 ## 第273页10.1.3节小节标题之前的一组通栏数学表达式
 
 $\pi_ \pi^{\left(\text{H}\right)}$
@@ -372,6 +373,7 @@ $U^{\left(v\right)}$
 
 
 ## 第326页倒数第2行
+
 类别分布 $p^{\left(\cdot\right)}\left(\cdot,\cdot\right)$ 和自
 
 #### 成为
@@ -380,6 +382,7 @@ $U^{\left(v\right)}$
 
 
 ## 第330-331页知识卡片第2-5段
+
 考虑随机变量 $X$ 的在给定累积概率值 $\omega\in\left[0,1\right]$ 下的分位数 $\phi_ X\left(\omega\right)$。 $\phi_ X\left(\omega\right)>X$ 的概率是 $\omega$，……
 
 （证明：……
@@ -442,7 +445,7 @@ $\frac1c\sum\limits_ {i=0}^{c-1}{\ell_ \text{QR}\left(x_ i-\phi\right)}$
 
 ## 第363页倒数第4行
 
-于任意的正整数 $c_ \mathsfit{a}\ge\underline{c}_ \kappa\left(\mathsfit{a}\right)$ ，有 $q\left(\mathsfit{a}_ \ast\right)\le q\left(\mathsfit{a}\right)+\sqrt{\frac{2\ln\kappa}{c_ \mathsfit{a}}}+\sqrt{\frac{2\ln\kappa }{c_ \mathsfit{a}}}$
+于任意的正整数 $c_ \mathsfit{a}\geqslant\underline{c}_ \kappa\left(\mathsfit{a}\right)$ ，有 $q\left(\mathsfit{a}_ \ast\right)\le q\left(\mathsfit{a}\right)+\sqrt{\frac{2\ln\kappa}{c_ \mathsfit{a}}}+\sqrt{\frac{2\ln\kappa }{c_ \mathsfit{a}}}$
 
 #### 改为
 
@@ -451,7 +454,7 @@ $\frac1c\sum\limits_ {i=0}^{c-1}{\ell_ \text{QR}\left(x_ i-\phi\right)}$
 
 ## 第363页倒数第2行
 
-$c_ \mathsfit{a}\ge\underline{c}_ \kappa\left(\mathsfit{a}\right)$
+$c_ \mathsfit{a}\geqslant\underline{c}_ \kappa\left(\mathsfit{a}\right)$
 
 #### 改为
 
@@ -460,7 +463,7 @@ $c_ \mathsfit{a}>\underline{c}_ \kappa\left(\mathsfit{a}\right)$
 
 ## 第365页倒数第6行，第365页第2行（共2处）
 
-$c_ \kappa\left(\mathsfit{a}\right)\ge\underline{c}_ \kappa\left(\mathsfit{a}\right)$
+$c_ \kappa\left(\mathsfit{a}\right)\geqslant\underline{c}_ \kappa\left(\mathsfit{a}\right)$
 
 #### 改为
 
@@ -506,21 +509,21 @@ $2\exp\left(-\frac{2c_ {\kappa,t}\left(\mathsfit{s},\mathsfit{a}\right)\varepsil
 ## 第372页倒数第6行
 
 $\Pr\left[\left|\sum\limits_ {\mathsfit{s'}}{p_ {\kappa,t}\left(\mathsfit{s'}\middle\vert\mathsfit{s},\mathsfit{a}\right)v_ \ast\left(\mathsfit{s'}\right)}-\sum\limits_ {\mathsfit{s'}}{p\left(\mathsfit{s'}\middle\vert\mathsfit{s},\mathsfit{a}\right)v_ \ast\left(\mathsfit{s'}\right)}\right|
-\ge{g_ \max}\sqrt{\frac{\ln 2\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}{c_ {\kappa,t}\left(\mathsfit{s},\mathsfit{a}\right)}}\right]$
+\geqslant{g_ \max}\sqrt{\frac{\ln 2\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}{c_ {\kappa,t}\left(\mathsfit{s},\mathsfit{a}\right)}}\right]$
 
 #### 改为
 
 $\Pr\left[\left|\sum\limits_ {\mathsfit{s'}}{p_ {\kappa,t}\left(\mathsfit{s'}\middle\vert\mathsfit{s},\mathsfit{a}\right)v_ \ast\left(\mathsfit{s'}\right)}-\sum\limits_ {\mathsfit{s'}}{p\left(\mathsfit{s'}\middle\vert\mathsfit{s},\mathsfit{a}\right)v_ \ast\left(\mathsfit{s'}\right)}\right|
-\ge{g_ \max}\sqrt{\frac{\ln 2\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}{2c_ {\kappa,t}\left(\mathsfit{s},\mathsfit{a}\right)}}\right]$
+\geqslant{g_ \max}\sqrt{\frac{\ln 2\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}{2c_ {\kappa,t}\left(\mathsfit{s},\mathsfit{a}\right)}}\right]$
 
 
 ## 第372页倒数第4行
 
-$\sqrt{\ln 2\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}\le 2\sqrt{\ln\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}$
+$\sqrt{\ln2\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}\leqslant2\sqrt{\ln\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}$
 
 #### 改为
 
-$\sqrt{\frac{1}{2}\ln 2\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}\le 2\sqrt{\ln\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}$
+$\sqrt{\frac12\ln2\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}\leqslant2\sqrt{\ln\left|\mathcal{S}\right|\left|\mathcal{A}\right|{k^2}t_ \max^2}$
 
 
 ## 第373页倒数第4行，第374页第3行，第374页第5行第10行第11行第12行第15行第16行第19行，第375页第6行第7行第11行。
@@ -578,7 +581,7 @@ $\left(R-r\left(\mathsfit{S},\mathsfit{A}\right)\right)^2$
 
 ## 第424页最后一行
 
-$\ge\mathop\sup\limits_ {\psi:\mathcal{X}\to\mathbb{R}}\sum\limits_ \mathsfit{x}{q\left(\mathsfit{x}\right)\left(\psi\left(\mathsfit{x}\right)\frac{p\left(\mathsfit{x}\right)}{q\left(\mathsfit{x}\right)}-f^\ast\left(\psi\left(\mathsfit{x}\right)\right)\right)}$
+$\geqslant\mathop\sup\limits_ {\psi:\mathcal{X}\to\mathbb{R}}\sum\limits_ \mathsfit{x}{q\left(\mathsfit{x}\right)\left(\psi\left(\mathsfit{x}\right)\frac{p\left(\mathsfit{x}\right)}{q\left(\mathsfit{x}\right)}-f^\ast\left(\psi\left(\mathsfit{x}\right)\right)\right)}$
 
 #### 改为
 
@@ -596,11 +599,11 @@ $d_ \text{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\le
 
 ## 第427页第5行
 
-$d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left(\cdot,\cdot\right)\right)\le\frac{\gamma}{1-\gamma}\mathrm{E}_ {\mathsfit{S}\sim\rho_ {\pi''}}\left[d_ \mathrm{TV}\left(\pi'\left(\cdot\middle\vert\mathsfit{S}\right)\middle\|\pi''\left(\cdot\middle\vert\mathsfit{S}\right)\right)\right]$
+$d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left(\cdot,\cdot\right)\right)\leqslant\frac{\gamma}{1-\gamma}\mathrm{E}_ {\mathsfit{S}\sim\rho_ {\pi''}}\left[d_ \mathrm{TV}\left(\pi'\left(\cdot\middle\vert\mathsfit{S}\right)\middle\|\pi''\left(\cdot\middle\vert\mathsfit{S}\right)\right)\right]$
 
 #### 改为
 
-$d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left(\cdot,\cdot\right)\right)\le\frac{1}{1-\gamma}\mathrm{E}_ {\mathsfit{S}\sim\rho_ {\pi''}}\left[d_ \mathrm{TV}\left(\pi'\left(\cdot\middle\vert\mathsfit{S}\right)\middle\|\pi''\left(\cdot\middle\vert\mathsfit{S}\right)\right)\right]$
+$d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left(\cdot,\cdot\right)\right)\leqslant\frac{1}{1-\gamma}\mathrm{E}_ {\mathsfit{S}\sim\rho_ {\pi''}}\left[d_ \mathrm{TV}\left(\pi'\left(\cdot\middle\vert\mathsfit{S}\right)\middle\|\pi''\left(\cdot\middle\vert\mathsfit{S}\right)\right)\right]$
 
 
 ## 第450页最后2行
@@ -614,6 +617,64 @@ $=\sum\limits_ {\mathsfit{s'},r}{p\left(\mathsfit{s'},r\middle\vert\mathsfit{s},
 $=\sum\limits_ {\mathsfit{s'},\tilde r}{\tilde p\left(\mathsfit{s'},\tilde r\middle\vert\mathsfit{s},\mathsfit{a}\right)\left[\tilde r+{\tilde v}_ \pi\left(\mathsfit{s'}\right)\right]}$
 
 $=\sum\limits_ {\mathsfit{s'},r}{p\left(\mathsfit{s'},r\middle\vert\mathsfit{s},\mathsfit{a}\right)\left[r-{\bar r}_ \pi+{\tilde v}_ \pi\left(\mathsfit{s'}\right)\right]}$
+
+
+## 第451页第4组通栏数学表达式第2行
+
+$p_ \pi\left(\mathsfit{s'}\middle\vert\mathsfit{s},\mathsfit{a}\right)$
+
+#### 改为
+
+$p\left(\mathsfit{s'}\middle\vert\mathsfit{s},\mathsfit{a}\right)$
+
+
+## 第453页第4组通栏数学表达式
+
+状态价值： $\bar{v}_ \ast\left(\mathsfit{s}\right)=\sup_ \pi{\bar{v}_ \pi^{\left(\gamma\right)}}\left(\mathsfit{s}\right),\quad\mathsfit{s}\in\mathcal{S}$ ,
+
+动作价值： $\bar{q}_ \ast\left(\mathsfit{s},\mathsfit{a}\right)=\sup_ \pi{\bar{q}_ \pi^{\left(\gamma\right)}}\left(\mathsfit{s},\mathsfit{a}\right),\quad\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}$ 。
+
+#### 改为
+
+状态价值： $\bar{v}_ \ast\left(\mathsfit{s}\right)=\sup_ \pi{\bar{v}_ \pi\left(\mathsfit{s}\right)},\quad\mathsfit{s}\in\mathcal{S}$ ,
+
+动作价值： $\bar{q}_ \ast\left(\mathsfit{s},\mathsfit{a}\right)=\sup_ \pi{\bar{q}_ \pi\left(\mathsfit{s},\mathsfit{a}\right)},\quad\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}$ 。
+
+
+## 第454页倒数第3行
+
+$\tilde{q}_ \pi\left(\mathsfit{S}_ {t+1},\mathsfit{A}_ {t+1}\right)\left(1-D'\right)$
+
+#### 改为
+
+$\tilde{q}_ \pi\left(\mathsfit{S}_ {t+1},\mathsfit{A}_ {t+1}\right)\left(1-D_ {t+1}\right)$
+
+
+## 第455页算法16-1第2.2.6步第2行
+
+$\nabla q\left(\mathsfit{S},\mathsfit{A},\mathbfit{w}\right)$
+
+#### 改为
+
+$\nabla\tilde{q}\left(\mathsfit{S},\mathsfit{A},\mathbfit{w}\right)$
+
+
+## 第462页第2个通栏数学表达式（1处）和第4个通栏数学表达式（2处）共3处
+
+$\frac1h\sum\limits_ {0<\tau\leqslant h}{\gamma^\tau R_ {t+\tau}}$
+
+#### 改为
+
+$\frac1h\sum\limits_ {0<\tau\leqslant h}{R_ {t+\tau}}$
+
+
+## 第466页第1个通栏数学表达式
+
+$\gamma^{{\huge\tau}_ t}$
+
+#### 改为
+
+$\gamma^{{\huge\tau}_ i}$
 
 
 ## 第472页第10行

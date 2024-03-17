@@ -1,6 +1,6 @@
 # Set Up Developing Environment
 
-This article introduces how to set up developing environment in a Macbook (w/o or w/ M chip).
+This article introduces how to set up developing environment in a macOS (w/o or w/ M chip).
 
 ## Part 1: Minimum Installation
 

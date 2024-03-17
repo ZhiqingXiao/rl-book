@@ -12,7 +12,7 @@
 #### 增加缩进
 
 
-## 第23页第1个通栏数学表达式
+## 第23页第1组通栏数学表达式
 
 $\Pr\left[\mathsfit{S}_ {t_ {i+1}}=\mathsfit{s}_ {t_ {i+1}}\middle\vert \mathsfit{S}_ {t_ 0}=\mathsfit{s}_ 0,\mathsfit{S}_ {t_ 1}=\mathsfit{s}_ 1,\ldots,\mathsfit{S}_ {t_ i}=\mathsfit{s}_ i\right]=\Pr\left[\mathsfit{S}_ {t_ {i+1}}=\mathsfit{s}_ {i+1}\middle\vert \mathsfit{S}_ {t_ i}=\mathsfit{s}_ i\right]$
 
@@ -21,7 +21,7 @@ $\Pr\left[\mathsfit{S}_ {t_ {i+1}}=\mathsfit{s}_ {t_ {i+1}}\middle\vert \mathsfi
 $\Pr\left[\mathsfit{S}_ {t_ {i+1}}=\mathsfit{s}_ {i+1}\middle\vert \mathsfit{S}_ {t_ 0}=\mathsfit{s}_ 0,\mathsfit{S}_ {t_ 1}=\mathsfit{s}_ 1,\ldots,\mathsfit{S}_ {t_ i}=\mathsfit{s}_ i\right]=\Pr\left[\mathsfit{S}_ {t_ {i+1}}=\mathsfit{s}_ {i+1}\middle\vert \mathsfit{S}_ {t_ i}=\mathsfit{s}_ i\right]$
 
 
-## 第27页倒数第2个通栏数学表达式的下面一行
+## 第27页倒数第2组通栏数学表达式的下面一行
 
 $\gamma+\gamma\sum\limits_ {\tau=1}^{+\infty}{\gamma^\tau R_ {\left(t+1\right)+\tau+1}}$
 
@@ -139,6 +139,15 @@ $\mathsfit{a}'=\arg\max_ \mathsfit{\mathsfit{a}}{q\left(\mathsfit{s},\mathsfit{a
 $\mathsfit{a}'\leftarrow\arg\max_ \mathsfit{\mathsfit{a}}{q\left(\mathsfit{s},\mathsfit{a}\right)}$
 
 
+## 第69页算法3-8第1步（共2处）
+
+$v_ 0$
+
+#### 改为
+
+$v$
+
+
 ## 第73页正文第2行
 
 $\pi\left(\mathsfit{s},\mathsfit{a}\right)=\frac{1}{\left|\mathcal{A}\right|}$
@@ -148,7 +157,7 @@ $\pi\left(\mathsfit{s},\mathsfit{a}\right)=\frac{1}{\left|\mathcal{A}\right|}$
 $\pi\left(\mathsfit{a}\middle\vert\mathsfit{s}\right)=\frac{1}{\left|\mathcal{A}\right|}$
 
 
-## 第80页倒数第5个通栏数学表达式第2行
+## 第80页倒数第5组通栏数学表达式第2行
 
 $\alpha_ k\mathrm{E}\left[\left|F{\left(X_ {k-1}\right)}^2\right|\middle\vert{X}_ {k-1}\right]$
 
@@ -166,7 +175,7 @@ $\alpha_ k\mathrm{E}\left[\left|F\left(X_ {k-1}\right)\right|^2\middle\vert{X}_ 
 策略来生成
 
 
-## 第91页第1个通栏数学表达式第2行
+## 第91页第1组通栏数学表达式第2行
 
 $p\left(\mathsfit{S}_ T,R_ T\middle\vert\mathsfit{S}_ {T-1},A_ {T-1}\right)$
 
@@ -220,7 +229,7 @@ $q\left(\mathsfit{S}_ {t+n}\middle\vert\cdot\right)$
 $q\left(\mathsfit{S}_ {t+n},\cdot\right)$
 
 
-## 第117页最后一个通栏数学表达式
+## 第117页最后一组通栏数学表达式
 
 $\rho_ {t+1:t+n-1}=\frac{\Pr_ \pi\left[R_ {t+1},\mathsfit{S}_ {t+1},\mathsfit{A}_ {t+1},\ldots,\mathsfit{S}_ {t+n}\middle\vert\mathsfit{S}_ t\right]}{\Pr_ b\left[R_ {t+1},\mathsfit{S}_ {t+1},\mathsfit{A}_ {t+1},\ldots,\mathsfit{S}_ {t+n}\middle\vert\mathsfit{S}_ t\right]}=\prod\limits_ {\tau=t+1}^{t+n-1}{\frac{\pi\left(\mathsfit{A}_ \tau\middle\vert\mathsfit{S}_ \tau\right)}{b\left(\mathsfit{A}_ \tau\middle\vert\mathsfit{S}_ \tau\right)}}$
 
@@ -303,7 +312,7 @@ $\mathrm{E}_ {\pi\left(\boldsymbol\theta\right)}\left[\sum\limits_ \mathsfit{a}q
 $\mathrm{E}_ {\pi\left(\boldsymbol\theta\right)}\left[\sum\limits_ \mathsfit{a}q_ {\pi\left(\boldsymbol\theta\right)}^\left(\mathrm{H}\right)\left(\mathsfit{S}_ t,\mathsfit{a}\right)\nabla\pi\left(\mathsfit{a}\middle\vert{\mathsfit{S}_ t};\boldsymbol\theta\right)+\nabla\left(\alpha^\left(\mathrm{H}\right)\mathrm{H}\left[\pi\left(\cdot\middle\vert\mathsfit{S}_ t;\boldsymbol\theta\right)\right]\right)\right]$
 
 
-## 第280页第1个通栏数学表达式最后1行
+## 第280页第1组通栏数学表达式最后1行
 
 $\mathrm{E}_ {\pi\left(\boldsymbol\theta\right)}\left[\left(q_ {\pi\left(\boldsymbol\theta\right)}^{\left(柔\right)}\left(\mathsfit{s},\mathsfit{a}\right)-\alpha^{\left(\text{H}\right)}\left(\ln\pi\left(\mathsfit{a}\middle\vert\mathsfit{s};\boldsymbol\theta\right)+1\right)\right)\nabla\ln\pi\left(\mathsfit{a}\middle\vert\mathsfit{s};\boldsymbol\theta\right)\right]$
 
@@ -597,7 +606,7 @@ $d_ \text{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi'}\lef
 $d_ \text{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left(\cdot,\cdot\right)\right)$
 
 
-## 第427页第5行
+## 第427页第2组通栏数学表达式
 
 $d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left(\cdot,\cdot\right)\right)\leqslant\frac{\gamma}{1-\gamma}\mathrm{E}_ {\mathsfit{S}\sim\rho_ {\pi''}}\left[d_ \mathrm{TV}\left(\pi'\left(\cdot\middle\vert\mathsfit{S}\right)\middle\|\pi''\left(\cdot\middle\vert\mathsfit{S}\right)\right)\right]$
 
@@ -659,7 +668,7 @@ $\nabla q\left(\mathsfit{S},\mathsfit{A},\mathbfit{w}\right)$
 $\nabla\tilde{q}\left(\mathsfit{S},\mathsfit{A},\mathbfit{w}\right)$
 
 
-## 第462页第2个通栏数学表达式（1处）和第4个通栏数学表达式（2处）共3处
+## 第462页第2组通栏数学表达式（1处）和第4组通栏数学表达式（2处）共3处
 
 $\frac1h\sum\limits_ {0<\tau\leqslant h}{\gamma^\tau R_ {t+\tau}}$
 
@@ -668,13 +677,51 @@ $\frac1h\sum\limits_ {0<\tau\leqslant h}{\gamma^\tau R_ {t+\tau}}$
 $\frac1h\sum\limits_ {0<\tau\leqslant h}{R_ {t+\tau}}$
 
 
-## 第466页第1个通栏数学表达式
+## 第464页第3组通栏数学表达式第1行
+
+$\left({\huge\tau},\mathsfit{s},r\middle\vert\mathsfit{s},\mathsfit{a}\right)=\Pr\left[{\huge\tau}_ i={\huge\tau},\right.$
+
+#### 改为
+
+$\left(\tau,\mathsfit{s}',r\middle\vert\mathsfit{s},\mathsfit{a}\right)=\Pr\left[{\huge\tau}_ i=\tau,\right.$
+
+
+## 第464页第3组通栏数学表达式第2行
+
+${\huge\tau}\in\mathcal{T}$
+
+#### 改为
+
+$\tau\in\mathcal{T}$
+
+
+## 第465页最后1组通栏数学表达式
+
+状态分布: $\bar\rho_ \pi\left(\mathsfit{s}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t<h}{\gamma^t1_ {\left[\mathsfit{S}_ t=\mathsfit{s}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S}$ ，
+
+状态动作对分布: $\bar\rho_ \pi\left(\mathsfit{s},\mathsfit{a}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t<h}{\gamma^t1_ {\left[\mathsfit{S}_ t=\mathsfit{s},\mathsfit{A}_ t=\mathsfit{a}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}$ 。
+
+#### 改为
+
+状态分布: $\bar\rho_ \pi\left(\mathsfit{s}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t<h}{1_ {\left[\mathsfit{S}_ t=\mathsfit{s}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S}$ ，
+
+状态动作对分布: $\bar\rho_ \pi\left(\mathsfit{s},\mathsfit{a}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t<h}{1_ {\left[\mathsfit{S}_ t=\mathsfit{s},\mathsfit{A}_ t=\mathsfit{a}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}$ 。
+
+
+## 第466页第1组通栏数学表达式
 
 $\gamma^{{\huge\tau}_ t}$
 
 #### 改为
 
 $\gamma^{{\huge\tau}_ i}$
+
+
+## 第466页第3个通栏数学表达式第2行和第5个通栏数学表达式第2行（共2处）
+
+$\left[r+\right.$
+
+#### 中的 $r$ 上面加圆括号
 
 
 ## 第472页第10行
@@ -695,10 +742,15 @@ $\omega\left(\mathsfit{r},\mathsfit{s'},\mathsfit{o}\middle\vert b,\mathsfit{a}\
 $\omega\left(r,\mathsfit{s'},\mathsfit{o}\middle\vert b,\mathsfit{a}\right)$
 
 
-## 第477页第3行
+## 第477页第1个通栏数学表达式
 
 $q_ \pi\left(b,\mathsfit{a}\right)=r\left(b,\mathsfit{a}\right)+\gamma\sum\limits_ \mathsfit{o}{\omega\left(\mathsfit{o}\middle\vert b,\mathsfit{a}\right)v_ \pi\left(u\left(b,\mathsfit{a},\mathsfit{o}\right)\right)}$
 
 #### 改为
 
 $q_ \pi\left(b,\mathsfit{a}\right)=r\left(b,\mathsfit{a}\right)+\gamma\sum\limits_ \mathsfit{o}{\omega\left(\mathsfit{o}\middle\vert b,\mathsfit{a}\right)v_ \pi\left(\mathfrak{u}\left(b,\mathsfit{a},\mathsfit{o}\right)\right)}$
+
+
+## 第481页第1组通栏数学表达式
+
+#### 把其中的 $\mathsfit{s}$ 改为 $\mathsfit{x}$ （共7处），把其中的 $\mathcal{S}$ 改为 $\mathcal{X}$ （共2处）。

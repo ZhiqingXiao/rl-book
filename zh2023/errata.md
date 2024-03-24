@@ -615,6 +615,15 @@ $d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left
 $d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left(\cdot,\cdot\right)\right)\leqslant\frac{1}{1-\gamma}\mathrm{E}_ {\mathsfit{S}\sim\rho_ {\pi''}}\left[d_ \mathrm{TV}\left(\pi'\left(\cdot\middle\vert\mathsfit{S}\right)\middle\|\pi''\left(\cdot\middle\vert\mathsfit{S}\right)\right)\right]$
 
 
+## 第431页算法15-1第2.2.2步（共2处）
+
+$\psi$
+
+#### 改为
+
+$\phi$
+
+
 ## 第450页最后2行
 
 $=\sum\limits_ {\mathsfit{s'},\tilde r}{\tilde p\left(\mathsfit{s'},\tilde r\middle\vert\mathsfit{s},\mathsfit{a}\right)\left[\tilde r+\gamma{\tilde v}_ \pi\left(\mathsfit{s'}\right)\right]}$
@@ -697,15 +706,15 @@ $\tau\in\mathcal{T}$
 
 ## 第465页最后1组通栏数学表达式
 
-状态分布: $\bar\rho_ \pi\left(\mathsfit{s}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t<h}{\gamma^t1_ {\left[\mathsfit{S}_ t=\mathsfit{s}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S}$ ，
+状态分布: $\bar\rho_ \pi\left(\mathsfit{s}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t < h}{\gamma^t1_ {\left[\mathsfit{S}_ t=\mathsfit{s}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S}$ ，
 
-状态动作对分布: $\bar\rho_ \pi\left(\mathsfit{s},\mathsfit{a}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t<h}{\gamma^t1_ {\left[\mathsfit{S}_ t=\mathsfit{s},\mathsfit{A}_ t=\mathsfit{a}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}$ 。
+状态动作对分布: $\bar\rho_ \pi\left(\mathsfit{s},\mathsfit{a}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t < h}{\gamma^t1_ {\left[\mathsfit{S}_ t=\mathsfit{s},\mathsfit{A}_ t=\mathsfit{a}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}$ 。
 
 #### 改为
 
-状态分布: $\bar\rho_ \pi\left(\mathsfit{s}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t<h}{1_ {\left[\mathsfit{S}_ t=\mathsfit{s}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S}$ ，
+状态分布: $\bar\rho_ \pi\left(\mathsfit{s}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t < h}{1_ {\left[\mathsfit{S}_ t=\mathsfit{s}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S}$ ，
 
-状态动作对分布: $\bar\rho_ \pi\left(\mathsfit{s},\mathsfit{a}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t<h}{1_ {\left[\mathsfit{S}_ t=\mathsfit{s},\mathsfit{A}_ t=\mathsfit{a}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}$ 。
+状态动作对分布: $\bar\rho_ \pi\left(\mathsfit{s},\mathsfit{a}\right)=\lim\limits_ {h\rightarrow+\infty}{\mathrm{E}_ \pi\left[\frac1h\sum\limits_ {0\leqslant t < h}{1_ {\left[\mathsfit{S}_ t=\mathsfit{s},\mathsfit{A}_ t=\mathsfit{a}\right]}}\right]},\quad\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}$ 。
 
 
 ## 第466页第1组通栏数学表达式

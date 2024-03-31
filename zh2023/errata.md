@@ -614,6 +614,14 @@ $d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left
 
 $d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left(\cdot,\cdot\right)\right)\leqslant\frac{1}{1-\gamma}\mathrm{E}_ {\mathsfit{S}\sim\rho_ {\pi''}}\left[d_ \mathrm{TV}\left(\pi'\left(\cdot\middle\vert\mathsfit{S}\right)\middle\|\pi''\left(\cdot\middle\vert\mathsfit{S}\right)\right)\right]$
 
+## 第428页倒数第2组通栏数学表达式
+
+$\sum\limits_ {\left(\mathsfit{S},\mathsfit{A}\right)\in\mathcal{D}}h\left(\mathsfit{A}\middle\vert\mathsfit{S};\boldsymbol\theta\right)-\mathop{\mathrm{logsumexp}}\limits_ {\mathsfit{a}\in\mathcal{A}\left(\mathsfit{S}\right)}h\left(\mathsfit{a}\middle\vert\mathsfit{S};\boldsymbol\theta\right)$
+
+#### 改为
+
+$\sum\limits_ {\left(\mathsfit{S},\mathsfit{A}\right)\in\mathcal{D}}\left(h\left(\mathsfit{S},\mathsfit{A};\boldsymbol\theta\right)-\mathop{\mathrm{logsumexp}}\limits_ {\mathsfit{a}\in\mathcal{A}\left(\mathsfit{S}\right)}h\left(\mathsfit{S},\mathsfit{a};\boldsymbol\theta\right)\right)$
+
 
 ## 第431页算法15-1第2.2.2步（共2处）
 

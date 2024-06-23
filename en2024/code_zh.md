@@ -126,15 +126,15 @@
 | [代码14-10](https://zhiqingxiao.github.io/rl-book/en2023/code/TicTacToe-v0_AlphaZero_torch.html) | AlphaZero用的网络（PyTorch版本） |
 | [代码14-11](https://zhiqingxiao.github.io/rl-book/en2023/code/TicTacToe-v0_AlphaZero_tf.html) | AlphaZero智能体（TensorFlow版本） |
 | [代码14-12](https://zhiqingxiao.github.io/rl-book/en2023/code/TicTacToe-v0_AlphaZero_torch.html) | AlphaZero智能体（PyTorch版本） |
-| [代码15-1](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | 调整摄像头 |
-| [代码15-2](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | 与环境交互并渲染 |
-| [代码15-3](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_BC_tf.html) | 状态动作对的经验回放 |
-| [代码15-4](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_BC_tf.html) | 行为克隆模仿学习智能体（TensorFlow版本） |
-| [代码15-5](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_BC_torch.html) | 行为克隆模仿学习智能体（PyTorch版本） |
-| [代码15-6](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) | 生成对抗模仿学习邻近策略优化算法智能体（TensorFlow版本） |
-| [代码15-7](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) | 生成对抗模仿学习邻近策略优化算法智能体（PyTorch版本） |
-| [代码16-1](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_ClosedForm.html) | 任务“老虎”环境类`TigerEnv` |
-| [代码16-2](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_ClosedForm.html) | 注册环境类`TigerEnv` |
-| [代码16-3](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_ClosedForm.html) | 折扣因子 $\gamma=1$ 时的最优策略 |
-| [代码16-4](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_Plan_demo.html) | 信念价值迭代 |
-| [代码16-5](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_Plan_demo.html) | 用基于点的价值迭代求解 |
+| [代码15-1](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_ClosedForm.html) | 任务“老虎”环境类`TigerEnv` |
+| [代码15-2](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_ClosedForm.html) | 注册环境类`TigerEnv` |
+| [代码15-3](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_ClosedForm.html) | 折扣因子 $\gamma=1$ 时的最优策略 |
+| [代码15-4](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_Plan_demo.html) | 信念价值迭代 |
+| [代码15-5](https://zhiqingxiao.github.io/rl-book/en2023/code/Tiger-v0_Plan_demo.html) | 用基于点的价值迭代求解 |
+| [代码16-1](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | 调整摄像头 |
+| [代码16-2](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | 与环境交互并渲染 |
+| [代码16-3](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_BC_tf.html) | 状态动作对的经验回放 |
+| [代码16-4](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_BC_tf.html) | 行为克隆模仿学习智能体（TensorFlow版本） |
+| [代码16-5](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_BC_torch.html) | 行为克隆模仿学习智能体（PyTorch版本） |
+| [代码16-6](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) | 生成对抗模仿学习邻近策略优化算法智能体（TensorFlow版本） |
+| [代码16-7](https://zhiqingxiao.github.io/rl-book/en2023/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) | 生成对抗模仿学习邻近策略优化算法智能体（PyTorch版本） |

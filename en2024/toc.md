@@ -12,7 +12,7 @@
 
 1.4.1. Task-Based Taxonomy
 
-1.4.2. Taxonomy based on Algorithm
+1.4.2. Algorithm-based Taxonomy
 
 #### 1.5. Performance Metrics
 
@@ -52,17 +52,23 @@
 
 2.2.2. Properties of Values
 
+2.2.3. Calculate Values
+
+2.2.4. Calculate Initial Expected Return using Values
+
 2.2.3. Partial Order of Policy and Policy Improvement
 
-#### 2.3. Discounted Visitation Frequency
+#### 2.3. Visitation Frequency
 
-2.3.1. Definition of Discounted Visitation Frequency
+2.3.1. Definition of Visitation Frequency
 
-2.3.2. Properties of Discounted Visitation Frequency
+2.3.2. Properties of Visitation Frequency
 
-2.3.3. Equivalence between Discounted Visitation Frequency and Policy
+2.3.3. Calculate Visitation Frequency
 
-2.3.4. Expectation over Discounted Distribution
+2.3.4. Equivalence between Discounted Visitation Frequency and Policy
+
+2.3.5. Expectation over Discounted Distribution
 
 #### 2.4. Optimal Policy and Optimal Value
 
@@ -70,9 +76,9 @@
 
 2.4.2. Existence of Optimal Policy
 
-2.4.3. Properties of Optimal Values and Bellman Optimal Equations
+2.4.3. Properties of Optimal Values
 
-2.4.4. LP: Linear Programming Method
+2.4.4. Calculate Optimal Values
 
 2.4.5. Use Optimal Values to Find Optimal Strategy
 
@@ -326,7 +332,7 @@
 
 8.4.4. TRPO: Trust Region Policy Optimization
 
-#### 8.5. Importance Sampling Off-policy AC
+#### 8.5. Importance Sampling Off-Policy AC
 
 #### 8.6. Case Study: Acrobot
 
@@ -582,89 +588,100 @@
 
 14.5.3. Mock Interview
 
-## 15. IL: Imitation Learning
+## 15. More Agent–Environment Interfaces
 
-#### 15.1. $f$-Divergences and their Properties
+#### 15.1. Average Reward DTMDP
 
-#### 15.2. BC: Behavior Cloning
+15.1.1. Average Reward
 
-#### 15.3. GAIL: Generative Adversarial Imitation Learning
+15.1.2. Differential Values
 
-#### 15.4. Case Study: Humanoid
+15.1.3. Optimal Policy
 
-15.4.1. The Library PyBullet
+#### 15.2. CTMDP: Continuous-Time MDP
 
-15.4.2. Use BC to IL
+#### 15.3. Non-Stationary MDP
 
-15.4.3. Use GAIL to IL
+15.3.1. Representation of Non-Stationary States
 
-#### 15.5. Summary
+15.3.2. Bounded Time Index
 
-#### 15.6. Exercises
+15.3.3. Unbounded Time Index
 
-15.6.1. Multiple Choices
+#### 15.4. SMDP: Semi-MDP
 
-15.6.2. Programming
+15.4.1. SMDP and its Values
 
-15.6.3. Mock Interview
+15.4.2. Find Optimal Policy
 
-## 16. More Agent–Environment Interfaces
+15.4.3. HRL: Hierarchical Reinforcement Learning
 
-#### 16.1. Average Reward DTMDP
+#### 15.5. POMDP: Partially Observable Markov Decision Process
 
-16.1.1. Average Reward
+15.5.1. DTPOMDP: Discrete-Time POMDP
 
-16.1.2. Differential Values
+15.5.2. Belief
 
-16.1.3. Optimal Policy
+15.5.3. Belief MDP
 
-#### 16.2. CTMDP: Continuous-Time MDP
+15.5.4. Belief Values
 
-#### 16.3. Non-Stationary MDP
+15.5.5. Belief Values for Finite POMDP
 
-16.3.1. Representation of Non-Stationary States
+15.5.6. Use Memory
 
-16.3.2. Bounded Time Index
+#### 15.6. Case Study: Tiger
 
-16.3.3. Unbounded Time Index
+15.6.1. Compare Discounted Return Expectation and Average Reward
 
-#### 16.4. SMDP: Semi-MDP
+15.6.2. Belief MDP
 
-16.4.1. SMDP and its Values
+15.6.3. Non-Stationary Belief State Values
 
-16.4.2. Find Optimal Policy
+#### 15.7. Summary
 
-16.4.3. HRL: Hierarchical Reinforcement Learning
+#### 15.8. Exercises
 
-#### 16.5. POMDP: Partially Observable Markov Decision Process
+15.8.1. Multiple Choices
 
-16.5.1. DTPOMDP: Discrete-Time POMDP
+15.8.2. Programming
 
-16.5.2. Belief
+15.8.3. Mock Interview
 
-16.5.3. Belief MDP
+## 16. Learning from Feedback and Imitation Learning
 
-16.5.4. Belief Values
+#### 16.1 Learning from Feedback
 
-16.5.5. Belief Values for Finite POMDP
+16.1.1. Reward Model
 
-16.5.6. Use Memory
+16.1.2. PbRL: Preference-based RL
 
-#### 16.6. Case Study: Tiger
+16.1.3. RLHF: Reinforcement Learning with Human Feedback
 
-16.6.1. Compare Discounted Return Expectation and Average Reward
+#### 16.2 IL: Imitation Learning
 
-16.6.2. Belief MDP
+16.2.1. $f$-Divergences and their Properties
 
-16.6.3. Non-Stationary Belief State Values
+16.2.2. BC: Behavior Cloning
 
-#### 16.7. Summary
+16.2.3. GAIL: Generative Adversarial Imitation Learning
 
-#### 16.8. Exercises
+#### 16.3 Application in Training GPT
 
-16.8.1. Multiple Choices
+#### 16.4. Case Study: Humanoid
 
-16.8.2. Programming
+16.4.1. Use PyBullet
 
-16.8.3. Mock Interview
+16.4.2. Use BC to IL
 
+16.4.3. Use GAIL to IL
+
+#### 16.5. Summary
+
+#### 16.6. Exercises
+
+16.6.1. Multiple Choices
+
+16.6.2. Programming
+
+16.6.3. Mock Interview

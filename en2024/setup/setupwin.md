@@ -4,13 +4,13 @@ This article introduces how to set up developing environment in a Windows 10/11 
 
 ## Part 1: Minimum Installation
 
-This part will show how to set up a minimum environment. After this step, you are able to run codes in Chapter 1-5, 13, 16.
+This part will show how to set up a minimum environment. After this step, you are able to run codes in Chapter 1-5, 13, 15.
 
 #### Install Anaconda 3
 
 **Steps:**
 
-- Download the installer on https://www.anaconda.com/products/distribution (Pick Windows version for Windows users).The name of installer is alike `Anaconda3-2023.09-0-Windows-x86_64.exe`, and the size is about 0.9 GB.
+- Download the installer on https://www.anaconda.com/products/distribution (Pick Windows version for Windows users).The name of installer is alike `Anaconda3-2024.02-1-Windows-x86_64.exe`, and the size is about 0.9 GB.
 - Double click the installer to start the install wizard and install accordingly. The free space of the disk should be at least 13GB. (If the free space of the disk is too little, you may still be able to install Anaconda 3 itself, but you may not have enough free space in the follow-up steps. 13GB is the storage requirements for all steps in this article except Visual Studio.) Record the location of Anaconda installation. The default location is `C:%HOMEPATH%\anaconda3`. We will use the location in the sequal.
 
 #### Create a New Conda Environment
@@ -63,7 +63,7 @@ This step is strongly recommended but not compulsory.
 
 ## Part 2: Install TensorFlow and/or PyTorch
 
-This part will show how to install TensorFlow and/or PyTorch upon the minimum environment in Part 1. Codes in Chapter 6-10, 12, 14, 15 need TensorFlow and/or PyTorch. After this step, you are able to run codes in Chapter 1-9, 13, 16.
+This part will show how to install TensorFlow and/or PyTorch upon the minimum environment in Part 1. Codes in Chapter 6-10, 12, 14, 16 need TensorFlow and/or PyTorch. After this step, you are able to run codes in Chapter 1-9, 13, 15.
 
 #### Install Visual Studio
 
@@ -102,7 +102,7 @@ Please install the latest version of Visual Studio before this step. Otherwise, 
 
 Codes in Chapter 10-11 use `gym[box2d]`. You can skip this part if you do not care the codes in Chapter 10-11. It does not impact other parts.
 
-This part will show how to install `gym[box2d]` upon the environment with PyTorch and/or TensorFlow in Part 2. Upon completed this part, you are able to run codes in Chapter 1-13, 16. If you complete all of Part 3.1-3.3, you are able to run codes in all chapters.
+This part will show how to install `gym[box2d]` upon the environment with PyTorch and/or TensorFlow in Part 2. Upon completed this part, you are able to run codes in Chapter 1-13, 15. If you complete all of Part 3.1-3.3, you are able to run codes in all chapters.
 
 #### Install SWIG
 
@@ -136,7 +136,7 @@ This part will show how to install `gym[box2d]` upon the environment with PyTorc
 
 ## Part 3.3: Install PyBullet
 
-Codes in Chapter 15 use PyBullet. You can skip this part if you do not care the codes in Chapter 15.
+Codes in Chapter 16 use PyBullet. You can skip this part if you do not care the codes in Chapter 16.
 
 Since PyBullet depends on an old version of Gym, so it is better install it in a new conda environment so that it will not pollute current conda environment.
 

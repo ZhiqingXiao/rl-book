@@ -6,18 +6,18 @@
 
 ## Table of Gym Internal
 
-| section | \# | class | codes | note |
+| section | class | codes | note |
 | --- | --- | --- | --- | --- |
-| Section 1.6.2 | Gym Internal 1-1 | environment class `gym.Env` | [core.py](https://github.com/openai/gym/blob/master/gym/core.py) | [Note](#environment-classes) |
-| Section 1.6.2 | Gym Internal 1-2 | space class `gym.space.Space` | [space.py](https://github.com/openai/gym/blob/master/gym/spaces/space.py) | [Note](#space-classes) |
-| Section 1.6.2 | Gym Internal 1-3 | space class `gym.space.Box` | [box.py](https://github.com/openai/gym/blob/master/gym/spaces/box.py) | [Note](#the-class-box) |
-| Section 1.6.2 | Gym Internal 1-4 | space class `gym.space.Discrete` | [discrete.py](https://github.com/openai/gym/blob/master/gym/spaces/discrete.py) | [Note](#the-class-discrete) |
-| Section 1.6.2 | Gym Internal 1-5 | wrapper class `gym.Wrapper` | [core.py](https://github.com/openai/gym/blob/master/gym/core.py) | [Note](#wrapper-classes) |
-| Section 1.6.2 | Gym Internal 1-6 | wrapper class `gym.wrapper.TimeLimit` | [time_limit.py](https://github.com/openai/gym/blob/master/gym/wrappers/time_limit.py) | [Note](#the-class-timelimit) |
-| Section 4.3.1 | Gym Internal 4-1 | space class `gym.space.Tuple` | [tuple.py](https://github.com/openai/gym/blob/master/gym/spaces/tuple.py) | [Note](#the-class-tuple) |
-| Section 11.3.1 | Gym Internal 11-1 | wrapper class `gym.wrapper.TransformReward` | [transform_reward.py](https://github.com/openai/gym/blob/master/gym/wrappers/transform_reward.py) | [Note](#the-class-transformreward) |
-| Section 12.6.3 | Gym Internal 12-1 | wrapper class `gym.wrapper.AtariPreprocessing` | [atari_preprocessing.py](https://github.com/openai/gym/blob/master/gym/wrappers/atari_preprocessing.py) | [Note](#the-class-ataripreprocessing) |
-| Section 12.6.3 | Gym Internal 12-2 | wrapper class `gym.wrapper.FrameStack` | [frame_stack.py](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py) | [Note](#the-class-framestack) |
+| Section 1.6.2 | environment class `gym.Env` | [core.py](https://github.com/openai/gym/blob/master/gym/core.py) | [Note](#environment-classes) |
+| Section 1.6.2 | space class `gym.space.Space` | [space.py](https://github.com/openai/gym/blob/master/gym/spaces/space.py) | [Note](#space-classes) |
+| Section 1.6.2 | space class `gym.space.Box` | [box.py](https://github.com/openai/gym/blob/master/gym/spaces/box.py) | [Note](#the-class-box) |
+| Section 1.6.2 | space class `gym.space.Discrete` | [discrete.py](https://github.com/openai/gym/blob/master/gym/spaces/discrete.py) | [Note](#the-class-discrete) |
+| Section 1.6.2 | wrapper class `gym.Wrapper` | [core.py](https://github.com/openai/gym/blob/master/gym/core.py) | [Note](#wrapper-classes) |
+| Section 1.6.2 | wrapper class `gym.wrapper.TimeLimit` | [time_limit.py](https://github.com/openai/gym/blob/master/gym/wrappers/time_limit.py) | [Note](#the-class-timelimit) |
+| Section 4.3.1 | space class `gym.space.Tuple` | [tuple.py](https://github.com/openai/gym/blob/master/gym/spaces/tuple.py) | [Note](#the-class-tuple) |
+| Section 11.3.1 | wrapper class `gym.wrapper.TransformReward` | [transform_reward.py](https://github.com/openai/gym/blob/master/gym/wrappers/transform_reward.py) | [Note](#the-class-transformreward) |
+| Section 12.6.3 | wrapper class `gym.wrapper.AtariPreprocessing` | [atari_preprocessing.py](https://github.com/openai/gym/blob/master/gym/wrappers/atari_preprocessing.py) | [Note](#the-class-ataripreprocessing) |
+| Section 12.6.3 | wrapper class `gym.wrapper.FrameStack` | [frame_stack.py](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py) | [Note](#the-class-framestack) |
 
 
 ## Environment Classes

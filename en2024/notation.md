@@ -41,6 +41,7 @@ In the sequel are notations throughout the book. We also occasionally follow oth
 | $\mathbf{g}$ | gradient vector |
 | $h$ | action preference |
 | $\text{H}$ | entropy |
+| $\mathbf{I}$ | identity matrix |
 | $k$ | index of iteration |
 | $\ell$ | loss |
 | $\mathbb{N}$ | set of natural numbers |
@@ -48,6 +49,7 @@ In the sequel are notations throughout the book. We also occasionally follow oth
 | $O$, $\tilde{O}$ | infinite in asymptotic notations |
 | $\mathsfit{O}$, $\mathsfit{o}$ | observation |
 | $\mathcal{O}$ | observation space |
+| $\mathbf{O}$ | zero matrix |
 | $p$ | probability, dynamics |
 | $\mathbf{P}$ | transition matrix |
 | $\Pr$ | probability |
@@ -91,12 +93,14 @@ In the sequel are notations throughout the book. We also occasionally follow oth
 | $\pi_ \ast$ | optimal policy |
 | $\pi_ \text{E}$ | expert policy in imitation learning |
 | $\rho$ | state–action visitation frequency; important sampling ratio in off-policy learning |
-| $\phi$ | quantile |
+| $\phi$ | quantile in distributional RL |
 | $\boldsymbol\uprho$ | vector representation of state–action visitation frequency |
 | $\huge\tau$, $\tau$ | sojourn time of SMDP |
 | $\mathit\Psi$ | Generalized Advantage Estimate (GAE) |
-| $\mathit\Omega$, $\omega$ | accumulated probability in distribution RL; (lower case only) conditional probability for partially observable tasks |
+| $\mathit\Omega$, $\omega$ | cumulative probability in distributional RL; (lower case only) conditional probability for partially observable tasks |
 | **Other Notations** | **Description** |
+| $\mathbf{0}$ | zero vector |
+| $\mathbf{1}$ | a vector all of whose entries are one |
 | $\stackrel{\text{a.e.}}{=}$ | equal almost everywhere |
 | $\stackrel{\text{d}}{=}$ | share the same distribution |
 | $\stackrel{\text{def}}{=}$ | define |

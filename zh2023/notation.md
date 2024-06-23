@@ -86,7 +86,7 @@
 | $\boldsymbol\rho$ | 访问频次的向量表示 | vector representation of visitation frequency |
 | $\phi$ | 分位数 | quantile |
 | ${\huge\tau}$, $\tau$ | 半Markov决策过程中的逗留时间 | sojourn time of SMDP |
-| $\mathit\Omega$, $\omega$ | 值分布学习中的累积概率；（仅小写）部分可观测任务中的条件概率 | accumulated probability in distribution RL; (lower case only) conditional probability for partially observable tasks |
+| $\mathit\Omega$, $\omega$ | 值分布学习中的累积概率；（仅小写）部分可观测任务中的条件概率 | cumulative probability in distribution RL; (lower case only) conditional probability for partially observable tasks |
 | $\mathit\Psi$ | 扩展的优势估计 | Generalized Advantage Estimate (GAE) |
 | **其他符号** | **含义** | **英文含义** |
 | $\stackrel{\text{d}}{=}$ | 分布相同 | share the same distribution |

@@ -47,6 +47,7 @@
 | HRL | 分层强化学习 | Hierarchical Reinforcement Learning |
 | IL | 模仿学习 | Imitation Learning |
 | IQN | 含蓄分位网络 | Implicit Quantile Networks |
+| IRL | 逆强化学习 | Inverse Reinforcement Learning |
 | JSD | Jensen-Shannon散度 | Jensen-Shannon Divergence |
 | KLD | Kullback–Leibler散度 | Kullback–Leibler Divergence |
 | MAB | 多臂赌博机 | Multi-Arm Bandit |
@@ -63,6 +64,7 @@
 | OffPAC | 异策的执行者/评论者算法 | Off-Policy Actor–Critic |
 | OPDAC | 异策确定性执行者/评论者算法 | Off-Policy Deterministic Actor–Critic |
 | OU | Ornstein Uhlenbeck过程 | Ornstein Uhlenbeck |
+| PbRL | 偏好强化学习 | Preference-based Reinforcement Learning |
 | PBVI | 点的价值迭代算法 | Point-Based Value Iteration |
 | PDF | 概率分布函数 | Probability Distribution Function |
 | PER | 优先经验回放 | Prioritized Experience Replay |
@@ -80,6 +82,7 @@
 | ReLU | 修正线性单元 | Rectified Linear Unit |
 | RL | 强化学习 | Reinforcement Learning |
 | RLHF | 人类反馈强化学习 | Reinforcement Learning with Human Feedback |
+| RM | 奖励模型 | Reward Model |
 | SAC | 柔性执行者/评论者算法 | Soft Actor–Critic |
 | SARSA | 状态/动作/奖励/状态/动作 | State-Action-Reward-State-Action |
 | SGD | 随机梯度下降 | Stochastic Gradient Descent  |

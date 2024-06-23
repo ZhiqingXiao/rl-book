@@ -9,6 +9,7 @@
 * Bellemare, M. G., Dabney, W., Munos, R. (2017). A distributional perspective on reinforcement learning. https://proceedings.mlr.press/v70/bellemare17a.html
 * Bellman, R. E. (1957). Dynamic Programming. Princeton University Press.
 * Blum, J. R. (1954). Approximation methods which converge with probability one. https://doi.org/10.1214/aoms/1177728794
+* Christina, P. F., Leike, J., Brown, T., Martic, M., Legg, S., and Amodei, D. (2017). Deep reinforcement learning from human preferences. https://arxiv.org/abs/1706.03741
 * Dabney, W., Ostrovski, G., Silver, D., Munos, R. (2018). Implicit quantile networks for distributional reinforcement learning. https://arxiv.org/abs/1806.06923
 * Dabney, W., Rowland, M., Bellemare, M. G., Munos, R. (2018). Distributional reinforcement learning with quantile regression. https://ojs.aaai.org/index.php/AAAI/article/view/11791
 * DeJong, G., Spong, M. W. (1994). Swinging up the Acrobot: an example of intelligent control. https://doi.org/10.1109/ACC.1994.752458
@@ -35,6 +36,7 @@
 * Moore, A. W. (1990). Efficient Memory-based Learning for Robot Control. Ph.D. dissertation. Cambridge, UK: University of Cambridge.
 * Nemirovski, A. S., Yudin, D. B. (1983). Problem complexity and method efficiency in optimization. Wiley.
 * Neumann, J. v., Morgenstern, O. (1953). Theory of Games and Economic Behavior. Princeton University Press.
+* Ouyang, L., Wu, J., Jing, X., Almeida, D., Wainwright, C. L., ..., Christiano, P., (2022). Training language models to follow instructions with human feedback. https://arxiv.org/abs/2203.02155
 * Pavlov, I. P. (1928). Lectures on Conditioned Reflexes, Volume 1 (English translation). International Publishers.
 * Robbins, H., Monro, S. (1951). A stochastic approximation algorithm. https://doi.org/10.1214/aoms/1177729586
 * Rummery, G. A., Niranjan, M. (1994). On-line Q-learning using connectionist systems. Technical Report CUED/F-INFENG/TR 166, Cambridge University.

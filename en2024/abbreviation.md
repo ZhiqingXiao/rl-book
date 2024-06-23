@@ -47,6 +47,7 @@
 | HRL | Hierarchical Reinforcement Learning |
 | IL | Imitation Learning |
 | IQN | Implicit Quantile Networks |
+| IRL | Inverse Reinforcement Learning |
 | JSD | Jensen-Shannon Divergence |
 | KLD | Kullback–Leibler Divergence |
 | MAB | Multi-Arm Bandit |
@@ -63,6 +64,7 @@
 | OffPAC | Off-Policy Actor–Critic |
 | OPDAC | Off-Policy Deterministic Actor–Critic |
 | OU | Ornstein Uhlenbeck |
+| PbRL | Preference-based Reinforcement Learning |
 | PBVI | Point-Based Value Iteration |
 | PDF | Probability Distribution Function |
 | PER | Prioritized Experience Replay |
@@ -80,6 +82,7 @@
 | ReLU | Rectified Linear Unit |
 | RL | Reinforcement Learning |
 | RLHF | Reinforcement Learning with Human Feedback |
+| RM | Reward Model |
 | SAC | Soft Actor–Critic |
 | SARSA | State-Action-Reward-State-Action |
 | SGD | Stochastic Gradient Descent  |

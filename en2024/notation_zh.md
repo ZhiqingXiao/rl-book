@@ -41,6 +41,7 @@
 | $\mathbf{g}$ | 梯度向量 | gradient vector |
 | $h$ | 动作偏好 | action preference |
 | $\text{H}$ | 熵 | entropy |
+| $\mathbf{I}$ | 单位矩阵 | identity matrix |
 | $k$ | 迭代次数指标 | index of iteration |
 | $\ell$ | 损失 | loss |
 | $\mathbb{N}$ | 自然数集 | set of natural numbers |
@@ -48,6 +49,7 @@
 | $O$, $\tilde{O}$ | 渐近无穷大 | infinite in asymptotic notations |
 | $\mathsfit{O}$, $\mathsfit{o}$ | 观测 | observation |
 | $\mathcal{O}$ | 观测空间 | observation space |
+| $\mathbf{O}$ | 零矩阵 | zero matrix |
 | $p$ | 概率值，动力 | probability, dynamics |
 | $\mathbf{P}$ | 转移矩阵 | transition matrix |
 | $\Pr$ | 概率 | probability |
@@ -91,12 +93,14 @@
 | $\pi_ \ast$ | 最优策略 | optimal policy |
 | $\pi_ \text{E}$ | 模仿学习中的专家策略 | expert policy in imitation learning |
 | $\rho$ | 状态动作对访问频次；异策算法中的重要性采样比率 | state–action visitation frequency; important sampling ratio in off-policy learning |
-| $\phi$ | 分位数 | quantile |
+| $\phi$ | 分位数 | quantile in distributional RL |
 | $\boldsymbol\uprho$ | 状态动作对访问频次的向量表示 | vector representation of state–action visitation frequency |
 | $\huge\tau$, $\tau$ | 半Markov决策过程中的逗留时间 | sojourn time of SMDP |
 | $\mathit\Psi$ | 扩展的优势估计 | Generalized Advantage Estimate (GAE) |
-| $\mathit\Omega$, $\omega$ | 值分布学习中的累积概率；（仅小写）部分可观测任务中的条件概率 | accumulated probability in distribution RL; (lower case only) conditional probability for partially observable tasks |
+| $\mathit\Omega$, $\omega$ | 值分布学习中的累积概率；（仅小写）部分可观测任务中的条件概率 | cumulative probability in distributional RL; (lower case only) conditional probability for partially observable tasks |
 | **其他符号** | **含义** | **英文含义** |
+| $\mathbf{0}$ | 零向量 | zero vector |
+| $\mathbf{1}$ | 各元素均为1的向量 | a vector all of whose entries are one |
 | $\stackrel{\text{a.e.}}{=}$ | 几乎处处相等 | equal almost everywhere |
 | $\stackrel{\text{d}}{=}$ | 分布相同 | share the same distribution |
 | $\stackrel{\text{def}}{=}$ | 定义 | define |

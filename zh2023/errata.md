@@ -30,6 +30,14 @@ $\gamma+\gamma\sum\limits_ {\tau=1}^{+\infty}{\gamma^\tau R_ {\left(t+1\right)+\
 $\gamma+\gamma\sum\limits_ {\tau=0}^{+\infty}{\gamma^\tau R_ {\left(t+1\right)+\tau+1}}$
 
 
+## 第30页第2组通栏数学表达式
+
+$\mathrm{E}_ \pi$
+
+#### 改为
+
+$\mathrm{E}$
+
 
 ## 第37页最后1行和第38页前3行（共4处）
 
@@ -40,20 +48,33 @@ $\sum\limits_ {t=1}^{+\infty}$
 $\sum\limits_ {t=0}^{+\infty}$
 
 
-## 第38页第2组通栏数学表达式中间那行
-$\Pr_ \pi\left[\mathsfit{S}_ 0=\mathsfit{s}'\middle\vert\mathsfit{S}_ 0=\mathsfit{s}_ 0\right]+$
+## 第38页倒数第2个通栏数学表达式最后的部分
+
+（ $\mathsfit{s}'\in\mathcal{S}$ ）
 
 #### 改为
 
-$\Pr_ \pi\left[\mathsfit{S}_ t=\mathsfit{s}'\middle\vert\mathsfit{S}_ 0=\mathsfit{s}_ 0\right]+$
+$\mathsfit{s}\in\mathcal{S}$
 
 
 ## 第40页第5组通栏数学表达式
-$\rho\left(\mathsfit{s}'\right)=\sum\limits_ {\mathsfit{s}_ 0\in\mathcal{S}}{p_ {\mathsfit{S}_ 0}\left(\mathsfit{s}\right)\sum\limits_ {t=0}^{+\infty}{\sum\limits_ {\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}\left(\mathsfit{s}\right)}}}$
+
+$\rho\left(\mathsfit{s}'\right)=\sum\limits_ {\mathsfit{s}_ 0\in\mathcal{S}}{p_ {\mathsfit{S}_ 0}\left(\mathsfit{s}\right)\sum\limits_ {t=0}^{+\infty}{\sum\limits_ {\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}\left(\mathsfit{s}\right)}\gamma^t\Pr_ \pi\left[\mathsfit{S}_ t=\mathsfit{s}'\middle\vert\mathsfit{S}_ 0=\mathsfit{s}\right]}}=\rho_ \pi\left(\mathsfit{s}'\right)$
 
 #### 改为
 
-$\rho\left(\mathsfit{s}'\right)=\sum\limits_ {t=0}^{+\infty}{\sum\limits_ {\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}\left(\mathsfit{s}\right)}}$
+$\rho\left(\mathsfit{s}'\right)=\sum\limits_ {t=0}^{+\infty}{\gamma^t\sum\limits_ {\mathsfit{s}_ 0\in\mathcal{S}}\Pr_\pi\left[\mathsfit{S}_ t=\mathsfit{s}'\middle\vert\mathsfit{S}_ 0=\mathsfit{s}_ 0\right]p_ {\mathsfit{S}_ 0}\left(\mathsfit{s}_ 0\right)}=\sum\limits_ {t=0}^{+\infty}{\gamma^t\Pr_ \pi\left[\mathsfit{S}_ t=\mathsfit{s}'\right]}=\rho_ \pi\left(\mathsfit{s}'\right)$
+
+注：在这里的证明中，在证明了 $\rho\left(\mathsfit{s}\right)$ 满足 Bellman 期望方程后，说明了它是不动点。由于 $\rho_ \pi\left(\mathsfit{s}\right)$ 也满足同样的 Bellman 期望方程，由不动点的唯一性可得 $\rho\left(\mathsfit{s}\right)=\rho_ \pi\left(\mathsfit{s}\right)$ 。
+
+
+## 第41页第1组通栏数学表达式第4行
+
+这里用到了全概率公式
+
+#### 改为
+
+这里用到了全期望公式
 
 
 ## 第41页第1组通栏数学表达式倒数第3行
@@ -70,6 +91,15 @@ $\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}\left(\mathsfit{s}\right),
 #### 改为
 
 $p_ \ast\left({\mathsfit{s'},\mathsfit{a'}|\mathsfit{s},\mathsfit{a}}\right)=\pi_ \ast\left(\mathsfit{a'}\middle\vert\mathsfit{s'}\right)p\left( \mathsfit{s'}\mid\mathsfit{s},\mathsfit{a}\right),\quad\mathsfit{s}\in\mathcal{S},\mathsfit{a}\in\mathcal{A}\left(\mathsfit{s}\right),\mathsfit{s'}\in\mathcal{S},\mathsfit{a'}\in\mathcal{A}\left(\mathsfit{s'}\right)$
+
+
+## 第49页知识卡片里第2组通栏数学表达式第1行
+
+$\mathop{\text{minimize}}\limits_\mathbfit{y}$
+
+#### 改为
+
+$\mathop{\text{maximize}}\limits_\mathbfit{y}$
 
 
 ## 第49页知识卡片里最后一行
@@ -119,6 +149,15 @@ $p\left(\mathsfit{s}'\middle\vert\mathsfit{s},\mathsfit{a}'\right)$
 #### 改为
 
 $p\left(\mathsfit{s}'\middle\vert\mathsfit{s},\mathsfit{a}\right)$
+
+
+## 第63页第2组通栏数学表达式第4行
+
+$=\gamma\sum\limits_{\mathsfit{s}'\in\mathcal{S}}{p\left(\mathsfit{s}'\middle\vert\mathsfit{s},\mathsfit{a}\right)d_\infty\left(q',q''\right)}$
+
+#### 改为
+
+$\leqslant\gamma\sum\limits_{\mathsfit{s}'\in\mathcal{S}}{p\left(\mathsfit{s}'\middle\vert\mathsfit{s},\mathsfit{a}\right)d_\infty\left(q',q''\right)}$
 
 
 ## 第66页算法3.3第1.2步
@@ -247,6 +286,79 @@ $\gamma^2\mathrm{E}_ {\pi\left(\boldsymbol\theta\right)}\left[\nabla{v_ {\pi\lef
 $\gamma^2\mathrm{E}_ {\pi\left(\boldsymbol\theta\right)}\left[\nabla{v_ {\pi\left(\boldsymbol\theta\right)}}\left(\mathsfit{S}_ 2\right)\right]$
 
 
+## 第180页第1组通栏数学表达式
+
+$\boldsymbol\theta_ {t+1}\leftarrow\boldsymbol\theta_ t+\alpha\gamma^t G_t\nabla\ln\pi\left(\mathsfit{A}_ t\middle\vert\mathsfit{S}_ t;\boldsymbol\theta\right),\quad t=0,1,\cdots$
+
+#### 改为
+
+$\boldsymbol\theta\leftarrow\boldsymbol\theta+\alpha\gamma^t G_t\nabla\ln\pi\left(\mathsfit{A}_ t\middle\vert\mathsfit{S}_ t;\boldsymbol\theta\right)$
+
+
+## 第183行算法7-3第2.4.2步第1行
+
+$\gamma^t G_ t$
+
+#### 改为
+
+$\gamma^t G$
+
+
+## 第206页知识卡片“Fisher信息矩阵”内文第2段第1行
+
+$\sum\limits_\mathsfit{x}{p\left(\mathsfit{x};\boldsymbol\theta\right)\nabla\ln p\left(\mathsfit{X};\boldsymbol\theta\right)}=\sum\limits_\mathsfit{x}{\nabla p\left(\mathsfit{X};\boldsymbol\theta\right)}=\nabla\sum\limits_\mathsfit{x}{p\left(\mathsfit{X};\boldsymbol\theta\right)}$
+
+#### 改为
+
+$\sum\limits_\mathsfit{x}{p\left(\mathsfit{x};\boldsymbol\theta\right)\nabla\ln p\left(\mathsfit{x};\boldsymbol\theta\right)}=\sum\limits_\mathsfit{x}{\nabla p\left(\mathsfit{x};\boldsymbol\theta\right)}=\nabla\sum\limits_\mathsfit{x}{p\left(\mathsfit{x};\boldsymbol\theta\right)}$
+
+
+## 第208页第8.4.2节正文第1段倒数第2行
+
+比 $g_{\pi\left(\boldsymbol\theta_ k\right)}$ 小
+
+#### 改为
+
+比 $g_{\pi\left(\boldsymbol\theta\right)}$ 小
+
+
+## 第209页倒数第3组通栏数学表达式
+
+$\boldsymbol{0}+\mathbfit{g}\left({\boldsymbol\theta}_ k\right)\left({\boldsymbol\theta}-{\boldsymbol\theta}_ k\right)$
+
+#### 改为
+
+$0+\left[\mathbfit{g}\left({\boldsymbol\theta}_ k\right)\right]^\mathrm{T}\left({\boldsymbol\theta}-{\boldsymbol\theta}_ k\right)$
+
+
+## 第209页倒数第2组通栏数学表达式第1行
+
+$\mathbfit{g}\left({\boldsymbol\theta}_ k\right)\left({\boldsymbol\theta}-{\boldsymbol\theta}_ k\right)$
+
+#### 改为
+
+$\left[\mathbfit{g}\left({\boldsymbol\theta}_ k\right)\right]^\mathrm{T}\left({\boldsymbol\theta}-{\boldsymbol\theta}_ k\right)$
+
+
+## 第252页正文倒数第2~3行
+
+在2.4.3步和2.4.5步
+
+#### 改为
+
+在第2.4.5步
+
+
+## 第256页第2个通栏数学表达式
+
+
+$\int_0^t{e^{\theta\left(\tau-t\right)}dB_ t}$
+
+#### 改为
+
+$\int_0^t{e^{\theta\left(\tau-t\right)}dB_ \tau}$
+
+
 ## 第271页最后一组通栏数学表达式最后一行
 
 $v_ \pi^\left(\text{H}\right)\left(\mathsfit{s},\mathsfit{a}\right)$
@@ -263,6 +375,33 @@ $\pi_ \pi^{\left(\text{H}\right)}$
 #### 改为
 
 $\pi$
+
+
+## 第272页第2组通栏数学表达式
+
+$\sum\limits_ {\mathsfit{a}}$
+
+#### 改为
+
+$\sum\limits_ {\mathsfit{a}'}$
+
+
+## 第272页第3组通栏数学表达式
+
+$\mathrm{E}_ {\left(\mathsfit{s},\mathsfit{a}\right)\sim\rho_ \pi}\left[q_ \pi^{\left(\mathrm{H}\right)}\left(\mathsfit{s},\mathsfit{a}\right)\right]$
+
+#### 改为
+
+$\mathrm{E}_ {\left(\mathsfit{S},\mathsfit{A}\right)\sim\rho_ \pi}\left[q_ \pi^{\left(\mathrm{H}\right)}\left(\mathsfit{S},\mathsfit{A}\right)\right]$
+
+
+## 第273页第1组通栏数学表达式
+
+$\mathrm{E}_ {\left(\mathsfit{s},\mathsfit{a}\right)\sim\rho_ \pi}\left[q_ \pi^{\left(\text{soft}\right)}\left(\mathsfit{s},\mathsfit{a}\right)+\alpha^{\left(\mathrm{H}\right)}\mathrm{H}\left[\pi\left(\cdot\middle\vert\mathsfit{s}\right)\right]\right]$
+
+#### 改为
+
+$\mathrm{E}_ {\left(\mathsfit{S},\mathsfit{A}\right)\sim\rho_ \pi}\left[q_ \pi^{\left(\text{soft}\right)}\left(\mathsfit{S},\mathsfit{A}\right)+\alpha^{\left(\mathrm{H}\right)}\mathrm{H}\left[\pi\left(\cdot\middle\vert\mathsfit{S}\right)\right]\right]$
 
 
 ## 第276页最后一组通栏数学表达式（两处）
@@ -321,6 +460,15 @@ $\mathrm{E}_ {\pi\left(\boldsymbol\theta\right)}\left[\left(q_ {\pi\left(\boldsy
 $\mathrm{E}_ {\mathsfit{A}\sim\pi\left(\cdot\middle\vert\mathsfit{s};\boldsymbol\theta\right)}\left[\left(q_ {\pi\left(\boldsymbol\theta\right)}^{\left(柔\right)}\left(\mathsfit{s},\mathsfit{A}\right)-\alpha^{\left(\text{H}\right)}\left(\ln\pi\left(\mathsfit{A}\middle\vert\mathsfit{s};\boldsymbol\theta\right)+1\right)\right)\nabla\ln\pi\left(\mathsfit{A}\middle\vert\mathsfit{s};\boldsymbol\theta\right)\right]$
 
 
+## 第283页第3组通栏数学表达式两行各有一处共两处
+
+$\mathrm{E}_{\mathsfit{A}'\sim\pi\left(\boldsymbol\theta\right)}$
+
+#### 改为
+
+$\mathrm{E}_{\mathsfit{A}'\sim\pi\left(\cdot\middle\vert\mathsfit{s};\boldsymbol\theta\right)}$
+
+
 ## 第284页算法10-2第2.2.2.2步，第285页算法10-3第2.2.2.3步（共2处）
 
 $U_ t^{\left(q\right)}\leftarrow R_ {t+1}+$
@@ -346,6 +494,15 @@ $U_ t^{\left(v\right)}$
 #### 改为
 
 $U^{\left(v\right)}$
+
+
+## 第285页算法10-3第2.2.2.2步
+
+#### 删去
+
+（ $(\mathsfit{S},\mathsfit{A},R$
+
+$\mathsfit{S}',D')\in\mathcal{B}$ ）
 
 
 ## 第288页代码清单10-2
@@ -381,13 +538,31 @@ $U^{\left(v\right)}$
 ```
 
 
+## 第322页正文第2段第1行
+
+在 $\left(Q_ p,d_{\mathrm{supW},p}\right)$ 上
+
+#### 改为
+
+在 $\left(\mathcal{Q}_ p,d_{\mathrm{supW},p}\right)$ 上
+
+
 ## 第326页倒数第2行
 
 类别分布 $p^{\left(\cdot\right)}\left(\cdot,\cdot\right)$ 和自
 
-#### 成为
+#### 改为
 
 类别分布 $p^{\left(\cdot\right)}\left(\cdot,\cdot;\boldsymbol{w}\right)$ 和自
+
+
+## 第328页算法12-1第2.2.2.4步最后一行，第329页算法12-2第2.2.2.4步第三行（各一处，共2处）
+
+$\sum\limits_{i\in\mathcal{I}}$
+
+#### 改为
+
+$\sum\limits_{j\in\mathcal{I}}$
 
 
 ## 第330-331页知识卡片第2-5段
@@ -450,6 +625,8 @@ $\frac1c\sum\limits_ {i=0}^{c-1}{\ell_ \text{QR}\left(x_ i-\phi\right)}$
 #### 增加文字
 
 记 $\mathsfit{a}_ \ast$ 是最优动作。
+
+作者注：把 $c=c_\mathsfit{a}$ ， $\bar{X}=\tilde{q}_ {c_ \mathsfit{a}}\left(\mathsfit{a}\right)$ ，和 $\varepsilon=\sqrt{\frac{2\ln\kappa}{c_ \mathsfit{a}}}$ 代入Hoeffding不等式 $\Pr\left[\bar{X}-\mathrm{E}\left[\bar{X}\right]\geqslant\varepsilon\right]\leqslant\exp\left(-2c\varepsilon^2\right)$ 和 $\Pr\left[\bar{X}-\mathrm{E}\left[\bar{X}\right]\leqslant-\varepsilon\right]\leqslant\exp\left(-2c\varepsilon^2\right)$ ，有 $\Pr\left[\tilde{q}_ {c_ \mathsfit{a}}\left(\mathsfit{a}\right)-q\left(\mathsfit{a}\right)\geqslant\sqrt{\frac{2\ln\kappa}{c_ \mathsfit{a}}}\right]\leqslant\frac{1}{\kappa^4}$ 和 $\Pr\left[\tilde{q}_ {c_ \mathsfit{a}}\left(\mathsfit{a}\right)-q\left(\mathsfit{a}\right)\leqslant-\sqrt{\frac{2\ln\kappa}{c_ \mathsfit{a}}}\right]\leqslant\frac{1}{\kappa^4}$ ，所以 $\Pr\left[q\left(\mathsfit{a}\right)+\sqrt{\frac{2\ln\kappa}{c_\mathsfit{a}}}\leqslant\tilde{q}_ {c_ \mathsfit{a}}\left(\mathsfit{a}\right)\right]\leqslant\frac{1}{\kappa^4}$ 和 $\Pr\left[\tilde{q}_ {c_ \mathsfit{a}}\left(\mathsfit{a}\right)+\sqrt{\frac{2\ln\kappa}{c_ \mathsfit{a}}}\leqslant q\left(\mathsfit{a}\right)\right]\leqslant\frac{1}{\kappa^4}$ 。在后面那个式子中取 $\mathsfit{a}=\mathsfit{a}_ \ast$ 和 $c_ \ast=c_ \mathsfit{a}$ 得证。
 
 
 ## 第363页倒数第4行
@@ -579,7 +756,7 @@ Gaussien
 Gaussian
 
 
-## 392页正文第4行
+## 第392页正文第4行
 
 $\left(R-r\left(\mathsfit{s},\mathsfit{a}\right)\right)^2$
 
@@ -614,6 +791,7 @@ $d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left
 
 $d_ \rm{TV}\left(\rho_ {\pi'}\left(\cdot,\cdot\right)\middle\|\rho_ {\pi''}\left(\cdot,\cdot\right)\right)\leqslant\frac{1}{1-\gamma}\mathrm{E}_ {\mathsfit{S}\sim\rho_ {\pi''}}\left[d_ \mathrm{TV}\left(\pi'\left(\cdot\middle\vert\mathsfit{S}\right)\middle\|\pi''\left(\cdot\middle\vert\mathsfit{S}\right)\right)\right]$
 
+
 ## 第428页倒数第2组通栏数学表达式
 
 $\sum\limits_ {\left(\mathsfit{S},\mathsfit{A}\right)\in\mathcal{D}}h\left(\mathsfit{A}\middle\vert\mathsfit{S};\boldsymbol\theta\right)-\mathop{\mathrm{logsumexp}}\limits_ {\mathsfit{a}\in\mathcal{A}\left(\mathsfit{S}\right)}h\left(\mathsfit{a}\middle\vert\mathsfit{S};\boldsymbol\theta\right)$
@@ -645,13 +823,22 @@ $=\sum\limits_ {\mathsfit{s'},\tilde r}{\tilde p\left(\mathsfit{s'},\tilde r\mid
 $=\sum\limits_ {\mathsfit{s'},r}{p\left(\mathsfit{s'},r\middle\vert\mathsfit{s},\mathsfit{a}\right)\left[r-{\bar r}_ \pi+{\tilde v}_ \pi\left(\mathsfit{s'}\right)\right]}$
 
 
-## 第451页第4组通栏数学表达式第2行
+## 第451页第2组通栏数学表达式第1行
 
-$p_ \pi\left(\mathsfit{s'}\middle\vert\mathsfit{s},\mathsfit{a}\right)$
+$\sum\limits_{\mathsfit{s}',r}{\tilde{p}\left(\mathsfit{s}',\tilde{r}\middle\vert\mathsfit{s},\mathsfit{a}\right)}$
 
 #### 改为
 
-$p\left(\mathsfit{s'}\middle\vert\mathsfit{s},\mathsfit{a}\right)$
+$\sum\limits_{\mathsfit{s}',\tilde{r}}{\tilde{p}\left(\mathsfit{s}',\tilde{r}\middle\vert\mathsfit{s},\mathsfit{a}\right)}$
+
+
+## 第451页第4组通栏数学表达式第2行
+
+$\sum\limits_{\mathsfit{s}'}p_ \pi\left(\mathsfit{s'}\middle\vert\mathsfit{s},\mathsfit{a}\right)$
+
+#### 改为
+ 
+$\sum\limits_{\mathsfit{s}',\mathsfit{a}'}p_ \pi\left(\mathsfit{s'},\mathsfit{a}'\middle\vert\mathsfit{s},\mathsfit{a}\right)$
 
 
 ## 第453页第4组通栏数学表达式
@@ -676,6 +863,15 @@ $\tilde{q}_ \pi\left(\mathsfit{S}_ {t+1},\mathsfit{A}_ {t+1}\right)\left(1-D'\ri
 $\tilde{q}_ \pi\left(\mathsfit{S}_ {t+1},\mathsfit{A}_ {t+1}\right)\left(1-D_ {t+1}\right)$
 
 
+## 第454页最后1组通栏数学表达式
+
+$\tilde{q}\left(\mathsfit{S},\mathsfit{A}\right)$
+
+#### 改为
+
+$\tilde{q}\left(\mathsfit{S},\mathsfit{A};\mathbfit{w}\right)$
+
+
 ## 第455页算法16-1第2.2.6步第2行
 
 $\nabla q\left(\mathsfit{S},\mathsfit{A},\mathbfit{w}\right)$
@@ -683,6 +879,13 @@ $\nabla q\left(\mathsfit{S},\mathsfit{A},\mathbfit{w}\right)$
 #### 改为
 
 $\nabla\tilde{q}\left(\mathsfit{S},\mathsfit{A},\mathbfit{w}\right)$
+
+
+## 第456页算法16-2第2.2.4步第1行和第3行（共2处）
+
+#### 删去
+
+$\gamma$
 
 
 ## 第462页第2组通栏数学表达式（1处）和第4组通栏数学表达式（2处）共3处
@@ -759,6 +962,23 @@ $\omega\left(\mathsfit{r},\mathsfit{s'},\mathsfit{o}\middle\vert b,\mathsfit{a}\
 $\omega\left(r,\mathsfit{s'},\mathsfit{o}\middle\vert b,\mathsfit{a}\right)$
 
 
+## 第475页表格16-8中间那列
+
+| 动作 $\mathsfit{a}$ |
+| ---- |
+| $\mathsfit{a}_ \text{听}$ |
+| $\mathsfit{a}_ \text{听}$ |
+| $\mathsfit{a}_ \text{听}$ |
+
+#### 改为
+
+| 动作 $\mathsfit{a}$ |
+| ---- |
+| $\mathsfit{a}_ \text{左}$ |
+| $\mathsfit{a}_ \text{右}$ |
+| $\mathsfit{a}_ \text{听}$ |
+
+
 ## 第477页第1个通栏数学表达式
 
 $q_ \pi\left(b,\mathsfit{a}\right)=r\left(b,\mathsfit{a}\right)+\gamma\sum\limits_ \mathsfit{o}{\omega\left(\mathsfit{o}\middle\vert b,\mathsfit{a}\right)v_ \pi\left(u\left(b,\mathsfit{a},\mathsfit{o}\right)\right)}$
@@ -768,6 +988,33 @@ $q_ \pi\left(b,\mathsfit{a}\right)=r\left(b,\mathsfit{a}\right)+\gamma\sum\limit
 $q_ \pi\left(b,\mathsfit{a}\right)=r\left(b,\mathsfit{a}\right)+\gamma\sum\limits_ \mathsfit{o}{\omega\left(\mathsfit{o}\middle\vert b,\mathsfit{a}\right)v_ \pi\left(\mathfrak{u}\left(b,\mathsfit{a},\mathsfit{o}\right)\right)}$
 
 
+## 第480页倒数第2个通栏数学表达式
+
+$\prod\limits_{\tau'=\tau}^{t-1}$
+
+#### 改为
+
+$\prod\limits_{\tau'=t}^{\tau-1}$
+
+
+## 第480页倒数第1个通栏数学表达式
+
+$\sum\limits_{\tau=0}^{t_ \text{max}-1}$
+
+#### 改为
+
+$\sum\limits_{\tau=0}^{t_ \text{max}-t-1}$
+
+
 ## 第481页第1组通栏数学表达式
 
-#### 把其中的 $\mathsfit{s}$ 改为 $\mathsfit{x}$ （共7处），把其中的 $\mathcal{S}$ 改为 $\mathcal{X}$ （共2处）。
+把其中的 $\mathsfit{s}$ 改为 $\mathsfit{x}$ （共7处），把其中的 $\mathcal{S}$ 改为 $\mathcal{X}$ （共2处）。
+
+
+## 第489页第3行
+
+信任状态是
+
+#### 改为
+
+信任状态价值是

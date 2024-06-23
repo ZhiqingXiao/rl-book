@@ -930,11 +930,11 @@ $\tau\in\mathcal{T}$
 
 ## 第466页第1组通栏数学表达式
 
-$\gamma^{{\huge\tau}_ t}$
+$\gamma^{ {\huge\tau}_ t}$
 
 #### 改为
 
-$\gamma^{{\huge\tau}_ i}$
+$\gamma^{ {\huge\tau}_ i}$
 
 
 ## 第466页第3个通栏数学表达式第2行和第5个通栏数学表达式第2行（共2处）

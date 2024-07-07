@@ -110,9 +110,7 @@
 
 3.2.1. Policy Evaluation
 
-3.2.2. Policy Improvement
-
-3.2.3. Policy Iteration
+3.2.2. Policy Iteration
 
 #### 3.3. VI: Value Iteration
 

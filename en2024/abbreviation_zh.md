@@ -40,6 +40,7 @@
 | ES | 进化策略 | Evolution Strategy |
 | FIM | Fisher信息矩阵 | Fisher Information Matrix |
 | GAIL | 生成对抗模仿学习 | Generative Adversarial Imitation Learning |
+| GAE | 推广的优势估计 | Generalized Advantage Estimate |
 | GAN | 生成对抗网络 | Generative Adversarial Network |
 | GP | Gaussian过程 | Gaussian Process |
 | GPT | 生成性预变换模型 | Generative Pre-trained Transformer |

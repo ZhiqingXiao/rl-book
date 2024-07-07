@@ -7,7 +7,7 @@
 ## Table of Gym Internal
 
 | section | class | codes | note |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | Section 1.6.2 | environment class `gym.Env` | [core.py](https://github.com/openai/gym/blob/master/gym/core.py) | [Note](#environment-classes) |
 | Section 1.6.2 | space class `gym.space.Space` | [space.py](https://github.com/openai/gym/blob/master/gym/spaces/space.py) | [Note](#space-classes) |
 | Section 1.6.2 | space class `gym.space.Box` | [box.py](https://github.com/openai/gym/blob/master/gym/spaces/box.py) | [Note](#the-class-box) |

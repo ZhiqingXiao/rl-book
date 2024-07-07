@@ -40,6 +40,7 @@
 | ES | Evolution Strategy |
 | FIM | Fisher Information Matrix |
 | GAIL | Generative Adversarial Imitation Learning |
+| GAE | Generalized Advantage Estimate |
 | GAN | Generative Adversarial Network |
 | GP | Gaussian Process |
 | GPT | Generative Pre-trained Transformer |

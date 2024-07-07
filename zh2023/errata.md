@@ -39,6 +39,14 @@ $\mathrm{E}_ \pi$
 $\mathrm{E}$
 
 
+## 第36页注意内前两组通栏数学表达式
+
+
+#### 删去
+
+$\mathsfit{s}\in\mathcal{S}$
+
+
 ## 第37页最后1行和第38页前3行（共4处）
 
 $\sum\limits_ {t=1}^{+\infty}$
@@ -368,15 +376,6 @@ $v_ \pi^\left(\text{H}\right)\left(\mathsfit{s},\mathsfit{a}\right)$
 $v_ \pi^\left(\text{H}\right)\left(\mathsfit{s}\right)$
 
 
-## 第273页10.1.3节小节标题之前的一组通栏数学表达式
-
-$\pi_ \pi^{\left(\text{H}\right)}$
-
-#### 改为
-
-$\pi$
-
-
 ## 第272页第2组通栏数学表达式
 
 $\sum\limits_ {\mathsfit{a}}$
@@ -402,6 +401,33 @@ $\mathrm{E}_ {\left(\mathsfit{s},\mathsfit{a}\right)\sim\rho_ \pi}\left[q_ \pi^{
 #### 改为
 
 $\mathrm{E}_ {\left(\mathsfit{S},\mathsfit{A}\right)\sim\rho_ \pi}\left[q_ \pi^{\left(\text{soft}\right)}\left(\mathsfit{S},\mathsfit{A}\right)+\alpha^{\left(\mathrm{H}\right)}\mathrm{H}\left[\pi\left(\cdot\middle\vert\mathsfit{S}\right)\right]\right]$
+
+
+## 第273页10.1.3节小节标题之前的一组通栏数学表达式
+
+$\pi_ \pi^{\left(\text{H}\right)}$
+
+#### 改为
+
+$\pi$
+
+
+## 第274页最后一组通栏数学表达式
+
+$\mathop{\mathrm{logsumexp}}\limits_{\mathsfit{a}\in\mathcal{A}\left(\mathsfit{s}\right)}\frac{1}{\alpha^{\left(\mathrm{H}\right)}}q\left(\mathsfit{s},\mathsfit{a}\right)$
+
+#### 改为
+
+$\mathop{\mathrm{logsumexp}}\limits_{\mathsfit{a}'\in\mathcal{A}\left(\mathsfit{s}'\right)}\frac{1}{\alpha^{\left(\mathrm{H}\right)}}q\left(\mathsfit{s}',\mathsfit{a}'\right)$
+
+
+## 第275页页第4组通栏数学表达式三行中的中间那行
+
+$\alpha^{\left(\mathrm{H}\right)}\mathop{\mathrm{logsumexp}}\limits_{\mathsfit{a}\in\mathcal{A}\left(\mathsfit{s}\right)}\frac{1}{\alpha^{\left(\mathrm{H}\right)}}q'\left(\mathsfit{s},\mathsfit{a}\right)-\alpha^{\left(\mathrm{H}\right)}\mathop{\mathrm{logsumexp}}\limits_{\mathsfit{a}\in\mathcal{A}\left(\mathsfit{s}\right)}\frac{1}{\alpha^{\left(\mathrm{H}\right)}}q''\left(\mathsfit{s},\mathsfit{a}\right)$
+
+#### 改为
+
+$\alpha^{\left(\mathrm{H}\right)}\mathop{\mathrm{logsumexp}}\limits_{\mathsfit{a}'\in\mathcal{A}\left(\mathsfit{s}'\right)}\frac{1}{\alpha^{\left(\mathrm{H}\right)}}q'\left(\mathsfit{s}',\mathsfit{a}'\right)-\alpha^{\left(\mathrm{H}\right)}\mathop{\mathrm{logsumexp}}\limits_{\mathsfit{a}'\in\mathcal{A}\left(\mathsfit{s}'\right)}\frac{1}{\alpha^{\left(\mathrm{H}\right)}}q''\left(\mathsfit{s}',\mathsfit{a}'\right)$
 
 
 ## 第276页最后一组通栏数学表达式（两处）
@@ -886,6 +912,15 @@ $\nabla\tilde{q}\left(\mathsfit{S},\mathsfit{A},\mathbfit{w}\right)$
 #### 删去
 
 $\gamma$
+
+
+## 第460页正文最后一段第1行
+
+Tayler
+
+#### 改为
+
+Taylor
 
 
 ## 第462页第2组通栏数学表达式（1处）和第4组通栏数学表达式（2处）共3处

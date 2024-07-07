@@ -87,7 +87,7 @@ In the sequel are notations throughout the book. We also occasionally follow oth
 | $\boldsymbol\upeta$ | vector representation of state visitation frequency |
 | $\lambda$ | decay strength of eligibility trace |
 | $\boldsymbol\uptheta$ | parameters for policy function estimates |
-| $\vartheta$ | threshold for value iteration |
+| $\vartheta$ | threshold for numerical iteration |
 | $\uppi$ | the constant $\uppi$ ( $\approx3.14$ ) |
 | $\mathit\Pi$, $\pi$ | policy |
 | $\pi_ \ast$ | optimal policy |
@@ -104,6 +104,7 @@ In the sequel are notations throughout the book. We also occasionally follow oth
 | $\stackrel{\text{a.e.}}{=}$ | equal almost everywhere |
 | $\stackrel{\text{d}}{=}$ | share the same distribution |
 | $\stackrel{\text{def}}{=}$ | define |
+| $\leftarrow$ | assign |
 | $\lt$, $\le$, $\ge$, $\gt$ | compare numbers; element-wise comparison |
 | $\prec$, $\preccurlyeq$, $\succcurlyeq$, $\succ$ | partial order comparison |
 | $\ll$ | absolute continuous |

@@ -6,18 +6,18 @@
 
 ## 随书解读索引
 
-| 章节 | \# | 类 | 源代码 | 解读 |
-| --- | --- | --- | --- | --- |
-| 1.6.2节 | Gym源码解读1-1 | 环境类`gym.Env` | [core.py](https://github.com/openai/gym/blob/master/gym/core.py) | [解读](#环境类) |
-| 1.6.2节 | Gym源码解读1-2 | 空间类`gym.space.Space` | [space.py](https://github.com/openai/gym/blob/master/gym/spaces/space.py) | [解读](#空间类) |
-| 1.6.2节 | Gym源码解读1-3 | 空间类`gym.space.Box` | [box.py](https://github.com/openai/gym/blob/master/gym/spaces/box.py) | [解读](#空间类Box) |
-| 1.6.2节 | Gym源码解读1-4 | 空间类`gym.space.Discrete` | [discrete.py](https://github.com/openai/gym/blob/master/gym/spaces/discrete.py) | [解读](#空间类Discrete) |
-| 1.6.2节 | Gym源码解读1-5 | 包装类`gym.Wrapper` | [core.py](https://github.com/openai/gym/blob/master/gym/core.py) | [解读](#包装类) |
-| 1.6.2节 | Gym源码解读1-6 | 包装类`gym.wrapper.TimeLimit` | [time_limit.py](https://github.com/openai/gym/blob/master/gym/wrappers/time_limit.py) | [解读](#包装类TimeLimit) |
-| 4.3.1节 | Gym源码解读4-1 | 空间类`gym.space.Tuple` | [tuple.py](https://github.com/openai/gym/blob/master/gym/spaces/tuple.py) | [解读](#空间类Tuple) |
-| 11.3.1节 | Gym源码解读11-1 | 包装类`gym.wrapper.TransformReward` | [transform_reward.py](https://github.com/openai/gym/blob/master//gym/wrappers/transform_reward.py) | [解读](#包装类TransformReward) |
-| 12.6.3节 | Gym源码解读12-1 | 包装类`gym.wrapper.AtariPreprocessing` | [atari_preprocessing.py](https://github.com/openai/gym/blob/master/gym/wrappers/atari_preprocessing.py) | [解读](#包装类AtariPreprocessing) |
-| 12.6.3节 | Gym源码解读12-2 | 包装类`gym.wrapper.FrameStack` | [frame_stack.py](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py) | [解读](#包装类FrameStack) |
+| 章节 | 类 | 源代码 | 解读 |
+| --- | --- | --- | --- |
+| 1.6.2节 | 环境类`gym.Env` | [core.py](https://github.com/openai/gym/blob/master/gym/core.py) | [解读](#环境类) |
+| 1.6.2节 | 空间类`gym.space.Space` | [space.py](https://github.com/openai/gym/blob/master/gym/spaces/space.py) | [解读](#空间类) |
+| 1.6.2节 | 空间类`gym.space.Box` | [box.py](https://github.com/openai/gym/blob/master/gym/spaces/box.py) | [解读](#空间类Box) |
+| 1.6.2节 | 空间类`gym.space.Discrete` | [discrete.py](https://github.com/openai/gym/blob/master/gym/spaces/discrete.py) | [解读](#空间类Discrete) |
+| 1.6.2节 | 包装类`gym.Wrapper` | [core.py](https://github.com/openai/gym/blob/master/gym/core.py) | [解读](#包装类) |
+| 1.6.2节 | 包装类`gym.wrapper.TimeLimit` | [time_limit.py](https://github.com/openai/gym/blob/master/gym/wrappers/time_limit.py) | [解读](#包装类TimeLimit) |
+| 4.3.1节 | 空间类`gym.space.Tuple` | [tuple.py](https://github.com/openai/gym/blob/master/gym/spaces/tuple.py) | [解读](#空间类Tuple) |
+| 11.3.1节 | 包装类`gym.wrapper.TransformReward` | [transform_reward.py](https://github.com/openai/gym/blob/master//gym/wrappers/transform_reward.py) | [解读](#包装类TransformReward) |
+| 12.6.3节 | 包装类`gym.wrapper.AtariPreprocessing` | [atari_preprocessing.py](https://github.com/openai/gym/blob/master/gym/wrappers/atari_preprocessing.py) | [解读](#包装类AtariPreprocessing) |
+| 12.6.3节 | 包装类`gym.wrapper.FrameStack` | [frame_stack.py](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py) | [解读](#包装类FrameStack) |
 
 
 ## 环境类

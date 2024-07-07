@@ -87,7 +87,7 @@
 | $\boldsymbol\upeta$ | 状态访问频次的向量表示 | vector representation of state visitation frequency |
 | $\lambda$ | 资格迹衰减强度 | decay strength of eligibility trace |
 | $\boldsymbol\uptheta$ | 策略估计参数 | parameters for policy function estimates |
-| $\vartheta$ | 价值迭代终止阈值 | threshold for value iteration |
+| $\vartheta$ | 数值迭代终止阈值 | threshold for numerical iteration |
 | $\uppi$ | 圆周率 | the constant $\uppi$ ( $\approx3.14$ ) |
 | $\mathit\Pi$, $\pi$ | 策略 | policy |
 | $\pi_ \ast$ | 最优策略 | optimal policy |
@@ -104,6 +104,7 @@
 | $\stackrel{\text{a.e.}}{=}$ | 几乎处处相等 | equal almost everywhere |
 | $\stackrel{\text{d}}{=}$ | 分布相同 | share the same distribution |
 | $\stackrel{\text{def}}{=}$ | 定义 | define |
+| $\leftarrow$ | 赋值 | assign |
 | $\lt$, $\le$, $\ge$, $\gt$ | 普通数值比较；向量逐元素比较 | compare numbers; element-wise comparison |
 | $\prec$, $\preccurlyeq$, $\succcurlyeq$, $\succ$ | 偏序关系 | partial order comparison |
 | $\ll$ | 绝对连续 | absolute continuous |
@@ -111,3 +112,4 @@
 | $\nabla$ | 梯度 | gradient |
 | $\sim$ | 服从分布；效用相同 | obey a distribution; utility equivalence in distributional RL |
 | $\left\|\quad\right\|$ | 实数的绝对值；向量或矩阵的逐元素求绝对值；集合的元素个数 | absolute value of a real number; element-wise absolute values of a vector or a matrix; the number of elements in a set |
+

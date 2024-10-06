@@ -43,9 +43,9 @@ All chapters are accompanied with Python codes.
 
 ### Resources
 
+- TOC, Table of notations, etc: [PDF in SpringerLink](https://link.springer.com/content/pdf/bfm:978-981-19-4933-3/1)
 - Reference answers of multiple choices: [link](https://zhiqingxiao.github.io/rl-book/en2024/choice.html)
 - Guide to set up developing environment: [Windows](https://github.com/ZhiqingXiao/rl-book/blob/master/en2024/setup/setupwin.md) [macOS](https://github.com/ZhiqingXiao/rl-book/blob/master/en2024/setup/setupmac.md)
-- Table of notations: [link](https://github.com/ZhiqingXiao/rl-book/blob/master/en2024/notation.md)
 - Table of abbreviations: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/abbreviation.md)
 - Table of algorithms: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/algo.md)
 - Table of interdisciplinary references: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/iref.md)

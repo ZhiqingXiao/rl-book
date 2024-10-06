@@ -13,7 +13,7 @@ Please email me if you are interested in publishing this book in other languages
 
 This is a tutorial book on reinforcement learning, with explanation of theory and Python implementation.
 
-- Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including all major algorithms such as eligibility traces and soft actor-critic algorithms.
+- Theory: Starting from a uniform mathematical framework, this book derives the theory and algorithms of reinforcement learning, including the algorithms in large model era such as PPO, RLHF, IRL, and PbRL.
 - Practice: Every chapter is accompanied by high quality implementation based on Python 3, Gym 0.26, and TensorFlow 2 / PyTorch 1&2. All codes are compatible with Windows, Linux, and macOS, can be run in a laptop. 
 
 

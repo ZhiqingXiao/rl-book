@@ -10,7 +10,7 @@ This part will show how to set up a minimum environment. After this step, you ar
 
 **Steps:**
 
-- Download the installer on https://www.anaconda.com/products/distribution (Pick Windows version for Windows users).The name of installer is alike `Anaconda3-2024.02-1-Windows-x86_64.exe`, and the size is about 0.9 GB.
+- Download the installer on https://www.anaconda.com/products/distribution (Pick Windows version for Windows users).The name of installer is alike `Anaconda3-2024.06-1-Windows-x86_64.exe`, and the size is about 0.9 GB.
 - Double click the installer to start the install wizard and install accordingly. The free space of the disk should be at least 13GB. (If the free space of the disk is too little, you may still be able to install Anaconda 3 itself, but you may not have enough free space in the follow-up steps. 13GB is the storage requirements for all steps in this article except Visual Studio.) Record the location of Anaconda installation. The default location is `C:%HOMEPATH%\anaconda3`. We will use the location in the sequal.
 
 #### Create a New Conda Environment

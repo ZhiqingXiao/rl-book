@@ -1,6 +1,8 @@
 # Reinforcement Learning: Theory and Python Implementation
 
-**The First Reinforcement Learning Tutorial Book with one-on-one mapping TensorFlow 2 and PyTorch 1/2 Implementation**
+**The First Reinforcement Learning Tutorial Book in English with one-on-one mapping TensorFlow 2 and PyTorch 1/2 Implementation**
+
+**Cover RL algorithms for large models such as PPO, RLHF, IRL, and PbRL**
 
 Please email me if you are interested in publishing this book in other languages.
 
@@ -8,7 +10,7 @@ Please email me if you are interested in publishing this book in other languages
 
 This book comprehensively introduces the mainstream RL theory.
 
-- This book introduces the trunk of the modern RL theory in a systematically way. All major results are accompanied with proofs. We introduce the algorithms based on the theory, which covers all mainstream RL algorithms, including both classical RL algorithms such as eligibility trace and deep RL algorithm such as MuZero.
+- This book introduces the trunk of the modern RL theory in a systematically way. All major results are accompanied with proofs. We introduce the algorithms based on the theory, which covers all mainstream RL algorithms, including the algorithms in large model era such as PPO, RLHF, IRL, and PbRL.
 - This book uses a consistent set of mathematical notations, which are compatible with mainstream RL tutorials.
 
 All chapters are accompanied with Python codes.
@@ -22,22 +24,22 @@ All chapters are accompanied with Python codes.
 
 ### Table of Contents
 
-01. Introduction of Reinforcement Learning
-02. Markov Decision Process
-03. Model-based Numeric Iteration
-04. MC: Monte-Carlo Learning
-05. TD: Temporal Difference Learning
-06. Function Approximation
-07. PG: Policy Gradient
-08. AC: Actor-Critic
-09. DPG: Deterministic Policy Gradient
-10. Maximum-Entropy RL
-11. Policy-based Gradient-Free Algorithms
-12. Distributional RL
-13. Minimize Regret
-14. Tree Search
-15. More Agent-Environment Interface
-16. Learning from Feedback and Imitation Learning
+01. Introduction of Reinforcement Learning [view](https://doi.org/10.1007/978-981-19-4933-3_1)
+02. Markov Decision Process [view](https://doi.org/10.1007/978-981-19-4933-3_2)
+03. Model-based Numeric Iteration [view](https://doi.org/10.1007/978-981-19-4933-3_3)
+04. MC: Monte-Carlo Learning [view](https://doi.org/10.1007/978-981-19-4933-3_4)
+05. TD: Temporal Difference Learning [view](https://doi.org/10.1007/978-981-19-4933-3_5)
+06. Function Approximation [view](https://doi.org/10.1007/978-981-19-4933-3_6)
+07. PG: Policy Gradient [view](https://doi.org/10.1007/978-981-19-4933-3_7)
+08. AC: Actor-Critic [view](https://doi.org/10.1007/978-981-19-4933-3_8)
+09. DPG: Deterministic Policy Gradient [view](https://doi.org/10.1007/978-981-19-4933-3_9)
+10. Maximum-Entropy RL [view](https://doi.org/10.1007/978-981-19-4933-3_10)
+11. Policy-based Gradient-Free Algorithms [view](https://doi.org/10.1007/978-981-19-4933-3_11)
+12. Distributional RL [view](https://doi.org/10.1007/978-981-19-4933-3_12)
+13. Minimize Regret [view](https://doi.org/10.1007/978-981-19-4933-3_13)
+14. Tree Search [view](https://doi.org/10.1007/978-981-19-4933-3_14)
+15. More Agent-Environment Interface [view](https://doi.org/10.1007/978-981-19-4933-3_15)
+16. Learning from Feedback and Imitation Learning [view](https://doi.org/10.1007/978-981-19-4933-3_16)
 
 ### Resources
 
@@ -45,6 +47,10 @@ All chapters are accompanied with Python codes.
 - Guide to set up developing environment: [Windows](https://github.com/ZhiqingXiao/rl-book/blob/master/en2024/setup/setupwin.md) [macOS](https://github.com/ZhiqingXiao/rl-book/blob/master/en2024/setup/setupmac.md)
 - Table of notations: [link](https://github.com/ZhiqingXiao/rl-book/blob/master/en2024/notation.md)
 - Table of abbreviations: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/abbreviation.md)
+- Table of algorithms: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/algo.md)
+- Table of interdisciplinary references: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/iref.md)
+- Table of figures: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/figure.md)
+- Table of tables: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/table.md)
 - Gym Internal: [link](https://github.com/ZhiqingXiao/rl-book/blob/master/en2024/gym.md)
 - Bibliography: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/bibliography.md)
 
@@ -83,17 +89,20 @@ Note:
      title     = {Reinforcement Learning: Theory and {Python} Implementation},
      author    = {Zhiqing Xiao}
      year      = 2024,
-     publisher = {Springer Nature},
+     month     = 9,
+     publisher = {Springer},
     }
 
 # 强化学习：原理与Python实现（英文版）
 
-**全球第一本配套 TensorFlow 2 和 PyTorch 1/2 一比一对照代码的强化学习书**
+**全球第一本配套 TensorFlow 2 和 PyTorch 1/2 一比一对照代码的英文强化学习书**
+
+**解密大模型训练技术 PPO、RLHF、IRL和PbRL**
 
 ### 本书特色
 
 本书完整地介绍了主流强化学习理论。
-- 选用现代强化学习理论体系，突出主干，主要定理均给出证明过程。基于理论讲解强化学习算法，全面覆盖主流强化学习算法，包括了资格迹等经典算法和MuZero等深度强化学习算法。
+- 选用现代强化学习理论体系，突出主干，主要定理均给出证明过程。基于理论讲解强化学习算法，全面覆盖主流强化学习算法，包括了资格迹等经典算法和MuZero等深度强化学习算法。涵盖大模型时代的常用算法如PPO、RLHF、IRL、PbRL等。
 - 全书采用完整的数学体系，各章内容循序渐进。全书采用一致的数学符号，并兼容主流强化学习教程。
 
 本书各章均提供Python代码，实战性强。

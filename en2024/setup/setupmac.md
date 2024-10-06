@@ -10,7 +10,7 @@ This part will show how to set up a minimum environment. After this step, you ar
 
 **Steps:**
 
-- Download the installer on https://www.anaconda.com/products/distribution (Pick MacOS Graphical Installer for MacOS users). The name of installer is alike `Anaconda3-2024.02-1-MacOSX-x86_64.pkg` (or `Anaconda3-2024.02-1-MacOSX-amd64.pkg` for M chip), and the size is about 0.6 GB.
+- Download the installer on https://www.anaconda.com/products/distribution (Pick MacOS Graphical Installer for MacOS users). The name of installer is alike `Anaconda3-2024.06-1-MacOSX-x86_64.pkg` (or `Anaconda3-2024.06-1-MacOSX-amd64.pkg` for M chip), and the size is about 0.7 GB.
 - Double click the installer to start the install wizard and install accordingly. The free space of the disk should be at least 13GB. (If the free space of the disk is too little, you may still be able to install Anaconda 3 itself, but you may not have enough free space in the follow-up steps. 13GB is the storage requirements for all steps in this article.) Record the location of Anaconda installation. The default location is `/opt/anaconda3`. We will use the location in the sequal.
 
 #### Create a New Conda Environment

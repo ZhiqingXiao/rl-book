@@ -10,7 +10,7 @@
 
 **步骤：**
 
-- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择MacOS Graphical版的安装包）。安装包名字像 `Anaconda3-2024.02-1-MacOSX-x86_64.pkg`（M芯片版安装包名字像`Anaconda3-2024.02-1-MacOSX-amd64.pkg`），大小约0.6 GB。
+- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择MacOS Graphical版的安装包）。安装包名字像 `Anaconda3-2024.06-1-MacOSX-x86_64.pkg`（M芯片版安装包名字像`Anaconda3-2024.06-1-MacOSX-amd64.pkg`），大小约0.7 GB。
 - 双击安装包启动安装向导完成安装。需要安装在剩余空间大于13GB的硬盘上。（如果空间小于这个数，虽然也能完成Anaconda 3的安装，但是后续步骤的空间就不够了。13GB是后续所有步骤需要的空间。）安装过程中记下Anaconda的安装路径。默认路径为：`/opt/anaconda3`。后续操作会用到这个路径。
 
 #### 新建conda环境

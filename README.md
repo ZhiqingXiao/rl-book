@@ -21,6 +21,9 @@ This is a tutorial book on reinforcement learning, with explanation of theory an
 
 Check [here](https://github.com/ZhiqingXiao/rl-book/tree/master/en2024) for codes, exercise answers, etc.
 
+Check [SpringerLink](https://doi.org/10.1007/978-981-19-4933-3) [Amazon](https://www.amazon.com/dp/9811949328) for book contents.
+
+
 ### Table of Codes
 
 All codes have been saved as a .ipynb file and a .html file in the same directory.
@@ -46,7 +49,7 @@ All codes have been saved as a .ipynb file and a .html file in the same director
 | 16 | [HumanoidBulletEnv-v0](https://zhiqingxiao.github.io/rl-book/en2024/code/HumanoidBulletEnv-v0_ClosedForm_demo.html) | BehaviorClone [tf](https://zhiqingxiao.github.io/rl-book/en2024/code/HumanoidBulletEnv-v0_BC_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2024/code/HumanoidBulletEnv-v0_BC_torch.html), GAIL [tf](https://zhiqingxiao.github.io/rl-book/en2024/code/HumanoidBulletEnv-v0_GAILPPO_tf.html) [torch](https://zhiqingxiao.github.io/rl-book/en2024/code/HumanoidBulletEnv-v0_GAILPPO_torch.html) |
 
 
-# 强化学习：原理与Python实战
+# 强化学习：原理与Python实战 (2023 中文版)
 
 **全球第一本配套 TensorFlow 2 和 PyTorch 1/2 对照代码的强化学习教程书**
 
@@ -89,7 +92,7 @@ All codes have been saved as a .ipynb file and a .html file in the same director
 
 本书介绍强化学习理论及其 Python 实现。
 - 理论完备：全书用一套完整的数学体系，严谨地讲授强化学习的理论基础，主要定理均给出证明过程。各章内容循序渐进，覆盖了所有主流强化学习算法，包括资格迹等非深度强化学习算法和柔性执行者/评论者等深度强化学习算法。
-- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3、Gym 0.26 和 TensorFlow 2 + PyTorch 1/2，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
+- 案例丰富：在您最爱的操作系统（包括 Windows、macOS、Linux）上，基于 Python 3、Gym 0.26 和 TensorFlow 2，实现强化学习算法。全书实现统一规范，体积小、重量轻。第 1～9 章给出了算法的配套实现，环境部分只依赖于 Gym 的最小安装，在没有 GPU 的计算机上也可运行；第 10～12 章介绍了多个热门综合案例，涵盖 Gym 的完整安装和自定义扩展，在有普通 GPU 的计算机上即可运行。
 
 **QQ群**
 

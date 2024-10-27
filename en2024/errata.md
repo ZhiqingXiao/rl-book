@@ -133,3 +133,37 @@ $q^{(0)}$
 #### $\Downarrow$
 
 `v = self.q[next_state].max()`
+
+
+## Page 183, Section 6.3.2, Second Paragraph, Line 5
+
+to next state $\mathsfit{a}^{\left(0\right)}$
+
+#### $\Downarrow$
+
+to next state $\mathsfit{s}^{\left(0\right)}$
+
+
+## Page 184, the block math, right-hand side of the equation
+
+```math
+\begin{bmatrix}
+2 & 0 & 0 & \cdots & 1 \\
+1 & 2 & 0 & \cdots & 0 \\
+1 & 0 & 2 & \cdots & 0 \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & 0 & 2 & \cdots & 0
+\end{bmatrix}
+```
+
+#### $\Downarrow$
+
+```math
+\begin{bmatrix}
+2 & 0 & 0 & \cdots & 0 & 1 \\
+1 & 2 & 0 & \cdots & 0 & 0 \\
+1 & 0 & 2 & \cdots & 0 & 0 \\
+\vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\
+1 & 0 & 0 & \cdots & 2 & 0
+\end{bmatrix}
+```

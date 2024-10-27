@@ -167,3 +167,12 @@ to next state $\mathsfit{s}^{\left(0\right)}$
 1 & 0 & 0 & \cdots & 2 & 0
 \end{bmatrix}
 ```
+
+## Page 186, the first block math, Line 1
+
+$\delta_ t=\gamma{\left(\mathbf{g}^{\left(0\right)}\right)}^\top\mathbf{w}_t-{\left(\mathbf{g}^{\left(0\right)}\right)}^\top\mathbf{w}_t$
+
+#### $\Downarrow$
+
+$\delta_ t=\gamma{\left(\mathbf{g}^{\left(0\right)}\right)}^\top\mathbf{w}_t-{\left(\mathbf{g}^{\left(i\right)}\right)}^\top\mathbf{w}_t$
+

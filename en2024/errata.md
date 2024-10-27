@@ -74,8 +74,35 @@ $q_ \ast\left(\text{full},\text{ignore}\right)=-6,\quad v_ \ast\left(\text{full}
 
 ## Interdisciplinary Reference 3.1, Page 82, Bullet Group, the Last Bullet Point
 
-$d\left(x',x'''\right)$
+$d\left(\mathsfit{x}',\mathsfit{x}'''\right)$
 
 #### $\Downarrow$
 
-$d\left(x'',x'''\right)$
+$d\left(\mathsfit{x}'',\mathsfit{x}'''\right)$
+
+
+## Example 4.1, Page 106. 3 occurances in total, including Fig. 4.1.
+
+$\frac{1-\mathrm{e}^x}{\cos x}$
+
+#### $\Downarrow$
+
+$\frac{1-\mathrm{e}^{-x}}{\cos x}$
+
+
+## Interdisciplinary Reference 4.2, Page 107, Third Paragraph, the Third Bullet Point
+
+$\sum_{k=0}^{+\infty}{\alpha^2_k}=+\infty$
+
+#### $\Downarrow$
+
+$\sum_{k=0}^{+\infty}{\alpha^2_k}<+\infty$
+
+
+## Example 4.2, Page 119. 4 occurances in total.
+
+$\frac{1-\mathrm{e}^x}{\cos x}$
+
+#### $\Downarrow$
+
+$\frac{1-\mathrm{e}^{-x}}{\cos x}$

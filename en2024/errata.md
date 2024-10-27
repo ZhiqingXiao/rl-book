@@ -81,7 +81,7 @@ $d\left(\mathsfit{x}',\mathsfit{x}'''\right)$
 $d\left(\mathsfit{x}'',\mathsfit{x}'''\right)$
 
 
-## Example 4.1, Page 106. 3 occurances in total, including Fig. 4.1.
+## Example 4.1, Page 106. 3 occurrences in total, including Fig. 4.1.
 
 $\frac{1-\mathrm{e}^x}{\cos x}$
 
@@ -99,10 +99,28 @@ $\sum_{k=0}^{+\infty}{\alpha^2_k}=+\infty$
 $\sum_{k=0}^{+\infty}{\alpha^2_k}<+\infty$
 
 
-## Example 4.2, Page 119. 4 occurances in total.
+## Example 4.2, Page 119. 4 occurrences in total.
 
 $\frac{1-\mathrm{e}^x}{\cos x}$
 
 #### $\Downarrow$
 
 $\frac{1-\mathrm{e}^{-x}}{\cos x}$
+
+
+## Page 154, Second bullet Point of the Bullet Group, First Two Lines. Two occurrence.
+
+$q^{(0)}$
+
+#### $\Downarrow$
+
+$q^{(1)}$
+
+
+## Page 154, Second bullet Point of the Bullet Group, First Two Lines. Two occurrence.
+
+$q^{(1)}$
+
+#### $\Downarrow$
+
+$q^{(0)}$

@@ -19,7 +19,7 @@ This is a tutorial book on reinforcement learning, with explanation of theory an
 
 ### Supporting contents for English version
 
-Check [here](https://github.com/ZhiqingXiao/rl-book/tree/master/en2024) for codes, exercise answers, etc.
+Check [here](https://github.com/ZhiqingXiao/rl-book/tree/master/en2024) for codes, exercise answers, errata, etc.
 
 Check [SpringerLink](https://doi.org/10.1007/978-981-19-4933-3) [Amazon](https://www.amazon.com/dp/9811949328) for book contents.
 
@@ -96,7 +96,7 @@ All codes have been saved as a .ipynb file and a .html file in the same director
 
 **QQ群**
 
-- QQ群：722846914（勘误报错可发此群，其他问题提问前请先Google，群主和管理员不提供免费咨询服务）
-- 多任务群：696984257（非小白群，多任务强化学习+强化元学习+终身强化学习+迁移强化学习，勘误报错勿发此群，提问前请先Google）
+- QQ群：948110103（勘误报错可发此群。其他问题提问前请先问过AI和Google，群主和管理员不提供免费咨询服务）
+- 多任务群：696984257（非小白群，多任务强化学习+强化元学习+终身强化学习+迁移强化学习，勘误报错勿发此群，提问前请先问过AI和Google）
 - 关于入群验证问题：由于QQ的bug，即使正确输入答案，也可能会验证失败。这时更换设备重试、更换输入法重试、改日重试均可能解决问题。如果答案中有英文字母，清注意大小写。
-- 中文版书前言中给出的QQ群（935702193、243613392和948110103）已满，不再新增群成员，谢谢理解。
+- 中文版书前言中给出的QQ群（935702193、243613392和722846914）已满，不再新增群成员，谢谢理解。

@@ -100,7 +100,7 @@
 
 This book comprehensively introduces the mainstream RL theory.
 
-- This book introduces the trunk of the modern RL theory in a systematically way. All major results are accompanied with proofs. We introduce the algorithms based on the theory, which covers all mainstream RL algorithms, including both classical RL algorithms such as eligibility trace and deep RL algorithm such as MuZero.
+- This book introduces the trunk of the modern RL theory systematically. All major results are accompanied with proofs. We introduce the algorithms based on the theory, which covers all mainstream RL algorithms, including both classical RL algorithms such as eligibility trace and deep RL algorithm such as MuZero.
 - This book uses a consistent set of mathematical notations, which are compatible with mainstream RL tutorials.
 
 All chapters are accompanied with Python codes.

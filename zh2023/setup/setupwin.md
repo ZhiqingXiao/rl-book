@@ -2,6 +2,8 @@
 
 本文介绍如何在Windows 10或11电脑上搭建开发环境。
 
+安装过程需要连网。
+
 ## 第1部分：最小安装
 
 本部分介绍搭建最小环境的方法。完成本步后，你可以运行第1-5章、第13章、第16章代码。
@@ -10,7 +12,7 @@
 
 **步骤：**
 
-- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择Windows版的安装包）。安装包名字像 `Anaconda3-2024.06-1-Windows-x86_64.exe`，大小约0.9GB。
+- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择Windows版的安装包）。安装包名字像 `Anaconda3-2024.10-1-Windows-x86_64.exe`，大小约0.9GB。
 - 双击安装包启动安装向导完成安装。需要安装在剩余空间大于13GB的硬盘上。（如果空间小于这个数，虽然也能完成Anaconda 3的安装，但是后续步骤的空间就不够了。13GB是后续所有步骤（除了安装Visual Studio以外）需要的空间。）安装过程中记下Anaconda的安装路径。默认路径为：`C:%HOMEPATH%\anaconda3`。后续操作会用到这个路径。
 
 #### 新建conda环境
@@ -19,17 +21,21 @@
 
 **步骤：**
 
-- 以管理员身份运行Anaconda Prompt，执行下列命令：（其中`py311`是conda环境名， 你也可以取其他名称）
+- 以管理员身份运行Anaconda Prompt，执行下列命令：（其中`py310`是conda环境名， 你也可以取其他名称）（注：这里使用了Python 3.10而不是3.11和3.12，是因为最新版本的`gym[toy_text,classic_control,box2d]`依赖于`pygame==2.1`。虽然最新版本的pygame的支持Python 3.12，但是pygame 2.1不支持。所以如果要在python 3.11和3.12上安装最新版本的`gym[toy_text,classic_control,box2d]`需要对代码做兼容性调整，比较麻烦。为了简单，这里用经过验证的Python 3.10。）
    ```
-   conda create --name py311 python=3.11
-   conda activate py311
+   conda create --name py310 python=3.10
+   conda activate py310
+   ```
+- 在新的conda目标环境中可以用下列命令安装jupyter:
+   ```
+   conda install jupyter
    ```
 
 #### 安装Python扩展包：numpy、pandas等
 
 **步骤：**
 
-- 以管理员身份运行Anaconda Prompt，在目标conda环境中（你可以用`conda activate py311`进入名为`py311`的conda环境）执行下列命令：
+- 以管理员身份运行Anaconda Prompt，在目标conda环境中（你可以用`conda activate py310`进入名为`py310`的conda环境）执行下列命令：
    ```
    conda install numpy pandas scipy sympy matplotlib
    ```
@@ -54,9 +60,9 @@
    C:
    cd C:%HOMEPATH%\Documents\Anaconda
    ```
-- 运行下列代码（用到了conda环境名，例如`py311`）：
+- 运行下列代码（用到了conda环境名，例如`py310`）：
    ```
-   C:%HOMEPATH%\anaconda3\python.exe C:%HOMEPATH%\anaconda3\cwp.py C:%HOMEPATH%\anaconda3\envs\py311 C:%HOMEPATH%\anaconda3\envs\py311\python.exe C:%HOMEPATH%\anaconda3\Scripts\jupyter-notebook-script.py C:%HOMEPATH%\Documents\Anaconda
+   C:%HOMEPATH%\anaconda3\python.exe C:%HOMEPATH%\anaconda3\cwp.py C:%HOMEPATH%\anaconda3\envs\py310 C:%HOMEPATH%\anaconda3\envs\py310\python.exe C:%HOMEPATH%\anaconda3\Scripts\jupyter-notebook-script.py C:%HOMEPATH%\Documents\Anaconda
    ```
 
 - 等待默认浏览器弹出。推荐您使用Chrome作为默认浏览器。
@@ -76,7 +82,7 @@ Visual Studio社区版是免费的，而且够用。装社区版就好了。
 **步骤：**
 
 - 访问`https://visualstudio.microsoft.com/downloads/`下载Visual Studio社区版安装包。
-- 双击运行安装想到完成安装。具体安装什么组件不太重要，因为我们需要的核心功能肯定是会安装的。在C盘需要8GB的空间。如果你还想装别的组件，可以选择其他盘，选的组件越多占用空间越多，比如15GB。
+- 安装时，除了非选不可的选项外，还需要确保选择包括对应Windows版本的SDK（Windows 10需要勾选Windows 10 SDK，Windows 11需要勾选Windows 11 SDK）。在C盘需要8GB的空间。如果你还想装别的组件，可以选择其他盘，选的组件越多占用空间越多，比如15GB。
 
 #### 在conda环境中安装TensorFlow和PyTorch
 
@@ -98,6 +104,9 @@ Visual Studio社区版是免费的，而且够用。装社区版就好了。
    conda install pytorch cpuonly -c pytorch
    ```
 
+（注：如果想用GPU：在Windows上支持GPU的最新TensorFlow版本为2.10版本，本GitHub仓库代码兼容该TensorFlow版本。在安装TensorFlow GPU之前需要先安装合适版本的CUDA和cudnn。PyTorch的最新版本支持GPU，在选择合适的安装命令后可以自动安装依赖的CUDA和cudnn。）
+
+
 ## 第3.1部分：安装`gym[box2d]`
 
 第10-11章代码需要用到`gym[box2d]`，这个部分安装`gym[box2d]`。如果您不想看这两章代码，可以略过此步，不影响其他部分。
@@ -109,9 +118,9 @@ Visual Studio社区版是免费的，而且够用。装社区版就好了。
 **步骤：**
 
 - 访问`http://www.swig.org/download.html`下载SWIG安装包。安装包的URL可能为
-  http://prdownloads.sourceforge.net/swig/swigwin-4.1.1.zip，大小约11MB。
+  http://prdownloads.sourceforge.net/swig/swigwin-4.3.0.zip，大小约12MB。
 - 将安装包解压到永久位置，例如`%PROGRAMFILE%\swig` （该位置需要管理员权限）。
-- 将解压后得到的文件中`swig.exe`所在的目录（如`%PROGRAMFILE%\swig\swigwin-4.1.1`）加到系统环境变量`PATH`中。（添加环境变量的方法是：用Windows+R打开“运行”窗口，输入`sysdm.cpl`并回车打开“系统属性”。然后在“高级”选项卡下找到“环境变量”，找到`PATH`并设置。
+- 将解压后得到的文件中`swig.exe`所在的目录（如`%PROGRAMFILE%\swig\swigwin-4.3.0`）加到系统环境变量`PATH`中。（添加环境变量的方法是：用Windows+R打开“运行”窗口，输入`sysdm.cpl`并回车打开“系统属性”。然后在“高级”选项卡下找到“环境变量”，找到`PATH`并设置。
 - 重启电脑确保环境变量生效。
 
 #### 在conda环境中安装`gym[box2d]`
@@ -133,7 +142,7 @@ Visual Studio社区版是免费的，而且够用。装社区版就好了。
 
 - 以管理员身份运行Anaconda Prompt，在目标conda环境中执行下列命令以安装`boardgame2`：
    ```
-   pip install --upgrade pybullet
+   pip install --upgrade boardgame2
    ```
 
 ## 第3.3部分：安装PyBullet

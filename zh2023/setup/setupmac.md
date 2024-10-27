@@ -2,6 +2,8 @@
 
 本文介绍如何在macOS （含M芯片版）上搭建开发环境。
 
+安装过程需要连网。
+
 ## 第1部分：最小安装
 
 本部分介绍搭建最小环境的方法。完成本步后，你可以运行第1-5章、第13章、第16章代码。
@@ -10,7 +12,7 @@
 
 **步骤：**
 
-- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择MacOS Graphical版的安装包）。安装包名字像 `Anaconda3-2024.06-1-MacOSX-x86_64.pkg`（M芯片版安装包名字像`Anaconda3-2024.06-1-MacOSX-amd64.pkg`），大小约0.7 GB。
+- 从https://www.anaconda.com/products/distribution 下载Anaconda 3安装包（选择MacOS Graphical版的安装包）。安装包名字像 `Anaconda3-2024.10-1-MacOSX-x86_64.pkg`（M芯片版安装包名字像`Anaconda3-2024.10-1-MacOSX-amd64.pkg`），大小约0.7 GB。
 - 双击安装包启动安装向导完成安装。需要安装在剩余空间大于13GB的硬盘上。（如果空间小于这个数，虽然也能完成Anaconda 3的安装，但是后续步骤的空间就不够了。13GB是后续所有步骤需要的空间。）安装过程中记下Anaconda的安装路径。默认路径为：`/opt/anaconda3`。后续操作会用到这个路径。
 
 #### 新建conda环境
@@ -19,10 +21,10 @@
 
 **步骤：**
 
-- 运行“终端”，执行下列命令：（其中`py311`是conda环境名， 你也可以取其他名称）
+- 运行“终端”，执行下列命令：（其中`py310`是conda环境名， 你也可以取其他名称）（注：这里使用了Python 3.10而不是3.11和3.12，是因为最新版本的`gym[toy_text,classic_control,box2d]`依赖于`pygame==2.1`。虽然最新版本的pygame的支持Python 3.12，但是pygame 2.1不支持。所以如果要在python 3.11和3.12上安装最新版本的`gym[toy_text,classic_control,box2d]`需要对代码做兼容性调整，比较麻烦。为了简单，这里用经过验证的Python 3.10。）
    ```
-   conda create --name py311 python=3.11
-   conda activate py311
+   conda create --name py310 python=3.10
+   conda activate py310
    ```
 - 在新的conda目标环境中可以用下列命令安装jupyter:
    ```
@@ -33,7 +35,7 @@
 
 **步骤：**
 
-- 在目标conda环境中（你可以在终端中用`conda activate py311`进入名为`py311`的conda环境）执行下列命令：
+- 在目标conda环境中（你可以在终端中用`conda activate py310`进入名为`py310`的conda环境）执行下列命令：
    ```
    conda install numpy pandas scipy sympy matplotlib
    ```
@@ -58,9 +60,9 @@
    C:
    cd C:%HOMEPATH%\Documents\Anaconda
    ```
-- 运行下列代码（用到了conda环境名，例如`py311`）：
+- 运行下列代码（用到了conda环境名，例如`py310`）：
    ```
-   /opt/anaconda3/envs/py311/bin/jupyter-notebook
+   /opt/anaconda3/envs/py310/bin/jupyter-notebook
    ```
 
 - 等待默认浏览器弹出。推荐您使用Chrome作为默认浏览器。
@@ -140,7 +142,7 @@
 
 - 在目标conda环境中执行下列命令以安装`boardgame2`：
    ```
-   pip install --upgrade pybullet
+   pip install --upgrade boardgame2
    ```
 
 ## 第3.3部分：安装PyBullet

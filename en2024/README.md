@@ -10,7 +10,7 @@ Please email me if you are interested in publishing this book in other languages
 
 This book comprehensively introduces the mainstream RL theory.
 
-- This book introduces the trunk of the modern RL theory in a systematically way. All major results are accompanied with proofs. We introduce the algorithms based on the theory, which covers all mainstream RL algorithms, including the algorithms in large model era such as PPO, RLHF, IRL, and PbRL.
+- This book introduces the trunk of the modern RL theory systematically. All major results are accompanied with proofs. We introduce the algorithms based on the theory, which covers all mainstream RL algorithms, including the algorithms in large model era such as PPO, RLHF, IRL, and PbRL.
 - This book uses a consistent set of mathematical notations, which are compatible with mainstream RL tutorials.
 
 All chapters are accompanied with Python codes.
@@ -155,7 +155,7 @@ Note:
 
 **常见问题**
 
-- 问：Windows系统下安装TensorFlow或PyTorch失败。答：请在Windows 10/11里安装Visual Studio 2022（如果有旧版本的Visual Studio请先彻底卸载）。请阅读本书的[开发环境搭建指南](https://zhiqingxiao.github.io/rl-book/en2024/setupwin_zh.html)。更多细节和安装问题请自行Google。PyTorch安装可参阅：https://mp.weixin.qq.com/s/uRx1XOPrfFOdMlRU6I-eyA
+- 问：Windows系统下安装TensorFlow或PyTorch失败。答：请在Windows 10/11里安装Visual Studio 2022（如果有旧版本的Visual Studio请先彻底卸载）。请阅读本书的[开发环境搭建指南](https://zhiqingxiao.github.io/rl-book/zh2023/setup/setupwin.html)。更多细节和安装问题请自行Google。PyTorch安装可参阅：https://mp.weixin.qq.com/s/uRx1XOPrfFOdMlRU6I-eyA
 
 - 问：在Visual Studio或Visual Studio Code或PyCharm里面运行代码失败，比如找不到函数`display()`。答：本repo代码是配套Jupyter Notebook环境的，只能在Jupyter Notebook里运行。推荐您安装最新版本的Anaconda并直接运行下载来的Notebook。（`display()`函数是Jupyter Notebook里才有的函数。）不需要安装Visual Studio Code或PyCharm。更多细节或其他错误请自行Google。
 

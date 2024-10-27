@@ -14656,20 +14656,20 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>14:21:37 [INFO] env: &lt;AcrobotEnv&lt;Acrobot-v1&gt;&gt;
-14:21:37 [INFO] action_space: Discrete(3)
-14:21:37 [INFO] observation_space: Box(-28.274333953857422, 28.274333953857422, (6,), float32)
-14:21:37 [INFO] reward_range: (-inf, inf)
-14:21:37 [INFO] metadata: {&#39;render.modes&#39;: [&#39;human&#39;, &#39;rgb_array&#39;], &#39;video.frames_per_second&#39;: 15}
-14:21:37 [INFO] _max_episode_steps: 500
-14:21:37 [INFO] _elapsed_steps: None
-14:21:37 [INFO] id: Acrobot-v1
-14:21:37 [INFO] entry_point: gym.envs.classic_control:AcrobotEnv
-14:21:37 [INFO] reward_threshold: -100.0
-14:21:37 [INFO] nondeterministic: False
-14:21:37 [INFO] max_episode_steps: 500
-14:21:37 [INFO] _kwargs: {}
-14:21:37 [INFO] _env_name: Acrobot
+<pre>00:01:37 [INFO] env: &lt;AcrobotEnv&lt;Acrobot-v1&gt;&gt;
+00:01:37 [INFO] action_space: Discrete(3)
+00:01:37 [INFO] observation_space: Box(-28.274333953857422, 28.274333953857422, (6,), float32)
+00:01:37 [INFO] reward_range: (-inf, inf)
+00:01:37 [INFO] metadata: {&#39;render.modes&#39;: [&#39;human&#39;, &#39;rgb_array&#39;], &#39;video.frames_per_second&#39;: 15}
+00:01:37 [INFO] _max_episode_steps: 500
+00:01:37 [INFO] _elapsed_steps: None
+00:01:37 [INFO] id: Acrobot-v1
+00:01:37 [INFO] entry_point: gym.envs.classic_control:AcrobotEnv
+00:01:37 [INFO] reward_threshold: -100.0
+00:01:37 [INFO] nondeterministic: False
+00:01:37 [INFO] max_episode_steps: 500
+00:01:37 [INFO] _kwargs: {}
+00:01:37 [INFO] _env_name: Acrobot
 </pre>
 </div>
 </div>
@@ -14702,7 +14702,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
         <span class="bp">self</span><span class="o">.</span><span class="n">critic_net</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_net</span><span class="p">(</span>
                 <span class="n">input_size</span><span class="o">=</span><span class="n">env</span><span class="o">.</span><span class="n">observation_space</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
-                <span class="n">hidden_sizes</span><span class="o">=</span><span class="p">[</span><span class="mi">100</span><span class="p">,],</span> <span class="n">output_size</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">action_n</span><span class="p">)</span>
+                <span class="n">hidden_sizes</span><span class="o">=</span><span class="p">[</span><span class="mi">100</span><span class="p">,],</span> <span class="n">output_size</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">critic_optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">critic_net</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="mf">0.0002</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">critic_loss</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">MSELoss</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">critic_trace</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">critic_net</span><span class="p">)</span>
@@ -14758,7 +14758,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         <span class="n">state</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">terminated</span><span class="p">,</span> <span class="n">next_action</span> <span class="o">=</span> \
                 <span class="bp">self</span><span class="o">.</span><span class="n">trajectory</span><span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="p">:]</span>
         <span class="n">state_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">as_tensor</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float</span><span class="p">)</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-        <span class="n">next_state_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">as_tensor</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float</span><span class="p">)</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">next_state_tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">as_tensor</span><span class="p">(</span><span class="n">next_state</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float</span><span class="p">)</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
         <span class="n">pred_tensor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">critic_net</span><span class="p">(</span><span class="n">state_tensor</span><span class="p">)</span>
         <span class="n">pred</span> <span class="o">=</span> <span class="n">pred_tensor</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
@@ -14868,145 +14868,145 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>14:21:37 [INFO] ==== train ====
-14:21:40 [INFO] train episode 0: reward = -500.00, steps = 500
-14:21:43 [INFO] train episode 1: reward = -500.00, steps = 500
-14:21:45 [INFO] train episode 2: reward = -500.00, steps = 500
-14:21:47 [INFO] train episode 3: reward = -346.00, steps = 347
-14:21:48 [INFO] train episode 4: reward = -149.00, steps = 150
-14:21:50 [INFO] train episode 5: reward = -311.00, steps = 312
-14:21:51 [INFO] train episode 6: reward = -323.00, steps = 324
-14:21:52 [INFO] train episode 7: reward = -184.00, steps = 185
-14:21:53 [INFO] train episode 8: reward = -143.00, steps = 144
-14:21:54 [INFO] train episode 9: reward = -225.00, steps = 226
-14:21:56 [INFO] train episode 10: reward = -207.00, steps = 208
-14:21:56 [INFO] train episode 11: reward = -171.00, steps = 172
-14:21:57 [INFO] train episode 12: reward = -123.00, steps = 124
-14:21:58 [INFO] train episode 13: reward = -208.00, steps = 209
-14:21:59 [INFO] train episode 14: reward = -188.00, steps = 189
-14:22:00 [INFO] train episode 15: reward = -209.00, steps = 210
-14:22:01 [INFO] train episode 16: reward = -123.00, steps = 124
-14:22:02 [INFO] train episode 17: reward = -158.00, steps = 159
-14:22:03 [INFO] train episode 18: reward = -143.00, steps = 144
-14:22:04 [INFO] train episode 19: reward = -204.00, steps = 205
-14:22:05 [INFO] train episode 20: reward = -165.00, steps = 166
-14:22:06 [INFO] train episode 21: reward = -148.00, steps = 149
-14:22:07 [INFO] train episode 22: reward = -145.00, steps = 146
-14:22:08 [INFO] train episode 23: reward = -115.00, steps = 116
-14:22:08 [INFO] train episode 24: reward = -159.00, steps = 160
-14:22:09 [INFO] train episode 25: reward = -135.00, steps = 136
-14:22:10 [INFO] train episode 26: reward = -117.00, steps = 118
-14:22:11 [INFO] train episode 27: reward = -137.00, steps = 138
-14:22:11 [INFO] train episode 28: reward = -129.00, steps = 130
-14:22:12 [INFO] train episode 29: reward = -102.00, steps = 103
-14:22:13 [INFO] train episode 30: reward = -119.00, steps = 120
-14:22:13 [INFO] train episode 31: reward = -99.00, steps = 100
-14:22:14 [INFO] train episode 32: reward = -122.00, steps = 123
-14:22:15 [INFO] train episode 33: reward = -134.00, steps = 135
-14:22:15 [INFO] train episode 34: reward = -108.00, steps = 109
-14:22:16 [INFO] train episode 35: reward = -131.00, steps = 132
-14:22:16 [INFO] ==== test ====
-14:22:16 [INFO] test episode 0: reward = -130.00, steps = 131
-14:22:16 [INFO] test episode 1: reward = -226.00, steps = 227
-14:22:16 [INFO] test episode 2: reward = -133.00, steps = 134
-14:22:17 [INFO] test episode 3: reward = -219.00, steps = 220
-14:22:17 [INFO] test episode 4: reward = -189.00, steps = 190
-14:22:17 [INFO] test episode 5: reward = -106.00, steps = 107
-14:22:17 [INFO] test episode 6: reward = -107.00, steps = 108
-14:22:17 [INFO] test episode 7: reward = -111.00, steps = 112
-14:22:17 [INFO] test episode 8: reward = -162.00, steps = 163
-14:22:17 [INFO] test episode 9: reward = -105.00, steps = 106
-14:22:17 [INFO] test episode 10: reward = -133.00, steps = 134
-14:22:17 [INFO] test episode 11: reward = -123.00, steps = 124
-14:22:17 [INFO] test episode 12: reward = -96.00, steps = 97
-14:22:18 [INFO] test episode 13: reward = -118.00, steps = 119
-14:22:18 [INFO] test episode 14: reward = -105.00, steps = 106
-14:22:18 [INFO] test episode 15: reward = -126.00, steps = 127
-14:22:18 [INFO] test episode 16: reward = -182.00, steps = 183
-14:22:18 [INFO] test episode 17: reward = -119.00, steps = 120
-14:22:18 [INFO] test episode 18: reward = -137.00, steps = 138
-14:22:18 [INFO] test episode 19: reward = -133.00, steps = 134
-14:22:18 [INFO] test episode 20: reward = -287.00, steps = 288
-14:22:19 [INFO] test episode 21: reward = -169.00, steps = 170
-14:22:19 [INFO] test episode 22: reward = -217.00, steps = 218
-14:22:19 [INFO] test episode 23: reward = -272.00, steps = 273
-14:22:19 [INFO] test episode 24: reward = -105.00, steps = 106
-14:22:19 [INFO] test episode 25: reward = -223.00, steps = 224
-14:22:19 [INFO] test episode 26: reward = -142.00, steps = 143
-14:22:19 [INFO] test episode 27: reward = -148.00, steps = 149
-14:22:20 [INFO] test episode 28: reward = -158.00, steps = 159
-14:22:20 [INFO] test episode 29: reward = -144.00, steps = 145
-14:22:20 [INFO] test episode 30: reward = -153.00, steps = 154
-14:22:20 [INFO] test episode 31: reward = -126.00, steps = 127
-14:22:20 [INFO] test episode 32: reward = -210.00, steps = 211
-14:22:20 [INFO] test episode 33: reward = -136.00, steps = 137
-14:22:20 [INFO] test episode 34: reward = -140.00, steps = 141
-14:22:20 [INFO] test episode 35: reward = -123.00, steps = 124
-14:22:20 [INFO] test episode 36: reward = -107.00, steps = 108
-14:22:21 [INFO] test episode 37: reward = -139.00, steps = 140
-14:22:21 [INFO] test episode 38: reward = -118.00, steps = 119
-14:22:21 [INFO] test episode 39: reward = -118.00, steps = 119
-14:22:21 [INFO] test episode 40: reward = -118.00, steps = 119
-14:22:21 [INFO] test episode 41: reward = -250.00, steps = 251
-14:22:21 [INFO] test episode 42: reward = -140.00, steps = 141
-14:22:21 [INFO] test episode 43: reward = -160.00, steps = 161
-14:22:21 [INFO] test episode 44: reward = -115.00, steps = 116
-14:22:21 [INFO] test episode 45: reward = -148.00, steps = 149
-14:22:22 [INFO] test episode 46: reward = -128.00, steps = 129
-14:22:22 [INFO] test episode 47: reward = -206.00, steps = 207
-14:22:22 [INFO] test episode 48: reward = -172.00, steps = 173
-14:22:22 [INFO] test episode 49: reward = -152.00, steps = 153
-14:22:22 [INFO] test episode 50: reward = -142.00, steps = 143
-14:22:22 [INFO] test episode 51: reward = -178.00, steps = 179
-14:22:22 [INFO] test episode 52: reward = -84.00, steps = 85
-14:22:22 [INFO] test episode 53: reward = -115.00, steps = 116
-14:22:23 [INFO] test episode 54: reward = -229.00, steps = 230
-14:22:23 [INFO] test episode 55: reward = -226.00, steps = 227
-14:22:23 [INFO] test episode 56: reward = -104.00, steps = 105
-14:22:23 [INFO] test episode 57: reward = -172.00, steps = 173
-14:22:23 [INFO] test episode 58: reward = -115.00, steps = 116
-14:22:23 [INFO] test episode 59: reward = -141.00, steps = 142
-14:22:23 [INFO] test episode 60: reward = -139.00, steps = 140
-14:22:23 [INFO] test episode 61: reward = -148.00, steps = 149
-14:22:24 [INFO] test episode 62: reward = -256.00, steps = 257
-14:22:24 [INFO] test episode 63: reward = -172.00, steps = 173
-14:22:24 [INFO] test episode 64: reward = -161.00, steps = 162
-14:22:24 [INFO] test episode 65: reward = -134.00, steps = 135
-14:22:24 [INFO] test episode 66: reward = -201.00, steps = 202
-14:22:24 [INFO] test episode 67: reward = -117.00, steps = 118
-14:22:24 [INFO] test episode 68: reward = -125.00, steps = 126
-14:22:24 [INFO] test episode 69: reward = -122.00, steps = 123
-14:22:24 [INFO] test episode 70: reward = -197.00, steps = 198
-14:22:25 [INFO] test episode 71: reward = -145.00, steps = 146
-14:22:25 [INFO] test episode 72: reward = -124.00, steps = 125
-14:22:25 [INFO] test episode 73: reward = -147.00, steps = 148
-14:22:25 [INFO] test episode 74: reward = -134.00, steps = 135
-14:22:25 [INFO] test episode 75: reward = -129.00, steps = 130
-14:22:25 [INFO] test episode 76: reward = -107.00, steps = 108
-14:22:25 [INFO] test episode 77: reward = -171.00, steps = 172
-14:22:25 [INFO] test episode 78: reward = -82.00, steps = 83
-14:22:25 [INFO] test episode 79: reward = -117.00, steps = 118
-14:22:26 [INFO] test episode 80: reward = -131.00, steps = 132
-14:22:26 [INFO] test episode 81: reward = -145.00, steps = 146
-14:22:26 [INFO] test episode 82: reward = -111.00, steps = 112
-14:22:26 [INFO] test episode 83: reward = -170.00, steps = 171
-14:22:26 [INFO] test episode 84: reward = -161.00, steps = 162
-14:22:26 [INFO] test episode 85: reward = -109.00, steps = 110
-14:22:26 [INFO] test episode 86: reward = -111.00, steps = 112
-14:22:26 [INFO] test episode 87: reward = -98.00, steps = 99
-14:22:26 [INFO] test episode 88: reward = -142.00, steps = 143
-14:22:26 [INFO] test episode 89: reward = -155.00, steps = 156
-14:22:27 [INFO] test episode 90: reward = -85.00, steps = 86
-14:22:27 [INFO] test episode 91: reward = -101.00, steps = 102
-14:22:27 [INFO] test episode 92: reward = -165.00, steps = 166
-14:22:27 [INFO] test episode 93: reward = -125.00, steps = 126
-14:22:27 [INFO] test episode 94: reward = -114.00, steps = 115
-14:22:27 [INFO] test episode 95: reward = -145.00, steps = 146
-14:22:27 [INFO] test episode 96: reward = -131.00, steps = 132
-14:22:27 [INFO] test episode 97: reward = -126.00, steps = 127
-14:22:27 [INFO] test episode 98: reward = -173.00, steps = 174
-14:22:27 [INFO] test episode 99: reward = -112.00, steps = 113
-14:22:27 [INFO] average episode reward = -146.28 ± 41.48
+<pre>00:01:37 [INFO] ==== train ====
+00:01:40 [INFO] train episode 0: reward = -500.00, steps = 500
+00:01:43 [INFO] train episode 1: reward = -500.00, steps = 500
+00:01:45 [INFO] train episode 2: reward = -500.00, steps = 500
+00:01:47 [INFO] train episode 3: reward = -346.00, steps = 347
+00:01:48 [INFO] train episode 4: reward = -149.00, steps = 150
+00:01:50 [INFO] train episode 5: reward = -311.00, steps = 312
+00:01:51 [INFO] train episode 6: reward = -323.00, steps = 324
+00:01:52 [INFO] train episode 7: reward = -184.00, steps = 185
+00:01:53 [INFO] train episode 8: reward = -143.00, steps = 144
+00:01:54 [INFO] train episode 9: reward = -225.00, steps = 226
+00:01:56 [INFO] train episode 10: reward = -207.00, steps = 208
+00:01:56 [INFO] train episode 11: reward = -171.00, steps = 172
+00:01:57 [INFO] train episode 12: reward = -123.00, steps = 124
+00:01:58 [INFO] train episode 13: reward = -208.00, steps = 209
+00:01:59 [INFO] train episode 14: reward = -188.00, steps = 189
+00:02:00 [INFO] train episode 15: reward = -209.00, steps = 210
+00:02:01 [INFO] train episode 16: reward = -123.00, steps = 124
+00:02:02 [INFO] train episode 17: reward = -158.00, steps = 159
+00:02:03 [INFO] train episode 18: reward = -143.00, steps = 144
+00:02:04 [INFO] train episode 19: reward = -204.00, steps = 205
+00:02:05 [INFO] train episode 20: reward = -165.00, steps = 166
+00:02:06 [INFO] train episode 21: reward = -148.00, steps = 149
+00:02:07 [INFO] train episode 22: reward = -145.00, steps = 146
+00:02:08 [INFO] train episode 23: reward = -115.00, steps = 116
+00:02:08 [INFO] train episode 24: reward = -159.00, steps = 160
+00:02:09 [INFO] train episode 25: reward = -135.00, steps = 136
+00:02:10 [INFO] train episode 26: reward = -117.00, steps = 118
+00:02:11 [INFO] train episode 27: reward = -137.00, steps = 138
+00:02:11 [INFO] train episode 28: reward = -129.00, steps = 130
+00:02:12 [INFO] train episode 29: reward = -102.00, steps = 103
+00:02:13 [INFO] train episode 30: reward = -119.00, steps = 120
+00:02:13 [INFO] train episode 31: reward = -99.00, steps = 100
+00:02:14 [INFO] train episode 32: reward = -122.00, steps = 123
+00:02:15 [INFO] train episode 33: reward = -134.00, steps = 135
+00:02:15 [INFO] train episode 34: reward = -108.00, steps = 109
+00:02:16 [INFO] train episode 35: reward = -131.00, steps = 132
+00:02:16 [INFO] ==== test ====
+00:02:16 [INFO] test episode 0: reward = -130.00, steps = 131
+00:02:16 [INFO] test episode 1: reward = -226.00, steps = 227
+00:02:16 [INFO] test episode 2: reward = -133.00, steps = 134
+00:02:17 [INFO] test episode 3: reward = -219.00, steps = 220
+00:02:17 [INFO] test episode 4: reward = -189.00, steps = 190
+00:02:17 [INFO] test episode 5: reward = -106.00, steps = 107
+00:02:17 [INFO] test episode 6: reward = -107.00, steps = 108
+00:02:17 [INFO] test episode 7: reward = -111.00, steps = 112
+00:02:17 [INFO] test episode 8: reward = -162.00, steps = 163
+00:02:17 [INFO] test episode 9: reward = -105.00, steps = 106
+00:02:17 [INFO] test episode 10: reward = -133.00, steps = 134
+00:02:17 [INFO] test episode 11: reward = -123.00, steps = 124
+00:02:17 [INFO] test episode 12: reward = -96.00, steps = 97
+00:02:18 [INFO] test episode 13: reward = -118.00, steps = 119
+00:02:18 [INFO] test episode 14: reward = -105.00, steps = 106
+00:02:18 [INFO] test episode 15: reward = -126.00, steps = 127
+00:02:18 [INFO] test episode 16: reward = -182.00, steps = 183
+00:02:18 [INFO] test episode 17: reward = -119.00, steps = 120
+00:02:18 [INFO] test episode 18: reward = -137.00, steps = 138
+00:02:18 [INFO] test episode 19: reward = -133.00, steps = 134
+00:02:18 [INFO] test episode 20: reward = -287.00, steps = 288
+00:02:19 [INFO] test episode 21: reward = -169.00, steps = 170
+00:02:19 [INFO] test episode 22: reward = -217.00, steps = 218
+00:02:19 [INFO] test episode 23: reward = -272.00, steps = 273
+00:02:19 [INFO] test episode 24: reward = -105.00, steps = 106
+00:02:19 [INFO] test episode 25: reward = -223.00, steps = 224
+00:02:19 [INFO] test episode 26: reward = -142.00, steps = 143
+00:02:19 [INFO] test episode 27: reward = -148.00, steps = 149
+00:02:20 [INFO] test episode 28: reward = -158.00, steps = 159
+00:02:20 [INFO] test episode 29: reward = -144.00, steps = 145
+00:02:20 [INFO] test episode 30: reward = -153.00, steps = 154
+00:02:20 [INFO] test episode 31: reward = -126.00, steps = 127
+00:02:20 [INFO] test episode 32: reward = -210.00, steps = 211
+00:02:20 [INFO] test episode 33: reward = -136.00, steps = 137
+00:02:20 [INFO] test episode 34: reward = -140.00, steps = 141
+00:02:20 [INFO] test episode 35: reward = -123.00, steps = 124
+00:02:20 [INFO] test episode 36: reward = -107.00, steps = 108
+00:02:21 [INFO] test episode 37: reward = -139.00, steps = 140
+00:02:21 [INFO] test episode 38: reward = -118.00, steps = 119
+00:02:21 [INFO] test episode 39: reward = -118.00, steps = 119
+00:02:21 [INFO] test episode 40: reward = -118.00, steps = 119
+00:02:21 [INFO] test episode 41: reward = -250.00, steps = 251
+00:02:21 [INFO] test episode 42: reward = -140.00, steps = 141
+00:02:21 [INFO] test episode 43: reward = -160.00, steps = 161
+00:02:21 [INFO] test episode 44: reward = -115.00, steps = 116
+00:02:21 [INFO] test episode 45: reward = -148.00, steps = 149
+00:02:22 [INFO] test episode 46: reward = -128.00, steps = 129
+00:02:22 [INFO] test episode 47: reward = -206.00, steps = 207
+00:02:22 [INFO] test episode 48: reward = -172.00, steps = 173
+00:02:22 [INFO] test episode 49: reward = -152.00, steps = 153
+00:02:22 [INFO] test episode 50: reward = -142.00, steps = 143
+00:02:22 [INFO] test episode 51: reward = -178.00, steps = 179
+00:02:22 [INFO] test episode 52: reward = -84.00, steps = 85
+00:02:22 [INFO] test episode 53: reward = -115.00, steps = 116
+00:02:23 [INFO] test episode 54: reward = -229.00, steps = 230
+00:02:23 [INFO] test episode 55: reward = -226.00, steps = 227
+00:02:23 [INFO] test episode 56: reward = -104.00, steps = 105
+00:02:23 [INFO] test episode 57: reward = -172.00, steps = 173
+00:02:23 [INFO] test episode 58: reward = -115.00, steps = 116
+00:02:23 [INFO] test episode 59: reward = -141.00, steps = 142
+00:02:23 [INFO] test episode 60: reward = -139.00, steps = 140
+00:02:23 [INFO] test episode 61: reward = -148.00, steps = 149
+00:02:24 [INFO] test episode 62: reward = -256.00, steps = 257
+00:02:24 [INFO] test episode 63: reward = -172.00, steps = 173
+00:02:24 [INFO] test episode 64: reward = -161.00, steps = 162
+00:02:24 [INFO] test episode 65: reward = -134.00, steps = 135
+00:02:24 [INFO] test episode 66: reward = -201.00, steps = 202
+00:02:24 [INFO] test episode 67: reward = -117.00, steps = 118
+00:02:24 [INFO] test episode 68: reward = -125.00, steps = 126
+00:02:24 [INFO] test episode 69: reward = -122.00, steps = 123
+00:02:24 [INFO] test episode 70: reward = -197.00, steps = 198
+00:02:25 [INFO] test episode 71: reward = -145.00, steps = 146
+00:02:25 [INFO] test episode 72: reward = -124.00, steps = 125
+00:02:25 [INFO] test episode 73: reward = -147.00, steps = 148
+00:02:25 [INFO] test episode 74: reward = -134.00, steps = 135
+00:02:25 [INFO] test episode 75: reward = -129.00, steps = 130
+00:02:25 [INFO] test episode 76: reward = -107.00, steps = 108
+00:02:25 [INFO] test episode 77: reward = -171.00, steps = 172
+00:02:25 [INFO] test episode 78: reward = -82.00, steps = 83
+00:02:25 [INFO] test episode 79: reward = -117.00, steps = 118
+00:02:26 [INFO] test episode 80: reward = -131.00, steps = 132
+00:02:26 [INFO] test episode 81: reward = -145.00, steps = 146
+00:02:26 [INFO] test episode 82: reward = -111.00, steps = 112
+00:02:26 [INFO] test episode 83: reward = -170.00, steps = 171
+00:02:26 [INFO] test episode 84: reward = -161.00, steps = 162
+00:02:26 [INFO] test episode 85: reward = -109.00, steps = 110
+00:02:26 [INFO] test episode 86: reward = -111.00, steps = 112
+00:02:26 [INFO] test episode 87: reward = -98.00, steps = 99
+00:02:26 [INFO] test episode 88: reward = -142.00, steps = 143
+00:02:26 [INFO] test episode 89: reward = -155.00, steps = 156
+00:02:27 [INFO] test episode 90: reward = -85.00, steps = 86
+00:02:27 [INFO] test episode 91: reward = -101.00, steps = 102
+00:02:27 [INFO] test episode 92: reward = -165.00, steps = 166
+00:02:27 [INFO] test episode 93: reward = -125.00, steps = 126
+00:02:27 [INFO] test episode 94: reward = -114.00, steps = 115
+00:02:27 [INFO] test episode 95: reward = -145.00, steps = 146
+00:02:27 [INFO] test episode 96: reward = -131.00, steps = 132
+00:02:27 [INFO] test episode 97: reward = -126.00, steps = 127
+00:02:27 [INFO] test episode 98: reward = -173.00, steps = 174
+00:02:27 [INFO] test episode 99: reward = -112.00, steps = 113
+00:02:27 [INFO] average episode reward = -146.28 ± 41.48
 </pre>
 </div>
 </div>

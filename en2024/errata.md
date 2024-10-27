@@ -176,3 +176,36 @@ $\delta_ t=\gamma{\left(\mathbf{g}^{\left(0\right)}\right)}^\top\mathbf{w}_t-{\l
 
 $\delta_ t=\gamma{\left(\mathbf{g}^{\left(0\right)}\right)}^\top\mathbf{w}_t-{\left(\mathbf{g}^{\left(i\right)}\right)}^\top\mathbf{w}_t$
 
+
+## Page 267, Code 8.6
+
+```python
+self.critic_net = self.build_net(
+        input_size=env.observation_space.shape[0],
+        hidden_sizes=[100,], output_size=self.action_n)
+```
+
+#### $\Downarrow$
+
+```python
+self.critic_net = self.build_net(
+        input_size=env.observation_space.shape[0],
+        hidden_sizes=[100,], output_size=1)
+```
+
+
+## Page 268, Code 8.6
+
+```python
+next_state_tensor = torch.as_tensor(state,
+        dtype=torch.float).unsqueeze(0)
+```
+
+#### $\Downarrow$
+
+```python
+next_state_tensor = torch.as_tensor(next_state,
+        dtype=torch.float).unsqueeze(0)
+```
+
+

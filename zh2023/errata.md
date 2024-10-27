@@ -206,11 +206,11 @@ $\pi\left(\mathsfit{a}\middle\vert\mathsfit{s}\right)=\frac{1}{\left|\mathcal{A}
 
 ## 第80页倒数第5组通栏数学表达式第2行
 
-$\alpha_ k\mathrm{E}\left[\left|F{\left(X_ {k-1}\right)}^2\right|\middle\vert{X}_ {k-1}\right]$
+$\alpha^2_ k\mathrm{E}\left[\left|F{\left(X_ {k-1}\right)}^2\right|\middle\vert{X}_ {k-1}\right]$
 
 #### 改为
 
-$\alpha_ k\mathrm{E}\left[\left|F\left(X_ {k-1}\right)\right|^2\middle\vert{X}_ {k-1}\right]$
+$\alpha^2_ k\mathrm{E}\left[\left|F\left(X_ {k-1}\right)\right|^2\middle\vert{X}_ {k-1}\right]$
 
 
 ## 第89页算法4.8第2.1步
@@ -346,6 +346,36 @@ $\mathbfit{g}\left({\boldsymbol\theta}_ k\right)\left({\boldsymbol\theta}-{\bold
 #### 改为
 
 $\left[\mathbfit{g}\left({\boldsymbol\theta}_ k\right)\right]^\mathrm{T}\left({\boldsymbol\theta}-{\boldsymbol\theta}_ k\right)$
+
+
+## 第224页代码清单8-6中代码中间部分
+
+```python
+self.critic_net = self.build_net(
+        input_size=env.observation_space.shape[0],
+        hidden_sizes=[100,], output_size=self.action_n)
+```
+
+#### 改为
+
+```python
+self.critic_net = self.build_net(
+        input_size=env.observation_space.shape[0],
+        hidden_sizes=[100,], output_size=1)
+```
+
+
+## 第225页代码清单8-6中间部分
+
+```python
+next_state_tensor = torch.as_tensor(state, dtype=torch.float).unsqueeze(0)
+```
+
+#### 改为
+
+```python
+next_state_tensor = torch.as_tensor(next_state, dtype=torch.float).unsqueeze(0)
+```
 
 
 ## 第252页正文倒数第2~3行
@@ -673,7 +703,7 @@ $c_ \mathsfit{a}\geqslant\underline{c}_ \kappa\left(\mathsfit{a}\right)$
 $c_ \mathsfit{a}>\underline{c}_ \kappa\left(\mathsfit{a}\right)$
 
 
-## 第365页倒数第6行，第365页第2行（共2处）
+## 第364页倒数第6行，第365页第2行（共2处）
 
 $c_ \kappa\left(\mathsfit{a}\right)\geqslant\underline{c}_ \kappa\left(\mathsfit{a}\right)$
 

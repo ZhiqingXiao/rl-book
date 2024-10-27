@@ -124,3 +124,12 @@ $q^{(1)}$
 #### $\Downarrow$
 
 $q^{(0)}$
+
+
+## Page 151, Code 5.5, Line 32
+
+`v = reward + self.gamma * self.q[next_state].max() * (1. - terminated)`
+
+#### $\Downarrow$
+
+`v = self.q[next_state].max()`

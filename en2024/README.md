@@ -93,11 +93,11 @@ Note:
      publisher = {Springer},
     }
 
-# 强化学习：原理与Python实现（英文版）
+# 强化学习：原理与 Python 实现（英文版）
 
 **全球第一本配套 TensorFlow 2 和 PyTorch 1/2 一比一对照代码的英文强化学习书**
 
-**解密大模型训练技术 PPO、RLHF、IRL和PbRL**
+**解密大模型训练技术 PPO、RLHF、IRL 和 PbRL**
 
 ### 本书特色
 

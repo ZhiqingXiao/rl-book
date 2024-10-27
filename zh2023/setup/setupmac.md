@@ -21,7 +21,7 @@
 
 **步骤：**
 
-- 运行“终端”，执行下列命令：（其中`py310`是conda环境名， 你也可以取其他名称）（注：这里使用了Python 3.10而不是3.11和3.12，是因为最新版本的`gym[toy_text,classic_control,box2d]`依赖于`pygame==2.1`。虽然最新版本的pygame的支持Python 3.12，但是pygame 2.1不支持。所以如果要在python 3.11和3.12上安装最新版本的`gym[toy_text,classic_control,box2d]`需要对代码做兼容性调整，比较麻烦。为了简单，这里用经过验证的Python 3.10。）
+- 运行“终端”，执行下列命令：（其中`py310`是conda环境名， 你也可以取其他名称）（注：这里使用了Python 3.10而不是3.11或3.12或3.13，是因为最新版本的`gym[toy_text,classic_control,box2d]`依赖于`pygame==2.1`。虽然最新版本的pygame的支持Python 3.12，但是pygame 2.1不支持。所以如果要在python 3.11或3.12或3.13上安装最新版本的`gym[toy_text,classic_control,box2d]`需要对代码做兼容性调整，比较麻烦。为了简单，这里用经过验证的Python 3.10。）
    ```
    conda create --name py310 python=3.10
    conda activate py310
@@ -92,7 +92,7 @@
 
 - 安装PyTorch（CPU版）：在目标conda环境中执行下列命令
    ```
-   conda install pytorch cpuonly -c pytorch
+   pip install --upgrade pytorch
    ```
 
 ## 第3.1部分：安装`gym[box2d]`

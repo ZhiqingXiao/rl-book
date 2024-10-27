@@ -55,7 +55,7 @@
 | Figure 15.1 | MDP of the task "Tiger". | 501 |
 | Figure 15.2 | Trajectories maintained by the environment and the agent. | 503 |
 | Figure 15.3 | Belief MDP of the task "Tiger". | 507 |
-| Figure 16.1 | Learning from feedbacks. | 526 |
+| Figure 16.1 | Learning from feedback. | 526 |
 | Figure 16.2 | Agent–environment interface of IL. | 531 |
 | Figure 16.3 | Compounding error of imitation policy. | 541 |
 | Figure 16.4 | Training GPT. | 545 |

@@ -21,7 +21,7 @@ This step is strongly recommended but not compulsory.
 
 **Steps:**
 
-- Launch "Terminal", and execute the following commands: (where `py310` is the conda environment name, and you can change it to an other name.) (Remark: Here we use Python 3.10 rather than Python 3.11 or Python 3.12, it is because the latest version of `gym[toy_text,classic_control,box2d]` depends on `pygame==2.1`, but `pygame==2.1` is not compatible with Python 3.12, although the latest version of `pygame` supports Python 3.12. Resolving the compatible between the latest version of Gym and Python 3.11&3.12 needs some efforts. For simplify, this guide uses Python 3.10.)
+- Launch "Terminal", and execute the following commands: (where `py310` is the conda environment name, and you can change it to an other name.) (Remark: Here we use Python 3.10 rather than Python 3.11 or Python 3.12 or Python 3.13, it is because the latest version of `gym[toy_text,classic_control,box2d]` depends on `pygame==2.1`, but `pygame==2.1` is not compatible with Python 3.12, although the latest version of `pygame` supports Python 3.12. Resolving the compatible between the latest version of Gym and Python 3.11&3.12&3.13 needs some efforts. For simplify, this guide uses Python 3.10.)
    ```
    conda create --name py310 python=3.10
    conda activate py310
@@ -92,7 +92,7 @@ This book only needs CPU version. You can of course install GPU versions, which 
 
 - Install PyTorch (CPU version): Execute the following command in target conda environment:
    ```
-   conda install pytorch cpuonly -c pytorch
+   pip install --upgrade pytorch
    ```
 
 ## Part 3.1: Install `gym[box2d]`

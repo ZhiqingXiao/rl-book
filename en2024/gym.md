@@ -171,4 +171,4 @@ The wrapper class `AtariPreprocessing` provides common wrapper for Atari games.
 
 Source codes: https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py
 
-In Atari environments, a single image of a video game can only show the position of objects, but can not show the movement of the objects. In order to obtain the movement information, we can stack multiple images together as the state. The class FrameStack implements the stack. Atari games usually stack 4 images.
+In Atari environments, a single image of a video game can only show the position of objects, but can not show the movement of the objects. In order to obtain the movement information, we can stack multiple images together as the state. The class `FrameStack` implements the stack. Atari games usually stack 4 images.

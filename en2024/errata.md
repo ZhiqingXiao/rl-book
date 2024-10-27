@@ -49,3 +49,33 @@ $\rho_ \pi\left(\mathsfit{s},\mathsfit{a}\right)\stackrel{\text{def}}=\sum_ {\ta
 
 $\rho_ \pi\left(\mathsfit{s},\mathsfit{a}\right)\stackrel{\text{def}}=\sum_ {\tau=0}^{+\infty}\gamma^\tau\text{Pr}_ \pi\left[{\mathsfit{S}_ \tau=\mathsfit{s},\mathsfit{A}_ \tau=\mathsfit{a}}\right]$
 
+
+## Section 2.4.4, Page 67, Second block math, First line
+
+$\frac6{11}$
+
+#### $\Downarrow$
+
+$-10$
+
+
+## Section 2.4.4, Page 67, Fourth block math
+
+$v_ \ast\left(\text{hungry}\right)=q_ \ast\left(\text{hungry},\text{ignore}\right)=-6,\quad q_ \ast\left(\text{hungry},\text{feed}\right)=-\frac13,$
+
+$v_ \ast\left(\text{full}\right)=q_ \ast\left(\text{full},\text{ignore}\right)=-10,\quad q_ \ast\left(\text{hungry},\text{feed}\right)=5.$
+
+#### $\Downarrow$
+
+$v_ \ast\left(\text{hungry}\right)=q_ \ast\left(\text{hungry},\text{ignore}\right)=-10,\quad q_ \ast\left(\text{hungry},\text{feed}\right)=-\frac13,$
+
+$q_ \ast\left(\text{full},\text{ignore}\right)=-6,\quad v_ \ast\left(\text{full}\right)=q_ \ast\left(\text{hungry},\text{feed}\right)=5.$
+
+
+## Interdisciplinary Reference 3.1, Page 82, Bullet Group, the Last Bullet Point
+
+$d\left(x',x'''\right)$
+
+#### $\Downarrow$
+
+$d\left(x'',x'''\right)$

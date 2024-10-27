@@ -53,6 +53,7 @@ All chapters are accompanied with Python codes.
 - Table of tables: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/table.md)
 - Gym Internal: [link](https://github.com/ZhiqingXiao/rl-book/blob/master/en2024/gym.md)
 - Bibliography: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/bibliography.md)
+- Corrigendum: [link](https://github.com/zhiqingxiao/rl-book/blob/master/en2024/errata.md)
 
 ### Table of Codes
 
